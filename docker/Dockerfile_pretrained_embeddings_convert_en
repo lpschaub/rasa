@@ -26,15 +26,12 @@ ENV PATH "/root/.poetry/bin:/opt/venv/bin:${PATH}"
 COPY . /app/
 COPY docker/configs/config_pretrained_embeddings_convert.yml /app/config.yml
 
-# download mitie model
-RUN wget -P /app/data/ https://s3-eu-west-1.amazonaws.com/mitie/total_word_feature_extractor.dat
-
 # install dependencies
 RUN python -m venv /opt/venv && \
   . /opt/venv/bin/activate && \
   pip install --no-cache-dir -U pip && \
   cd /app && \
-  poetry install --extras mitie --no-dev --no-interaction
+  poetry install --extras convert --no-dev --no-interaction
 
 # start a new build stage
 FROM python:3.6-slim
