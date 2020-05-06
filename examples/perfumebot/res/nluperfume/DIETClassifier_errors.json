@@ -1,0 +1,884 @@
+[
+  {
+    "text": "_Name2_ : J e vous ai précisé que je ne comprenais pas la différence de facturation qui frais de transport compris est de 9794€ et au final on me réclame 10096€. Merci. je m'a fait livrer à mon domicile je ne vois donc pas pourquoi sur le bon de commande les frais inclus sont arrêtés à un peu plus de 97€. j'ai commandé 2 articles. a vous lire. cordialement",
+    "entities": [
+      {
+        "start": 72,
+        "end": 83,
+        "value": "facturation",
+        "entity": "billing"
+      },
+      {
+        "start": 88,
+        "end": 106,
+        "value": "frais de transport",
+        "entity": "fdp"
+      },
+      {
+        "start": 181,
+        "end": 187,
+        "value": "livrer",
+        "entity": "delivery"
+      },
+      {
+        "start": 194,
+        "end": 202,
+        "value": "domicile",
+        "entity": "home"
+      },
+      {
+        "start": 239,
+        "end": 254,
+        "value": "bon de commande",
+        "entity": "billing"
+      },
+      {
+        "start": 259,
+        "end": 271,
+        "value": "frais inclus",
+        "entity": "fdp"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name1_ : Merci mais lors de la commande la livraison était pour le septembre merci pour votre réponse je vais attendre bonne journée",
+    "entities": [
+      {
+        "start": 68,
+        "end": 77,
+        "value": "septembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "de belles fêtes de Noël et de fin d'année pour vous et vos proches.13 non merci plus aucune question.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "Noël",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_: _Email1_2 _Name2_ : mon paiement vient d'être refusé par votre site sur ma carte mastercard des postes italiennes3 _Name2_ : j'ai bien reçus le code d'acceptation de mon débit par la carte",
+    "entities": [
+      {
+        "start": 33,
+        "end": 41,
+        "value": "paiement",
+        "entity": "payment"
+      },
+      {
+        "start": 72,
+        "end": 76,
+        "value": "site",
+        "entity": "website"
+      },
+      {
+        "start": 84,
+        "end": 100,
+        "value": "carte mastercard",
+        "entity": "tool"
+      },
+      {
+        "start": 153,
+        "end": 157,
+        "value": "code",
+        "entity": "discount"
+      },
+      {
+        "start": 179,
+        "end": 184,
+        "value": "débit",
+        "entity": "payment"
+      },
+      {
+        "start": 192,
+        "end": 197,
+        "value": "carte",
+        "entity": "tool"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_City1_: oui cela me marque numéro de portable non valide je n'en ai jamais eu et ce n'est pas ma première commande sauf mon adresse perso qui changé mais je préfère le point relais",
+    "entities": [
+      {
+        "start": 28,
+        "end": 46,
+        "value": "numéro de portable",
+        "entity": "phone"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : mauvaise expérience par Paypal",
+    "entities": [
+      {
+        "start": 34,
+        "end": 40,
+        "value": "Paypal",
+        "entity": "tool"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name1_ : alors aujourd'hui je comprends. doc je dois patienter. Merci",
+    "entities": [
+      {
+        "start": 16,
+        "end": 27,
+        "value": "aujourd'hui",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Merci vous de même a propos avez vous la gamme _Name1_ à savoir Doorella ou Diorissimo",
+    "entities": [
+      {
+        "start": 64,
+        "end": 72,
+        "value": "Doorella",
+        "entity": "article"
+      },
+      {
+        "start": 76,
+        "end": 86,
+        "value": "Diorissimo",
+        "entity": "article"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name3_ : bonjour2 _Name3_ : c'est la troisième fois que je commande mon parfum Insolence de _Name2_ chez vous. j'ai été très satisfaite les deux premières fois mais j'ai reçu hier ma troisième commande et quelle déception : il s'agit de l'ancien conditionnement et l'eau de parfum a viré : cela ne sent pas du tout comme d'habitude. je suis très déçue. pouvez vous faire quelque chose ? cela m'ennuie de renoncer à commander chez vous3 _Name3_ : mon adresse mail est : _Email1_",
+    "entities": [
+      {
+        "start": 73,
+        "end": 79,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 80,
+        "end": 100,
+        "value": "Insolence de _Name2_",
+        "entity": "article"
+      },
+      {
+        "start": 213,
+        "end": 222,
+        "value": "déception",
+        "entity": "mood"
+      },
+      {
+        "start": 275,
+        "end": 281,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 284,
+        "end": 288,
+        "value": "viré",
+        "entity": "damaged"
+      },
+      {
+        "start": 470,
+        "end": 478,
+        "value": "_Email1_",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "et pourrez vous me _City1_",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "_City1_",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "j'ai mis le code MDM10 pour une remise et l'on me répond code expire quand un nouveau code remise sinon je diffère ma commande",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "code",
+        "entity": "discount"
+      },
+      {
+        "start": 17,
+        "end": 22,
+        "value": "MDM10",
+        "entity": "code"
+      },
+      {
+        "start": 32,
+        "end": 38,
+        "value": "remise",
+        "entity": "discount"
+      },
+      {
+        "start": 57,
+        "end": 61,
+        "value": "code",
+        "entity": "discount"
+      },
+      {
+        "start": 86,
+        "end": 90,
+        "value": "code",
+        "entity": "discount"
+      },
+      {
+        "start": 91,
+        "end": 97,
+        "value": "remise",
+        "entity": "discount"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bonjour puis je avoir un code promo pour mon anniversaire ?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 29,
+        "value": "code",
+        "entity": "discount"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "tétard : OK je le note et vous rappelle si je n'i rien le 15 Merci",
+    "entities": [
+      {
+        "start": 55,
+        "end": 60,
+        "value": "le 15",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name4_ : alors je vais me déconnecter et recommencer la manip",
+    "entities": [
+      {
+        "start": 27,
+        "end": 38,
+        "value": "déconnecter",
+        "entity": "connection"
+      },
+      {
+        "start": 57,
+        "end": 62,
+        "value": "manip",
+        "entity": "operation"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name4_ : quel mot de passe provisoire ?20 _Name4_ : c'est bien un bug de votre système !",
+    "entities": [
+      {
+        "start": 15,
+        "end": 27,
+        "value": "mot de passe",
+        "entity": "pwd"
+      },
+      {
+        "start": 67,
+        "end": 70,
+        "value": "bug",
+        "entity": "bug"
+      },
+      {
+        "start": 80,
+        "end": 87,
+        "value": "système",
+        "entity": "website"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "je sais mais ça ne passe pas7 je connais bien le fonctionnement : j'ai travaillé dans ce secteur. apparemment votre site dysfonctionnait quand j'ai voulu saisir.8 je réessaierai plus tard",
+    "entities": [
+      {
+        "start": 116,
+        "end": 120,
+        "value": "site",
+        "entity": "website"
+      },
+      {
+        "start": 121,
+        "end": 136,
+        "value": "dysfonctionnait",
+        "entity": "bug"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "j'ai reçu un nouveau mot de passe je n'arrive pas à passer commande",
+    "entities": [
+      {
+        "start": 21,
+        "end": 33,
+        "value": "mot de passe",
+        "entity": "pwd"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bonjour je n'arrive pas à passer ma commande3 _Email1_",
+    "entities": [
+      {
+        "start": 46,
+        "end": 54,
+        "value": "_Email1_",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name1_ : bonjour je voudrai offrir le parfum que j'ai commandé dimanche 26 et je ne l'ai toujours pas reçu est ce que je l'Arai à temps ?2 _Name1_ : _Email1_",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "offrir",
+        "entity": "present"
+      },
+      {
+        "start": 39,
+        "end": 45,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 64,
+        "end": 75,
+        "value": "dimanche 26",
+        "entity": "date"
+      },
+      {
+        "start": 150,
+        "end": 158,
+        "value": "_Email1_",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : bonjour3 _Name2_ : ma commande  N 00 apparaît toujours en dépôt chez l'expéditeur alors qu'il était indiqué que la livraison était prévue pour samedi en point relais. est ce normal ? je m'inquiète un peu",
+    "entities": [
+      {
+        "start": 41,
+        "end": 43,
+        "value": " N",
+        "entity": "phone"
+      },
+      {
+        "start": 44,
+        "end": 46,
+        "value": "00",
+        "entity": "order"
+      },
+      {
+        "start": 65,
+        "end": 73,
+        "value": "en dépôt",
+        "entity": "status"
+      },
+      {
+        "start": 153,
+        "end": 159,
+        "value": "samedi",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : voilà mon adresse mail _Email1_3 _Name2_ : j'ai passé une commande samedi et dans le suivi du colis je ne vois pas où il est",
+    "entities": [
+      {
+        "start": 77,
+        "end": 83,
+        "value": "samedi",
+        "entity": "date"
+      },
+      {
+        "start": 95,
+        "end": 100,
+        "value": "suivi",
+        "entity": "follow-up"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_City1_ : j'ai commandé un parfum pouvez vous me dire où en est ma commande _Email1_2 _City1_ : ma commande porte le  N 00",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "_City1_",
+        "entity": "city"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 86,
+        "end": 93,
+        "value": "_City1_",
+        "entity": "city"
+      },
+      {
+        "start": 117,
+        "end": 119,
+        "value": " N",
+        "entity": "phone"
+      },
+      {
+        "start": 120,
+        "end": 122,
+        "value": "00",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bonjour j'ai effectué une commande mais je n'ai toujours rien reçu alors que c'et par Chronopost.2 00",
+    "entities": [
+      {
+        "start": 99,
+        "end": 101,
+        "value": "00",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : il est toujours en préparation chez vous",
+    "entities": [
+      {
+        "start": 26,
+        "end": 40,
+        "value": "en préparation",
+        "entity": "status"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name1_ : pouvez vous me dire où en est ma commande passée le 16/11/2018",
+    "entities": [
+      {
+        "start": 62,
+        "end": 72,
+        "value": "16/11/2018",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name3_ : oui j'avais reçu un parfum Chloé que j'ai photographié et retourne j'ai confirmé le parfum initialement commandé on m'a confirmé l'expédition le 31 / _Name1_ et depuis il est toujours considéré \" \" prêt chez l'expéditeur \" \" et rien ne bouge",
+    "entities": [
+      {
+        "start": 30,
+        "end": 36,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 37,
+        "end": 42,
+        "value": "Chloé",
+        "entity": "article"
+      },
+      {
+        "start": 94,
+        "end": 100,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 152,
+        "end": 157,
+        "value": "le 31",
+        "entity": "date"
+      },
+      {
+        "start": 208,
+        "end": 230,
+        "value": "prêt chez l'expéditeur",
+        "entity": "status"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "donc ?3 _Name2_ je livrée avant Noel",
+    "entities": [
+      {
+        "start": 19,
+        "end": 25,
+        "value": "livrée",
+        "entity": "delivery"
+      },
+      {
+        "start": 32,
+        "end": 36,
+        "value": "Noel",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name3_ : j'ai reçu le parfum angel4 _Name3_ : il manque le parfum homme Kenzo",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 50,
+        "end": 56,
+        "value": "manque",
+        "entity": "missing"
+      },
+      {
+        "start": 60,
+        "end": 66,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 67,
+        "end": 72,
+        "value": "homme",
+        "entity": "target"
+      },
+      {
+        "start": 73,
+        "end": 78,
+        "value": "Kenzo",
+        "entity": "article"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : 00",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "00",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : mon adresse mail est _Email1_ et ma commande est le 00",
+    "entities": [
+      {
+        "start": 31,
+        "end": 39,
+        "value": "_Email1_",
+        "entity": "email"
+      },
+      {
+        "start": 62,
+        "end": 64,
+        "value": "00",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : je dois suivre ce lien pour avoir des nouvelles ? c'est ça ?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 32,
+        "value": "lien",
+        "entity": "follow-up"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : dans mon compte les fichiers pdf je ne peux pas les télécharger5 _Name2_ : commande No 00 et les anciennes commandes6 _Name2_ : je ne comprends pas car sur les autres sites je peux télécharger mes factures relatives aux commandes7 _Name2_ : dans mon compte8 _Name2_ : comment puis je faire ?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 25,
+        "value": "compte",
+        "entity": "account"
+      },
+      {
+        "start": 97,
+        "end": 99,
+        "value": "00",
+        "entity": "order"
+      },
+      {
+        "start": 177,
+        "end": 182,
+        "value": "sites",
+        "entity": "website"
+      },
+      {
+        "start": 207,
+        "end": 215,
+        "value": "factures",
+        "entity": "billing"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name4_ : mon panier est composé de deux articlesRéf 10413229 et 10414580",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "value": "panier",
+        "entity": "basket"
+      },
+      {
+        "start": 65,
+        "end": 73,
+        "value": "10414580",
+        "entity": "article"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bien que j'aie cliqué sur mot de passe oublié on ne me renvoie pas de mail de renouvellement",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "mot de passe",
+        "entity": "pwd"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : le coloris sable du fond de teint make up for ever fluide tenseur   est il bien pour les peaux claires j'ai peur que coloris porcelaine ne fasse trop blanc3 _Name2_ : avez vous eu mes questions ?4 _Name2_ : Merci",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "sable",
+        "entity": "color"
+      },
+      {
+        "start": 30,
+        "end": 75,
+        "value": "fond de teint make up for ever fluide tenseur",
+        "entity": "article"
+      },
+      {
+        "start": 105,
+        "end": 112,
+        "value": "claires",
+        "entity": "color"
+      },
+      {
+        "start": 135,
+        "end": 145,
+        "value": "porcelaine",
+        "entity": "color"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : si la commande n'est pas encore partie vous pouvez le faire5 _Name2_ : j'ai pas fait attention je croyais que c'était un parfum et pas un savon vous pouvez me faire un avoir ?",
+    "entities": [
+      {
+        "start": 131,
+        "end": 137,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 175,
+        "end": 183,
+        "value": "un avoir",
+        "entity": "refund"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : oui je voulais commander un parfum combien du temps pour être livrer car le part en vaconce à la fin du mois",
+    "entities": [
+      {
+        "start": 38,
+        "end": 44,
+        "value": "parfum",
+        "entity": "article"
+      },
+      {
+        "start": 72,
+        "end": 78,
+        "value": "livrer",
+        "entity": "delivery"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : bonjour pouvez vous me garantir que si je commande aujourd'hui je suis garanti de l'avoir pour Noel ?",
+    "entities": [
+      {
+        "start": 61,
+        "end": 72,
+        "value": "aujourd'hui",
+        "entity": "date"
+      },
+      {
+        "start": 105,
+        "end": 109,
+        "value": "Noel",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name1_ : pensez à déduire les 10€ oubliés de la commande initiale",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "déduire",
+        "entity": "discount"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bonjour3 c'est ma première commande 148 euros je ne veux pas payer les frais de port avez vous un code d'ebienvenue ?4 s'il vous plaît merci",
+    "entities": [
+      {
+        "start": 61,
+        "end": 66,
+        "value": "payer",
+        "entity": "payment"
+      },
+      {
+        "start": 71,
+        "end": 84,
+        "value": "frais de port",
+        "entity": "fdp"
+      },
+      {
+        "start": 98,
+        "end": 102,
+        "value": "code",
+        "entity": "discount"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name3_ : nous étions en conversation à propos de ma commande mon colis est annoncé chez chrono post comme \" \" prêt chez l'expéditeur \" \" mais toujours rien reçu",
+    "entities": [
+      {
+        "start": 89,
+        "end": 100,
+        "value": "chrono post",
+        "entity": "transporter"
+      },
+      {
+        "start": 111,
+        "end": 133,
+        "value": "prêt chez l'expéditeur",
+        "entity": "status"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Name2_ : oui mon  N de commande",
+    "entities": [
+      {
+        "start": 18,
+        "end": 20,
+        "value": " N",
+        "entity": "phone"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "par contre l'adresse n'est plus la même je n'habite plus à _City1_",
+    "entities": [
+      {
+        "start": 59,
+        "end": 66,
+        "value": "_City1_",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "mon adresse mail est : _Email1_",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "_Email1_",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

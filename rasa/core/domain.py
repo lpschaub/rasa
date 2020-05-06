@@ -551,6 +551,7 @@ class Domain:
         import numpy as np
 
         if utter_action in self.templates:
+            print("several utterance instances ! What should I choose...")
             return np.random.choice(self.templates[utter_action])
         else:
             return None

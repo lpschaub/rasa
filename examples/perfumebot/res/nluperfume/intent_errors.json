@@ -1,0 +1,282 @@
+[
+  {
+    "text": "_Name2_ : J e vous ai précisé que je ne comprenais pas la différence de facturation qui frais de transport compris est de 9794€ et au final on me réclame 10096€. Merci. je m'a fait livrer à mon domicile je ne vois donc pas pourquoi sur le bon de commande les frais inclus sont arrêtés à un peu plus de 97€. j'ai commandé 2 articles. a vous lire. cordialement",
+    "intent": "deliveryCost",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.480535089969635
+    }
+  },
+  {
+    "text": "_Name2_ : oui merci",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.6005253791809082
+    }
+  },
+  {
+    "text": "_Name2_ : mauvaise expérience par Paypal",
+    "intent": "PaymentTool",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.27653801441192627
+    }
+  },
+  {
+    "text": "_Name1_ : alors aujourd'hui je comprends. doc je dois patienter. Merci",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "WebsiteBug",
+      "confidence": 0.23034393787384033
+    }
+  },
+  {
+    "text": "_Name3_ : _Name1_ ok",
+    "intent": "oui",
+    "intent_prediction": {
+      "name": "autre",
+      "confidence": 0.28986862301826477
+    }
+  },
+  {
+    "text": "_Name2_ : ok vous devriez l'avoir reçu maintenant etc etc",
+    "intent": "oui",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.28379854559898376
+    }
+  },
+  {
+    "text": "Merci vous de même a propos avez vous la gamme _Name1_ à savoir Doorella ou Diorissimo",
+    "intent": "ProductAvailable",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.5447246432304382
+    }
+  },
+  {
+    "text": "_Name1_ : Merci pour vos informations bonne journée",
+    "intent": "goodbye+thanks",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5299112200737
+    }
+  },
+  {
+    "text": "Merci beaucoup de votre aide je vous souhaite une bonne journée ! il y a )",
+    "intent": "thanks+goodbye",
+    "intent_prediction": {
+      "name": "goodbye+thanks",
+      "confidence": 0.1862005740404129
+    }
+  },
+  {
+    "text": "tétard : OK je le note et vous rappelle si je n'i rien le 15 Merci",
+    "intent": "thanks+oui",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.1993418037891388
+    }
+  },
+  {
+    "text": "_Name2_ _Name3_ : non merci. on verra le 19",
+    "intent": "non+thanks",
+    "intent_prediction": {
+      "name": "non",
+      "confidence": 0.36305683851242065
+    }
+  },
+  {
+    "text": "_Name4_ : quel mot de passe provisoire ?20 _Name4_ : c'est bien un bug de votre système !",
+    "intent": "WebsiteBug",
+    "intent_prediction": {
+      "name": "Login",
+      "confidence": 0.4845145046710968
+    }
+  },
+  {
+    "text": "je sais mais ça ne passe pas7 je connais bien le fonctionnement : j'ai travaillé dans ce secteur. apparemment votre site dysfonctionnait quand j'ai voulu saisir.8 je réessaierai plus tard",
+    "intent": "WebsiteBug+goodbye",
+    "intent_prediction": {
+      "name": "ConfirmationOrder",
+      "confidence": 0.2664916515350342
+    }
+  },
+  {
+    "text": "_Name2_ : voilà mon adresse mail _Email1_3 _Name2_ : j'ai passé une commande samedi et dans le suivi du colis je ne vois pas où il est",
+    "intent": "deliveryNews",
+    "intent_prediction": {
+      "name": "missingItem",
+      "confidence": 0.28875526785850525
+    }
+  },
+  {
+    "text": "_Name3_ : oui j'avais reçu un parfum Chloé que j'ai photographié et retourne j'ai confirmé le parfum initialement commandé on m'a confirmé l'expédition le 31 / _Name1_ et depuis il est toujours considéré \" \" prêt chez l'expéditeur \" \" et rien ne bouge",
+    "intent": "deliveryNews+AskDetails",
+    "intent_prediction": {
+      "name": "ConfirmationOrder",
+      "confidence": 0.24704115092754364
+    }
+  },
+  {
+    "text": "donc ?3 _Name2_ je livrée avant Noel",
+    "intent": "AskDetails",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.25097933411598206
+    }
+  },
+  {
+    "text": "_Name2_ : mon adresse mail est _Email1_ et ma commande est le 00",
+    "intent": "rien",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.8745513558387756
+    }
+  },
+  {
+    "text": "100ml5 36.99 euros au lieu de 96.50 euros en 1ère _Name2_",
+    "intent": "ProductPrice",
+    "intent_prediction": {
+      "name": "deliveryCost",
+      "confidence": 0.2861000895500183
+    }
+  },
+  {
+    "text": "cela m'a coûté 6 euros pour rien",
+    "intent": "CustomerComplaint",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.24927173554897308
+    }
+  },
+  {
+    "text": "_Name4_ : mon panier est composé de deux articlesRéf 10413229 et 10414580",
+    "intent": "purchase",
+    "intent_prediction": {
+      "name": "rien",
+      "confidence": 0.5093520283699036
+    }
+  },
+  {
+    "text": "_Name2_ : c'est très long pour le prix etc merci au revoir6 _Name2_ : PS : je ne suis pas sûre du tout de recommander un jour",
+    "intent": "CustomerComplaint+goodbye",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.29328653216362
+    }
+  },
+  {
+    "text": "bien que j'aie cliqué sur mot de passe oublié on ne me renvoie pas de mail de renouvellement",
+    "intent": "AccountIssue",
+    "intent_prediction": {
+      "name": "Login",
+      "confidence": 0.3406834602355957
+    }
+  },
+  {
+    "text": "_Name2_ : d'accord je attend un peu7 _Name2_ : merci pour votre aide",
+    "intent": "oui+thanks",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6792320609092712
+    }
+  },
+  {
+    "text": "_Name2_ : le coloris sable du fond de teint make up for ever fluide tenseur   est il bien pour les peaux claires j'ai peur que coloris porcelaine ne fasse trop blanc3 _Name2_ : avez vous eu mes questions ?4 _Name2_ : Merci",
+    "intent": "ProductTarget",
+    "intent_prediction": {
+      "name": "damagedPackage",
+      "confidence": 0.23229274153709412
+    }
+  },
+  {
+    "text": "_Name2_ : ok je vais essayer etc. Merci et bonne journée",
+    "intent": "thanks+goodbye+oui",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.45794397592544556
+    }
+  },
+  {
+    "text": "_Name2_ : oui je voulais commander un parfum combien du temps pour être livrer car le part en vaconce à la fin du mois",
+    "intent": "deliveryTime",
+    "intent_prediction": {
+      "name": "ReceptionAlert",
+      "confidence": 0.15933746099472046
+    }
+  },
+  {
+    "text": "_Name2_ : quand ? heure et date svp",
+    "intent": "ConfirmationOrder",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.27699387073516846
+    }
+  },
+  {
+    "text": "_Name1_ : pensez à déduire les 10€ oubliés de la commande initiale",
+    "intent": "Refund",
+    "intent_prediction": {
+      "name": "missingItem",
+      "confidence": 0.40228360891342163
+    }
+  },
+  {
+    "text": "bonjour3 c'est ma première commande 148 euros je ne veux pas payer les frais de port avez vous un code d'ebienvenue ?4 s'il vous plaît merci",
+    "intent": "deliveryCost+Discount",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.33940765261650085
+    }
+  },
+  {
+    "text": "_Name3_ : nous étions en conversation à propos de ma commande mon colis est annoncé chez chrono post comme \" \" prêt chez l'expéditeur \" \" mais toujours rien reçu",
+    "intent": "CommuncationInterruption+deliveryNews",
+    "intent_prediction": {
+      "name": "deliveryNews",
+      "confidence": 0.47506198287010193
+    }
+  },
+  {
+    "text": "alirs faites la livraison en point relais14 merci de le confirmer",
+    "intent": "deliveryPlace",
+    "intent_prediction": {
+      "name": "ReceptionAlert",
+      "confidence": 0.3288009464740753
+    }
+  },
+  {
+    "text": "_Name2_ : oui mon  N de commande",
+    "intent": "delivery",
+    "intent_prediction": {
+      "name": "autre",
+      "confidence": 0.4231901168823242
+    }
+  },
+  {
+    "text": "_Name2_ : bonjour",
+    "intent": "saluer",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.7422614097595215
+    }
+  },
+  {
+    "text": "par contre l'adresse n'est plus la même je n'habite plus à _City1_",
+    "intent": "ChangeData",
+    "intent_prediction": {
+      "name": "damagedPackage",
+      "confidence": 0.3365519940853119
+    }
+  },
+  {
+    "text": "mon adresse mail est : _Email1_",
+    "intent": "AccountCreation",
+    "intent_prediction": {
+      "name": "autre",
+      "confidence": 0.7847055792808533
+    }
+  }
+]

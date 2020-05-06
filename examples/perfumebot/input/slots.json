@@ -1,0 +1,161 @@
+{
+    "Store_name": [
+        "Parfum moins cher"
+    ],
+    "account_connection": [
+        "issue",
+        "yes"
+    ],
+    "add": [
+        "yes"
+    ],
+    "address": [
+        "17 avenue _Name3_ _ZipCode1_ _City1_",
+        "75 avenue du docteur _Name4_ résidence _City3_ _ZipCode1_ _City2_"
+    ],
+    "article": [
+        "womanity EAU de parfum spray",
+        "Lolita Lempicka",
+        "present",
+        "fond de teint make up for ever fluide tenseur",
+        "Kenzo",
+        "Guerlain+Chanel",
+        "Guerlain",
+        "Doorella Diorissimo",
+        "Courrèges in blue",
+        "Valentino Donna"
+    ],
+    "cache": [
+        "yes",
+        "unable"
+    ],
+    "code": [
+        "name1",
+        "amour",
+        "PANTALEO5",
+        "MDM10",
+        "NOEL5",
+        "NOEL10"
+    ],
+    "complaint": [
+        "bad add",
+        "splitted delivery",
+        "no answer",
+        "long phone",
+        "expensive long phone",
+        "fraud",
+        "no package"
+    ],
+    "country": [
+        "USA",
+        "France"
+    ],
+    "data": [
+        "pwd",
+        "address"
+    ],
+    "date": [
+        "09/07",
+        "24/12",
+        "6/?"
+    ],
+    "delivery": [
+        " free",
+        " details",
+        " douane",
+        " frais de"
+    ],
+    "device": [
+        "computer"
+    ],
+    "email": [
+        "_Email1_",
+        "not recieved",
+        "details",
+        "resend",
+        "_Email2_"
+    ],
+    "error": [
+        "yes",
+        "no",
+        "bank issue"
+    ],
+    "info": [
+        "order 00"
+    ],
+    "operation": [
+        "resend",
+        "payment",
+        "registration",
+        "discount",
+        "refund",
+        "returned"
+    ],
+    "order_nbr": [
+        "61",
+        "00",
+        "_Email1_",
+        "?",
+        "03",
+        "02+00"
+    ],
+    "payment_tool": [
+        "cb"
+    ],
+    "paypal": [
+        " no paypal"
+    ],
+    "place": [
+        "home",
+        "point-relais",
+
+        "point relais"
+    ],
+    "price": [
+        "36.99"
+    ],
+    "profile": [
+        "mate"
+    ],
+    "pwd": [
+        "forgotten",
+        "azerty"
+    ],
+    "reinit": [
+        "pwd",
+        "yes"
+    ],
+    "reload": [
+        "yes"
+    ],
+    "relog": [
+        "yes"
+    ],
+    "separated": [
+        "returned"
+    ],
+    "size": [
+        "100ml"
+    ],
+    "status": [
+        "in deposit",
+        "in process",
+        "unchanged",
+        "ready",
+        "lost"
+    ],
+    "step": [
+        "delivery",
+        "authentification",
+        "payment"
+    ],
+    "store": [
+        "location"
+    ],
+    "topic": [
+        "news"
+    ],
+    "uppercase": [
+        "yes"
+    ]
+}
