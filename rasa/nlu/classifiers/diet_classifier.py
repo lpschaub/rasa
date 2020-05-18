@@ -189,7 +189,7 @@ class DIETClassifier(IntentClassifier, EntityExtractor):
         USE_MAX_NEG_SIM: True,
         # If 'True' scale loss inverse proportionally to the confidence
         # of the correct prediction
-        SCALE_LOSS: True,
+        SCALE_LOSS: False,
         # ## Regularization parameters
         # The scale of regularization
         REGULARIZATION_CONSTANT: 0.002,
@@ -803,7 +803,6 @@ class DIETClassifier(IntentClassifier, EntityExtractor):
         )
 
         entities = self.add_extractor_name(entities)
-        entities = self.clean_up_entities(message, entities)
         entities = message.get(ENTITIES, []) + entities
 
         return entities
