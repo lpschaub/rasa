@@ -65,23 +65,52 @@ class PMCverter(Converter):
         if not dialogues:
             self.utterances = utterances
         else:
-            def one_turn_utterance(turns, small_utterance={}):
+            def one_turn_utterance(turns, small_utterance={}, intent="", utter_list=[('', '')]):
                 if not turns:
                     return small_utterance
                 else:
+
                     try:
                         turns[0]['sys'] = self.post_treatment_intent(turns[0]['sys'])
                     except TypeError:
                         turns[0]['sys'][0] = self.post_treatment_intent(turns[0]['sys'][0])
-                    try:
-                        if '_'.join(turns[0]['policy_funcs']) not in small_utterance:
-
-                            small_utterance.update({'_'.join(turns[0]['policy_funcs']): [turns[0]['sys']]})
+                    new = '_'.join(turns[0]['intent'])
+                    if not new:
+                        if intent:
+                            new = intent
                         else:
-                            small_utterance['_'.join(turns[0]['policy_funcs'])].append(turns[0]['sys'])
+                            new = ''
+                    try:
+                        seen = True
+                        ut = ""
+                        for tuple in utter_list:
+                            utter = tuple[1]
+                            seen = True
+
+                            for elem in turns[0]['policy_funcs']:
+                                elem = elem.replace(' ', '')
+                                if elem not in utter:
+                                    seen = False
+                            if seen:
+                                ut = '_'.join(utter)
+                                break
+
+                        if not seen:
+                            ut = '_'.join([elem.replace(' ', '') for elem in turns[0]['policy_funcs']])
+                            utter_list.append((ut, [elem.replace(' ', '') for elem in turns[0]['policy_funcs']]))
+
+                        if new + '_' + ut not in small_utterance:
+
+                            small_utterance.update({new + '_' + ut: [turns[0]['sys']]})
+                        else:
+                            small_utterance[new + '_' + ut].append(turns[0]['sys'])
+                        policy = new + '_' + ut
+                        turns[0]['policy_funcs'] = [elem for elem in policy.split('_') if
+                                                    elem]
                     except KeyError:
                         pass
-                    return one_turn_utterance(turns[1:], small_utterance)
+
+                    return one_turn_utterance(turns[1:], small_utterance, new, utter_list)
 
             one_turn_utterance(dialogues[0], utterances)
             return self.utterance_builder(dialogues[1:], utterances)
@@ -122,12 +151,10 @@ class PMCverter(Converter):
                             if current in self.utterances[utterance2]:
                                 self.utterances[utterance].remove(current)
         # self.utterances.pop('')
-        pprint([utterance for utterance in self.utterances])
         new_utter = {}
         for utterance in self.utterances:
             new_ut = []
             for ut in self.utterances[utterance]:
-                print(ut)
                 new_ut.append(ut[0])
                 ut[0].replace('"', "<>").replace("''", "'").replace('"', '\"')
             new_ut = list(set(new_ut))
@@ -135,6 +162,7 @@ class PMCverter(Converter):
         self.utterances = new_utter
         utterances = self.utterances
         self.utterances = self.utterance_labelling(slots, utterances)
+        self.list_utterances = [utter for utter in self.utterances if utter]
         self.actions = ['action_Perform_action', 'action_Search_order', 'action_Look_for_customer_file',
                         'action_Reset_working_memory']
 
@@ -149,11 +177,10 @@ class PMCverter(Converter):
   - """.join([entity for entity in self.entities]))
         out.write('\n\nintents:\n')
         out.write('  - ' + """
-  - """.join([intent.replace(" ", "_") for intent in self.intents]))
+  - """.join([intent.replace(" ", "_") for intent in self.intents if intent]))
         out.write('\n\nresponses:\n')
-        pprint(self.utterances)
         for utterance in self.utterances:
-            print(utterance)
+
             if utterance:
                 out.write(f'\n  utter_{utterance.replace(" ", "")}:\n    - text: "')
                 out.write(
@@ -163,8 +190,8 @@ class PMCverter(Converter):
     def stories_converter(self, dialogues):
 
         self.stories_builder(dialogues)
-        pprint(self.stories)
-        stories_file = open('data/storiesperfume.md', 'wb')
+
+        stories_file = open('data/stories.md', 'wb')
         for story in self.stories:
             stories_file.write(str(story + '\n\n').encode('utf-8'))
 
@@ -174,7 +201,7 @@ class PMCverter(Converter):
         intents = self.intents
         self.intents = self.entities_labelling(entities, intents)
         # pprint(dialogues)
-        nlu_file = open('data/nluperfume.md', 'wb')
+        nlu_file = open('data/nlu.md', 'wb')
         # pprint(self.intents)
         for intent in self.intents:
             if intent:
@@ -292,11 +319,29 @@ class PMCverter(Converter):
                             new_slots.update({s.replace(" ", "_"): slot[s]})
                             slots.update({s.replace(" ", "_"): slot[s]})
                     str_slots = ''
+                    erase = False
                     if new_slots:
-                        str_slots = str(new_slots)
+                        str_slots = '{'
+                        for slot in new_slots:
+                            if slot == "''" :
+                                erase = True
+                                break
+                            sslot = str(slot).replace("'", '"')
+                            svalue = str(new_slots[slot].replace("'", '<apostrophe>')).replace('<apostrophe>', "'")
+                            str_slots += '"' + sslot + '"' + ': ' + '"' + svalue + '"' + ','
+
+                        str_slots = str_slots[:-1] + '}'
+                    if erase :
+                        str_slots = ''
+                    if not turns[0]['intent']:
+                        turns[0]['intent'] = ['rien']
                     intent = '\n* ' + '+'.join(turns[0]['intent']) + str_slots
                     try:
-                        action = ' - utter_' + '_'.join([elem.replace(" ", "") for elem in turns[0]['policy_funcs']])
+                        action = 'rien du tout'
+                        action = ' - utter_' + '_'.join(
+                            [elem.replace(" ", "") for elem in turns[0]['policy_funcs']])
+                        # while action not in self.list_utterances:
+                        # print(action)
                         for elem in turns[0]['policy_funcs']:
                             elem = 'action_' + elem.replace(" ", "_")
                             if elem in self.actions:
@@ -304,7 +349,6 @@ class PMCverter(Converter):
                     except KeyError:
                         action = 'action_listen'
                     turn = intent + '\n' + action
-                    print(turn)
                     story += turn
                     return one_turn_story(turns[1:], story, slots)
 

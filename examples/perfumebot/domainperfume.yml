@@ -1,186 +1,186 @@
 slots:
-  connection:
-    type: text
-  transporter:
-    type: text
-  info:
-    type: text
-  cancel:
-    type: text
-  delay:
-    type: text
-  billing:
-    type: text
-  free:
-    type: text
-  present:
-    type: text
-  price:
-    type: text
-  uppercase:
-    type: text
-  damaged:
-    type: text
-  size:
-    type: text
-  article:
-    type: text
-  account:
-    type: text
-  concurrence:
-    type: text
-  payment:
-    type: text
-  store:
-    type: text
-  profile:
-    type: text
-  basket:
-    type: text
-  error:
-    type: text
   follow-up:
-    type: text
-  add:
-    type: text
-  pwd:
-    type: text
-  reload:
-    type: text
-  step:
-    type: text
-  phone:
-    type: text
-  missing:
-    type: text
-  country:
-    type: text
-  mood:
-    type: text
-  email:
-    type: text
-  discount:
-    type: text
-  refund:
-    type: text
-  address:
-    type: text
-  resend:
     type: text
   operation:
     type: text
-  city:
-    type: text
-  target:
-    type: text
-  topic:
-    type: text
-  delivery:
-    type: text
-  reinit:
-    type: text
-  complaint:
-    type: text
-  channel:
-    type: text
-  account_connection:
-    type: text
-  order:
-    type: text
-  bug:
-    type: text
-  color:
-    type: text
-  Store name:
-    type: text
-  payment_tool:
-    type: text
-  home:
-    type: text
-  separated:
-    type: text
-  data:
-    type: text
-  order_nbr:
-    type: text
-  paypal:
-    type: text
-  tool:
-    type: text
-  fdp:
-    type: text
-  pr:
-    type: text
   status:
     type: text
-  cache:
+  code:
     type: text
-  website:
+  phone:
     type: text
-  device:
+  size:
+    type: text
+  account:
     type: text
   customer:
     type: text
-  relog:
+  step:
     type: text
-  facebook:
+  city:
     type: text
-  date:
+  tool:
+    type: text
+  complaint:
+    type: text
+  website:
+    type: text
+  cache:
+    type: text
+  channel:
+    type: text
+  price:
+    type: text
+  damaged:
+    type: text
+  cancel:
     type: text
   place:
     type: text
-  code:
+  facebook:
+    type: text
+  resend:
+    type: text
+  connection:
+    type: text
+  present:
+    type: text
+  add:
+    type: text
+  topic:
+    type: text
+  reload:
+    type: text
+  device:
+    type: text
+  date:
+    type: text
+  pwd:
+    type: text
+  info:
+    type: text
+  bug:
+    type: text
+  discount:
+    type: text
+  store:
+    type: text
+  order:
+    type: text
+  data:
+    type: text
+  delay:
+    type: text
+  basket:
+    type: text
+  payment:
+    type: text
+  delivery:
+    type: text
+  address:
+    type: text
+  free:
+    type: text
+  payment_tool:
+    type: text
+  fdp:
+    type: text
+  billing:
+    type: text
+  paypal:
+    type: text
+  relog:
+    type: text
+  reinit:
+    type: text
+  uppercase:
+    type: text
+  home:
+    type: text
+  mood:
+    type: text
+  profile:
+    type: text
+  concurrence:
+    type: text
+  Store name:
+    type: text
+  article:
+    type: text
+  missing:
+    type: text
+  error:
+    type: text
+  target:
+    type: text
+  country:
+    type: text
+  account_connection:
+    type: text
+  refund:
+    type: text
+  color:
+    type: text
+  pr:
+    type: text
+  transporter:
+    type: text
+  order_nbr:
+    type: text
+  email:
+    type: text
+  separated:
     type: text
 
 
 entities:
-  - connection
-  - transporter
-  - cancel
-  - delay
-  - billing
-  - free
-  - present
-  - damaged
-  - size
-  - article
-  - account
-  - concurrence
-  - payment
-  - store
-  - basket
   - follow-up
-  - add
-  - pwd
-  - reload
-  - phone
-  - missing
-  - mood
-  - email
-  - discount
-  - refund
-  - address
-  - resend
   - operation
-  - city
-  - target
-  - delivery
-  - channel
-  - order
-  - bug
-  - color
-  - home
-  - tool
-  - fdp
-  - pr
   - status
-  - website
-  - device
-  - customer
-  - facebook
-  - date
-  - place
   - code
+  - phone
+  - size
+  - account
+  - customer
+  - city
+  - tool
+  - website
+  - channel
+  - damaged
+  - cancel
+  - place
+  - facebook
+  - resend
+  - connection
+  - present
+  - add
+  - reload
+  - device
+  - date
+  - pwd
+  - bug
+  - discount
+  - store
+  - order
+  - delay
+  - basket
+  - payment
+  - delivery
+  - address
+  - free
+  - fdp
+  - billing
+  - home
+  - mood
+  - concurrence
+  - article
+  - missing
+  - target
+  - refund
+  - color
+  - pr
+  - transporter
+  - email
 
 intents:
   - deliveryCost
@@ -267,334 +267,528 @@ intents:
 
 responses:
 
-  utter_AskForMissingSlots_SayHello:
-    - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande _Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+  utter__AskForMissingSlots_SayHello:
     - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande"
-  utter_ProvideInfo:
-    - text: "_Name1_ : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile"
-    - text: "_Name2_ : il a bien été expédié _Name2_ : le lien sera mis à jour par Chronopost dès l'arrivée de votre colis sur le sol français très prochainement"
-    - text: "_Name1_ : je vous invite à saisir le code {code} afin de bénéficier de 5 % de réduction"
-    - text: "_Name1_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impacte la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochains jours."
-    - text: "_Name2_ : pour le moment nous n'avons pas de code de remise"
-    - text: "_Name3_ : l'eau de parfum   {article}   {size} est au prix de 4699€"
-    - text: "_Name1_ : le colis a bien été expédié"
-    - text: "_Name2_ : le délai est compris entre 7 et 10 jours ouvrés"
-    - text: "_Name2_ : la livraison est prévue entre le 10 et le 15 janvier"
-    - text: "_Name1_ : la livraison devrait avoir lieu en fin de semaine Madame"
-    - text: "_Name1_ : ils ont bien eu les documents _Name1_ : mais cela prend toujours un peu de temps pour mener l'enquête en interne _Name1_ : je lis votre message je vous demande un instant _Name1_ : soyez rassuré dès la réponse de Chronopost nous serons en mesure de vous proposer le remboursement ou le renvoi de la marchandise mais dans un premier temps nous avons besoin que le transporteur nous réponde comme vous le comprenez bien."
-    - text: "_Name1_ : je vous invite à contacter votre banque"
-    - text: "_Name3_ : normalement je n'ai pas la possibilité de le faire mais je me renseigne pour savoir qui est votre interlocuteur"
-    - text: "_Name4_ : le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. _Name4_ : le délai de livraison n'est pas encore arrivé à son terme _Name4_ : merci de patienter"
-    - text: "_Name1_ : alors sans hésiter je vous conseille le sable _Name1_ : nous avons de très bons retours sur cet article en particulier {order_nbr}"
-    - text: "_Name1_ : vous pourrez modifier également votre adresse postale une fois connectée à votre Espace client."
-    - text: "_Name1_ : les {delivery} port dépendent de l'option de livraison choisie et du nombre de produits commandés : - pour une livraison en {place} ( {country} métropolitaine uniquement ) il faut ainsi compter 7.99 € pour le premier article commandé puis 5.99 € par produit supplémentaire ensuite. le délai de livraison avec cette option est compris entre 7 et 10 jours ouvrés. - pour une livraison à l'adresse de votre choix il faut compter 9.99 € pour un produit puis 5.99 € par article supplémentaire ensuite. le délai de livraison avec cette option est compris entre 10 et 14 jours ouvrés."
-    - text: "_Name2_ : ceci est normal _Name2_ : l'expédition est récente"
-    - text: "_Name1_ : les délais de livraison dépendent de l'option de livraison choisie lors de votre commande. il faut ainsi compter entre 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement ) et entre 10 et 14 jours ouvrés pour une livraison à l'adresse de votre choix."
-    - text: "_Name1_ : comme l'indique votre lien de suivi votre colis nous a été retourné"
-    - text: "_Name1_ : si le produit a une étoile rouge nous garantissons une livraison pour Noel si la commande est passée avant le 16 décembre"
-    - text: "_Name1_ : oui un sms ou un mail"
-    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 24 Septembre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT013719780FR"
-    - text: "_Name3_ : je vais transmettre l'information au service concerné"
-    - text: "_Name1_ : une livraison en {place} vous assure effectivement une livraison avant Noël."
-    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 20 Août. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le Point relais que vous avez choisi dans les prochains jours. _Name1_ : je vous invite à patienter encore un peu"
-    - text: "_Name1_ : votre mot de passe a été réinitialisé Monsieur"
-    - text: "_Name1_ : Chronopost vous avertira par mail et sms"
-    - text: "_Name3_ : il vous faut créer un compte client sur notre site pour pouvoir commander Madame _Name3_ : https://www.parfumsmoinscher.com/ < https://www.parfumsmoinscher.com/ >"
-    - text: "_Name1_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile"
-    - text: "_Name1_ : ce délai s'explique par le fait que nos produits sont expédiés depuis les USA. il s'agit malheureusement d'un délai incomprésible afin de profiter de remises avantageuses sur vos produits préférés."
-    - text: "_Name3_ : donc je vous confirme qu'il n'y a pas de compte à votre nom"
-    - text: "_Name1_ : je vous rappelle nos délais _Name1_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile _Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
-    - text: "_Name1_ : oui bien sur"
-    - text: "_Name2_ : les prix sont remisés mais le code _Name1_ fonctionne pour tout le site _Name2_ : vous ne pouvez pas cumuler plusieurs codes de remise par contre"
-    - text: "_Name1_ : comme indiqué lors de votre commande le délai de livraison avec l'option choisie est compris entre 7 et 10 jours ouvrés. votre colis devrait donc vous parvenir en fin de semaine."
-    - text: "_Name2_ : votre commande a bien été expédiée par nos services le 26 Août. comme indiqué lors du passage de celle ci le délai de livraison avec l'option choisie est généralement compris entre 10 et 14 jours ouvrés à compter de la date d'expédition. lorsque le colis aura été pris en charge par Chronopost vous pourrez suivre son acheminement depuis le lien suivant : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XU399664704FR"
-    - text: "_Name1_ : je vous invite à saisir le code REMI5P"
-    - text: "_Name2_ : alors à l'étape 3 vous devez choisir votre mode de livraison : c'est à dire livraison en {place} livraison standard ou livraison premium"
-    - text: "_Name1_ : notre société est implantée aux Etats-unis _Name1_ : les commandes s'effectuent via notre site internet ou par téléphone en contactant notre service client"
-    - text: "_Name1_ : un email vous en informant vous a été adressé le 21/03. malheureusement ce retour expéditeur est lié à une erreur du transporteur."
-    - text: "_Name3_ : je ne trouve pas de compte"
-    - text: "_Name1_ : Merci _Name1_ : je vous invite à vous connecter à votre compte à l'aide du mot de passe : AZERTY"
-    - text: "_Name2_ : vous pouvez régler votre commande à l'étape 4"
-    - text: "_Name1_ : les {delivery} livraison sont calculés en fonction du nombre de produits commandés"
-    - text: "_Name2_ : vous avez le choix de payer avec votre carte bancaire ou alors via Paypal il vous suffit de cocher la case carte bancaire"
-    - text: "_Name2_ : vous avez reçu un autre produit et vous nous l'avez retourné _Name2_ : un renvoi a été effectué le 31 décembre"
-    - text: "_Name2_ : en effet aucune remise n'est cumulable _Name2_ : vous devez choisir la plus intéressante pour vous"
-    - text: "_Name1_ : je vous confirme que vous avez bien réceptionné cet email. notre service automatique d'emails transactionnels à bien reçu un accusé réception de votre boite email. _Name1_ : malheureusement ces emails étant automatique je ne peux vous renvoyer l'email. cependant je peux vous le copier ici : _Name1_ : bonjour _Name2_ votre commande #732398 vient d'être expédiée. pour des raisons logistiques le ( s ) produit ( s ) suivant ( s ) pourrait faire l'objet d'un délai de livraison supplémentaire par rapport à celui indiqué initialement : HM ( x1 ) ce délai additionnel - n'excédant pas cinq jours maximum - ne remet pas en cause les modalités de livraison choisies lors du passage de votre commande ( {place} ou adresse de livraison sélectionnée ). veuillez aussi noter que votre commande est expédiée en plusieurs colis. cela n'a cependant aucune incidence sur le coût des {delivery} port. vous pouvez suivre l'avancement de la livraison à l'adresse suivante : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT070996874FR vous pouvez accéder au suivi de votre commande et télécharger votre facture dans   historique des commandes   de la rubrique   mon compte   sur notre site."
-    - text: "_Name2_ : effectivement je vois que le produit   {article} de _Name3_ eau De parfum spray 100 ml   n'a pas été expédié"
-    - text: "_Name1_ : vous êtes bien connecté à votre compte client _Name1_ : voici le panier que nous avons _Name1_ : Azzaro Pour Homme réf : 10436517/149633 4599 € 2 496 9198 € Total produits : 9198 € Total réductions : -500 € Total {delivery} port : 1598 € Total : 10296 € _Name1_ : c'est le bon prix"
-    - text: "_Name2_ : votre commande a bien été expédiée par nos services le {order_nbr} _Name1_. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. _Name2_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT025558722FR"
-    - text: "_Name2_ : le code FDM10 a expiré depuis le 13 Mai"
-    - text: "_Name2_ : nos colis sont expédiés des {country} Madame"
-    - text: "_Name1_ : il s'agit du détail que j'ai repris dans votre panier _Name1_ : je vois que vous avez choisi 2 produits pour un montant de 9298€ vous avez bénéficié de 465€ de réduction et vous devez régler 1398€ de {delivery} port pour les 2 produits"
-    - text: "_Name2_ : je ne vois pas votre panier _Name2_ : il faut bien vous connecter"
-    - text: "_Name1_ : l'ensemble des produits proposés sur notre boutique en ligne sont garantis 100 % neufs et authentiques et proviennent directement des plus grandes marques de parfums à travers le monde ( à l'instar des parfums que vous pouvez retrouver en boutique près de chez vous ). nos colis sont régulièrement contrôlés en {delivery} afin de vérifier qu'il ne s'agisse pas de produits contrefaits."
-    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 18 Septembre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. lorsqu'il aura été pris en charge par Chronopost vous pourrez suivre son acheminement depuis le lien suivant : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT082087099FR"
+    - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande _Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+  utter_deliveryCost_ProvideInfo:
     - text: "_Name1_ : vous pouvez utiliser la remise spéciale pour Noël : 5€ de remise dès 60€ d'achat ( hors {delivery} port ) avec le code {code} et 10€ de remise dès 100€ d'achat ( hors {delivery} port ) avec le code {code}"
-    - text: "_Name2_ : votre commande a bien été expédiée par nos services le 13 Mai. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis depuis le lien suivant : _Name2_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT056326105FR"
-    - text: "_Name2_ : nous rencontrons un retard inhabituel sur nos commandes du mois de mars et nous en sommes sincèrement désolés. nous attendons un retour du transporteur. nous vous invitons à revenir vers nous vendredi après midi si la livraison n'a pas été effectuée. Merci de votre patience et de votre compréhension."
-    - text: "_Name1_ : d'accord _Name1_ : une réponse vous sera donc envoyée par mail _Name1_ : votre dossier sera traité dans la journée Madame"
-    - text: "_Name1_ : je vous invite à vous déconnecter puis à recommencer votre commande"
     - text: "_Name1_ : nous ne proposons pas de livraison gratuite actuellement sur ParfumsMoinsCher.com."
-    - text: "_Name1_ : je vous invite à saisir le code {code} en majuscules sans espaces et sans accents"
-    - text: "_Name2_ : oui Chronopost vous avertira par mail ou sms"
-    - text: "_Name1_ : votre colis vous sera livré cette semaine ou lundi au plus tard"
-    - text: "_Name2_ : nos produits sont expédiés depuis les Etats-Unis"
-    - text: "_Name4_ : le colis a été expédié le 09 Juillet _Name4_ : la livraison est donc comprise entre le 13 et 19 juillet"
-    - text: "_Name1_ : Merci de bien vouloir rester en ligne je vous prie. _Name1_ : votre commande a bien été prise en charge et ne peut plus être remboursée à ce stade"
-    - text: "_Name1_ : je vous invite donc à vous connecter avec l'adresse email {email} et le mot de passe   _Name4_  . vous pourrez bien entendu le modifier par la suite."
-    - text: "_Name1_ : paypal est le moyen de paiement le plus sur"
-    - text: "_Name1_ : c'est la procédure _Name1_ : je vous invite à nous envoyer la photo et notre service client y répondra rapidement"
-    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 08 Octobre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT016060086FR _Name1_ : un mail / sms vous sera envoyé dès que le colis sera disponible au relais"
-    - text: "_Name2_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impact la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-Unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochaines heures ou prochains jours."
-    - text: "_Name2_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement ) - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile."
-    - text: "_Name1_ : les {delivery} port que vous jugez élevés s'expliquent par le fait que nos produits sont expédiés depuis les Etats-Unis et que nous faisons le choix d'une livraison rapide avec numéro de suivi pour chaque colis. de plus nous nous engageons à vous rembourser intégralement les {delivery} douanes au cas où vous seriez amené à en régler à la livraison de votre commande."
-    - text: "_Name1_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement ) - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile."
-    - text: "_Name1_ : comme nous vous l'avons spécifié par email lors du traitement de votre commande celle ci a été expédiée en deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XU092394289FR"
-    - text: "_Name1_ : _Name4_ deux liens de suivi vous ont été transmis par email. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT070996874FR voici votre lien de suivi"
-    - text: "_"
-    - text: "_Name3_ : je reste en ligne pour être certaine que vous pouvez vous connecter"
-    - text: "_Name2_ : oui bien sur dans son emballage d'origine"
-    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 27 Juin. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT002137718FR"
-    - text: "_Name2_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impact la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-Unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochains jours."
-    - text: "_Name1_ : oui Chronopost vous avertira par mail ou sms"
-    - text: "_Name1_ : je vous invite à choisir l'un des 3 modes de livraison : en {place} standard ou premium _Name1_ : vous devez cocher la case"
-    - text: "_Name1_ : voici les codes de remise du moment : https://www.parfumsmoinscher.com/code-reduction.html < https://www.parfumsmoinscher.com/code-reduction.html >"
-    - text: "_Name1_ : oui c'est bien cela Madame _Name1_ : vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français"
-    - text: "_Name1_ : les {delivery} port sont facturés. - pour une livraison en {place} ( {country} métropolitaine uniquement ) il faut ainsi compter 7.99 € pour le premier article commandé puis 5.99 € par produit supplémentaire ensuite. le délai de livraison avec cette option est compris entre 7 et 10 jours ouvrés. - pour une livraison à l'adresse de votre choix il faut compter 9.99 € pour un produit puis 5.99 € par article supplémentaire ensuite. le délai de livraison avec cette option est compris entre 10 et 14 jours ouvrés."
-  utter_SayGoodbye:
-    - text: "_Name1_ : très bien. alors au nom de toute l'équipe ParfumsMoinsChers.com je vous souhaite une agréable journée à vous également."
-    - text: "_Name1_ : de rien je suis à votre service. n'hésitez pas à revenir vers nous si cela ne fonctionnait pas."
-    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée et de joyeuses fêtes de fin d'année"
-    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name1_ : merci de nous recontacter vendredi si la livraison n'a pas eu lieu s'il vous plaît _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
-    - text: "_Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils. _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente soirée."
-    - text: "_Name1_ : je vous en prie"
-    - text: "_Name3_ : je vous invite à revenir vers nous en cas de souci _Name3_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name1_ : je vous souhaite une excellente journée"
+    - text: "_Name1_ : les {delivery} livraison sont calculés en fonction du nombre de produits commandés"
+    - text: "_Name1_ : les {delivery} port dépendent de l'option de livraison choisie et du nombre de produits commandés : - pour une livraison en {place} ( {country} métropolitaine uniquement ) il faut ainsi compter 7.99 € pour le premier article commandé puis 5.99 € par produit supplémentaire ensuite. le délai de livraison avec cette option est compris entre 7 et 10 jours ouvrés. - pour une livraison à l'adresse de votre choix il faut compter 9.99 € pour un produit puis 5.99 € par article supplémentaire ensuite. le délai de livraison avec cette option est compris entre 10 et 14 jours ouvrés."
+  utter_goodbye_SayGoodbye:
     - text: "_Name2_ : Merci. au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente soirée à vous également."
-    - text: "_Name1_ : j'en suis ravie et je vous en remercie ! _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name4_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name1_ : je vous remercie _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "_Name3_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
     - text: "_Name1_ : je vous en prie _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-    - text: "great ! bye"
-    - text: "_Name1_ : je vous souhaite une bonne journée également - _Name1_"
-  utter_SayHello_AskForMissingSlots:
-    - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande _Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : je vous remercie _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : merci de nous recontacter vendredi si la livraison n'a pas eu lieu s'il vous plaît _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée et de joyeuses fêtes de fin d'année"
+  utter__SayHello_AskForMissingSlots:
     - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande"
-  utter_Proceedtocheckpoint:
-    - text: "_Name1_ : avez vous réussi {order_nbr}"
-    - text: "_Name2_ : _Name5_ {address}  _Name1_ _Name2_ : est ce la bonne adresse {order_nbr}"
-    - text: "_Name2_ : c'est bon pour vous {order_nbr} vous avez trouvé {order_nbr}"
-    - text: "_Name2_ : vous optez donc pour le remboursement {order_nbr}"
-    - text: "_Name2_ : donc vous êtes à l'étape 3 : livraison c'est ça {order_nbr}"
-    - text: "_Name3_ : est ce que cette adresse vous dit quelque chose {order_nbr} _Name3_ : 6 chemin de _Name1_ _ZipCode2_ _City1_"
-  utter_AskForMissingSlots:
-    - text: "_Name1_ : quel type de livraison avez vous sélectionné {order_nbr}"
-    - text: "_Name3_ : pouvez vous m'indiquer votre adresse {order_nbr}"
-    - text: "_Name1_ : avez vous un message d'erreur {order_nbr}"
-    - text: "_Name3_ : Merci de m'indiquer votre adresse mail _Name3_ : pouvez vous m'indiquer quand avez vous reçu cette publicité {order_nbr} _Name3_ : pourriez vous m'envoyer par mail une copie de cette publicité {order_nbr} _Name3_ : à l'adresse mail {email} serviceclient.com"
-    - text: "_Name1_ : est ce que votre carte bancaire accepte les paiements internationaux"
-    - text: "_Name1_ : un message d'erreur s'affiche t il sur votre écran {order_nbr}"
-    - text: "_Name3_ : pourriez vous m'indiquer votre adresse mail s'il vous plaît {order_nbr}"
-    - text: "_Name1_ : merci de me donner votre mail je vous prie"
-    - text: "_Name1_ : Merci de me confirmer la partie réceptionnée je vous prie."
-    - text: "_Name1_ : pouvez vous me donner des détails concernant votre problème {order_nbr}"
-    - text: "_Name2_ : pourriez vous m'indiquer votre adresse email s'il vous plaît {order_nbr}"
-    - text: "_Name2_ : êtes vous connecté à votre compte {order_nbr}"
-    - text: "_Name1_ : pourriez vous s'il vous plaît nous envoyer la preuve de paiement par mail _Name1_ : {email} serviceclient.com"
-    - text: "_Name2_ : souhaitez vous le renvoi du produit Pour Un Homme de _Name4_ eau De toilette spray 200 ml ou le remboursement {order_nbr}"
-    - text: "_Name1_ : je vais le réinitialiser _Name1_ : pouvez vous m'indiquer votre adresse mail {order_nbr}"
-    - text: "_Name2_ : merci de me préciser votre demande je vous prie"
-    - text: "_Name3_ : pour quelle contenance {order_nbr}"
-    - text: "_Name2_ : avez vous tenté de vous connecter à partir d'un autre navigateur {order_nbr}"
     - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande _Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
-    - text: "_Name1_ : êtes vous connecté à votre compte client {order_nbr}"
-    - text: "_Name2_ : A quelle étape êtes vous {order_nbr}"
-    - text: "_Name1_ : pouvez vous m'indiquer votre adresse mail {order_nbr}"
-    - text: "_Name1_ : est ce que cette carte accepte les paiements internationaux {order_nbr}"
-    - text: "_Name3_ : c'est une publicité reçue directement de notre site {order_nbr} _Name3_ : ou par un partenaire {order_nbr}"
-    - text: "_Name2_ : l'avez vous bien noté en majuscule"
-    - text: "_Name1_ : pourriez vous m'indiquer votre numéro de commande s'il vous plaît {order_nbr}"
-    - text: "_Name1_ : souhaitez vous que je le réinitialise pour vous {order_nbr}"
-    - text: "_Name2_ : vous êtes bien sur le compte {email} {order_nbr}"
-    - text: "_Name1_ : pourriez vous s'il vous plaît nous donner plus de renseignements concernant votre problème {order_nbr} un message d'erreur s'affiche t il sur votre écran {order_nbr} et si oui quel est son code {order_nbr} d'avance merci pour votre réponse."
-    - text: "_Name1_ : sans accents _Name1_ : quel est le montant de votre commande hors {delivery} port {order_nbr}"
-    - text: "_Name2_ : que puis je faire pour vous {order_nbr}"
+  utter_PaymentRefused_ProvideInfo:
+    - text: "_Name2_ : vous pouvez régler votre commande à l'étape 4"
+  utter_PaymentTool_ProvideInfo:
+    - text: "_Name1_ : paypal est le moyen de paiement le plus sur"
+    - text: "_Name2_ : vous avez le choix de payer avec votre carte bancaire ou alors via Paypal il vous suffit de cocher la case carte bancaire"
+  utter_thanks_Proceedtocheckpoint:
+    - text: "_Name2_ : c'est bon pour vous {order_nbr} vous avez trouvé {order_nbr}"
+  utter_non_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : pouvez vous me donner des détails concernant votre problème {order_nbr}"
     - text: "_Name1_ : avez vous sélectionné l'un des 3 modes de livraison {order_nbr}"
-    - text: "_Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
-    - text: "_Name1_ : pourriez vous m'indiquer votre adresse mail s'il vous plaît {order_nbr}"
-    - text: "_Name1_ : pouvez vous nous transmettre une photo du produit reçu par mail {order_nbr}"
-    - text: "_Name1_ : pourriez vous m'indiquer votre numéro de commande s'il vous plaît {order_nbr} _Name1_ : êtes vous toujours en ligne {order_nbr}"
+    - text: "_Name2_ : A quelle étape êtes vous {order_nbr}"
     - text: "_Name1_ : avez vous utilisé une autre adresse mail pour la création de votre compte {order_nbr}"
-    - text: "_Name2_ : un message d'erreur s'affiche t il sur votre écran {order_nbr}"
-    - text: "_Name2_ : thank you for entrusting me with your email please _Name2_ : are you taire {order_nbr}"
-  utter_Repeatprevious:
-    - text: "_Name1_ : je vous invite à vous connecter à votre compte à l'aide du mot de passe : AZERTY adresse mail : {email}"
-    - text: "_Name1_ : votre commande a bien été prise en charge et ne peut plus être remboursée à ce stade _Name1_ : vous aurez la possibilité de nous renvoyer cet article"
+  utter_PaymentRefused_Proceedtocheckpoint:
+    - text: "_Name2_ : donc vous êtes à l'étape 3 : livraison c'est ça {order_nbr}"
+  utter_oui_ProvideInfo:
+    - text: "_Name2_ : votre commande a bien été expédiée par nos services le 13 Mai. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis depuis le lien suivant : _Name2_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT056326105FR"
+    - text: "_Name2_ : alors à l'étape 3 vous devez choisir votre mode de livraison : c'est à dire livraison en {place} livraison standard ou livraison premium"
+  utter_non_Repeatprevious:
     - text: "_Name2_ : Madame vous devez choisir votre mode de livraison"
-    - text: "_Name2_ : oui je vous y invite _Name2_ : rechargez bien votre page avant de revenir vers votre compte avec ce nouveau mot de passe provisoire."
-  utter_ProvideInfo_Searchorder:
-    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 02 Novembre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT019783168FR"
-    - text: "_Name2_ : je regarde votre commande _Name2_ : je vous invite à nous envoyer une photo du produit reçu par mail _Name2_ : à l'adresse mail : {email} serviceclient.com"
-    - text: "_Name1_ : votre second colis est actuellement en transit vers la {country} et devrait arriver sur le territoire Français ce jour ou demain pour une livraison prévue en cette fin de semaine. _Name1_ : comme indiqué par email lors de l'expédition de vos colis. votre colis XT070996874FR peut mettre jusqu'à 5 jours supplémentaires avant de vous parvenir."
-    - text: "_Name2_ : oui mais je ne peux pas le voir car il n'est pas associé à votre compte client"
-    - text: "_Name2_ : https://www.parfumsmoinscher.com/produit/31236-diorama-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html < https://www.parfumsmoinscher.com/produit/31236-diorama-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html > _Name2_ : https://www.parfumsmoinscher.com/produit/5352-diorissimo-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html < https://www.parfumsmoinscher.com/produit/5352-diorissimo-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html > _Name2_ : https://www.parfumsmoinscher.com/produit/10973-diorella-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html < https://www.parfumsmoinscher.com/produit/10973-diorella-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html >"
+  utter_oui_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente soirée."
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_ProductAvailable_ProvideInfo_Searchorder:
     - text: "_Name1_ : le produit suivant est rechargeable : https://www.parfumsmoinscher.com/produit/13772-womanity.html < https://www.parfumsmoinscher.com/produit/13772-womanity.html > _Name1_ : celui ci est la recharge : https://www.parfumsmoinscher.com/produit/14192-womanity.html < https://www.parfumsmoinscher.com/produit/14192-womanity.html >"
-  utter_ProvideInfo_Performaction:
+    - text: "_Name2_ : https://www.parfumsmoinscher.com/produit/31236-diorama-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html < https://www.parfumsmoinscher.com/produit/31236-diorama-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html > _Name2_ : https://www.parfumsmoinscher.com/produit/5352-diorissimo-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html < https://www.parfumsmoinscher.com/produit/5352-diorissimo-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html > _Name2_ : https://www.parfumsmoinscher.com/produit/10973-diorella-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html < https://www.parfumsmoinscher.com/produit/10973-diorella-de-christian-dior-eau-de-toilette-spray-100-ml-pour-femme.html >"
+  utter_goodbye_thanks_SayGoodbye:
+    - text: "_Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_damagedPackage_AskForMissingSlots:
+    - text: "_Name2_ : souhaitez vous le renvoi du produit Pour Un Homme de _Name4_ eau De toilette spray 200 ml ou le remboursement {order_nbr}"
+  utter_damagedPackage_Proceedtocheckpoint:
+    - text: "_Name2_ : _Name5_ {address}  _Name1_ _Name2_ : est ce la bonne adresse {order_nbr}"
+  utter_autre_ProvideInfo_Performaction:
     - text: "_Name2_ : d'accord je procède au renvoi"
-    - text: "_Name2_ : je viens donc de procéder au remboursement du produit et des {delivery} port associés soit 95.98 euros"
-    - text: "_Name3_ : j'ai créé votre compte _Name3_ : adresse mail : {email} _Name3_ : mot de passe : AZERTY"
-    - text: "_Name2_ : je procède immédiatement au renvoi"
-    - text: "_Name1_ : 9298€ - 465€ ( réduction ) + 1398€ ( {delivery} port ) = 10231€"
-  utter_ProvideInfo_SayGoodbye:
-    - text: "_Name1_ : un code de remise a déjà été enregistré dans votre panier Madame _Name1_ : _Name2_ de 10 euros _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_thanks_goodbye_ProvideInfo_SayGoodbye:
     - text: "_"
-  utter_ProvideInfo_AskForMissingSlots:
-    - text: "_Name1_ : je vous invite à vider les caches de votre navigateur. _Name1_ : puis à recommencer"
+  utter_deliveryCost_AskForMissingSlots_SayHello:
+    - text: "_Name1_ : quel type de livraison avez vous sélectionné {order_nbr}"
+  utter_goodbye_ProvideInfo:
+    - text: "_Name1_ : vous êtes bien connecté à votre compte client _Name1_ : voici le panier que nous avons _Name1_ : Azzaro Pour Homme réf : 10436517/149633 4599 € 2 496 9198 € Total produits : 9198 € Total réductions : -500 € Total {delivery} port : 1598 € Total : 10296 € _Name1_ : c'est le bon prix"
+  utter_Discount_ProvideInfo_SayGoodbye:
+    - text: "_Name1_ : un code de remise a déjà été enregistré dans votre panier Madame _Name1_ : _Name2_ de 10 euros _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_autre_ProvideInfo_AskForMissingSlots:
     - text: "_Name1_ : oui je suis là _Name1_ : que puis je faire pour vous {order_nbr}"
-    - text: "_Name1_ : porcelaine va être clair c'est certain _Name1_ : vous avez la peau claire {order_nbr}"
-    - text: "_Name1_ : je n'ai pas de commande associée à cette adresse mail _Name1_ : pouvez m'indiquer le numéro de commande {order_nbr}"
-    - text: "_Name2_ : nous n'avons pas connaissance de ce problème et faisons donc remonter l'information à notre service informatique. nous vous invitons à vider le cache de votre navigateur Internet ou bien à en utiliser un différent. cela résout il votre problème {order_nbr}"
-  utter_ProvideInfo_Apologize:
-    - text: "_Name1_ : nous rencontrons un retard inhabituel sur nos commandes du mois de mars et nous en sommes sincèrement désolés. nous attendons un retour du transporteur. nous vous invitons à revenir vers nous vendredi après midi si la livraison n'a pas été effectuée. Merci de votre patience et de votre compréhension."
-    - text: "_Name2_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile _Name2_ : je suis désolée mais à ce jour le service paquet cadeau n'est pas disponible veuillez nous en excuser."
+  utter_deliveryCost_ProvideInfo_Apologize:
     - text: "_Name1_ : nous ne proposons pas les {delivery} port gratuits et j'en suis désolée _Name1_ : nos colis sont expédiés depuis les Etats-Unis"
-    - text: "_Name2_ : nous sommes sincèrement désolés mais nous ne pouvons proposer de produits de la marque Chanel pour le moment. nous vous invitons à vous rendre régulièrement sur notre site ou à vous inscrire à la newsletter afin de vous tenir informée des dernières nouveautés."
-  utter_Askforanotherquestion:
+  utter_thanks_oui_Askforanotherquestion:
     - text: "_Name1_ : avez vous d'autres questions {order_nbr}"
-    - text: "_Name1_ : je vous en prie _Name1_ : avez vous d'autres questions {order_nbr}"
     - text: "_Name2_ : avez vous d'autres questions {order_nbr}"
     - text: "_Name1_ : de rien je suis à votre service. avez vous d'autres questions {order_nbr}"
-    - text: "_Name4_ : avez vous d'autres questions {order_nbr}"
-    - text: "_Name2_ : de rien je suis à votre service. avez vous d'autres questions {order_nbr}"
-  utter_ProvideInfo_Offeralternative:
-    - text: "_Name2_ : je n'ai aucun retour à ce sujet _Name2_ : vous pouvez prétendre au code _Name1_ sans souci _Name2_ : je vous invite soit à mettre à jour votre page soit à vider vos caches"
-    - text: "_Name1_ : le mode d'expédition choisi initialement était en point relais. le renvoi se fera donc impérativement en point relais. cependant si vous souhaitez une livraison à domicile je peux procéder au remboursement intégral de votre commande afin que vous puissiez repasser une commande en livraison à domicile."
-    - text: "_Name1_ : vous l'avez reçu le 19/07 à 12h46. si vous n'avez pas connaissance de cet email je vous invite à consulter vos indésirables. il est possible qu'il s'y situe"
-    - text: "_Name1_ : je pense qu'il s'agit d'un souci avec l'envoi du code de validation par SMS requis par votre banque afin de valider le paiement. _Name1_ : je vous invite donc à contourner l'envoi de ce code en choisissant le second onglet appelé   PayPal   sur la page de paiement. vous pourrez ensuite saisir vos coordonnées de Carte bancaire afin de régler votre commande sans avoir nécessairement de compte PayPal."
-    - text: "_Name2_ : ma collègue a fait le nécessaire auprès de Chronopost _Name2_ : je vous invite à revenir vers nous demain le temps qu'une réponse nous soit apportée _Name2_ : si votre colis n'est pas localisé d'ici là nous vous proposerons le renvoi ou le remboursement"
+  utter_non_thanks_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name4_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_WebsiteBug_AskForMissingSlots_SayHello:
+    - text: "_Name1_ : êtes vous connecté à votre compte client {order_nbr}"
+  utter_CommuncationInterruption_ProvideInfo_Offeralternative:
     - text: "_Name1_ : normalement non et si c'était le cas veuillez nous solliciter à nouveau je vous prie"
-    - text: "_Name1_ : lors de votre commande vous aviez choisi une livraison au {place} primeur de la place 5 place _Name2_ _ZipCode1_ _City1_. votre colis nous a été retourné avant d'être mis à votre disposition. _Name1_ : je peux procéder au renvoi de votre colis ou bien au remboursement intégral de votre commande."
-  utter_AskForMissingSlots_Repeatprevious:
+  utter_WebsiteBug_goodbye_SayGoodbye:
+    - text: "_Name3_ : je vous invite à revenir vers nous en cas de souci _Name3_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_rien_goodbye_SayGoodbye:
+    - text: "_Name1_ : j'en suis ravie et je vous en remercie ! _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_Login_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : souhaitez vous que je le réinitialise pour vous {order_nbr}"
+    - text: "_Name3_ : pourriez vous m'indiquer votre adresse mail s'il vous plaît {order_nbr}"
+    - text: "_Name1_ : je vais le réinitialiser _Name1_ : pouvez vous m'indiquer votre adresse mail {order_nbr}"
+  utter_autre_AskForMissingSlots_Repeatprevious:
     - text: "_Name1_ : Merci de bien vouloir me donner votre adresse mail"
-  utter_Searchorder_Askforwaiting_ProvideInfo:
+  utter_autre_ProvideInfo:
+    - text: "_Name1_ : Merci _Name1_ : je vous invite à vous connecter à votre compte à l'aide du mot de passe : AZERTY"
+    - text: "_Name2_ : je ne vois pas votre panier _Name2_ : il faut bien vous connecter"
+  utter_thanks_Login_Askforanotherquestion:
+    - text: "_Name1_ : je vous en prie _Name1_ : avez vous d'autres questions {order_nbr}"
+  utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo:
     - text: "_Name1_ : merci _Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT013715403FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande. _Name1_ : A ce stade c'est normal et habituel compte tenu de nos délais. le lien va évoluer dès l'arrivée en {country} _Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
     - text: "_Name1_ : je regarde je vous demande un instant. _Name1_ : votre commande a bien été expédiée par nos services le 06 Juillet. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT003828105FR"
-  utter_Askforwaiting:
+  utter_deliveryNews_AskDetails_Searchorder_Askforwaiting_ProvideInfo:
+    - text: "_Name1_ : le colis a bien été expédié"
+  utter_AskDetails_Searchorder_Askforwaiting_ProvideInfo:
+    - text: "_Name1_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impacte la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochains jours."
+  utter_thanks_SayGoodbye:
+    - text: "_Name1_ : je vous en prie"
+    - text: "_Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name3_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_PaymentRefused_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : avez vous un message d'erreur {order_nbr}"
+    - text: "_Name1_ : un message d'erreur s'affiche t il sur votre écran {order_nbr}"
+  utter_PaymentRefused_ProvideInfo_Offeralternative:
+    - text: "_Name1_ : je pense qu'il s'agit d'un souci avec l'envoi du code de validation par SMS requis par votre banque afin de valider le paiement. _Name1_ : je vous invite donc à contourner l'envoi de ce code en choisissant le second onglet appelé   PayPal   sur la page de paiement. vous pourrez ensuite saisir vos coordonnées de Carte bancaire afin de régler votre commande sans avoir nécessairement de compte PayPal."
+  utter_autre_CancelOrder_SayGoodbye:
+    - text: "_Name1_ : de rien je suis à votre service. n'hésitez pas à revenir vers nous si cela ne fonctionnait pas."
+  utter_autre_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_AskConfirmation_ProvideInfo:
+    - text: "_Name3_ : il vous faut créer un compte client sur notre site pour pouvoir commander Madame _Name3_ : https://www.parfumsmoinscher.com/ < https://www.parfumsmoinscher.com/ >"
+  utter_missingItem_Askforwaiting:
     - text: "_Name1_ : je regarde je vous demande un instant."
-    - text: "_Name1_ : je vous demande un instant"
-    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant."
-    - text: "_Name1_ : d'accord je traite votre dossier dès que nous aurons reçu votre mail Madame"
-    - text: "_Name2_ : je regarde je vous demande un instant. _Name2_ : votre commande a bien été expédiée par nos services le 10 Juin. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le {place} que vous avez choisi dans les prochains jours."
-    - text: "_Name1_ : je regarde je vous demande un instant"
-  utter_ProvideInfo_Askforwaiting:
-    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : http://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT000015098FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande."
+  utter_rien_ProvideInfo:
+    - text: "_Name1_ : je vous invite à saisir le code {code} en majuscules sans espaces et sans accents"
+    - text: "_Name3_ : je ne trouve pas de compte"
+    - text: "_Name1_ : votre colis vous sera livré cette semaine ou lundi au plus tard"
+    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 24 Septembre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT013719780FR"
+    - text: "_Name1_ : votre mot de passe a été réinitialisé Monsieur"
+    - text: "_Name1_ : comme nous vous l'avons spécifié par email lors du traitement de votre commande celle ci a été expédiée en deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XU092394289FR"
+    - text: "_Name1_ : Merci de bien vouloir rester en ligne je vous prie. _Name1_ : votre commande a bien été prise en charge et ne peut plus être remboursée à ce stade"
+  utter_deliveryNews_ProvideInfo_Askforwaiting:
     - text: "_Name2_ : je regarde je vous demande un instant. _Name2_ : votre commande a bien été expédiée par nos services le 10 Janvier. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le {place} que vous avez choisi dans les prochains jours."
-    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant."
-    - text: "_Name1_ : je regarde je vous demande un instant. _Name1_ : non je ne vois pas de commande _Name1_ : je vais vérifier la transaction _Name1_ : les deux paiements ont été refusés"
-    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT012387145FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande. _Name1_ : A ce stade c'est normal et habituel compte tenu de nos délais. le lien va évoluer dès l'arrivée en {country} _Name1_ : la livraison est estimée la semaine prochaine"
     - text: "_Name1_ : je regarde je vous demande un instant _Name1_ : votre commande a bien été expédiée par nos services le 05 _Name2_. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le Point relais que vous avez choisi dans les prochains jours."
-  utter_Searchorder_Askforwaiting:
+    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : http://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT000015098FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande."
+    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT012387145FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande. _Name1_ : A ce stade c'est normal et habituel compte tenu de nos délais. le lien va évoluer dès l'arrivée en {country} _Name1_ : la livraison est estimée la semaine prochaine"
+  utter_ReceptionAlert_ProvideInfo_Askforwaiting:
+    - text: "_Name1_ : oui un sms ou un mail"
+  utter_ProductPrice_SayHello_AskForMissingSlots:
+    - text: "_Name3_ : pour quelle contenance {order_nbr}"
+  utter_ProductPrice_ProvideInfo:
+    - text: "_Name3_ : l'eau de parfum   {article}   {size} est au prix de 4699€"
+  utter_CustomerComplaint_ProvideInfo:
+    - text: "_Name1_ : c'est la procédure _Name1_ : je vous invite à nous envoyer la photo et notre service client y répondra rapidement"
+    - text: "_Name3_ : je vais transmettre l'information au service concerné"
+  utter_autre_SayHello_AskForMissingSlots:
+    - text: "_Name2_ : êtes vous connecté à votre compte {order_nbr}"
+    - text: "_Name2_ : merci de me préciser votre demande je vous prie"
+    - text: "_Name3_ : c'est une publicité reçue directement de notre site {order_nbr} _Name3_ : ou par un partenaire {order_nbr}"
+    - text: "_Name2_ : vous êtes bien sur le compte {email} {order_nbr}"
+  utter_purchase_SayHello_AskForMissingSlots:
+    - text: "_Name3_ : Merci de m'indiquer votre adresse mail _Name3_ : pouvez vous m'indiquer quand avez vous reçu cette publicité {order_nbr} _Name3_ : pourriez vous m'envoyer par mail une copie de cette publicité {order_nbr} _Name3_ : à l'adresse mail {email} serviceclient.com"
+  utter_deliveryNews_Searchorder_Askforwaiting:
     - text: "_Name1_ : je regarde je vous demande un instant."
-    - text: "_Name1_ : je regarde je vous demande un instant _Name1_ : comme nous vous l'avons spécifié par email lors du traitement de votre commande celle ci a été expédiée en deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT046600451FR"
-    - text: "_Name1_ : merci _Name1_ : j'effectue les recherches nécessaires je vous demande un instant."
     - text: "_Name2_ : je regarde je vous demande un instant."
-    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. »"
-  utter_Performaction_ProvideInfo_Suggeststo:
+  utter_deliveryNews_ProvideInfo:
+    - text: "_Name2_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impact la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-Unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochaines heures ou prochains jours."
+    - text: "_Name1_ : comme l'indique votre lien de suivi votre colis nous a été retourné"
+    - text: "_Name2_ : votre commande a bien été expédiée par nos services le 26 Août. comme indiqué lors du passage de celle ci le délai de livraison avec l'option choisie est généralement compris entre 10 et 14 jours ouvrés à compter de la date d'expédition. lorsque le colis aura été pris en charge par Chronopost vous pourrez suivre son acheminement depuis le lien suivant : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XU399664704FR"
+    - text: "_Name2_ : ceci est normal _Name2_ : l'expédition est récente"
+    - text: "_Name1_ : comme indiqué lors de votre commande le délai de livraison avec l'option choisie est compris entre 7 et 10 jours ouvrés. votre colis devrait donc vous parvenir en fin de semaine."
+    - text: "_Name1_ : un email vous en informant vous a été adressé le 21/03. malheureusement ce retour expéditeur est lié à une erreur du transporteur."
+    - text: "_"
+    - text: "_Name2_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impact la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-Unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochains jours."
+    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 18 Septembre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. lorsqu'il aura été pris en charge par Chronopost vous pourrez suivre son acheminement depuis le lien suivant : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT082087099FR"
+    - text: "_Name2_ : nous rencontrons un retard inhabituel sur nos commandes du mois de mars et nous en sommes sincèrement désolés. nous attendons un retour du transporteur. nous vous invitons à revenir vers nous vendredi après midi si la livraison n'a pas été effectuée. Merci de votre patience et de votre compréhension."
+  utter_deliveryTime_ProductAvailable_ProvideInfo_Apologize:
+    - text: "_Name2_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile _Name2_ : je suis désolée mais à ce jour le service paquet cadeau n'est pas disponible veuillez nous en excuser."
+  utter_product_AskDetails_ProvideInfo_Apologize:
+    - text: "_Name2_ : oui bien sur dans son emballage d'origine"
+  utter_customer_service_ProvideInfo:
+    - text: "_Name1_ : d'accord _Name1_ : une réponse vous sera donc envoyée par mail _Name1_ : votre dossier sera traité dans la journée Madame"
+  utter_deliveryCost_ProvideInfo_Performaction:
+    - text: "_Name1_ : 9298€ - 465€ ( réduction ) + 1398€ ( {delivery} port ) = 10231€"
+  utter_CustomerComplaint_goodbye_ProvideInfo:
+    - text: "_Name1_ : il s'agit du détail que j'ai repris dans votre panier _Name1_ : je vois que vous avez choisi 2 produits pour un montant de 9298€ vous avez bénéficié de 465€ de réduction et vous devez régler 1398€ de {delivery} port pour les 2 produits"
+    - text: "_Name1_ : ce délai s'explique par le fait que nos produits sont expédiés depuis les USA. il s'agit malheureusement d'un délai incomprésible afin de profiter de remises avantageuses sur vos produits préférés."
+  utter_AccountIssue_SayHello_AskForMissingSlots:
+    - text: "_Name2_ : pourriez vous m'indiquer votre adresse email s'il vous plaît {order_nbr}"
+    - text: "_Name2_ : un message d'erreur s'affiche t il sur votre écran {order_nbr}"
+  utter_AccountIssue_Performaction_ProvideInfo_Suggeststo:
     - text: "_Name2_ : je viens de réinitialiser votre mot de passe et vous invite donc à vous connecter avec l'adresse email : _Name1_ {email} et le mot de passe : _Name3_. vous pourrez bien entendu modifier ce dernier depuis votre espace client par la suite."
-  utter_Apologize_SayGoodbye:
+  utter_oui_thanks_Askforanotherquestion:
+    - text: "_Name2_ : de rien je suis à votre service. avez vous d'autres questions {order_nbr}"
+  utter_ProductTarget_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+  utter_ProductTarget_Askforwaiting:
+    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant."
+  utter_thanks_ProvideInfo_AskForMissingSlots:
+    - text: "_Name1_ : porcelaine va être clair c'est certain _Name1_ : vous avez la peau claire {order_nbr}"
+    - text: "_Name1_ : je n'ai pas de commande associée à cette adresse mail _Name1_ : pouvez m'indiquer le numéro de commande {order_nbr}"
+  utter_ProductTarget_ProvideInfo_AskForMissingSlots:
+    - text: "_Name1_ : alors sans hésiter je vous conseille le sable _Name1_ : nous avons de très bons retours sur cet article en particulier {order_nbr}"
+  utter_Login_AskForMissingSlots:
+    - text: "_Name1_ : pourriez vous s'il vous plaît nous donner plus de renseignements concernant votre problème {order_nbr} un message d'erreur s'affiche t il sur votre écran {order_nbr} et si oui quel est son code {order_nbr} d'avance merci pour votre réponse."
+  utter_Login_Repeatprevious:
+    - text: "_Name1_ : je vous invite à vous connecter à votre compte à l'aide du mot de passe : AZERTY adresse mail : {email}"
+  utter_rien_Proceedtocheckpoint:
+    - text: "_Name3_ : est ce que cette adresse vous dit quelque chose {order_nbr} _Name3_ : 6 chemin de _Name1_ _ZipCode2_ _City1_"
+    - text: "_Name1_ : avez vous réussi {order_nbr}"
+  utter_Discount_ProvideInfo:
+    - text: "_Name1_ : je vous invite à saisir le code REMI5P"
+    - text: "_Name2_ : en effet aucune remise n'est cumulable _Name2_ : vous devez choisir la plus intéressante pour vous"
+    - text: "_Name2_ : le code FDM10 a expiré depuis le 13 Mai"
+    - text: "_Name1_ : voici les codes de remise du moment : https://www.parfumsmoinscher.com/code-reduction.html < https://www.parfumsmoinscher.com/code-reduction.html >"
+  utter_Discount_CustomerComplaint_ProvideInfo:
+    - text: "_Name2_ : les prix sont remisés mais le code _Name1_ fonctionne pour tout le site _Name2_ : vous ne pouvez pas cumuler plusieurs codes de remise par contre"
+  utter_Discount_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : sans accents _Name1_ : quel est le montant de votre commande hors {delivery} port {order_nbr}"
+    - text: "_Name1_ : pouvez vous m'indiquer votre adresse mail {order_nbr}"
+    - text: "_Name2_ : l'avez vous bien noté en majuscule"
+  utter_purchase_ProvideInfo_Searchorder:
+    - text: "_Name2_ : oui mais je ne peux pas le voir car il n'est pas associé à votre compte client"
+  utter_WebsiteBug_ProvideInfo_Offeralternative:
+    - text: "_Name2_ : je n'ai aucun retour à ce sujet _Name2_ : vous pouvez prétendre au code _Name1_ sans souci _Name2_ : je vous invite soit à mettre à jour votre page soit à vider vos caches"
+  utter_WebsiteBug_Repeatprevious:
+    - text: "_Name2_ : oui je vous y invite _Name2_ : rechargez bien votre page avant de revenir vers votre compte avec ce nouveau mot de passe provisoire."
+  utter_WebsiteBug_ProvideInfo_AskForMissingSlots:
+    - text: "_Name2_ : nous n'avons pas connaissance de ce problème et faisons donc remonter l'information à notre service informatique. nous vous invitons à vider le cache de votre navigateur Internet ou bien à en utiliser un différent. cela résout il votre problème {order_nbr}"
+    - text: "_Name1_ : je vous invite à vider les caches de votre navigateur. _Name1_ : puis à recommencer"
+  utter_WebsiteBug_SayHello_AskForMissingSlots:
+    - text: "_Name2_ : avez vous tenté de vous connecter à partir d'un autre navigateur {order_nbr}"
+  utter_autre_Apologize_SayGoodbye:
     - text: "_Name2_ : je n'accède pas à votre compte je suis confuse"
-  utter_Searchorder_ProvideInfo_Performaction_Askforwaiting:
+  utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting:
     - text: "_Name1_ : je regarde je vous demande un instant. _Name1_ : je viens de procéder à l'annulation et au remboursement de votre commande"
-  utter_Askforwaiting_Searchorder:
+  utter_thanks_goodbye_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_ProductQuality_ProvideInfo:
+    - text: "_Name1_ : l'ensemble des produits proposés sur notre boutique en ligne sont garantis 100 % neufs et authentiques et proviennent directement des plus grandes marques de parfums à travers le monde ( à l'instar des parfums que vous pouvez retrouver en boutique près de chez vous ). nos colis sont régulièrement contrôlés en {delivery} afin de vérifier qu'il ne s'agisse pas de produits contrefaits."
+  utter_payment_ProvideInfo:
+    - text: "_Name1_ : oui bien sur"
+  utter_deliveryNews_Askforwaiting_Searchorder:
     - text: "_Name2_ : je regarde je vous demande un instant."
     - text: "_Name1_ : je regarde je vous demande un instant. _Name1_ : votre colis est disponible au {place} _Name1_ : votre lien de suivi : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT044737369FR"
-    - text: "_Name1_ : je regarde je vous demande un instant"
-  utter_Suggeststo_ProvideInfo:
+  utter_thanks_ProvideInfo:
+    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 27 Juin. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT002137718FR"
+    - text: "_"
+    - text: "_Name2_ : votre commande a bien été expédiée par nos services le {order_nbr} _Name1_. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. _Name2_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT025558722FR"
+    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 20 Août. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le Point relais que vous avez choisi dans les prochains jours. _Name1_ : je vous invite à patienter encore un peu"
+    - text: "_Name1_ : je vous invite à saisir le code {code} afin de bénéficier de 5 % de réduction"
+  utter_thanks_goodbye_oui_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_PaymentRefused_AskForMissingSlots:
+    - text: "_Name1_ : pourriez vous s'il vous plaît nous donner plus de renseignements concernant votre problème {order_nbr} un message d'erreur s'affiche t il sur votre écran {order_nbr} et si oui quel est son code {order_nbr} d'avance merci pour votre réponse."
+  utter_PaymentRefused_Login_AskForMissingSlots:
+    - text: "_Name1_ : pourriez vous m'indiquer votre adresse mail s'il vous plaît {order_nbr}"
+  utter_rien_Suggeststo_ProvideInfo:
     - text: "_Name1_ : je vous invite à vous connecter à votre compte à l'aide du mot de passe : AZERTY adresse mail : {email} lelamentin.fr"
-  utter_Searchorder_ProvideInfo_Askforwaiting:
+  utter_deliveryTime_Suggeststo_ProvideInfo:
+    - text: "_Name1_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement ) - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile."
+  utter_deliveryNews_Searchorder_ProvideInfo_Askforwaiting:
     - text: "_Name4_ : je regarde je vous demande un instant. _Name4_ : votre commande a bien été expédiée par nos services le 09 Juillet. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name4_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT004118950FR"
-  utter_Offeralternative:
+  utter_autre_Searchorder_ProvideInfo_Askforwaiting:
+    - text: "_Name4_ : le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. _Name4_ : le délai de livraison n'est pas encore arrivé à son terme _Name4_ : merci de patienter"
+  utter_deliveryTime_Searchorder_ProvideInfo_Askforwaiting:
+    - text: "_Name4_ : le colis a été expédié le 09 Juillet _Name4_ : la livraison est donc comprise entre le 13 et 19 juillet"
+  utter_oui_Askforanotherquestion:
+    - text: "_Name2_ : avez vous d'autres questions {order_nbr}"
+    - text: "_Name4_ : avez vous d'autres questions {order_nbr}"
+  utter_PaymentRefused_Offeralternative:
     - text: "_Name1_ : je vous invite à passer par Paypal Monsieur"
     - text: "_Name1_ :. vous pouvez régler votre commande par Paypal ( qui constitue le moyen de paiement le plus sécurisé sur Internet à l'heure actuelle )."
-  utter_AskForMissingSlots_Apologize:
+  utter_CancelOrder_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_autre_AskForMissingSlots_Apologize:
     - text: "_Name1_ : je suis désolée je ne comprends pas votre demande _Name1_ : vous ne pouvez pas visualiser votre propres commandes {order_nbr}"
-  utter_Askforwaiting_Searchorder_ProvideInfo:
+  utter_CustomerComplaint_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_missingItem_ProvideInfo_Searchorder:
+    - text: "_Name1_ : votre second colis est actuellement en transit vers la {country} et devrait arriver sur le territoire Français ce jour ou demain pour une livraison prévue en cette fin de semaine. _Name1_ : comme indiqué par email lors de l'expédition de vos colis. votre colis XT070996874FR peut mettre jusqu'à 5 jours supplémentaires avant de vous parvenir."
+  utter_ConfirmationOrder_ProvideInfo_Searchorder:
+    - text: "_Name1_ : _Name4_ deux liens de suivi vous ont été transmis par email. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT070996874FR voici votre lien de suivi"
+  utter_CustomerComplaint_Askforwaiting_Searchorder_ProvideInfo:
     - text: "_Name1_ : un instant SVP je consulte les emails transactionnels _Name1_ : vous avez bien reçu un email contenant votre second lien de suivi et vous informant d'un éventuel délai supplémentaire. cependant vous n'avez pas ouvert ni cliqué cet email. _Name1_ : vous l'avez reçu le 19/07 à 12h46. si vous n'avez pas connaissance de cet email je vous invite à consulter vos indésirables. il est possible qu'il s'y situe"
-  utter_ProvideInfo_Askforanotherquestion:
-    - text: "_Name1_ : votre colis a été expédié _Name1_ : avez vous d'autres questions {order_nbr} _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_ConfirmationOrder_ProvideInfo_Offeralternative:
+    - text: "_Name1_ : vous l'avez reçu le 19/07 à 12h46. si vous n'avez pas connaissance de cet email je vous invite à consulter vos indésirables. il est possible qu'il s'y situe"
+  utter_oui_ConfirmationOrder_ProvideInfo_Searchorder:
+    - text: "_Name1_ : je vous confirme que vous avez bien réceptionné cet email. notre service automatique d'emails transactionnels à bien reçu un accusé réception de votre boite email. _Name1_ : malheureusement ces emails étant automatique je ne peux vous renvoyer l'email. cependant je peux vous le copier ici : _Name1_ : bonjour _Name2_ votre commande #732398 vient d'être expédiée. pour des raisons logistiques le ( s ) produit ( s ) suivant ( s ) pourrait faire l'objet d'un délai de livraison supplémentaire par rapport à celui indiqué initialement : HM ( x1 ) ce délai additionnel - n'excédant pas cinq jours maximum - ne remet pas en cause les modalités de livraison choisies lors du passage de votre commande ( {place} ou adresse de livraison sélectionnée ). veuillez aussi noter que votre commande est expédiée en plusieurs colis. cela n'a cependant aucune incidence sur le coût des {delivery} port. vous pouvez suivre l'avancement de la livraison à l'adresse suivante : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT070996874FR vous pouvez accéder au suivi de votre commande et télécharger votre facture dans   historique des commandes   de la rubrique   mon compte   sur notre site."
+  utter_oui_goodbye_SayGoodbye:
+    - text: "_Name1_ : je vous souhaite une bonne journée également - _Name1_"
+  utter_deliveryNews_Askforwaiting:
+    - text: "_Name1_ : je regarde je vous demande un instant."
+    - text: "_Name2_ : je regarde je vous demande un instant. _Name2_ : votre commande a bien été expédiée par nos services le 10 Juin. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le {place} que vous avez choisi dans les prochains jours."
+    - text: "_Name1_ : je regarde je vous demande un instant"
+  utter_AskDetails_ProvideInfo:
+    - text: "_Name1_ : une livraison en {place} vous assure effectivement une livraison avant Noël."
+    - text: "_Name1_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impacte la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochains jours."
+  utter_oui_thanks_SayGoodbye:
+    - text: "_Name1_ : je vous en prie _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name1_ : je vous souhaite une excellente journée"
+  utter_rien_Askforwaiting:
+    - text: "_Name1_ : je vous demande un instant"
+  utter_damagedPackage_AskForMissingSlots_SayHello:
+    - text: "_Name1_ : pouvez vous nous transmettre une photo du produit reçu par mail {order_nbr}"
+  utter_rien_SayGoodbye:
+    - text: "great ! bye"
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_missingItem_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : Merci de me confirmer la partie réceptionnée je vous prie."
+  utter_missingItem_Searchorder_Askforwaiting:
+    - text: "_Name1_ : merci _Name1_ : j'effectue les recherches nécessaires je vous demande un instant."
+    - text: "_Name1_ : je regarde je vous demande un instant _Name1_ : comme nous vous l'avons spécifié par email lors du traitement de votre commande celle ci a été expédiée en deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT046600451FR"
+  utter_thanks_ProvideInfo_Askforanotherquestion:
     - text: "_Name1_ : je vous invite à suivre le lien suivant. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT000867630FR _Name1_ : comme nous vous l'avons spécifié par email lors du traitement de votre commande celle ci a été expédiée en deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les prochains jours : _Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
-  utter_ProvideInfo_Searchorder_Askforwaiting:
-    - text: "_Name2_ : je regarde je vous demande un instant. _Name2_ : votre commande a bien été expédiée par nos services le 24 Mai. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis depuis le lien suivant : _Name2_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT058668875FR"
+  utter_thanks_goodbye_autre_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_deliveryNews_ProvideInfo_Searchorder:
+    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 02 Novembre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT019783168FR"
+  utter_deliveryNews_ProvideInfo_Searchorder_Askforwaiting:
     - text: "_Name1_ : je regarde je vous demande un instant _Name1_ : votre colis sera livré cette semaine ou lundi au plus tard"
-  utter_Offeralternative_SayGoodbye:
+    - text: "_Name2_ : comme nous l'indiquons dans l'email contenant le lien de suivi le statut peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela n'impact la bonne livraison de votre colis. ceci est lié au fait que Chronopost ne propose pas de suivi aux Etats-Unis ; vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français dans les prochains jours."
+    - text: "_Name2_ : je regarde je vous demande un instant. _Name2_ : votre commande a bien été expédiée par nos services le 24 Mai. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis depuis le lien suivant : _Name2_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT058668875FR"
+  utter_ReceptionAlert_ProvideInfo_Searchorder_Askforwaiting:
+    - text: "_Name1_ : Chronopost vous avertira par mail et sms"
+  utter_CancelOrder_Searchorder_Askforwaiting:
+    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. »"
+  utter_CancelOrder_Repeatprevious:
+    - text: "_Name1_ : votre commande a bien été prise en charge et ne peut plus être remboursée à ce stade _Name1_ : vous aurez la possibilité de nous renvoyer cet article"
+  utter_Refund_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_deliveryCost_Discount_ProvideInfo:
+    - text: "_Name1_ : les {delivery} port sont facturés. - pour une livraison en {place} ( {country} métropolitaine uniquement ) il faut ainsi compter 7.99 € pour le premier article commandé puis 5.99 € par produit supplémentaire ensuite. le délai de livraison avec cette option est compris entre 7 et 10 jours ouvrés. - pour une livraison à l'adresse de votre choix il faut compter 9.99 € pour un produit puis 5.99 € par article supplémentaire ensuite. le délai de livraison avec cette option est compris entre 10 et 14 jours ouvrés."
+    - text: "_Name1_ : les {delivery} port que vous jugez élevés s'expliquent par le fait que nos produits sont expédiés depuis les Etats-Unis et que nous faisons le choix d'une livraison rapide avec numéro de suivi pour chaque colis. de plus nous nous engageons à vous rembourser intégralement les {delivery} douanes au cas où vous seriez amené à en régler à la livraison de votre commande."
+  utter_goodbye_Offeralternative_SayGoodbye:
     - text: "_Name1_ : si vous disposez d'un compte Facebook vous pouvez profiter d'une remise de 5 % sur votre panier en rejoignant notre page officielle : https://www.facebook.com/ParfumsMoinsCher/ < https://www.facebook.com/ParfumsMoinsCher/ > _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-  utter_Askforwaiting_ProvideInfo_Searchorder:
+  utter_deliveryNews_Askforwaiting_ProvideInfo_Searchorder:
     - text: "_Name1_ : nous étions en ligne me semble t il {order_nbr} _Name1_ : nous avons été coupé _Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : http://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT000256385FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande. _Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
     - text: "_Name1_ : je regarde je vous demande un instant _Name1_ : votre commande a bien été expédiée par nos services le 15 Octobre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. votre colis devrait donc être remis dans le Point relais que vous avez choisi dans les prochains jours."
-  utter_Searchorder:
+  utter_deliveryTime_Askforwaiting_ProvideInfo_Searchorder:
+    - text: "_Name1_ : je vous rappelle nos délais _Name1_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile _Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
+  utter_CommuncationInterruption_deliveryNews_Searchorder:
     - text: "_Name2_ : je regarde"
-  utter_Apologize_ProvideInfo:
+  utter_rien_ProvideInfo_Offeralternative:
+    - text: "_Name2_ : ma collègue a fait le nécessaire auprès de Chronopost _Name2_ : je vous invite à revenir vers nous demain le temps qu'une réponse nous soit apportée _Name2_ : si votre colis n'est pas localisé d'ici là nous vous proposerons le renvoi ou le remboursement"
+  utter_CustomerComplaint_Apologize_ProvideInfo:
     - text: "_Name2_ : je suis sincèrement désolée _Name2_ : oui nous avons relancé Chronopost car cette situation est inacceptable"
-  utter_Offeralternative_ProvideInfo:
+  utter_deliveryNews_ProvideInfo_Offeralternative:
     - text: "_Name2_ : si Chronopost est dans l'incapacité de localiser votre colis nous vous proposerons le renvoi ou le remboursement je vous invite à revenir vers nous sur le tchat"
-  utter_Apologize:
+    - text: "_Name1_ : lors de votre commande vous aviez choisi une livraison au {place} primeur de la place 5 place _Name2_ _ZipCode1_ _City1_. votre colis nous a été retourné avant d'être mis à votre disposition. _Name1_ : je peux procéder au renvoi de votre colis ou bien au remboursement intégral de votre commande."
+  utter_goodbye_Apologize_ProvideInfo:
     - text: "_Name2_ : je vous présente de nouveau toutes nos excuses"
-  utter_ProvideInfo_Proceedtocheckpoint:
+  utter_deliveryTime_ProvideInfo:
+    - text: "_Name2_ : le délai est compris entre 7 et 10 jours ouvrés"
+    - text: "_Name1_ : si le produit a une étoile rouge nous garantissons une livraison pour Noel si la commande est passée avant le 16 décembre"
+    - text: "_Name1_ : les délais de livraison dépendent de l'option de livraison choisie lors de votre commande. il faut ainsi compter entre 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement ) et entre 10 et 14 jours ouvrés pour une livraison à l'adresse de votre choix."
+    - text: "_Name2_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement ) - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile."
+    - text: "_Name1_ : les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile"
+  utter_AskDetails_deliveryTime_ProvideInfo:
+    - text: "_Name1_ : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés pour une livraison   express   à domicile"
+  utter_oui_deliveryPlace_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_deliveryCost_ProvideInfo_Proceedtocheckpoint:
     - text: "_Name1_ : vous n'avez que très peu de chance d'avoir des {delivery} {delivery} à régler à la livraison de votre commande ( moins de 5 % de nos expéditions en font l'objet ). si tel était le cas nous nous engageons à vous les rembourser intégralement comme indiqué dans nos CGV et dans l'email de confirmation de commande. il vous suffit pour cela simplement de nous adresser le justificatif de dédouanement par email à l'adresse suivante : _Email1_. _Name1_ : ai je répondu à vos attentes {order_nbr}"
-  utter_ProvideInfo_Advisetolookelsewhere:
+  utter_deliveryPlace_AskForMissingSlots_SayHello:
+    - text: "_Name2_ : thank you for entrusting me with your email please _Name2_ : are you taire {order_nbr}"
+  utter_ProductPrice_ProvideInfo_Apologize:
+    - text: "_Name2_ : nous sommes sincèrement désolés mais nous ne pouvons proposer de produits de la marque Chanel pour le moment. nous vous invitons à vous rendre régulièrement sur notre site ou à vous inscrire à la newsletter afin de vous tenir informée des dernières nouveautés."
+  utter_ProductPrice_ProvideInfo_Advisetolookelsewhere:
     - text: "_Name2_ : je vous laisse suivre ce lien _Name2_ : https://www.parfumsmoinscher.com/search.php?orderby=position&orderway=desc&search_query=mon + guerlain+&submit_search = _Name2_ : vous allez découvrir toute la gamme de ce parfum _Name2_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
-  utter_Searchorder_ProvideInfo:
+  utter_delivery_AskForMissingSlots_SayHello:
+    - text: "_Name1_ : pourriez vous m'indiquer votre numéro de commande s'il vous plaît {order_nbr} _Name1_ : êtes vous toujours en ligne {order_nbr}"
+  utter_delivery_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_Discount_AskDetails_ProvideInfo:
+    - text: "_Name2_ : pour le moment nous n'avons pas de code de remise"
+  utter_deliveryNews_Searchorder_ProvideInfo:
     - text: "_Name1_ : ce colis a bien été expédié et vous sera livré en fin de semaine Madame"
     - text: "_Name1_ : votre commande a bien été expédiée par nos services le 10 Mars. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. je vous invite à suivre l'acheminement de votre colis depuis le lien suivant : _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT044128663FR"
-  utter_AskForMissingSlots_Searchorder_Askforwaiting:
+  utter_deliveryNews_CustomerComplaint_ProvideInfo_Apologize:
+    - text: "_Name1_ : nous rencontrons un retard inhabituel sur nos commandes du mois de mars et nous en sommes sincèrement désolés. nous attendons un retour du transporteur. nous vous invitons à revenir vers nous vendredi après midi si la livraison n'a pas été effectuée. Merci de votre patience et de votre compréhension."
+  utter_deliveryNews_AskDetails_CustomerComplaint_Searchorder_ProvideInfo:
+    - text: "_Name1_ : la livraison devrait avoir lieu en fin de semaine Madame"
+  utter_deliveryNews_AskForMissingSlots_Searchorder_Askforwaiting:
     - text: "_Name1_ : que puis je faire pour vous {order_nbr} _Name1_ : je regarde"
-  utter_Apologize_Offeralternative:
+  utter_deliveryPlace_ProvideInfo_Searchorder_Askforwaiting:
+    - text: "_Name2_ : nos colis sont expédiés des {country} Madame"
+  utter_PaymentRefused_AskForMissingSlots_SayHello:
+    - text: "_Name1_ : est ce que cette carte accepte les paiements internationaux {order_nbr}"
+  utter_rien_Apologize_Offeralternative:
     - text: "_Name1_ : vous semblez avoir rencontrer un souci de paiement. nous sommes désolés de ce contretemps indépendant de notre volonté et nous vous prions de bien vouloir nous excuser. je vous invite à contourner le souci. veuillez passer par paypal pour faire le paiement on vous proposera alors 2 choix soit payer avec un compte paypal soit de payer avec votre carte bancaire habituel."
-  utter_Apologize_AskForMissingSlots:
+  utter_saluer_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+  utter_ReceptionAlert_Searchorder_ProvideInfo:
+    - text: "_Name1_ : oui c'est bien cela Madame _Name1_ : vous pourrez constater une mise à jour du suivi à l'arrivée du colis sur le territoire français"
+  utter_ConfirmationOrder_ProvideInfo_Askforwaiting:
+    - text: "_Name1_ : je regarde je vous demande un instant. _Name1_ : non je ne vois pas de commande _Name1_ : je vais vérifier la transaction _Name1_ : les deux paiements ont été refusés"
+  utter_ReceptionAlert_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_CommuncationInterruption_deliveryNews_ProvideInfo:
+    - text: "_Name2_ : vous avez reçu un autre produit et vous nous l'avez retourné _Name2_ : un renvoi a été effectué le 31 décembre"
+  utter_deliveryNews_AskDetails_ProvideInfo:
+    - text: "_Name2_ : il a bien été expédié _Name2_ : le lien sera mis à jour par Chronopost dès l'arrivée de votre colis sur le sol français très prochainement"
+  utter_AskDetails_StoreLocation_deliveryTime_ProvideInfo:
+    - text: "_Name2_ : nos produits sont expédiés depuis les Etats-Unis"
+  utter_deliveryTime_AskDetails_ProvideInfo:
+    - text: "_Name2_ : la livraison est prévue entre le 10 et le 15 janvier"
+  utter_non_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+    - text: "_Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_damagedPackage_Apologize_AskForMissingSlots:
     - text: "_Name1_ : je suis sincèrement désolée _Name1_ : pouvez vous nous envoyer une photo du produit reçu par mail {order_nbr}"
-  utter_Askforwaiting_SayGoodbye:
+  utter_deliveryNews_AskForMissingSlots:
+    - text: "_Name1_ : merci de me donner votre mail je vous prie"
+    - text: "_Name1_ : pourriez vous m'indiquer votre numéro de commande s'il vous plaît {order_nbr}"
+  utter_saluer_deliveryNews_Askforwaiting_Searchorder:
+    - text: "_Name1_ : je regarde je vous demande un instant"
+  utter_ConfirmationOrder_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : pourriez vous s'il vous plaît nous envoyer la preuve de paiement par mail _Name1_ : {email} serviceclient.com"
+  utter_oui_Askforwaiting:
+    - text: "_Name1_ : d'accord je traite votre dossier dès que nous aurons reçu votre mail Madame"
+  utter_oui_Askforwaiting_SayGoodbye:
     - text: "_Name1_ : je m'occupe de votre dossier _Name1_ : je reviendrais vers vous par mail dans la matinée Madame"
-  utter_ProvideInfo_Suggeststo:
-    - text: "_Name3_ : aucun compte n'est associé à ces informations _Name3_ : vous devez vous rendre dans la rubrique   mon compte   puis 'je ne possède pas de compte   _Name3_ : vous pourrez alors créer votre compte"
+  utter_rien_SayHello_AskForMissingSlots:
+    - text: "_Name2_ : que puis je faire pour vous {order_nbr}"
+  utter_ReceptionAlert_ProvideInfo:
+    - text: "_Name2_ : oui Chronopost vous avertira par mail ou sms"
+    - text: "_Name1_ : votre commande a bien été expédiée par nos services le 08 Octobre. comme indiqué lors du passage de votre commande le délai de livraison avec l'option choisie est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT016060086FR _Name1_ : un mail / sms vous sera envoyé dès que le colis sera disponible au relais"
+  utter_ChangeData_ProvideInfo_Suggeststo:
     - text: "_Name2_ : oui vous devez vous rendre dans la rubrique   mon compte   puis informations personnelles"
-  utter_Askforwaiting_ProvideInfo_Apologize:
+  utter_saluer_AskForMissingSlots_SayHello:
+    - text: "_Name2_ : que puis je faire pour vous {order_nbr}"
+    - text: "_Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+  utter_deliveryNews_AskForMissingSlots_SayHello:
+    - text: "_Name1_ : pourriez vous m'indiquer votre numéro de commande s'il vous plaît {order_nbr}"
+  utter_deliveryTime_deliveryPlace_ProvideInfo_Askforwaiting:
+    - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant."
+  utter__AskForMissingSlots:
+    - text: "bonjour je suis _Name1_. en quoi puis je vous aider {order_nbr} afin d'accélérer le traitement de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro de commande _Name1_ : je suis à votre écoute que puis je faire pour vous {order_nbr}"
+  utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize:
     - text: "_Name1_ : je regarde je vous demande un instant. _Name1_ : nous sommes sincèrement désolés mais nous ne pouvons proposer ce produit pour le moment. nous vous invitons à vous rendre régulièrement sur notre site ou à vous inscrire à la newsletter afin de vous tenir informée des dernières nouveautés. _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
-  utter_ProvideInfo_Apologize_Offeralternative:
+  utter_missingItem_ProvideInfo:
+    - text: "_Name2_ : effectivement je vois que le produit   {article} de _Name3_ eau De parfum spray 100 ml   n'a pas été expédié"
+  utter_deliveryNews_ProvideInfo_Apologize_Offeralternative:
     - text: "_Name2_ : il y a eu une erreur de préparation nous en sommes désolés / _Name2_ : souhaitez vous son expédition ( sous 12 à 14 jours ) ou le remboursement {order_nbr}"
-  utter_SayGoodbye_Apologize:
+  utter_non_Proceedtocheckpoint:
+    - text: "_Name2_ : vous optez donc pour le remboursement {order_nbr}"
+  utter_oui_CustomerComplaint_ProvideInfo_Performaction:
+    - text: "_Name2_ : je viens donc de procéder au remboursement du produit et des {delivery} port associés soit 95.98 euros"
+  utter_thanks_Askforanotherquestion:
+    - text: "_Name1_ : avez vous d'autres questions {order_nbr}"
+    - text: "_Name1_ : de rien je suis à votre service. avez vous d'autres questions {order_nbr}"
+  utter_damagedPackage_ProvideInfo_Searchorder:
+    - text: "_Name2_ : je regarde votre commande _Name2_ : je vous invite à nous envoyer une photo du produit reçu par mail _Name2_ : à l'adresse mail : {email} serviceclient.com"
+  utter_autre_goodbye_SayGoodbye_Apologize:
     - text: "_Name2_ : je vous en remercie _Name2_ : et je vous présente toutes nos excuses"
-  utter_Askforwaiting_Performaction:
+  utter_Discount_non_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_deliveryNews_ProvideInfo_Askforanotherquestion:
+    - text: "_Name1_ : votre colis a été expédié _Name1_ : avez vous d'autres questions {order_nbr} _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_ReceptionAlert_Askforwaiting_ProvideInfo_Searchorder:
+    - text: "_Name1_ : oui Chronopost vous avertira par mail ou sms"
+  utter_rien_Askforanotherquestion:
+    - text: "_Name2_ : de rien je suis à votre service. avez vous d'autres questions {order_nbr}"
+  utter_deliveryNews_deliveryPlace_ProvideInfo_Offeralternative:
+    - text: "_Name1_ : le mode d'expédition choisi initialement était en point relais. le renvoi se fera donc impérativement en point relais. cependant si vous souhaitez une livraison à domicile je peux procéder au remboursement intégral de votre commande afin que vous puissiez repasser une commande en livraison à domicile."
+  utter_deliveryPlace_Askforwaiting_Performaction:
     - text: "_Name1_ : un instant svp j'effectue le renvoi"
-  utter_Searchorder_ProvideInfo_AskForMissingSlots:
+  utter_deliveryNews_Searchorder_ProvideInfo_AskForMissingSlots:
     - text: "_Name1_ : il semblerait que votre commande ait été perdue ou volée durant son transport. souhaitez vous son renvoi ou bien son remboursement {order_nbr}"
-  utter_Performaction_Suggeststo:
+  utter_deliveryNews_Performaction_Suggeststo:
     - text: "_Name1_ : très bien je vais donc procéder au renvoi de votre commande. j'attire votre attention sur le fait de nous avertir au plus vite si jamais le colis initial venait finalement à vous être livré. ceci afin que le transporteur ne se retourne pas contre vous suite à l'enquête qui va être réalisée."
-  utter_Askforwaiting_ProvideInfo_Askforanotherquestion:
+  utter_non_goodbye_SayGoodbye:
+    - text: "_Name1_ : très bien. alors au nom de toute l'équipe ParfumsMoinsChers.com je vous souhaite une agréable journée à vous également."
+  utter_deliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion:
     - text: "_Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je vous invite à suivre le lien suivant. _Name1_ : https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT017207857FR _Name1_ : votre colis a bien été pris en charge par le transporteur il est actuellement en transit aérien. dès son arrivée sur le sol français c'est Chronopost qui finalisera la commande. _Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils."
-  utter_Offeralternative_ProvideInfo_Apologize:
+  utter_Discount_goodbye_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_non_ProvideInfo:
+    - text: "_Name3_ : donc je vous confirme qu'il n'y a pas de compte à votre nom"
+    - text: "_Name1_ : je vous invite à choisir l'un des 3 modes de livraison : en {place} standard ou premium _Name1_ : vous devez cocher la case"
+  utter_WebsiteBug_ProvideInfo:
+    - text: "_Name1_ : je vous invite à vous déconnecter puis à recommencer votre commande"
+  utter_WebsiteBug_SayGoodbye:
+    - text: "au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_PaymentTool_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : est ce que votre carte bancaire accepte les paiements internationaux"
+  utter_PaymentTool_Offeralternative_ProvideInfo_Apologize:
     - text: "_Name1_ : vous semblez avoir rencontrer un souci de paiement. nous sommes désolés de ce contretemps indépendant de notre volonté et nous vous prions de bien vouloir nous excuser. je vous invite à contourner le souci. veuillez passer par Paypal pour faire le paiement on vous proposera alors 2 choix soit payer avec un compte paypal soit de payer avec votre carte bancaire habituel."
-  utter_ProvideInfo_Repeatprevious:
+  utter_PaymentTool_PaymentRefused_ProvideInfo:
+    - text: "_Name1_ : je vous invite à contacter votre banque"
+  utter_non_ProvideInfo_Repeatprevious:
     - text: "_Name1_ : je vous invite à les contacter et à réessayer cet après midi. de mon côté je vais contacter le service concerné"
-  utter_Lookforcustomerfile_Askforwaiting_AskForMissingSlots:
+  utter_Login_Lookforcustomerfile_Askforwaiting_AskForMissingSlots:
     - text: "_Name3_ : je regarde je vous demande un instant. _Name3_ : pouvez vous m'indiquer votre adresse mail {order_nbr}"
-  utter_Suggeststo:
+  utter_CustomerComplaint_ProvideInfo_Suggeststo:
+    - text: "_Name3_ : aucun compte n'est associé à ces informations _Name3_ : vous devez vous rendre dans la rubrique   mon compte   puis 'je ne possède pas de compte   _Name3_ : vous pourrez alors créer votre compte"
+  utter_CustomerComplaint_SayHello_AskForMissingSlots:
+    - text: "_Name3_ : pouvez vous m'indiquer votre adresse {order_nbr}"
+  utter_CustomerComplaint_AccountCreation_ProvideInfo_Suggeststo:
     - text: "_Name3_ : je vous invite à réessayer de créer votre compte"
-  utter_Searchorder_Negaterequest:
+  utter_AccountIssue_CustomerComplaint_Searchorder_Negaterequest:
     - text: "_Name3_ : non pas du tout _Name3_ : j'essaye de me renseigner"
-  utter_Askforwaiting_Searchorder_ProvideInfo_Performaction:
+  utter_AccountCreation_ProvideInfo:
+    - text: "_Name3_ : normalement je n'ai pas la possibilité de le faire mais je me renseigne pour savoir qui est votre interlocuteur"
+  utter_thanks_CustomerComplaint_ProvideInfo_Performaction:
+    - text: "_Name3_ : j'ai créé votre compte _Name3_ : adresse mail : {email} _Name3_ : mot de passe : AZERTY"
+  utter_thanks_oui_ProvideInfo:
+    - text: "_Name3_ : je reste en ligne pour être certaine que vous pouvez vous connecter"
+  utter_goodbye_ReceptionAlert_SayGoodbye:
+    - text: "_Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_deliveryCountry_ProvideInfo:
+    - text: "_Name1_ : notre société est implantée aux Etats-unis _Name1_ : les commandes s'effectuent via notre site internet ou par téléphone en contactant notre service client"
+  utter_rien_Askforwaiting_Searchorder_ProvideInfo_Performaction:
     - text: "_Name1_ : merci _Name1_ : j'effectue les recherches nécessaires je vous demande un instant. _Name1_ : je viens de relancer le transporteur"
-  utter_Searchorder_Askforwaiting_ProvideInfo_AskForMissingSlots:
+  utter_CustomerComplaint_deliveryNews_Askforwaiting_Searchorder_ProvideInfo_Performaction:
+    - text: "_Name1_ : ils ont bien eu les documents _Name1_ : mais cela prend toujours un peu de temps pour mener l'enquête en interne _Name1_ : je lis votre message je vous demande un instant _Name1_ : soyez rassuré dès la réponse de Chronopost nous serons en mesure de vous proposer le remboursement ou le renvoi de la marchandise mais dans un premier temps nous avons besoin que le transporteur nous réponde comme vous le comprenez bien."
+  utter_customer_service_goodbye_SayGoodbye:
+    - text: "_Name1_ : je suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin de conseils. _Name1_ : au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente journée."
+  utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo_AskForMissingSlots:
     - text: "_Name2_ : je regarde je vous demande un instant. _Name2_ : votre colis a probablement été perdu ou volé lors de son transport. veuillez nous excuser pour ce problème indépendant de notre volonté. souhaitez vous que nous procédions au renvoi ( sous 10 à 14 jours ouvrés ) ou bien au remboursement de la commande non reçue {order_nbr} dès réception de votre réponse nous déposerons plainte contre le transporteur pour non livraison de commande."
-  utter_ProvideInfo_Suggeststo_Apologize:
+  utter_deliveryNews_ProvideInfo_Performaction:
+    - text: "_Name2_ : je procède immédiatement au renvoi"
+  utter_Refund_ProvideInfo_Suggeststo_Apologize:
     - text: "_Name2_ : je vous présente toutes nos excuses _Name2_ : je vous invite à revenir vers nous dès réception de votre colis et nous procéderons au remboursement des 10€"
-  utter_ProvideInfo_Lookforcustomerfile:
+  utter_AccountCreation_SayHello_AskForMissingSlots:
+    - text: "_Name1_ : pourriez vous m'indiquer votre adresse mail s'il vous plaît {order_nbr}"
+  utter_AccountCreation_ProvideInfo_Lookforcustomerfile:
     - text: "_Name1_ : après vérification je constate qu'il existe déjà un compte avec l'adresse email _Email1_. _Name1_ : ce compte a été créé en 2009 et est au nom de _Name3_ _Name5_."
+  utter_thanks_ProvideInfo_Lookforcustomerfile:
+    - text: "_Name1_ : je vous invite donc à vous connecter avec l'adresse email {email} et le mot de passe   _Name4_  . vous pourrez bien entendu le modifier par la suite."
+  utter_ChangeData_ProvideInfo_Lookforcustomerfile:
+    - text: "_Name1_ : vous pourrez modifier également votre adresse postale une fois connectée à votre Espace client."
 
 actions:
 - action_Perform_action
