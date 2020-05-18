@@ -1,3 +1,4 @@
+
 ## intent:deliveryCost
 _Name2_ : bonjour2 _Name2_ : bonjour je passerai commande seulement si les [frais de port](fdp) sont à [0 €](free) surtout pour une commande de 220 €. très cordialement. _Name2_3 _Name2_ : [_Email1_](email)
 - _Name2_ : J e vous ai précisé que je ne comprenais pas la différence de [facturation](billing) qui [frais de transport](fdp) compris est de 9794€ et au final on me réclame 10096€. Merci. je m'a fait [livrer](delivery) à mon [domicile](home) je ne vois donc pas pourquoi sur le [bon de commande](billing) les [frais inclus](fdp) sont arrêtés à un peu plus de 97€. j'ai commandé 2 articles. a vous lire. cordialement
