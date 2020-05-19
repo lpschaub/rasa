@@ -61,11 +61,11 @@ class PMCverter(Converter):
 
         self.slots = list(set(self.slots))
 
-    def utterance_builder(self, dialogues, utterances={}):
+    def utterance_builder(self, dialogues, utterances={}, utter_list = [('','')]):
         if not dialogues:
             self.utterances = utterances
         else:
-            def one_turn_utterance(turns, small_utterance={}, intent="", utter_list=[('', '')]):
+            def one_turn_utterance(turns, small_utterance={}, intent="", utter_list=utter_list):
                 if not turns:
                     return small_utterance
                 else:
@@ -83,17 +83,29 @@ class PMCverter(Converter):
                     try:
                         seen = True
                         ut = ""
-                        for tuple in utter_list:
-                            utter = tuple[1]
+                        print(f"before : {utter_list}")
+                        for tpl in utter_list:
+                            # print(tpl)
+                            utter = tpl[1]
+                            print(f"\tutter = {utter}")
                             seen = True
 
                             for elem in turns[0]['policy_funcs']:
                                 elem = elem.replace(' ', '')
+                                print(f"\t\telem = {elem}")
+                                
                                 if elem not in utter:
+                                    print(f"\t\t\tthis is new : {turns[0]['policy_funcs']}")
                                     seen = False
+                                else : 
+                                    print("\t\t\tit is in, yeah")
+                            
                             if seen:
+                                print(f"\t\tseen :{'_'.join(utter)}")
                                 ut = '_'.join(utter)
                                 break
+
+                        print(f"\tseen = {seen}")
 
                         if not seen:
                             ut = '_'.join([elem.replace(' ', '') for elem in turns[0]['policy_funcs']])
@@ -108,8 +120,9 @@ class PMCverter(Converter):
                         turns[0]['policy_funcs'] = [elem for elem in policy.split('_') if
                                                     elem]
                     except KeyError:
+                        print("ERROR")
                         pass
-
+                    print(f"after : {utter_list}")
                     return one_turn_utterance(turns[1:], small_utterance, new, utter_list)
 
             one_turn_utterance(dialogues[0], utterances)
@@ -166,7 +179,7 @@ class PMCverter(Converter):
         self.actions = ['action_Perform_action', 'action_Search_order', 'action_Look_for_customer_file',
                         'action_Reset_working_memory']
 
-    def domain_writer(self, out='domainperfume.yml'):
+    def domain_writer(self, out='../domainperfume.yml'):
         out = open(out, 'w', encoding='utf-8')
         out.write('slots:\n  ')
         out.write(""":
@@ -191,7 +204,7 @@ class PMCverter(Converter):
 
         self.stories_builder(dialogues)
 
-        stories_file = open('data/stories.md', 'wb')
+        stories_file = open('../data/stories.md', 'wb')
         for story in self.stories:
             stories_file.write(str(story + '\n\n').encode('utf-8'))
 
@@ -201,7 +214,7 @@ class PMCverter(Converter):
         intents = self.intents
         self.intents = self.entities_labelling(entities, intents)
         # pprint(dialogues)
-        nlu_file = open('data/nlu.md', 'wb')
+        nlu_file = open('../data/nlu.md', 'wb')
         # pprint(self.intents)
         for intent in self.intents:
             if intent:
@@ -425,10 +438,10 @@ class PMCverter(Converter):
 
 conv = PMCverter()
 
-dialogues = conv.json_parse('input/entitiesintents_dialogues1-100.json')
+dialogues = conv.json_parse('../input/entitiesintents_dialogues1-100.json')
 
-entities = json.load(open('input/entities.json'), encoding='utf-8')
-slots = json.load(open('input/slots.json'), encoding='utf-8')
+entities = json.load(open('../input/entities.json'), encoding='utf-8')
+slots = json.load(open('../input/slots.json'), encoding='utf-8')
 
 conv.nlu_converter(dialogues, entities)
 conv.domain_builder(dialogues, entities, slots)

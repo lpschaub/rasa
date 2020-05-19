@@ -12,7 +12,7 @@
 * thanks
  - utter_thanks_Proceedtocheckpoint
 * non
- - utter_non_SayHello_AskForMissingSlots
+ - utter_non_AskForMissingSlots_SayHello
 * PaymentRefused{"delivery": "livraison"}
  - utter_PaymentRefused_Proceedtocheckpoint
 * oui
@@ -30,7 +30,7 @@
 
 ## story_4
 * damagedPackage{"damaged": "casse","transporter": "Chronopost"}
- - utter_damagedPackage_AskForMissingSlots
+ - utter_damagedPackage_AskForMissingSlots_SayHello
 * damagedPackage{"resend": "renvoi","home": "chez nous"}
  - utter_damagedPackage_Proceedtocheckpoint
 * autre{"phone": "tel mob"}
@@ -76,7 +76,7 @@
 
 ## story_10
 * Login{"pwd": "numéro de passe"}
- - utter_Login_SayHello_AskForMissingSlots
+ - utter_Login_AskForMissingSlots_SayHello
 * autre
  - utter_autre_AskForMissingSlots_Repeatprevious
 * autre{"email": "_Email1_"}
@@ -90,15 +90,15 @@
 * deliveryNews{"order": "61"}
  - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * deliveryNews+AskDetails{"store": "chez vous"}
- - utter_deliveryNews_AskDetails_Searchorder_Askforwaiting_ProvideInfo
+ - utter_deliveryNews_AskDetails_ProvideInfo
 * AskDetails
- - utter_AskDetails_Searchorder_Askforwaiting_ProvideInfo
+ - utter_AskDetails_ProvideInfo
 * thanks
  - utter_thanks_SayGoodbye
 
 ## story_12
 * PaymentRefused{"device": "portable","delivery": "livraison","pr": "point relais","payment": "régler"}
- - utter_PaymentRefused_SayHello_AskForMissingSlots
+ - utter_PaymentRefused_AskForMissingSlots_SayHello
 * PaymentRefused{"phone": "numéro de portable"}
  - utter_PaymentRefused_ProvideInfo_Offeralternative
 * autre+CancelOrder{"cancel": "j'annule"}
@@ -108,7 +108,7 @@
 
 ## story_13
 * Login{"facebook": "FB","pwd": "mot de passe"}
- - utter_Login_SayHello_AskForMissingSlots
+ - utter_Login_AskForMissingSlots_SayHello
 * AskConfirmation
  - utter_AskConfirmation_ProvideInfo
 * WebsiteBug+goodbye{"bug": "dysfonctionnait","website": "site"}
@@ -116,31 +116,31 @@
 
 ## story_14
 * missingItem{"missing": "manque"}
- - utter_missingItem_Askforwaiting
+ - utter_missingItem_Searchorder_Askforwaiting_ProvideInfo
 * rien{"order": "00"}
  - utter_rien_ProvideInfo
 
 ## story_15
 * deliveryNews{"order": "00"}
- - utter_deliveryNews_ProvideInfo_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * ReceptionAlert{"channel": "sms"}
- - utter_ReceptionAlert_ProvideInfo_Askforwaiting
+ - utter_ReceptionAlert_ProvideInfo
 
 ## story_16
 * ProductPrice{"article": "Lolita Lempicka","discount": "remise"}
- - utter_ProductPrice_SayHello_AskForMissingSlots
+ - utter_ProductPrice_AskForMissingSlots_SayHello
 * ProductPrice{"size": "100ml"}
  - utter_ProductPrice_ProvideInfo
 * CustomerComplaint{"add": "publicité"}
  - utter_CustomerComplaint_ProvideInfo
 * autre
- - utter_autre_SayHello_AskForMissingSlots
+ - utter_autre_AskForMissingSlots_SayHello
 * purchase
- - utter_purchase_SayHello_AskForMissingSlots
+ - utter_purchase_AskForMissingSlots_SayHello
 
 ## story_17
 * deliveryNews{"present": "offrir","article": "parfum","date": "dimanche 26","email": "_Email1_"}
- - utter_deliveryNews_Searchorder_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * oui
  - utter_oui_ProvideInfo
 * deliveryNews{"status": "en cours de traitement"}
@@ -152,7 +152,7 @@
 * deliveryTime+ProductAvailable{"article": "eau de toilette","size": "200ml","target": "homme","present": "cadeau","delivery": "livraison","fdp": "frais de port"}
  - utter_deliveryTime_ProductAvailable_ProvideInfo_Apologize
 * product+AskDetails
- - utter_product_AskDetails_ProvideInfo_Apologize
+ - utter_product_AskDetails_ProvideInfo
 * thanks
  - utter_thanks_SayGoodbye
 
@@ -174,9 +174,9 @@
 
 ## story_21
 * AccountIssue
- - utter_AccountIssue_SayHello_AskForMissingSlots
+ - utter_AccountIssue_AskForMissingSlots_SayHello
 * AccountIssue{"pwd": "mot de passe","channel": "mail"}
- - utter_AccountIssue_SayHello_AskForMissingSlots
+ - utter_AccountIssue_AskForMissingSlots_SayHello
 * rien{"email": "_Email1_"}
  - utter_AccountIssue_Performaction_ProvideInfo_Suggeststo
 * oui+thanks
@@ -184,19 +184,19 @@
 
 ## story_22
 * ProductTarget{"article": "fond de teint make up for ever fluide tenseur","color": "sable"}
- - utter_ProductTarget_SayHello_AskForMissingSlots
+ - utter_ProductTarget_AskForMissingSlots_SayHello
 * ProductTarget
- - utter_ProductTarget_Askforwaiting
+ - utter_ProductTarget_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo_AskForMissingSlots
 * ProductTarget
- - utter_ProductTarget_ProvideInfo_AskForMissingSlots
+ - utter_ProductTarget_ProvideInfo
 * goodbye+thanks
  - utter_goodbye_thanks_SayGoodbye
 
 ## story_23
 * Login{"email": "_Email1_"}
- - utter_Login_AskForMissingSlots
+ - utter_Login_AskForMissingSlots_SayHello
 * Login{"pwd": "mot de passe"}
 action_listen
 * Login{"connection": "authentification"}
@@ -208,15 +208,15 @@ action_listen
 
 ## story_24
 * autre{"email": "_Email1_"}
- - utter_autre_SayHello_AskForMissingSlots
+ - utter_autre_AskForMissingSlots_SayHello
 * Discount{"discount": "code"}
  - utter_Discount_ProvideInfo
 * Discount+CustomerComplaint{"website": "site"}
  - utter_Discount_CustomerComplaint_ProvideInfo
 * Discount{"code": "amour"}
- - utter_Discount_SayHello_AskForMissingSlots
+ - utter_Discount_AskForMissingSlots_SayHello
 * autre
- - utter_autre_SayHello_AskForMissingSlots
+ - utter_autre_AskForMissingSlots_SayHello
 * autre
  - utter_autre_ProvideInfo
 * purchase{"article": "10412339"}
@@ -228,9 +228,9 @@ action_listen
 * WebsiteBug{"pwd": "mot de passe"}
  - utter_WebsiteBug_ProvideInfo_AskForMissingSlots
 * WebsiteBug{"account": "compte"}
- - utter_WebsiteBug_SayHello_AskForMissingSlots
+ - utter_WebsiteBug_AskForMissingSlots_SayHello
 * autre
- - utter_autre_SayHello_AskForMissingSlots
+ - utter_autre_AskForMissingSlots_SayHello
 * autre
  - utter_autre_Apologize_SayGoodbye
 
@@ -250,7 +250,7 @@ action_listen
 
 ## story_27
 * deliveryNews{"transporter": "Chronopost","order": "00"}
- - utter_deliveryNews_Askforwaiting_Searchorder
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo
 * deliveryNews{"status": "évolue"}
@@ -260,23 +260,23 @@ action_listen
 
 ## story_28
 * PaymentRefused{"payment": "payer"}
- - utter_PaymentRefused_AskForMissingSlots
+ - utter_PaymentRefused_AskForMissingSlots_SayHello
 * PaymentRefused+Login{"connection": "authentification"}
- - utter_PaymentRefused_Login_AskForMissingSlots
+ - utter_PaymentRefused_Login_AskForMissingSlots_SayHello
 * rien{"email": "_Email1_"}
- - utter_rien_Suggeststo_ProvideInfo
+ - utter_rien_Performaction_ProvideInfo_Suggeststo
 * deliveryTime{"delivery": "livrée","date": "semaine prochaine","place": "Martinique","home": "chez mon fils","city": "_City1_"}
- - utter_deliveryTime_Suggeststo_ProvideInfo
+ - utter_deliveryTime_ProvideInfo
 * thanks
  - utter_thanks_SayGoodbye
 
 ## story_29
 * deliveryNews
- - utter_deliveryNews_Searchorder_ProvideInfo_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * autre
- - utter_autre_Searchorder_ProvideInfo_Askforwaiting
+ - utter_autre_ProvideInfo
 * deliveryTime
- - utter_deliveryTime_Searchorder_ProvideInfo_Askforwaiting
+ - utter_deliveryTime_ProvideInfo
 * oui
  - utter_oui_Askforanotherquestion
 * non+thanks{"date": "le 19"}
@@ -284,7 +284,7 @@ action_listen
 
 ## story_30
 * PaymentRefused{"tool": "carde américaine MasterCard","payment": "paiement","email": "_Email1_"}
- - utter_PaymentRefused_Offeralternative
+ - utter_PaymentRefused_ProvideInfo_Offeralternative
 * PaymentTool
  - utter_PaymentTool_ProvideInfo
 * CancelOrder{"cancel": "abandonner"}
@@ -292,7 +292,7 @@ action_listen
 
 ## story_31
 * deliveryNews{"article": "parfum","date": "la semaine dernière","order": "00","transporter": "Chronopost","store": "chez vous"}
- - utter_deliveryNews_ProvideInfo_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * goodbye
  - utter_goodbye_SayGoodbye
 
@@ -304,7 +304,7 @@ action_listen
 
 ## story_33
 * deliveryNews{"order": "00","email": "_Email1_","article": "parfum"}
- - utter_deliveryNews_ProvideInfo_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * goodbye
  - utter_goodbye_SayGoodbye
 
@@ -312,25 +312,25 @@ action_listen
 * missingItem{"date": "18juillet"}
  - utter_missingItem_ProvideInfo_Searchorder
 * ConfirmationOrder{"channel": "message","follow-up": "numéro de suivi"}
- - utter_ConfirmationOrder_ProvideInfo_Searchorder
+ - utter_ConfirmationOrder_ProvideInfo
 * CustomerComplaint{"pr": "relais","delivery": "livraison","fdp": "frais de port","concurrence": "nocive"}
- - utter_CustomerComplaint_Askforwaiting_Searchorder_ProvideInfo
+ - utter_CustomerComplaint_Searchorder_Askforwaiting_ProvideInfo
 * ConfirmationOrder
  - utter_ConfirmationOrder_ProvideInfo_Offeralternative
 * oui+ConfirmationOrder{"website": "site"}
- - utter_oui_ConfirmationOrder_ProvideInfo_Searchorder
+ - utter_oui_ConfirmationOrder_ProvideInfo
 * oui+goodbye
  - utter_oui_goodbye_SayGoodbye
 
 ## story_35
 * deliveryNews{"order": "00","email": "_Email1_","date": "10/06/19"}
- - utter_deliveryNews_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * goodbye
  - utter_goodbye_SayGoodbye
 
 ## story_36
 * deliveryNews{"order": "00","delivery": "livraison","date": "samedi","pr": "point relais","mood": "inquiète"}
- - utter_deliveryNews_Searchorder_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo
 * AskDetails{"status": "en dépôt"}
@@ -340,9 +340,9 @@ action_listen
 
 ## story_37
 * Discount{"discount": "code promo"}
- - utter_Discount_SayHello_AskForMissingSlots
+ - utter_Discount_AskForMissingSlots_SayHello
 * rien{"email": "_Email1_"}
- - utter_rien_Askforwaiting
+ - utter_rien_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo
 * thanks
@@ -362,9 +362,9 @@ action_listen
 
 ## story_40
 * missingItem{"order": "00"}
- - utter_missingItem_SayHello_AskForMissingSlots
+ - utter_missingItem_AskForMissingSlots_SayHello
 * missingItem{"article": "angel","target": "homme"}
- - utter_missingItem_Searchorder_Askforwaiting
+ - utter_missingItem_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo_Askforanotherquestion
 * thanks+goodbye+autre
@@ -376,21 +376,21 @@ action_listen
 
 ## story_42
 * deliveryNews{"order": "00"}
- - utter_deliveryNews_ProvideInfo_Searchorder_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * ReceptionAlert{"device": "portable","pr": "point relais","phone": " N"}
- - utter_ReceptionAlert_ProvideInfo_Searchorder_Askforwaiting
+ - utter_ReceptionAlert_ProvideInfo
 * goodbye+thanks
  - utter_goodbye_thanks_SayGoodbye
 
 ## story_43
 * deliveryNews{"article": "parfum","email": "_Email1_","order": "00"}
- - utter_deliveryNews_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * rien
  - utter_rien_ProvideInfo
 
 ## story_44
 * CancelOrder{"cancel": "annuler","order": "00"}
- - utter_CancelOrder_Searchorder_Askforwaiting
+ - utter_CancelOrder_Searchorder_Askforwaiting_ProvideInfo
 * rien{"email": "_Email1_","channel": "mail"}
  - utter_rien_ProvideInfo
 * CancelOrder{"refund": "un avoir"}
@@ -406,23 +406,23 @@ action_listen
 
 ## story_46
 * deliveryNews{"order": "00"}
- - utter_deliveryNews_Askforwaiting_ProvideInfo_Searchorder
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * deliveryTime{"date": "week-end","present": "cadeau"}
- - utter_deliveryTime_Askforwaiting_ProvideInfo_Searchorder
+ - utter_deliveryTime_ProvideInfo
 * oui
  - utter_oui_SayGoodbye
 
 ## story_47
 * CommuncationInterruption+deliveryNews{"transporter": "Chronopost","date": "1er octobre"}
- - utter_CommuncationInterruption_deliveryNews_Searchorder
+ - utter_CommuncationInterruption_deliveryNews_ProvideInfo_Searchorder
 * rien{"order": "00"}
  - utter_rien_ProvideInfo_Offeralternative
 * CustomerComplaint{"channel": "système conversation","bug": "fonctionnait","customer": "service client","mood": "furieuse"}
- - utter_CustomerComplaint_Apologize_ProvideInfo
+ - utter_CustomerComplaint_ProvideInfo_Apologize
 * deliveryNews{"refund": "remboursement","present": "cadeau"}
  - utter_deliveryNews_ProvideInfo_Offeralternative
 * goodbye
- - utter_goodbye_Apologize_ProvideInfo
+ - utter_goodbye_ProvideInfo_Apologize
 
 ## story_48
 * deliveryTime{"article": "parfum","delivery": "livrer","date": "fin du mois"}
@@ -452,7 +452,7 @@ action_listen
 
 ## story_52
 * deliveryNews{"order": "00","date": "22/09","delivery": "livraison"}
- - utter_deliveryNews_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * rien
  - utter_rien_ProvideInfo
 
@@ -484,11 +484,11 @@ action_listen
 
 ## story_56
 * deliveryNews{"order": "00"}
- - utter_deliveryNews_Searchorder_ProvideInfo
+ - utter_deliveryNews_ProvideInfo_Searchorder
 * deliveryNews+CustomerComplaint{"date": "26 mars"}
  - utter_deliveryNews_CustomerComplaint_ProvideInfo_Apologize
 * deliveryNews+AskDetails+CustomerComplaint
- - utter_deliveryNews_AskDetails_CustomerComplaint_Searchorder_ProvideInfo
+ - utter_deliveryNews_AskDetails_CustomerComplaint_ProvideInfo
 * goodbye{"refund": "remboursement"}
  - utter_goodbye_SayGoodbye
 
@@ -502,11 +502,11 @@ action_listen
 
 ## story_58
 * deliveryNews{"order": "00"}
- - utter_deliveryNews_ProvideInfo_Searchorder_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * deliveryNews{"status": "en préparation","date": "24 mai"}
- - utter_deliveryNews_ProvideInfo_Searchorder_Askforwaiting
+ - utter_deliveryNews_ProvideInfo
 * deliveryPlace{"place": "France"}
- - utter_deliveryPlace_ProvideInfo_Searchorder_Askforwaiting
+ - utter_deliveryPlace_ProvideInfo
 * thanks
  - utter_thanks_SayGoodbye
 
@@ -524,23 +524,23 @@ action_listen
 
 ## story_61
 * saluer
- - utter_saluer_SayHello_AskForMissingSlots
+ - utter_saluer_AskForMissingSlots_SayHello
 * deliveryNews{"delay": "tarde","transporter": "Chronopost"}
- - utter_deliveryNews_Searchorder_ProvideInfo
+ - utter_deliveryNews_ProvideInfo_Searchorder
 * ReceptionAlert{"follow-up": "lien"}
- - utter_ReceptionAlert_Searchorder_ProvideInfo
+ - utter_ReceptionAlert_ProvideInfo
 * delivery
  - utter_delivery_SayGoodbye
 
 ## story_62
 * ConfirmationOrder{"payment": "débité","email": "_Email1_"}
- - utter_ConfirmationOrder_ProvideInfo_Askforwaiting
+ - utter_ConfirmationOrder_Searchorder_Askforwaiting_ProvideInfo
 * goodbye+thanks
  - utter_goodbye_thanks_SayGoodbye
 
 ## story_63
 * deliveryNews{"order": "00","date": "10 jour","place": "france"}
- - utter_deliveryNews_ProvideInfo_Askforwaiting
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * ReceptionAlert
  - utter_ReceptionAlert_SayGoodbye
 
@@ -562,13 +562,13 @@ action_listen
 
 ## story_65
 * damagedPackage{"email": "_Email1_","order": "00","article": "crèmes onctueuses lolitalempica","damaged": "abîmées"}
- - utter_damagedPackage_Apologize_AskForMissingSlots
+ - utter_damagedPackage_AskForMissingSlots_Apologize
 * CustomerComplaint{"channel": "mails","date": "15 jours"}
  - utter_CustomerComplaint_ProvideInfo
 
 ## story_66
 * deliveryNews{"order": "10","date": "5 jours"}
- - utter_deliveryNews_AskForMissingSlots
+ - utter_deliveryNews_AskForMissingSlots_SayHello
 * rien{"email": "_Email1_"}
  - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * thanks+goodbye
@@ -582,17 +582,17 @@ action_listen
 
 ## story_68
 * saluer+deliveryNews
- - utter_saluer_deliveryNews_Askforwaiting_Searchorder
+ - utter_saluer_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo_AskForMissingSlots
 * non{"date": "27/06"}
- - utter_non_SayHello_AskForMissingSlots
+ - utter_non_AskForMissingSlots_SayHello
 
 ## story_69
 * ConfirmationOrder{"tool": "carte bancaire","payment": "paiement","account": "compte"}
- - utter_ConfirmationOrder_SayHello_AskForMissingSlots
+ - utter_ConfirmationOrder_AskForMissingSlots_SayHello
 * oui
- - utter_oui_Askforwaiting
+ - utter_oui_Searchorder_Askforwaiting_ProvideInfo
 * oui
  - utter_oui_Askforwaiting_SayGoodbye
 * rien
@@ -602,13 +602,13 @@ action_listen
 
 ## story_70
 * rien{"email": "_Email1_"}
- - utter_rien_SayHello_AskForMissingSlots
+ - utter_rien_AskForMissingSlots_SayHello
 * ReceptionAlert{"delivery": "livraison"}
  - utter_ReceptionAlert_ProvideInfo
 * oui
  - utter_oui_Askforanotherquestion
 * ChangeData{"pwd": "mot de passe"}
- - utter_ChangeData_ProvideInfo_Suggeststo
+ - utter_ChangeData_Performaction_ProvideInfo_Suggeststo
 * thanks+goodbye
  - utter_thanks_goodbye_SayGoodbye
 
@@ -618,7 +618,7 @@ action_listen
 * deliveryNews{"email": "_Email1_","date": "samedi","follow-up": "suivi"}
  - utter_deliveryNews_AskForMissingSlots_SayHello
 * deliveryTime+deliveryPlace{"transporter": "Chronopost","home": "boîte aux lettre","order": "00","mood": "rassurez"}
- - utter_deliveryTime_deliveryPlace_ProvideInfo_Askforwaiting
+ - utter_deliveryTime_deliveryPlace_Searchorder_Askforwaiting_ProvideInfo
 
 ## story_72
 * ProductAvailable{"article": "Courrèges in blue"}
@@ -638,7 +638,7 @@ action_listen
 
 ## story_74
 * missingItem{"order": "00","missing": "reste"}
- - utter_missingItem_Searchorder_Askforwaiting
+ - utter_missingItem_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_Askforanotherquestion
 * non
@@ -650,7 +650,7 @@ action_listen
 * damagedPackage{"article": "Angel","color": "bleu gris","email": "_Email1_"}
  - utter_damagedPackage_ProvideInfo_Searchorder
 * autre+goodbye
- - utter_autre_goodbye_SayGoodbye_Apologize
+ - utter_autre_goodbye_Apologize_SayGoodbye
 
 ## story_76
 * ReceptionAlert{"delivery": "livraison","pr": "point relais"}
@@ -660,7 +660,7 @@ action_listen
 
 ## story_77
 * Discount{"code": "NOEL5"}
- - utter_Discount_SayHello_AskForMissingSlots
+ - utter_Discount_AskForMissingSlots_SayHello
 * rien{"article": "prada"}
  - utter_rien_ProvideInfo
 * Discount+non{"discount": "réduction"}
@@ -680,9 +680,9 @@ action_listen
 
 ## story_80
 * deliveryNews{"delivery": "livraison","date": "14 octobre","order": "00"}
- - utter_deliveryNews_Askforwaiting_ProvideInfo_Searchorder
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * ReceptionAlert{"channel": "mail"}
- - utter_ReceptionAlert_Askforwaiting_ProvideInfo_Searchorder
+ - utter_ReceptionAlert_ProvideInfo
 * goodbye+thanks
  - utter_goodbye_thanks_SayGoodbye
 
@@ -704,7 +704,7 @@ action_listen
 * deliveryNews+deliveryPlace{"address": "202 rue du château des rentiers"}
  - utter_deliveryNews_deliveryPlace_ProvideInfo_Offeralternative
 * deliveryPlace{"pr": "point relais"}
- - utter_deliveryPlace_Askforwaiting_Performaction
+ - utter_deliveryPlace_Searchorder_ProvideInfo_Performaction_Askforwaiting
 * thanks
  - utter_thanks_ProvideInfo
 * thanks
@@ -722,7 +722,7 @@ action_listen
 * deliveryNews{"order": "00","date": "1 juin 2019","email": "_Email1_"}
  - utter_deliveryNews_Searchorder_ProvideInfo_AskForMissingSlots
 * deliveryNews{"resend": "renvoyez"}
- - utter_deliveryNews_Performaction_Suggeststo
+ - utter_deliveryNews_Performaction_ProvideInfo_Suggeststo
 * thanks+oui
  - utter_thanks_oui_Askforanotherquestion
 * non+goodbye
@@ -750,9 +750,9 @@ action_listen
 
 ## story_88
 * PaymentRefused{"payment": "payment"}
- - utter_PaymentRefused_SayHello_AskForMissingSlots
+ - utter_PaymentRefused_AskForMissingSlots_SayHello
 * non
- - utter_non_SayHello_AskForMissingSlots
+ - utter_non_AskForMissingSlots_SayHello
 * non
  - utter_non_ProvideInfo
 * WebsiteBug
@@ -768,19 +768,19 @@ action_listen
 
 ## story_90
 * PaymentRefused{"payment": "paiement","website": "site","tool": "carte mastercard"}
- - utter_PaymentRefused_Offeralternative
+ - utter_PaymentRefused_ProvideInfo_Offeralternative
 * PaymentTool{"place": "France"}
- - utter_PaymentTool_SayHello_AskForMissingSlots
+ - utter_PaymentTool_AskForMissingSlots_SayHello
 * rien
- - utter_PaymentTool_Offeralternative_ProvideInfo_Apologize
+ - utter_PaymentTool_ProvideInfo_Apologize_Offeralternative
 * thanks+goodbye+oui
  - utter_thanks_goodbye_oui_SayGoodbye
 
 ## story_91
 * PaymentRefused{"payment": "payer"}
- - utter_PaymentRefused_SayHello_AskForMissingSlots
+ - utter_PaymentRefused_AskForMissingSlots_SayHello
 * non
- - utter_non_SayHello_AskForMissingSlots
+ - utter_non_AskForMissingSlots_SayHello
 * PaymentTool+PaymentRefused{"tool": "carte"}
  - utter_PaymentTool_PaymentRefused_ProvideInfo
 * non
@@ -792,15 +792,15 @@ action_listen
 * rien{"address": "75 avenue du docteur _Name4_ résidence _City3_ _ZipCode1_ _City2_","pwd": "mot de passe"}
  - utter_rien_ProvideInfo
 * CustomerComplaint{"phone": "Num tel"}
- - utter_CustomerComplaint_ProvideInfo_Suggeststo
+ - utter_CustomerComplaint_Performaction_ProvideInfo_Suggeststo
 * CustomerComplaint
- - utter_CustomerComplaint_SayHello_AskForMissingSlots
+ - utter_CustomerComplaint_AskForMissingSlots_SayHello
 * rien
  - utter_rien_Proceedtocheckpoint
 * non
  - utter_non_ProvideInfo
 * CustomerComplaint+AccountCreation{"account": "compte","website": "site"}
- - utter_CustomerComplaint_AccountCreation_ProvideInfo_Suggeststo
+ - utter_CustomerComplaint_AccountCreation_Performaction_ProvideInfo_Suggeststo
 * AccountIssue+CustomerComplaint
  - utter_AccountIssue_CustomerComplaint_Searchorder_Negaterequest
 * AccountCreation
@@ -814,7 +814,7 @@ action_listen
 
 ## story_93
 * deliveryNews{"delivery": "livraison","order": "00"}
- - utter_deliveryNews_Askforwaiting_Searchorder
+ - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * goodbye+ReceptionAlert{"channel": "message"}
  - utter_goodbye_ReceptionAlert_SayGoodbye
 
@@ -824,11 +824,11 @@ action_listen
 
 ## story_95
 * deliveryNews
- - utter_deliveryNews_AskForMissingSlots
+ - utter_deliveryNews_AskForMissingSlots_SayHello
 * rien{"order": "00"}
- - utter_rien_Askforwaiting_Searchorder_ProvideInfo_Performaction
+ - utter_rien_Searchorder_ProvideInfo_Performaction_Askforwaiting
 * CustomerComplaint+deliveryNews{"article": "parfums","refund": "remboursement","transporter": "Chronopost","customer": "avocat","store": "boutique"}
- - utter_CustomerComplaint_deliveryNews_Askforwaiting_Searchorder_ProvideInfo_Performaction
+ - utter_CustomerComplaint_deliveryNews_ProvideInfo
 * customer_service+goodbye{"date": "vendredi"}
  - utter_customer_service_goodbye_SayGoodbye
 
@@ -844,15 +844,15 @@ action_listen
 
 ## story_97
 * AccountCreation{"connection": "inscrire","channel": "mail"}
- - utter_AccountCreation_SayHello_AskForMissingSlots
+ - utter_AccountCreation_AskForMissingSlots_SayHello
 * AccountCreation{"email": "_Email1_"}
  - utter_AccountCreation_ProvideInfo_Lookforcustomerfile
 * Login{"pwd": "mot de passe"}
- - utter_Login_SayHello_AskForMissingSlots
+ - utter_Login_AskForMissingSlots_SayHello
 * thanks
- - utter_thanks_ProvideInfo_Lookforcustomerfile
+ - utter_thanks_ProvideInfo
 * ChangeData{"place": "_City1_"}
- - utter_ChangeData_ProvideInfo_Lookforcustomerfile
+ - utter_ChangeData_ProvideInfo
 * thanks
  - utter_thanks_Askforanotherquestion
 
