@@ -33,7 +33,7 @@
  - utter_damagedPackage_AskForMissingSlots_SayHello
 * damagedPackage{"resend": "renvoi","home": "chez nous"}
  - utter_damagedPackage_Proceedtocheckpoint
-* autre{"phone": "tel mob"}
+* damagedPackage{"phone": "tel mob"}
  - utter_autre_ProvideInfo_Performaction
 * thanks+goodbye
  - utter_thanks_goodbye_ProvideInfo_SayGoodbye
@@ -117,8 +117,8 @@
 ## story_14
 * missingItem{"missing": "manque"}
  - utter_missingItem_Searchorder_Askforwaiting_ProvideInfo
-* rien{"order": "00"}
- - utter_rien_ProvideInfo
+* missingItem{"order": "00"}
+ - utter_missingItem_ProvideInfo_Searchorder
 
 ## story_15
 * deliveryNews{"order": "00"}
@@ -133,8 +133,6 @@
  - utter_ProductPrice_ProvideInfo
 * CustomerComplaint{"add": "publicité"}
  - utter_CustomerComplaint_ProvideInfo
-* autre
- - utter_autre_AskForMissingSlots_SayHello
 * purchase
  - utter_purchase_AskForMissingSlots_SayHello
 
@@ -177,7 +175,7 @@
  - utter_AccountIssue_AskForMissingSlots_SayHello
 * AccountIssue{"pwd": "mot de passe","channel": "mail"}
  - utter_AccountIssue_AskForMissingSlots_SayHello
-* rien{"email": "_Email1_"}
+* AccountIssue{"email": "_Email1_"}
  - utter_AccountIssue_Performaction_ProvideInfo_Suggeststo
 * oui+thanks
  - utter_oui_thanks_Askforanotherquestion
@@ -201,38 +199,8 @@
 action_listen
 * Login{"connection": "authentification"}
  - utter_Login_Repeatprevious
-* rien
+* Login
  - utter_rien_Proceedtocheckpoint
-* rien
- - utter_rien_ProvideInfo
-
-## story_24
-* autre{"email": "_Email1_"}
- - utter_autre_AskForMissingSlots_SayHello
-* Discount{"discount": "code"}
- - utter_Discount_ProvideInfo
-* Discount+CustomerComplaint{"website": "site"}
- - utter_Discount_CustomerComplaint_ProvideInfo
-* Discount{"code": "amour"}
- - utter_Discount_AskForMissingSlots_SayHello
-* autre
- - utter_autre_AskForMissingSlots_SayHello
-* autre
- - utter_autre_ProvideInfo
-* purchase{"article": "10412339"}
- - utter_purchase_ProvideInfo_Searchorder
-* WebsiteBug{"bug": "bug"}
- - utter_WebsiteBug_ProvideInfo_Offeralternative
-* WebsiteBug{"connection": "déconnecter","operation": "manip"}
- - utter_WebsiteBug_Repeatprevious
-* WebsiteBug{"pwd": "mot de passe"}
- - utter_WebsiteBug_ProvideInfo_AskForMissingSlots
-* WebsiteBug{"account": "compte"}
- - utter_WebsiteBug_AskForMissingSlots_SayHello
-* autre
- - utter_autre_AskForMissingSlots_SayHello
-* autre
- - utter_autre_Apologize_SayGoodbye
 
 ## story_25
 * CancelOrder{"order": "00","cancel": "annuler"}
@@ -263,7 +231,7 @@ action_listen
  - utter_PaymentRefused_AskForMissingSlots_SayHello
 * PaymentRefused+Login{"connection": "authentification"}
  - utter_PaymentRefused_Login_AskForMissingSlots_SayHello
-* rien{"email": "_Email1_"}
+* PaymentRefused{"email": "_Email1_"}
  - utter_rien_Performaction_ProvideInfo_Suggeststo
 * deliveryTime{"delivery": "livrée","date": "semaine prochaine","place": "Martinique","home": "chez mon fils","city": "_City1_"}
  - utter_deliveryTime_ProvideInfo
@@ -341,7 +309,7 @@ action_listen
 ## story_37
 * Discount{"discount": "code promo"}
  - utter_Discount_AskForMissingSlots_SayHello
-* rien{"email": "_Email1_"}
+* Discount{"email": "_Email1_"}
  - utter_rien_Searchorder_Askforwaiting_ProvideInfo
 * thanks
  - utter_thanks_ProvideInfo
@@ -357,7 +325,7 @@ action_listen
 ## story_39
 * damagedPackage{"article": "Insolence de _Name2_","store": "chez vous","mood": "déception","damaged": "viré","email": "_Email1_"}
  - utter_damagedPackage_AskForMissingSlots_SayHello
-* rien{"order": "00"}
+* damagedPackage{"order": "00"}
  - utter_rien_SayGoodbye
 
 ## story_40
@@ -385,14 +353,12 @@ action_listen
 ## story_43
 * deliveryNews{"article": "parfum","email": "_Email1_","order": "00"}
  - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
-* rien
- - utter_rien_ProvideInfo
 
 ## story_44
 * CancelOrder{"cancel": "annuler","order": "00"}
  - utter_CancelOrder_Searchorder_Askforwaiting_ProvideInfo
-* rien{"email": "_Email1_","channel": "mail"}
- - utter_rien_ProvideInfo
+* CancelOrder{"email": "_Email1_","channel": "mail"}
+ - utter_CancelOrder_Repeatprevious
 * CancelOrder{"refund": "un avoir"}
  - utter_CancelOrder_Repeatprevious
 * Refund{"resend": "renvoi"}
@@ -415,7 +381,7 @@ action_listen
 ## story_47
 * CommuncationInterruption+deliveryNews{"transporter": "Chronopost","date": "1er octobre"}
  - utter_CommuncationInterruption_deliveryNews_ProvideInfo_Searchorder
-* rien{"order": "00"}
+* deliveryNews{"order": "00"}
  - utter_rien_ProvideInfo_Offeralternative
 * CustomerComplaint{"channel": "système conversation","bug": "fonctionnait","customer": "service client","mood": "furieuse"}
  - utter_CustomerComplaint_ProvideInfo_Apologize
@@ -441,7 +407,7 @@ action_listen
 ## story_50
 * deliveryPlace{"order": "0201 7041 4639 69773","delivery": "delivered"}
  - utter_deliveryPlace_AskForMissingSlots_SayHello
-* rien{"transporter": "UPS"}
+* deliveryPlace{"transporter": "UPS"}
  - utter_rien_SayGoodbye
 
 ## story_51
@@ -453,8 +419,6 @@ action_listen
 ## story_52
 * deliveryNews{"order": "00","date": "22/09","delivery": "livraison"}
  - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
-* rien
- - utter_rien_ProvideInfo
 
 ## story_53
 * delivery{"email": "_Email1_","resend": "retourné"}
@@ -513,7 +477,7 @@ action_listen
 ## story_59
 * PaymentRefused{"tool": "carte bancaire"}
  - utter_PaymentRefused_AskForMissingSlots_SayHello
-* rien
+* PaymentRefused
  - utter_rien_Apologize_Offeralternative
 
 ## story_60
@@ -569,7 +533,7 @@ action_listen
 ## story_66
 * deliveryNews{"order": "10","date": "5 jours"}
  - utter_deliveryNews_AskForMissingSlots_SayHello
-* rien{"email": "_Email1_"}
+* deliveryNews{"email": "_Email1_"}
  - utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo
 * thanks+goodbye
  - utter_thanks_goodbye_SayGoodbye
@@ -595,13 +559,13 @@ action_listen
  - utter_oui_Searchorder_Askforwaiting_ProvideInfo
 * oui
  - utter_oui_Askforwaiting_SayGoodbye
-* rien
+* oui
 action_listen
-* rien{"mood": "rassurée"}
+* oui{"mood": "rassurée"}
 action_listen
 
 ## story_70
-* rien{"email": "_Email1_"}
+* autre{"email": "_Email1_"}
  - utter_rien_AskForMissingSlots_SayHello
 * ReceptionAlert{"delivery": "livraison"}
  - utter_ReceptionAlert_ProvideInfo
@@ -661,8 +625,8 @@ action_listen
 ## story_77
 * Discount{"code": "NOEL5"}
  - utter_Discount_AskForMissingSlots_SayHello
-* rien{"article": "prada"}
- - utter_rien_ProvideInfo
+* Discount{"article": "prada"}
+ - utter_Discount_ProvideInfo
 * Discount+non{"discount": "réduction"}
  - utter_Discount_non_SayGoodbye
 
@@ -689,7 +653,7 @@ action_listen
 ## story_81
 * deliveryNews{"order": "00"}
  - utter_deliveryNews_ProvideInfo
-* rien
+* deliveryNews
  - utter_rien_Askforanotherquestion
 * goodbye
  - utter_goodbye_SayGoodbye
@@ -771,7 +735,7 @@ action_listen
  - utter_PaymentRefused_ProvideInfo_Offeralternative
 * PaymentTool{"place": "France"}
  - utter_PaymentTool_AskForMissingSlots_SayHello
-* rien
+* PaymentTool
  - utter_PaymentTool_ProvideInfo_Apologize_Offeralternative
 * thanks+goodbye+oui
  - utter_thanks_goodbye_oui_SayGoodbye
@@ -789,13 +753,13 @@ action_listen
 ## story_92
 * Login{"customer": "conseiller","connection": "connecter"}
  - utter_Login_Lookforcustomerfile_Askforwaiting_AskForMissingSlots
-* rien{"address": "75 avenue du docteur _Name4_ résidence _City3_ _ZipCode1_ _City2_","pwd": "mot de passe"}
- - utter_rien_ProvideInfo
+* Login{"address": "75 avenue du docteur _Name4_ résidence _City3_ _ZipCode1_ _City2_","pwd": "mot de passe"}
+ - utter_Login_AskForMissingSlots_SayHello
 * CustomerComplaint{"phone": "Num tel"}
  - utter_CustomerComplaint_Performaction_ProvideInfo_Suggeststo
 * CustomerComplaint
  - utter_CustomerComplaint_AskForMissingSlots_SayHello
-* rien
+* CustomerComplain
  - utter_rien_Proceedtocheckpoint
 * non
  - utter_non_ProvideInfo
@@ -825,7 +789,7 @@ action_listen
 ## story_95
 * deliveryNews
  - utter_deliveryNews_AskForMissingSlots_SayHello
-* rien{"order": "00"}
+* deliveryNews{"order": "00"}
  - utter_rien_Searchorder_ProvideInfo_Performaction_Askforwaiting
 * CustomerComplaint+deliveryNews{"article": "parfums","refund": "remboursement","transporter": "Chronopost","customer": "avocat","store": "boutique"}
  - utter_CustomerComplaint_deliveryNews_ProvideInfo

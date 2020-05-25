@@ -28,7 +28,6 @@
 - ok merci j'attends donc la livraison bonne journée
 - ah bon il faut des étoiles rouges ? je vais vérifier cela alors merci bonne journée
 - non merci bonne soirée
-- merci bonne journée
 - Merci
 
 ## intent:PaymentRefused
@@ -54,34 +53,21 @@
 - ok merci bien
 - Merci beaucoup cordialement
 - ok merci
-- Merci
-- merci
-- merci
-- Merci
 - merci
 - Merci attendrai donc avant de passer une nouvelle commande
-- Merci
-- merci
 - alors [aujourd'hui](date) je comprends. doc je dois patienter. Merci
-- merci
 - Merci en espérant recevoir mes produits très vite
-- merci
 - merci de votre compréhension
 - super merci mille fois bonne journée
-- merci
 - oui merci !
 - Merci je vais aller rectifier tout cela !
 
 ## intent:non
 - non
 - je ne comprends rien
-- non
 - eu h non je suis sur mon lieu de travail pourtant ça a été prélevé le7/0
 - ah non 1 1 jours
 - non pour le moment
-- non
-- non
-- non
 - je pense pas que ce soit le problème
 - absolument rien
 
@@ -107,7 +93,6 @@
 - d'accord merci des renseignements bonne fin de journée
 - Super. Merci bonne journée
 - Merci et a bientôt
-- merci bonne journée
 - . Merci. bonne après midi
 
 ## intent:damagedPackage
@@ -126,10 +111,6 @@
 - et pourrez vous me [_City1_](city)
 - excusez moi j'ai été pris par une autre activité. mon adresse est : [_Email1_](email)
 - oui
-- oui
-- je vais essayer.
-- oui parfaitement
-- et ?
 - rebonjour je ne peux pas téléchargé les commandes de votre [site](website)
 
 ## intent:thanks+goodbye
@@ -271,8 +252,6 @@
 - mon adresse mail est [_Email1_](email) et ma commande est le [0](order)
 - colis X - commande du [1/0/1](date) N° [0](order)
 - I found out thru UPS.
-- ok
-- oui
 - _Email1_ CwmFYCaC
 - le [prada](article) a 19€
 - très bien merci
