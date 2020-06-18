@@ -1,35 +1,16 @@
-language: en
+language: fr
 
 pipeline:
   - name: "SpacyNLP"
   - name: "SpacyTokenizer"
   - name: "SpacyFeaturizer"
-  - name: "SklearnIntentClassifier"
-  - name: "CRFEntityExtractor"
-    features: [
-      ["low", "title", "upper"],
-      [
-        "bias",
-        "low",
-        "prefix5",
-        "prefix2",
-        "suffix5",
-        "suffix3",
-        "suffix2",
-        "upper",
-        "title",
-        "digit",
-        "pattern",
-        "text_dense_features"
-      ],
-      ["low", "title", "upper"],
-    ]
-  - name: "EntitySynonymMapper"
+  - name: "DIETClassifier"
+    entity_recognition: False
+    epochs: 50
 
 policies:
-  - name: "examples.restaurantbot.policy.RestaurantPolicy"
-    batch_size: 100
+  - name: "policy.RestaurantPolicy"
+    max_history: 5
     epochs: 100
-    validation_split: 0.2
   - name: MemoizationPolicy
   - name: MappingPolicy
