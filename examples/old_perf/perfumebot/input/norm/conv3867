@@ -1,0 +1,9 @@
+( 11:42 ) _Name1_ : bonjour, je suis _Name1_.
+en quoi puis je vous aider ?
+( 11:43 ) _Name2_ : bonjour, j'ai changé d'adresse et je ne peux pas passer ma commande ( 11:45 ) _Name1_ : voici l'adresse de livraison prise en compte sur votre compte client : ( 11:45 ) _Name1_ : _Name2_ 8 route du _Name3_ les _City1_ _ZipCode1_ _City2_ ( 11:46 ) _Name2_ : OK pour l'adresse mais au moment de valider ma commande pour l'adresse on me dit qu'il y a erreur 1 alias ?
+( 11:47 ) _Name2_ : c'est l'adresse de livraison et de mon habitation, donc pas d'alias.
+( 11:47 ) _Name1_ : dans l'encadré alias, je vous propose d'enregistrer : perso ( 11:47 ) _Name2_ : je le trouve ou ?
+( 11:48 ) _Name1_ : souhaitez vous une livraison à domicile ou en point relais ?
+( 11:48 ) _Name2_ : tout dépend ou se trouve le point de relais le plus proche de chez moi !
+( 11:50 ) _Name1_ : je vous invite donc à sélectionner la livraison en point relais, ainsi une carte de point relais s'affichera ( 11:50 ) userX : l'internaute a mis fin à la conversation.
+
