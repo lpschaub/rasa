@@ -152,7 +152,7 @@ class DIETClassifier(IntentClassifier, EntityExtractor):
         # ## Training parameters
         # Initial and final batch sizes:
         # Batch size will be linearly increased for each epoch.
-        BATCH_SIZES: [64, 256],
+        BATCH_SIZES: [16, 32],
         # Strategy used when creating batches.
         # Can be either 'sequence' or 'balanced'.
         BATCH_STRATEGY: BALANCED,
