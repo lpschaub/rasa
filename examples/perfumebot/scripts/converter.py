@@ -61,7 +61,7 @@ class PMCverter(Converter):
 
         self.slots = list(set(self.slots))
 
-    def utterance_builder(self, dialogues, utterances={}, utter_list = [('','')]):
+    def utterance_builder(self, dialogues, utterances={}, utter_list=[('', '')]):
         if not dialogues:
             self.utterances = utterances
         else:
@@ -93,13 +93,13 @@ class PMCverter(Converter):
                             for elem in turns[0]['policy_funcs']:
                                 elem = elem.replace(' ', '')
                                 print(f"\t\telem = {elem}")
-                                
+
                                 if elem not in utter:
                                     print(f"\t\t\tthis is new : {turns[0]['policy_funcs']}")
                                     seen = False
-                                else : 
+                                else:
                                     print("\t\t\tit is in, yeah")
-                            
+
                             if seen:
                                 print(f"\t\tseen :{'_'.join(utter)}")
                                 ut = '_'.join(utter)
@@ -208,11 +208,33 @@ class PMCverter(Converter):
         for story in self.stories:
             stories_file.write(str(story + '\n\n').encode('utf-8'))
 
+    def stories_converter_lite(self, file):
+
+        self.get_stories(file)
+
+        stories_file = open('../data/stories.md', 'wb')
+        for story in self.stories:
+            stories_file.write(str(story + ''.join(self.stories[story])).encode('utf-8'))
+
+    def filter_intents(self, min=5):
+        for intent in list(self.intents):
+            if len(self.intents[intent]) < min:
+                self.intents.pop(intent)
+
+    def filter_entities(self, min=5):
+        for intent in self.intents:
+            for i in range(len(self.intents[intent])):
+                for elem in self.entities:
+                    if elem in self.intents[intent][i] and self.entities[elem] < min:
+                        self.intents[intent][i].replace(elem, "")
+
     def nlu_converter(self, dialogues, entities):
 
         self.intents_extractor(dialogues)
         intents = self.intents
         self.intents = self.entities_labelling(entities, intents)
+        self.filter_intents()
+        self.filter_entities()
         # pprint(dialogues)
         nlu_file = open('../data/nlu.md', 'wb')
         # pprint(self.intents)
@@ -221,6 +243,74 @@ class PMCverter(Converter):
                 # print(intent)
                 nlu_file.write(f'\n## intent:{intent}\n'.encode('utf-8'))
                 nlu_file.write("\n- ".join(self.intents[intent]).encode('utf-8'))
+
+    def get_intents(self, file):
+        self.entities = {}
+        p = re.compile("\[[\w _]+\]\([\w]+\)")
+        for line in open(file).readlines():
+            if "## intent:" in line:
+                if line not in self.intents:
+                    current = line
+                    self.intents[current] = []
+            else:
+                entitiy = re.findall(p, line)
+                if entitiy:
+                    for ent in entitiy:
+                        if ent not in self.entities:
+                            self.entities[ent] = 1
+                        else:
+                            self.entities[ent] += 1
+                self.intents[current].append(line)
+
+    def nlu_converter_lite(self, fic):
+
+        self.get_intents(fic)
+        self.filter_intents(3)
+        self.filter_entities()
+        # pprint(dialogues)
+        nlu_file = open('../data/nlu.md', 'wb')
+        # pprint(self.intents)
+        for intent in self.intents:
+            if intent:
+                # print(intent)
+                nlu_file.write(intent.encode('utf-8'))
+                nlu_file.write("".join(self.intents[intent]).encode('utf-8'))
+
+    def get_stories(self, file):
+        p = re.compile(r"\{.*\}")
+        intents = list(set([key.split(':')[-1].replace('\n', '') for key in list(self.intents)]))
+        entits = list(set([key.split('(')[1].split(')')[0] for key in list(self.entities)]))
+        for line in open(file).readlines():
+            if "## story_" in line:
+                if line not in self.stories:
+                    current = line
+                    self.stories[current] = []
+            else:
+                if line.startswith("*"):
+                    if '{' in line:
+                        intent = line.split('* ')[1].split('{')[0]
+                    else:
+                        intent = line.split('* ')[1].split('\n')[0]
+
+                    if intent not in intents:
+                        line = "to_be_removed"
+
+                entities = re.findall(p, line)
+                if entities:
+                    # print(entities)
+                    entity = [eval(entitiy) for entitiy in entities][0]
+                    entities = ''.join(entities)
+                    for ent in entity:
+                        if ent not in self.entities:
+                            line.replace(entities, "")
+                self.stories[current].append(line)
+        for story in list(self.stories):
+            for turn in self.stories[story]:
+                if "to_be_removed" in turn:
+                    self.stories.pop(story)
+                    break
+        print(len(self.stories))
+        pprint(self.stories)
 
     def intents_extractor(self, dialogues, intents={}):
 
@@ -336,7 +426,7 @@ class PMCverter(Converter):
                     if new_slots:
                         str_slots = '{'
                         for slot in new_slots:
-                            if slot == "''" :
+                            if slot == "''":
                                 erase = True
                                 break
                             sslot = str(slot).replace("'", '"')
@@ -344,7 +434,7 @@ class PMCverter(Converter):
                             str_slots += '"' + sslot + '"' + ': ' + '"' + svalue + '"' + ','
 
                         str_slots = str_slots[:-1] + '}'
-                    if erase :
+                    if erase:
                         str_slots = ''
                     if not turns[0]['intent']:
                         turns[0]['intent'] = ['rien']
@@ -437,14 +527,17 @@ class PMCverter(Converter):
 
 
 conv = PMCverter()
+#
+# dialogues = conv.json_parse('../input/entitiesintents_dialogues1-100.json')
+#
+# entities = json.load(open('../input/entities.json'), encoding='utf-8')
+# slots = json.load(open('../input/slots.json'), encoding='utf-8')
 
-dialogues = conv.json_parse('../input/entitiesintents_dialogues1-100.json')
-
-entities = json.load(open('../input/entities.json'), encoding='utf-8')
-slots = json.load(open('../input/slots.json'), encoding='utf-8')
-
-conv.nlu_converter(dialogues, entities)
-conv.domain_builder(dialogues, entities, slots)
-conv.domain_writer()
-conv.stories_converter(dialogues)
+intent_file = '../v0/nlu.md'
+stories_file = '../v0/stories.md'
+conv.nlu_converter_lite(intent_file)
+conv.stories_converter_lite(stories_file)
+# conv.domain_builder(dialogues, entities, slots)
+# conv.domain_writer()
+# conv.stories_converter(dialogues)
 # conv.entities_labelling(entities)

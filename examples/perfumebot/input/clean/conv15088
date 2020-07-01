@@ -1,0 +1,31 @@
+(10:55) _Name1_ : bonjour, je suis _Name1_. en quoi puis je vous aider ? afin d'accélérer le traitement de votre dossier, merci de nous indiquer votre adresse email et / ou votre numéro de commande. 
+(10:55) _Name2_ : bonjour 
+(10:56) _Name2_ : je viens de passer une commande de 190 .32 
+(10:56) _Name2_ : j'ai bien entrée mon numéro de carte et tout le reste 
+(10:57) _Name2_ : mais je compred pas rien ne s'affiche dans mes commandes 
+(10:57) _Name2_ : mon adresse mail 
+(10:58) _Name2_ : _Email1_ 
+(10:58) _Name1_ : je constate qu'aucune commande n'a été enregistrée avec votre adresse email et que le paiement se trouve en attente de finalisation ( aucun prélèvement n'est donc prévu pour le moment ). avez vous bien reçu le code de validation par SMS ? 
+(10:58) _Name2_ : non rien justement 
+(10:59) _Name2_ : et pourtant j'ai bien entrer tout 
+(10:59) _Name1_ : le numéro de téléphone _Phone1_ est il correct ? 
+(10:59) _Name2_ : oui 
+(11:00) _Name1_ : et correspond t il au numéro de téléphone associé à votre carte bancaire ? 
+(11:00) _Name2_ : non 
+(11:01) _Name1_ : c'est donc pour cette raison que vous ne recevez pas le code sur ce numéro. le code de validation sera envoyé sur le numéro renseigné auprès de votre banque et associé à la carte bancaire servant au paiement. 
+(11:01) _Name2_ : j'ai déjà passer commande sur d autre site et j'ai toujours eu une confirmation sms avec code 
+(11:01) _Name2_ : que dois je faire 
+(11:02) _Name2_ : je recommence 
+(11:02) _Name1_ : il vous faut contacter votre banque afin de changer le numéro de téléphone associé à votre carte ou bien être en possession de ce téléphone lors de votre tentative de paiement. 
+(11:03) _Name2_ : je refais une tentative 
+(11:04) _Name2_ : vous me confirmer que la premeiere fois cela n'a pas fonctionner 
+(11:04) _Name1_ : il n'est pas utile de refaire une tentative, le code sera systématiquement envoyé sur le numéro associé à la CB et vous ne pourrez donc pas valider votre commande sans ce code. 
+(11:04) _Name2_ : ok 
+(11:04) _Name2_ : j'ai peut être fait une erreur 
+(11:05) _Name2_ : je recommence 
+(11:05) _Name2_ : car mon tel est bien associe avec ma banque 
+(11:06) _Name1_ : si vous êtes certaine qu'il s'agit bien du bon numéro, vous pouvez effectivement refaire un essai. rien ne vous sera prélevé tant que le code n'aura pas été validé sur le formulaire de paiement. 
+(11:07) _Name2_ : ok merci de votre aide 
+(11:07) _Name1_ : de rien, je suis à votre service. n'hésitez pas à nous recontacter si besoin. 
+(11:07) _Name2_ : oui 
+(11:07) userX : vous avez mis fin à la conversation.  

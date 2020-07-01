@@ -1,0 +1,24 @@
+(13:00) _Name3_ : bonjour, je suis _Name3_. en quoi puis je vous aider ? afin d'accélérer le traitement de votre dossier, merci de nous indiquer votre adresse email et / ou votre numéro de commande. 
+(13:01) bonjour mon numéro de tel ne va pas 
+(13:01) _Name3_ : vous souhaitez créer un compte client ? 
+(13:02) oui 
+(13:02) _Name3_ : indiquez votre numéro à la suite sans espaces 
+(13:02) _Email1_ 
+(13:03) _Name3_ : vous devez remplir les 2 cases : téléphone fixe et téléphone portable 
+(13:04) OK 
+(13:04) MM avec les 2 numéro cela ne passe pas 
+(13:05) _Name3_ : avez vous un message d'erreur ? si oui lequel ? 
+(13:06) oui numéro pas valide 
+(13:07) _Name3_ : pouvez vous m'indiquer ce numéro ? 
+(13:07) _Phone1_ 
+(13:08) _Name3_ : je vais essayer de créer votre compte 
+(13:08) OK 
+(13:09) _Name3_ : merci de m'indiquer vos nom, prénom, adresse complète, date de naissance, numéro de téléphone 
+(13:10) _Name1_ 84 rue des roses le _City1_ _ZipCode1_ le 06 04 1949 
+(13:10) _Phone1_ 
+(13:10) _Name2_ 
+(13:16) _Name3_ : je rencontre également un soucis à la création de votre compte 
+(13:16) _Name3_ : je vais contacter le service concerné 
+(13:16) _Name3_ : je vous invite à réessayer dans une heure ou deux 
+(13:17) OK merci 
+(13:20) userX : l'internaute a mis fin à la conversation.  

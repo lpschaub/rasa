@@ -1,0 +1,173 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ProductAvailable
+- ChangeData
+- oui
+- ProductQuality
+- Previous
+- ProductOrigin
+- Discount
+- ProductTarget
+- thanks
+- Send
+- DeliveryTime
+- Change+CancelOrder
+- AskDetails
+- DeliveryCost
+- AccountIssue
+- Login
+- rien
+- Customer_service
+- DeliveryPlace
+- ConfirmationOrder
+entities:
+- article
+- origin
+- order
+- oui
+- target
+- discount
+- channel
+- date
+- fdp
+- bug
+- pwd
+- email
+- pr
+- place
+- delivery
+- billing
+responses:
+  utter_AccountIssue_Performaction_ProvideInfo_Suggeststo:
+  - text: ' afin de réinitialiser votre compte, je vous propose de remplacer personnellement
+      votre mot de passe actuel par un mot de passe provisoire. grâce à lui vous pourrez
+      accéder à votre compte et le modifier à votre guise par la suite.'
+  utter_AskForMissingSlots_delivery:
+  - text: " pourriez vous m'indiquer votre numéro de commande s'il vous plaît ?"
+  utter_AskForMissingSlots_login:
+  - text: ' quel mot de passe avez vous utilisé ?'
+  utter_AskForMissingSlots_perfume:
+  - text: ' pour homme ou pour femme ?'
+  utter_Askforanotherquestion:
+  - text: " je suis à votre service. avez vous d'autres questions ?"
+  utter_CancelOrder_Searchorder_Askforwaiting_ProvideInfo:
+  - text: ' votre commande a bien été prise en charge et ne peut plus être remboursée
+      à ce stade  vous aurez la possibilité de nous renvoyer cet article'
+  utter_ChangeData_ProvideInfo:
+  - text: " la facture n'est pas jointe au colis, elle est disponible depuis votre\
+      \ espace client souhaitez vous que j'indique l'adresse de facturation suivante\
+      \ ? _Name3_ 1 impasse _Name2_. 17927 _ZipCode1_ _City1_ France êtes vous toujours\
+      \ en ligne ?"
+  utter_CustomerService:
+  - text: " Vous pouvez nous contacter à l'adresse mail suivante : _Email1_ serviceclient.com"
+  utter_DeliveryCost:
+  - text: " contrairement à nos concurrents, nous avons fait le choix de ne pas inclure\
+      \ les frais de port dans le prix des parfums afin de vous proposer les prix\
+      \ les moins chers du marché. de ce fait, nous ne sommes pas en mesure à l'heure\
+      \ actuelle d'offrir les frais de port."
+  utter_DeliveryPlace:
+  - text: " vous pouvez choisir la livraison en point relais avez vous d'autres questions"
+  utter_Discount:
+  - text: ' je vous invite à saisir le code {code} en majuscules sans espaces et sans       accents'
+  utter_Discount_ProvideInfo:
+  - text: ' je vous invite à saisir le code {code}'
+  utter_Login:
+  - text: ' il vous suffit de vous rendre dans votre compte et vous pourrez modifier
+      le mot de passe dans mes informations personnelles'
+  utter_Login_Repeatprevious:
+  - text: ' je vous invite à vous rendre dans la rubrique   mon compte   puis je suis
+      déjà client  . vous pourrez alors indiquer votre adresse mail et le mot de passe
+      AZERTY en majuscules'
+  utter_ProductAvailableRedirection:
+  - text: ' je vous invite à cliquer sur le lien pour avoir les précisions sur le
+      produit demandé'
+  utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize:
+  - text: ' je regarde je vous demande un instant.  nous sommes sincèrement désolés       mais
+      nous ne pouvons proposer ce produit pour le moment. nous vous invitons       à
+      vous rendre régulièrement sur notre site ou à vous inscrire à la newsletter       afin
+      de vous tenir informée des dernières nouveautés.'
+  utter_ProductOrigin:
+  - text: ' nos produits sont expédiés des USA'
+  - text: ' nous avons des fournisseurs'
+  utter_ProductQuality_ProvideInfo:
+  - text: " l'ensemble des produits proposés sur notre boutique en ligne sont garantis\
+      \ 100 % neufs et authentiques et proviennent directement des plus grandes marques\
+      \       de parfums à travers le monde ( à l'instar des parfums que vous pouvez\
+      \ retrouver       en boutique près de chez vous ). nos colis sont régulièrement\
+      \ contrôlés en {delivery}       afin de vérifier qu'il ne s'agisse pas de produits\
+      \ contrefaits."
+  utter_ProductTarget_ProvideInfo:
+  - text: ' Pour une {target} voici la liste des parfums les plus adaptés'
+  utter_ProvideInfo:
+  - text: ' Vous pourrez bien entendu le modifier par la suite.'
+  utter_Send_Performaction:
+  - text: ' je vous envoie cela tout de suite'
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_deliveryNews_AskDetails_CustomerComplaint_ProvideInfo:
+  - text: ' la livraison devrait avoir lieu en fin de semaine.'
+  utter_deliveryTime_ProvideInfogen:
+  - text: " Je vous rappelle nos délais  les délais de livraison sont compris entre:\
+      \ - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine\
+      \ uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile\
+      \ - 7 et 10 jours ouvrés pour une livraison   express   à domicile  je suis\
+      \ à votre service n'hésitez pas si vous avez d'autres questions ou besoin de\
+      \ conseils."
+  utter_deliveryTime_ProvideInfopart:
+  - text: " votre commande a bien été expédiée par nos services le {date}. comme indiqué\
+      \ lors du passage de votre commande, le délai de livraison avec l'option choisie\
+      \ est généralement compris entre 7 et 10 jours ouvrés à partir de la date d'expédition.\
+      \ je vous invite à suivre l'acheminement de votre colis :"
+  utter_did_that_help:
+  - text: ' Did that help you?'
+  utter_goodbye:
+  - text: ' Bye'
+  utter_greet:
+  - text: ' Hey! How are you?'
+  utter_happy:
+  - text: ' Great, carry on!'
+  utter_iamabot:
+  - text: ' I am a bot, powered by Rasa.'
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize
+- utter_ChangeData_ProvideInfo
+- utter_ProductQuality_ProvideInfo
+- utter_ProductAvailableRedirection
+- utter_ProductOrigin
+- utter_Discount_ProvideInfo
+- utter_Discount
+- utter_ProductTarget_ProvideInfo
+- utter_Askforanotherquestion
+- utter_Send_Performaction
+- utter_deliveryTime_ProvideInfo
+- utter_CancelOrder_Searchorder_Askforwaiting_ProvideInfo
+- utter_deliveryNews_AskDetails_CustomerComplaint_ProvideInfo
+- utter_DeliveryCost
+- utter_AccountIssue_Performaction_ProvideInfo_Suggeststo
+- utter_Login
+- utter_AskForMissingSlots
+- utter_Login_Repeatprevious
+- utter_ProvideInfo
+- utter_CustomerService
+- utter_DeliveryPlace
+- utter_AskForMissingSlots_delivery
+- utter_AskForMissingSlots_login
+- utter_AskForMissingSlots_perfume
+- utter_deliveryTime_ProvideInfogen
+- utter_deliveryTime_ProvideInfopart

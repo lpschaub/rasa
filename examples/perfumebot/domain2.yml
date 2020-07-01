@@ -1,0 +1,712 @@
+actions: [action_Perform_action, action_Search_order, action_Look_for_customer_file,
+  action_Reset_working_memory]
+entities: [city, damaged, home, email, discount, store, phone, pwd, article, website,
+  customer, basket, device, delay, connection, payment, add, concurrence, order, missing,
+  channel, account, delivery, tool, fdp, pr, date, transporter, status, color, facebook]
+intents: [deliveryCost, goodbye, PaymentRefused, PaymentTool, thanks, non, oui, ProductAvailable,
+  goodbye+thanks, damagedPackage, autre, thanks+goodbye, Discount, thanks+oui, non+thanks,
+  WebsiteBug, WebsiteBug+goodbye, Login, deliveryNews, deliveryNews+AskDetails, AskDetails,
+  AskConfirmation, missingItem, rien, ReceptionAlert, ProductPrice, CustomerComplaint,
+  purchase, product+AskDetails, CustomerComplaint+goodbye, AccountIssue, oui+thanks,
+  ProductTarget, CancelOrder, payment, thanks+goodbye+oui, deliveryTime, ConfirmationOrder,
+  oui+goodbye, Refund, deliveryCost+Discount, CommuncationInterruption+deliveryNews,
+  oui+deliveryPlace, deliveryPlace, delivery, deliveryNews+CustomerComplaint, saluer,
+  deliveryTime+AskDetails, ChangeData, oui+CustomerComplaint, Discount+non, non+goodbye,
+  PaymentTool+PaymentRefused, AccountIssue+CustomerComplaint, AccountCreation, goodbye+ReceptionAlert,
+  CustomerComplaint+deliveryNews]
+responses:
+  utter_AccountCreation_AskForMissingSlots_SayHello:
+  - {text: "pourriez vous m'indiquer votre adresse mail s'il vous pla\xEEt"}
+  utter_AccountCreation_ProvideInfo:
+  - {text: "normalement je n'ai pas la possibilit\xE9 de le faire mais je me renseigne\
+      \ pour savoir qui est votre interlocuteur"}
+  utter_AccountCreation_ProvideInfo_Lookforcustomerfile:
+  - {text: "apr\xE8s v\xE9rification je constate qu'il existe d\xE9j\xE0 un compte\
+      \ avec l'adresse email {email}.  ce compte a \xE9t\xE9 cr\xE9\xE9 en {date}\
+      \ et est au nom de _Name3_ _Name5_."}
+  utter_AccountIssue_AskForMissingSlots_SayHello:
+  - {text: "pourriez vous m'indiquer votre adresse email s'il vous pla\xEEt ?"}
+  utter_AccountIssue_CustomerComplaint_Searchorder_Negaterequest:
+  - {text: non pas du tout  j'essaye de me renseigner}
+  utter_AccountIssue_Performaction_ProvideInfo_Suggeststo:
+  - {text: "je viens de r\xE9initialiser votre mot de passe et vous invite donc \xE0\
+      \ vous connecter avec l'adresse email : _Name1_ {email} et le mot de passe :\
+      \ _Name3_. vous pourrez bien entendu modifier ce dernier depuis votre espace\
+      \ client par la suite."}
+  utter_AskConfirmation_ProvideInfo:
+  - {text: "il vous faut cr\xE9er un compte client sur notre site pour pouvoir commander."}
+  utter_AskDetails_ProvideInfo:
+  - {text: "comme nous l'indiquons dans l'email contenant le lien de suivi le statut\
+      \ peut rester en   envoi pr\xEAt chez l'exp\xE9diteur   durant quelques jours\
+      \ sans que cela n'impacte la bonne livraison de votre colis. ceci est li\xE9\
+      \ au fait que {transporter} ne propose pas de suivi aux Etats-unis ; vous pourrez\
+      \ constater une mise \xE0 jour du suivi \xE0 l'arriv\xE9e du colis sur le territoire\
+      \ fran\xE7ais dans les prochains jours."}
+  - {text: 'une livraison en {place} vous assure effectivement une livraison avant
+      {date}.'}
+  utter_AskDetails_StoreLocation_deliveryTime_ProvideInfo:
+  - {text: "nos produits sont exp\xE9di\xE9s depuis {place}"}
+  utter_AskDetails_deliveryTime_ProvideInfo:
+  - {text: "- 7 et 10 jours ouvr\xE9s pour une livraison en {place} ( {country} m\xE9\
+      tropolitaine uniquement - 10 et 14 jours ouvr\xE9s pour une livraison   classique\
+      \   \xE0 domicile - 7 et 10 jours ouvr\xE9s pour une livraison   express   \xE0\
+      \ domicile"}
+  utter_AskForMissingSlots_SayHello:
+  - {text: "bonjour je suis Noah en quoi puis je vous aider ? afin d'acc\xE9l\xE9\
+      rer le traitement de votre dossier merci de nous indiquer votre adresse email\
+      \ et / ou votre num\xE9ro de commande"}
+  utter_CancelOrder_Repeatprevious:
+  - {text: "votre commande a bien \xE9t\xE9 prise en charge et ne peut plus \xEAtre\
+      \ rembours\xE9e \xE0 ce stade  vous aurez la possibilit\xE9 de nous renvoyer\
+      \ cet article"}
+  utter_CancelOrder_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_CancelOrder_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "Merci de bien vouloir rester en ligne je vous prie.  votre commande a\
+      \ bien \xE9t\xE9 prise en charge et ne peut plus \xEAtre rembours\xE9e \xE0\
+      \ ce stade"}
+  utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting:
+  - {text: "je regarde je vous demande un instant.  je viens de proc\xE9der \xE0 l'annulation\
+      \ et au remboursement de votre commande"}
+  utter_ChangeData_Performaction_ProvideInfo_Suggeststo:
+  - {text: oui vous devez vous rendre dans la rubrique   mon compte   puis informations
+      personnelles}
+  utter_ChangeData_ProvideInfo:
+  - {text: "vous pourrez modifier \xE9galement votre adresse postale une fois connect\xE9\
+      e \xE0 votre Espace client."}
+  utter_CommuncationInterruption_ProvideInfo_Offeralternative:
+  - {text: "normalement non et si c'\xE9tait le cas veuillez nous solliciter \xE0\
+      \ nouveau je vous prie"}
+  utter_CommuncationInterruption_deliveryNews_ProvideInfo:
+  - {text: "vous avez re\xE7u un autre produit et vous nous l'avez retourn\xE9  un\
+      \ renvoi a \xE9t\xE9 effectu\xE9 {date}S"}
+  utter_CommuncationInterruption_deliveryNews_ProvideInfo_Searchorder:
+  - {text: je regarde}
+  utter_ConfirmationOrder_AskForMissingSlots_SayHello:
+  - {text: "pourriez vous s'il vous pla\xEEt nous envoyer la preuve de paiement par\
+      \ mail  {email} serviceclient.com"}
+  utter_ConfirmationOrder_ProvideInfo:
+  - {text: "_Name4_ deux liens de suivi vous ont \xE9t\xE9 transmis par email.  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT070996874FR\
+      \ voici votre lien de suivi"}
+  utter_ConfirmationOrder_ProvideInfo_Offeralternative:
+  - {text: "vous l'avez re\xE7u le {date}. si vous n'avez pas connaissance de cet\
+      \ email je vous invite \xE0 consulter vos ind\xE9sirables. il est possible qu'il\
+      \ s'y situe"}
+  utter_ConfirmationOrder_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "je regarde je vous demande un instant.  non je ne vois pas de commande\
+      \  je vais v\xE9rifier la transaction  les deux paiements ont \xE9t\xE9 refus\xE9\
+      s"}
+  utter_CustomerComplaint_AccountCreation_Performaction_ProvideInfo_Suggeststo:
+  - {text: "je vous invite \xE0 r\xE9essayer de cr\xE9er votre compte"}
+  utter_CustomerComplaint_AskForMissingSlots_SayHello:
+  - {text: pouvez vous m'indiquer votre adresse}
+  utter_CustomerComplaint_Performaction_ProvideInfo_Suggeststo:
+  - {text: "aucun compte n'est associ\xE9 \xE0 ces informations  vous devez vous rendre\
+      \ dans la rubrique   mon compte   puis 'je ne poss\xE8de pas de compte    vous\
+      \ pourrez alors cr\xE9er votre compte"}
+  utter_CustomerComplaint_ProvideInfo:
+  - {text: "je vais transmettre l'information au service concern\xE9."}
+  utter_CustomerComplaint_ProvideInfo_Apologize:
+  - {text: "je suis sinc\xE8rement d\xE9sol\xE9e  oui nous avons relanc\xE9 {transporter}\
+      \ car cette situation est inacceptable"}
+  utter_CustomerComplaint_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_CustomerComplaint_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "un instant SVP je consulte les emails transactionnels  vous avez bien\
+      \ re\xE7u un email contenant votre second lien de suivi et vous informant d'un\
+      \ \xE9ventuel d\xE9lai suppl\xE9mentaire. cependant vous n'avez pas ouvert ni\
+      \ cliqu\xE9 cet email.  vous l'avez re\xE7u le 19/07 \xE0 12h46. si vous n'avez\
+      \ pas connaissance de cet email je vous invite \xE0 consulter vos ind\xE9sirables.\
+      \ il est possible qu'il s'y situe"}
+  utter_CustomerComplaint_deliveryNews_ProvideInfo:
+  - {text: "ils ont bien eu les documents  mais cela prend toujours un peu de temps\
+      \ pour mener l'enqu\xEAte en interne  je lis votre message je vous demande un\
+      \ instant  soyez rassur\xE9 d\xE8s la r\xE9ponse de {transporter} nous serons\
+      \ en mesure de vous proposer le remboursement ou le renvoi de la marchandise\
+      \ mais dans un premier temps nous avons besoin que le transporteur nous r\xE9\
+      ponde comme vous le comprenez bien."}
+  utter_CustomerComplaint_goodbye_ProvideInfo:
+  - {text: "Ce d\xE9lai s'explique par le fait que nos produits sont exp\xE9di\xE9\
+      s depuis les USA. il s'agit malheureusement d'un d\xE9lai incompr\xE9sible afin\
+      \ de profiter de remises avantageuses sur vos produits pr\xE9f\xE9r\xE9s."}
+  utter_Discount_AskDetails_ProvideInfo:
+  - {text: pour le moment nous n'avons pas de code de remise}
+  utter_Discount_AskForMissingSlots_SayHello:
+  - {text: pouvez vous m'indiquer votre adresse mail}
+  utter_Discount_CustomerComplaint_ProvideInfo:
+  - {text: "les prix sont remis\xE9s mais le code _Name1_ fonctionne pour tout le\
+      \ site  vous ne pouvez pas cumuler plusieurs codes de remise par contre"}
+  utter_Discount_ProvideInfo:
+  - {text: "je vous invite \xE0 saisir le code {code}"}
+  - {text: "je vous invite \xE0 saisir le code {code} en majuscules sans espaces et\
+      \ sans accents"}
+  utter_Discount_ProvideInfo_SayGoodbye:
+  - {text: "un code de remise a d\xE9j\xE0 \xE9t\xE9 enregistr\xE9 dans votre panier\
+      \ de {amount} au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite\
+      \ une excellente journ\xE9e."}
+  utter_Discount_goodbye_SayGoodbye:
+  - {text: "au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une\
+      \ excellente journ\xE9e."}
+  utter_Discount_non_SayGoodbye:
+  - {text: "je vous souhaite une bonne journ\xE9e."}
+  utter_Login_AskForMissingSlots_SayHello:
+  - {text: "je vais le r\xE9initialiser  pouvez vous m'indiquer votre adresse mail\
+      \ {email}"}
+  utter_Login_Lookforcustomerfile_Askforwaiting_AskForMissingSlots:
+  - {text: je regarde je vous demande un instant.  pouvez vous m'indiquer votre adresse
+      mail}
+  utter_Login_Repeatprevious:
+  - {text: "je vous invite \xE0 vous connecter \xE0 votre compte \xE0 l'aide du mot\
+      \ de passe : AZERTY adresse mail : {email}"}
+  utter_PaymentRefused_AskForMissingSlots_SayHello:
+  - {text: 'est ce que cette {tool} accepte les paiements internationaux ?'}
+  - {text: "un message d'erreur s'affiche t il sur votre \xE9cran ?"}
+  - {text: 'avez vous un message d''erreur?'}
+  - {text: "pourriez vous s'il vous pla\xEEt nous donner plus de renseignements concernant\
+      \ votre probl\xE8me  un message d'erreur s'affiche t il sur votre \xE9cran et\
+      \ si oui quel est son code d'avance merci pour votre r\xE9ponse."}
+  utter_PaymentRefused_Login_AskForMissingSlots_SayHello:
+  - {text: 'Avez vous un message d''erreur qui s''affiche ? '}
+  utter_PaymentRefused_Proceedtocheckpoint:
+  - {text: "donc vous \xEAtes \xE0 l'\xE9tape de livraison c'est \xE7a ?"}
+  utter_PaymentRefused_ProvideInfo:
+  - {text: "vous pouvez r\xE9gler votre commande \xE0 l'\xE9tape 4"}
+  utter_PaymentRefused_ProvideInfo_Offeralternative:
+  - {text: "vous pouvez r\xE9gler votre commande par {paypal} ( qui constitue le moyen\
+      \ de paiement le plus s\xE9curis\xE9 sur Internet \xE0 l'heure actuelle )."}
+  utter_PaymentTool_AskForMissingSlots_SayHello:
+  - {text: 'est ce que votre {tool} accepte les paiements internationaux'}
+  utter_PaymentTool_PaymentRefused_ProvideInfo:
+  - {text: "je vous invite \xE0 contacter votre banque"}
+  utter_PaymentTool_ProvideInfo:
+  - {text: 'vous avez le choix de payer avec votre {tool} ou alors via {paypal} il
+      vous suffit de cocher la case {tool}'}
+  utter_PaymentTool_ProvideInfo_Apologize_Offeralternative:
+  - {text: "vous semblez avoir rencontrer un souci de paiement. nous sommes d\xE9\
+      sol\xE9s de ce contretemps ind\xE9pendant de notre volont\xE9 et nous vous prions\
+      \ de bien vouloir nous excuser. je vous invite \xE0 contourner le souci. veuillez\
+      \ passer par {paypal} pour faire le paiement on vous proposera alors 2 choix\
+      \ soit payer avec un compte {paypal} soit de payer avec votre carte bancaire\
+      \ habituel."}
+  utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize:
+  - {text: "je regarde je vous demande un instant.  nous sommes sinc\xE8rement d\xE9\
+      sol\xE9s mais nous ne pouvons proposer ce produit pour le moment. nous vous\
+      \ invitons \xE0 vous rendre r\xE9guli\xE8rement sur notre site ou \xE0 vous\
+      \ inscrire \xE0 la newsletter afin de vous tenir inform\xE9e des derni\xE8res\
+      \ nouveaut\xE9s.  au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite\
+      \ une excellente journ\xE9e."}
+  utter_ProductAvailable_ProvideInfo_Searchorder:
+  - {text: 'le produit {article} est disponible.'}
+  utter_ProductPrice_AskForMissingSlots_SayHello:
+  - {text: 'Pour quelle contenance ?'}
+  utter_ProductPrice_ProvideInfo:
+  - {text: 'l''eau de parfum   {article}   {size} est au prix de {amount}'}
+  utter_ProductPrice_ProvideInfo_Advisetolookelsewhere:
+  - {text: "je vous laisse suivre ce lien  https://www.parfumsmoinscher.com/search.php?orderby=position&orderway=desc&search_query=mon\
+      \ + guerlain+&submit_search =  vous allez d\xE9couvrir toute la gamme de ce\
+      \ parfum  je suis \xE0 votre service n'h\xE9sitez pas si vous avez d'autres\
+      \ questions ou besoin de conseils."}
+  utter_ProductPrice_ProvideInfo_Apologize:
+  - {text: "nous sommes sinc\xE8rement d\xE9sol\xE9s mais nous ne pouvons proposer\
+      \ de produits de la marque Chanel pour le moment. nous vous invitons \xE0 vous\
+      \ rendre r\xE9guli\xE8rement sur notre site ou \xE0 vous inscrire \xE0 la newsletter\
+      \ afin de vous tenir inform\xE9e des derni\xE8res nouveaut\xE9s."}
+  utter_ProductQuality_ProvideInfo:
+  - {text: "l'ensemble des produits propos\xE9s sur notre boutique en ligne sont garantis\
+      \ 100 % neufs et authentiques et proviennent directement des plus grandes marques\
+      \ de parfums \xE0 travers le monde ( \xE0 l'instar des parfums que vous pouvez\
+      \ retrouver en boutique pr\xE8s de chez vous ). nos colis sont r\xE9guli\xE8\
+      rement contr\xF4l\xE9s en {delivery} afin de v\xE9rifier qu'il ne s'agisse pas\
+      \ de produits contrefaits."}
+  utter_ProductTarget_AskForMissingSlots_SayHello:
+  - {text: "je suis \xE0 votre \xE9coute que puis je faire pour vous ?"}
+  utter_ProductTarget_ProvideInfo:
+  - {text: "alors sans h\xE9siter je vous conseille le sable  nous avons de tr\xE8\
+      s bons retours sur cet article en particulier"}
+  utter_ProductTarget_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "j'effectue les recherches n\xE9cessaires je vous demande un instant."}
+  utter_ReceptionAlert_ProvideInfo:
+  - {text: 'oui {transporter} vous avertira par mail ou sms.'}
+  utter_ReceptionAlert_SayGoodbye:
+  - {text: "Vous serez avertie d\xE8s que le produit sera en cours d'acheminement.\
+      \ Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_Refund_ProvideInfo_Suggeststo_Apologize:
+  - {text: "je vous pr\xE9sente toutes nos excuses  je vous invite \xE0 revenir vers\
+      \ nous d\xE8s r\xE9ception de votre colis et nous proc\xE9derons au {operation}\
+      \ des {amount}"}
+  utter_Refund_SayGoodbye:
+  - {text: "Nous allons proc\xE9der au remboursement. Au nom de toute l'\xE9quipe\
+      \ je vous souhaite une bonne journ\xE9e"}
+  utter_WebsiteBug_AskForMissingSlots_SayHello:
+  - {text: "\xEAtes vous connect\xE9 \xE0 votre compte client ?"}
+  - {text: "avez vous tent\xE9 de vous connecter \xE0 partir d'un autre navigateur\
+      \ ?"}
+  utter_WebsiteBug_ProvideInfo:
+  - {text: "je vous invite \xE0 vous d\xE9connecter puis \xE0 recommencer votre commande"}
+  utter_WebsiteBug_ProvideInfo_AskForMissingSlots:
+  - {text: "je vous invite \xE0 vider les caches de votre navigateur.  puis \xE0 recommencer"}
+  - {text: "nous n'avons pas connaissance de ce probl\xE8me et faisons donc remonter\
+      \ l'information \xE0 notre service informatique. nous vous invitons \xE0 vider\
+      \ le cache de votre navigateur Internet ou bien \xE0 en utiliser un diff\xE9\
+      rent. cela r\xE9sout il votre probl\xE8me"}
+  utter_WebsiteBug_ProvideInfo_Offeralternative:
+  - {text: "je n'ai aucun retour \xE0 ce sujet  vous pouvez pr\xE9tendre au code _Name1_\
+      \ sans souci  je vous invite soit \xE0 mettre \xE0 jour votre page soit \xE0\
+      \ vider vos caches"}
+  utter_WebsiteBug_Repeatprevious:
+  - {text: oui je vous y invite  rechargez bien votre page avant de revenir vers votre
+      compte avec ce nouveau mot de passe provisoire.}
+  utter_WebsiteBug_SayGoodbye:
+  - {text: "au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une\
+      \ excellente journ\xE9e."}
+  utter_WebsiteBug_goodbye_SayGoodbye:
+  - {text: "je vous invite \xE0 revenir vers nous en cas de souci  au nom de toute\
+      \ l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une excellente journ\xE9\
+      e."}
+  utter_autre_Apologize_SayGoodbye:
+  - {text: "je n'acc\xE8de pas \xE0 votre compte je suis confuse"}
+  utter_autre_AskForMissingSlots_Apologize:
+  - {text: "je suis d\xE9sol\xE9e je ne comprends pas votre demande pouvez-vous la\
+      \ sp\xE9cifier ?"}
+  utter_autre_AskForMissingSlots_Repeatprevious:
+  - {text: Merci de bien vouloir me donner votre adresse mail}
+  utter_autre_AskForMissingSlots_SayHello:
+  - {text: "vous \xEAtes bien sur le compte {email}"}
+  - {text: "merci de me pr\xE9ciser votre demande je vous prie"}
+  - {text: "\xEAtes vous connect\xE9 \xE0 votre compte"}
+  utter_autre_CancelOrder_SayGoodbye:
+  - {text: "de rien je suis \xE0 votre service. n'h\xE9sitez pas \xE0 revenir vers\
+      \ nous si cela ne fonctionnait pas."}
+  utter_autre_ProvideInfo:
+  - {text: "le d\xE9lai de livraison avec l'option choisie est g\xE9n\xE9ralement\
+      \ compris entre 7 et 10 jours ouvr\xE9s \xE0 partir de la date d'exp\xE9dition.\
+      \  le d\xE9lai de livraison n'est pas encore arriv\xE9 \xE0 son terme  merci\
+      \ de patienter"}
+  utter_autre_ProvideInfo_AskForMissingSlots:
+  - {text: "oui je suis l\xE0  que puis je faire pour vous"}
+  utter_autre_ProvideInfo_Performaction:
+  - {text: "D'accord je proc\xE8de au {operation}."}
+  utter_autre_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e."}
+  utter_autre_goodbye_Apologize_SayGoodbye:
+  - {text: "je vous en remercie  et je vous pr\xE9sente toutes nos excuses"}
+  utter_customer_service_ProvideInfo:
+  - {text: "Uune r\xE9ponse vous sera donc envoy\xE9e par mail  votre dossier sera\
+      \ trait\xE9 dans la journ\xE9e Madame"}
+  utter_customer_service_goodbye_SayGoodbye:
+  - {text: "je suis \xE0 votre service n'h\xE9sitez pas si vous avez d'autres questions\
+      \ ou besoin de conseils.  au nom de toute l'\xE9quipe ParfumsMoinsCher.com je\
+      \ vous souhaite une excellente journ\xE9e."}
+  utter_damagedPackage_AskForMissingSlots_Apologize:
+  - {text: "je suis sinc\xE8rement d\xE9sol\xE9e  pouvez vous nous envoyer une photo\
+      \ du produit re\xE7u par mail"}
+  utter_damagedPackage_AskForMissingSlots_SayHello:
+  - {text: 'souhaitez vous le renvoi du produit Pour {article} {size} ou le remboursement
+      ?'}
+  utter_damagedPackage_Proceedtocheckpoint:
+  - {text: '_Name5_ {address}  _Name1_  est ce la bonne adresse ? '}
+  utter_damagedPackage_ProvideInfo_Searchorder:
+  - {text: "je regarde votre commande  je vous invite \xE0 nous envoyer une photo\
+      \ du produit re\xE7u par mail  \xE0 l'adresse mail : {email} serviceclient.com"}
+  utter_deliveryCost_AskForMissingSlots_SayHello:
+  - {text: "Quel type de livraison avez vous s\xE9lectionn\xE9 ? "}
+  utter_deliveryCost_Discount_ProvideInfo:
+  - {text: "les frais de port sont factur\xE9s. - pour une livraison en {place} (\
+      \ {country} m\xE9tropolitaine uniquement ) il faut ainsi compter {amount} pour\
+      \ le premier article command\xE9 puis {amount} par produit suppl\xE9mentaire\
+      \ ensuite. le d\xE9lai de livraison avec cette option est compris entre 7 et\
+      \ 10 jours ouvr\xE9s. - pour une livraison \xE0 l'adresse de votre choix il\
+      \ faut compter {amount} pour un produit puis {amount} par article suppl\xE9\
+      mentaire ensuite. le d\xE9lai de livraison avec cette option est compris entre\
+      \ 10 et 14 jours ouvr\xE9s."}
+  utter_deliveryCost_ProvideInfo:
+  - {text: "les frais de port d\xE9pendent de l'option de livraison choisie et du\
+      \ nombre de produits command\xE9s : - pour une livraison en {place}  il faut\
+      \ ainsi compter {amount} pour le premier article command\xE9 puis {amount} par\
+      \ produit suppl\xE9mentaire ensuite. le d\xE9lai de livraison avec cette option\
+      \ est compris entre 7 et 10 jours ouvr\xE9s. - pour une livraison \xE0 l'adresse\
+      \ de votre choix il faut compter {amount} pour un produit puis {amount} par\
+      \ article suppl\xE9mentaire ensuite. le d\xE9lai de livraison avec cette option\
+      \ est compris entre 10 et 14 jours ouvr\xE9s."}
+  - {text: "les frais de livraison sont calcul\xE9s en fonction du nombre de produits\
+      \ command\xE9s"}
+  - {text: nous ne proposons pas de livraison gratuite actuellement sur ParfumsMoinsCher.com.}
+  utter_deliveryCost_ProvideInfo_Apologize:
+  - {text: "nous ne proposons pas les frais de port gratuits et j'en suis d\xE9sol\xE9\
+      e  nos colis sont exp\xE9di\xE9s depuis {place}."}
+  utter_deliveryCost_ProvideInfo_Performaction:
+  - {text: "{amount} - {amount} ( r\xE9duction ) + {amount} ( frais de port ) = {amount}"}
+  utter_deliveryCost_ProvideInfo_Proceedtocheckpoint:
+  - {text: "vous n'avez que tr\xE8s peu de chance d'avoir des frais de port \xE0 r\xE9\
+      gler \xE0 la livraison de votre commande ( moins de 5 % de nos exp\xE9ditions\
+      \ en font l'objet ). si tel \xE9tait le cas nous nous engageons \xE0 vous les\
+      \ rembourser int\xE9gralement comme indiqu\xE9 dans nos CGV et dans l'email\
+      \ de confirmation de commande. il vous suffit pour cela simplement de nous adresser\
+      \ le justificatif de d\xE9douanement par email \xE0 l'adresse suivante : _Email1_.\
+      \  ai je r\xE9pondu \xE0 vos attentes"}
+  utter_deliveryCountry_ProvideInfo:
+  - {text: "notre soci\xE9t\xE9 est implant\xE9e aux {place}  les commandes s'effectuent\
+      \ via notre site internet ou par t\xE9l\xE9phone en contactant notre service\
+      \ client"}
+  utter_deliveryNews_AskDetails_CustomerComplaint_ProvideInfo:
+  - {text: la livraison devrait avoir lieu en fin de semaine Madame}
+  utter_deliveryNews_AskDetails_ProvideInfo:
+  - {text: "le colis a bien \xE9t\xE9 exp\xE9di\xE9"}
+  - {text: "il a bien \xE9t\xE9 exp\xE9di\xE9  le lien sera mis \xE0 jour par {transporter}\
+      \ d\xE8s l'arriv\xE9e de votre colis sur le sol fran\xE7ais tr\xE8s prochainement"}
+  utter_deliveryNews_AskForMissingSlots_SayHello:
+  - {text: "pourriez vous m'indiquer votre num\xE9ro de commande s'il vous pla\xEE\
+      t"}
+  - {text: merci de me donner votre mail je vous prie}
+  utter_deliveryNews_AskForMissingSlots_Searchorder_Askforwaiting:
+  - {text: que puis je faire pour vous   je regarde}
+  utter_deliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion:
+  - {text: "j'effectue les recherches n\xE9cessaires je vous demande un instant. \
+      \ je vous invite \xE0 suivre le lien suivant.  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT017207857FR\
+      \  votre colis a bien \xE9t\xE9 pris en charge par le transporteur il est actuellement\
+      \ en transit a\xE9rien. d\xE8s son arriv\xE9e sur le sol fran\xE7ais c'est {transporter}\
+      \ qui finalisera la commande.  je suis \xE0 votre service n'h\xE9sitez pas si\
+      \ vous avez d'autres questions ou besoin de conseils."}
+  utter_deliveryNews_CustomerComplaint_ProvideInfo_Apologize:
+  - {text: "Au nom de toute l'\xE9quipe je vous transmets nos excuses et allons faire\
+      \ le n\xE9cessaire le plus vite"}
+  utter_deliveryNews_Performaction_ProvideInfo_Suggeststo:
+  - {text: "tr\xE8s bien je vais donc proc\xE9der au renvoi de votre commande. j'attire\
+      \ votre attention sur le fait de nous avertir au plus vite si jamais le colis\
+      \ initial venait finalement \xE0 vous \xEAtre livr\xE9. ceci afin que le transporteur\
+      \ ne se retourne pas contre vous suite \xE0 l'enqu\xEAte qui va \xEAtre r\xE9\
+      alis\xE9e."}
+  utter_deliveryNews_ProvideInfo:
+  - {text: "comme indiqu\xE9 lors de votre commande le d\xE9lai de livraison avec\
+      \ l'option choisie est compris entre 7 et 10 jours ouvr\xE9s. votre colis devrait\
+      \ donc vous parvenir en fin de semaine."}
+  utter_deliveryNews_ProvideInfo_Apologize_Offeralternative:
+  - {text: "il y a eu une erreur de pr\xE9paration nous en sommes d\xE9sol\xE9s /\
+      \  souhaitez vous son exp\xE9dition ( sous 12 \xE0 14 jours ) ou le remboursement"}
+  utter_deliveryNews_ProvideInfo_Askforanotherquestion:
+  - {text: "votre colis a \xE9t\xE9 exp\xE9di\xE9  avez vous d'autres questions  \
+      \ au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une excellente\
+      \ journ\xE9e."}
+  utter_deliveryNews_ProvideInfo_Offeralternative:
+  - {text: "si {transporter} est dans l'incapacit\xE9 de localiser votre colis nous\
+      \ vous proposerons le renvoi ou le remboursement je vous invite \xE0 revenir\
+      \ vers nous sur le tchat"}
+  utter_deliveryNews_ProvideInfo_Performaction:
+  - {text: "je proc\xE8de imm\xE9diatement au {operation}"}
+  utter_deliveryNews_ProvideInfo_Searchorder:
+  - {text: "votre commande a bien \xE9t\xE9 exp\xE9di\xE9e par nos services le {date}.\
+      \ comme indiqu\xE9 lors du passage de votre commande le d\xE9lai de livraison\
+      \ avec l'option choisie est g\xE9n\xE9ralement compris entre 7 et 10 jours ouvr\xE9\
+      s \xE0 partir de la date d'exp\xE9dition. je vous invite \xE0 suivre l'acheminement\
+      \ de votre colis :  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT019783168FR"}
+  utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "je regarde je vous demande un instant.  votre commande a bien \xE9t\xE9\
+      \ exp\xE9di\xE9e par nos services le {date}. comme indiqu\xE9 lors du passage\
+      \ de votre commande le d\xE9lai de livraison avec l'option choisie est g\xE9\
+      n\xE9ralement compris entre 7 et 10 jours ouvr\xE9s \xE0 partir de la date d'exp\xE9\
+      dition. votre colis devrait donc \xEAtre remis dans le {place} que vous avez\
+      \ choisi dans les prochains jours."}
+  utter_deliveryNews_Searchorder_Askforwaiting_ProvideInfo_AskForMissingSlots:
+  - {text: "je regarde je vous demande un instant.  votre colis a probablement \xE9\
+      t\xE9 perdu ou vol\xE9 lors de son transport. veuillez nous excuser pour ce\
+      \ probl\xE8me ind\xE9pendant de notre volont\xE9. souhaitez vous que nous proc\xE9\
+      dions au renvoi ( sous 10 \xE0 14 jours ouvr\xE9s ) ou bien au remboursement\
+      \ de la commande non re\xE7ue  d\xE8s r\xE9ception de votre r\xE9ponse nous\
+      \ d\xE9poserons plainte contre le transporteur pour non livraison de commande."}
+  utter_deliveryNews_Searchorder_ProvideInfo_AskForMissingSlots:
+  - {text: "il semblerait que votre commande ait \xE9t\xE9 perdue ou vol\xE9e durant\
+      \ son transport. souhaitez vous son renvoi ou bien son remboursement"}
+  utter_deliveryNews_deliveryPlace_ProvideInfo_Offeralternative:
+  - {text: "le mode d'exp\xE9dition choisi initialement \xE9tait en point relais.\
+      \ le renvoi se fera donc imp\xE9rativement en point relais. cependant si vous\
+      \ souhaitez une livraison \xE0 domicile je peux proc\xE9der au remboursement\
+      \ int\xE9gral de votre commande afin que vous puissiez repasser une commande\
+      \ en livraison \xE0 domicile."}
+  utter_deliveryPlace_AskForMissingSlots_SayHello:
+  - {text: 'Pouvez vous me donner votre adresse email ?'}
+  utter_deliveryPlace_ProvideInfo:
+  - {text: "nos colis sont exp\xE9di\xE9s des {country} Madame"}
+  utter_deliveryPlace_Searchorder_ProvideInfo_Performaction_Askforwaiting:
+  - {text: un instant svp j'effectue le renvoi}
+  utter_deliveryTime_AskDetails_ProvideInfo:
+  - {text: "la livraison est pr\xE9vue {date}"}
+  utter_deliveryTime_ProductAvailable_ProvideInfo_Apologize:
+  - {text: "les d\xE9lais de livraison sont compris entre : - 7 et 10 jours ouvr\xE9\
+      s pour une livraison en {place} ( {country} m\xE9tropolitaine uniquement - 10\
+      \ et 14 jours ouvr\xE9s pour une livraison   classique   \xE0 domicile - 7 et\
+      \ 10 jours ouvr\xE9s pour une livraison   express   \xE0 domicile  je suis d\xE9\
+      sol\xE9e mais \xE0 ce jour le service paquet cadeau n'est pas disponible veuillez\
+      \ nous en excuser."}
+  utter_deliveryTime_ProvideInfo:
+  - {text: "je vous rappelle nos d\xE9lais  les d\xE9lais de livraison sont compris\
+      \ entre : - 7 et 10 jours ouvr\xE9s pour une livraison en {place} ( {country}\
+      \ m\xE9tropolitaine uniquement - 10 et 14 jours ouvr\xE9s pour une livraison\
+      \   classique   \xE0 domicile - 7 et 10 jours ouvr\xE9s pour une livraison \
+      \  express   \xE0 domicile  je suis \xE0 votre service n'h\xE9sitez pas si vous\
+      \ avez d'autres questions ou besoin de conseils."}
+  - {text: "le d\xE9lai est compris entre 7 et 10 jours ouvr\xE9s"}
+  utter_deliveryTime_deliveryPlace_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "Votre commande est en cours d'acheminement. Elle arrivera entre 3 et 7\
+      \ jours ouvr\xE9s."}
+  utter_delivery_AskForMissingSlots_SayHello:
+  - {text: "pourriez vous m'indiquer votre num\xE9ro de commande s'il vous pla\xEE\
+      t   \xEAtes vous toujours en ligne"}
+  utter_delivery_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_goodbye_Offeralternative_SayGoodbye:
+  - {text: "si vous disposez d'un compte Facebook vous pouvez profiter d'une remise\
+      \ de 5 % sur votre panier en rejoignant notre page officielle : https://www.facebook.com/ParfumsMoinsCher/\
+      \ < https://www.facebook.com/ParfumsMoinsCher/ >  au nom de toute l'\xE9quipe\
+      \ ParfumsMoinsCher.com je vous souhaite une excellente journ\xE9e."}
+  utter_goodbye_ProvideInfo:
+  - {text: "vous \xEAtes bien connect\xE9 \xE0 votre compte client. c'est le bon prix. "}
+  utter_goodbye_ProvideInfo_Apologize:
+  - {text: "je vous pr\xE9sente de nouveau toutes nos excuses"}
+  utter_goodbye_ReceptionAlert_SayGoodbye:
+  - {text: "au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une\
+      \ excellente journ\xE9e."}
+  utter_goodbye_SayGoodbye:
+  - {text: "au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une\
+      \ excellente journ\xE9e."}
+  utter_goodbye_thanks_SayGoodbye:
+  - {text: "je suis \xE0 votre service n'h\xE9sitez pas si vous avez d'autres questions\
+      \ ou besoin de conseils."}
+  utter_missingItem_AskForMissingSlots_SayHello:
+  - {text: "Merci de me confirmer la partie r\xE9ceptionn\xE9e je vous prie."}
+  utter_missingItem_ProvideInfo:
+  - {text: "effectivement je vois que le produit   {article} de _Name3_ eau De parfum\
+      \ spray 100 ml   n'a pas \xE9t\xE9 exp\xE9di\xE9"}
+  utter_missingItem_ProvideInfo_Searchorder:
+  - {text: "votre second colis est actuellement en transit vers la {country} et devrait\
+      \ arriver sur le territoire Fran\xE7ais ce jour ou demain pour une livraison\
+      \ pr\xE9vue en cette fin de semaine.  comme indiqu\xE9 par email lors de l'exp\xE9\
+      dition de vos colis. votre colis XT070996874FR peut mettre jusqu'\xE0 5 jours\
+      \ suppl\xE9mentaires avant de vous parvenir."}
+  utter_missingItem_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "je regarde je vous demande un instant  comme nous vous l'avons sp\xE9\
+      cifi\xE9 par email lors du traitement de votre commande celle ci a \xE9t\xE9\
+      \ exp\xE9di\xE9e en deux colis. voici le lien du 2\xE8me colis qui devrait vous\
+      \ \xEAtre livr\xE9 dans les prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT046600451FR"}
+  - {text: "merci  j'effectue les recherches n\xE9cessaires je vous demande un instant."}
+  utter_non_AskForMissingSlots_SayHello:
+  - {text: "Pouvez-vous me donner des d\xE9tails concernant votre probl\xE8me ?"}
+  utter_non_Proceedtocheckpoint:
+  - {text: vous optez donc pour le remboursement}
+  utter_non_ProvideInfo:
+  - {text: "je vous invite \xE0 choisir l'un des 3 modes de livraison : en {place}\
+      \ standard ou premium  vous devez cocher la case"}
+  - {text: "donc je vous confirme qu'il n'y a pas de compte \xE0 votre nom"}
+  utter_non_ProvideInfo_Repeatprevious:
+  - {text: "je vous invite \xE0 les contacter et \xE0 r\xE9essayer cet apr\xE8s midi.\
+      \ de mon c\xF4t\xE9 je vais contacter le service concern\xE9"}
+  utter_non_Repeatprevious:
+  - {text: Vous devez choisir votre mode de livraison}
+  utter_non_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_non_goodbye_SayGoodbye:
+  - {text: "tr\xE8s bien. alors au nom de toute l'\xE9quipe ParfumsMoinsChers.com\
+      \ je vous souhaite une agr\xE9able journ\xE9e \xE0 vous \xE9galement."}
+  utter_non_thanks_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_oui_Askforanotherquestion:
+  - {text: 'Avez vous d''autres questions ?'}
+  utter_oui_Askforwaiting_SayGoodbye:
+  - {text: "je m'occupe de votre dossier  je reviendrais vers vous par mail dans la\
+      \ matin\xE9e Madame"}
+  utter_oui_ConfirmationOrder_ProvideInfo:
+  - {text: "je vous confirme que vous avez bien r\xE9ceptionn\xE9 cet email. notre\
+      \ service automatique d'emails transactionnels \xE0 bien re\xE7u un accus\xE9\
+      \ r\xE9ception de votre boite email.  malheureusement ces emails \xE9tant automatique\
+      \ je ne peux vous renvoyer l'email. cependant je peux vous le copier ici : \
+      \ bonjour _Name2_ votre commande #732398 vient d'\xEAtre exp\xE9di\xE9e. pour\
+      \ des raisons logistiques le ( s ) produit ( s ) suivant ( s ) pourrait faire\
+      \ l'objet d'un d\xE9lai de livraison suppl\xE9mentaire par rapport \xE0 celui\
+      \ indiqu\xE9 initialement : HM ( x1 ) ce d\xE9lai additionnel - n'exc\xE9dant\
+      \ pas cinq jours maximum - ne remet pas en cause les modalit\xE9s de livraison\
+      \ choisies lors du passage de votre commande ( {place} ou adresse de livraison\
+      \ s\xE9lectionn\xE9e ). veuillez aussi noter que votre commande est exp\xE9\
+      di\xE9e en plusieurs colis. cela n'a cependant aucune incidence sur le co\xFB\
+      t des frais de port. vous pouvez suivre l'avancement de la livraison \xE0 l'adresse\
+      \ suivante : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT070996874FR\
+      \ vous pouvez acc\xE9der au suivi de votre commande et t\xE9l\xE9charger votre\
+      \ facture dans   historique des commandes   de la rubrique   mon compte   sur\
+      \ notre site."}
+  utter_oui_CustomerComplaint_ProvideInfo_Performaction:
+  - {text: "je viens donc de proc\xE9der au remboursement du produit et des frais\
+      \ de port associ\xE9s soit 95.98 euros"}
+  utter_oui_ProvideInfo:
+  - {text: "votre commande a bien \xE9t\xE9 exp\xE9di\xE9e par nos services le {date}.\
+      \ comme indiqu\xE9 lors du passage de votre commande le d\xE9lai de livraison\
+      \ avec l'option choisie est g\xE9n\xE9ralement compris entre 7 et 10 jours ouvr\xE9\
+      s \xE0 partir de la date d'exp\xE9dition. je vous invite \xE0 suivre l'acheminement\
+      \ de votre colis depuis le lien suivant :  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT056326105FR"}
+  utter_oui_SayGoodbye:
+  - {text: "au nom de toute l'\xE9quipe ParfumsMoinsCher.com je vous souhaite une\
+      \ excellente soir\xE9e."}
+  utter_oui_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "d'accord je traite votre dossier d\xE8s que nous aurons re\xE7u votre\
+      \ mail Madame"}
+  utter_oui_deliveryPlace_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_oui_goodbye_SayGoodbye:
+  - {text: "je vous souhaite une bonne journ\xE9e \xE9galement - _Name1_"}
+  utter_oui_thanks_Askforanotherquestion:
+  - {text: 'Avez vous d''autres questions ? '}
+  utter_oui_thanks_SayGoodbye:
+  - {text: "je vous souhaite une excellente journ\xE9e"}
+  utter_payment_ProvideInfo:
+  - {text: oui bien sur.}
+  utter_product_AskDetails_ProvideInfo:
+  - {text: Il est dans son emballage d'origine}
+  utter_purchase_AskForMissingSlots_SayHello:
+  - {text: "Merci de m'indiquer votre adresse mail  pouvez vous m'indiquer quand avez\
+      \ vous re\xE7u cette publicit\xE9 pourriez vous m'envoyer par mail une copie\
+      \ de cette publicit\xE9   \xE0 l'adresse mail {email} serviceclient.com"}
+  utter_purchase_ProvideInfo_Searchorder:
+  - {text: "oui mais je ne peux pas le voir car il n'est pas associ\xE9 \xE0 votre\
+      \ compte client"}
+  utter_rien_Apologize_Offeralternative:
+  - {text: "vous semblez avoir rencontrer un souci de paiement. nous sommes d\xE9\
+      sol\xE9s de ce contretemps ind\xE9pendant de notre volont\xE9 et nous vous prions\
+      \ de bien vouloir nous excuser. je vous invite \xE0 contourner le souci. veuillez\
+      \ passer par {paypal} pour faire le paiement on vous proposera alors 2 choix\
+      \ soit payer avec un compte {paypal} soit de payer avec votre {tool} habituel."}
+  utter_rien_AskForMissingSlots_SayHello:
+  - {text: 'Que puis-je faire pour vous ? '}
+  utter_rien_Askforanotherquestion:
+  - {text: 'avez vous d''autres questions?'}
+  utter_rien_Performaction_ProvideInfo_Suggeststo:
+  - {text: "je vous invite \xE0 vous connecter \xE0 votre compte \xE0 l'aide du mot\
+      \ de passe : AZERTY adresse mail : {email} lelamentin.fr"}
+  utter_rien_Proceedtocheckpoint:
+  - {text: "avez vous r\xE9ussi ?"}
+  utter_rien_ProvideInfo_Offeralternative:
+  - {text: "ma coll\xE8gue a fait le n\xE9cessaire aupr\xE8s de {transporter}  je\
+      \ vous invite \xE0 revenir vers nous demain le temps qu'une r\xE9ponse nous\
+      \ soit apport\xE9e  si votre colis n'est pas localis\xE9 d'ici l\xE0 nous vous\
+      \ proposerons le renvoi ou le remboursement"}
+  utter_rien_SayGoodbye:
+  - {text: great ! bye}
+  utter_rien_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: je vous demande un instant}
+  utter_rien_Searchorder_ProvideInfo_Performaction_Askforwaiting:
+  - {text: "merci  j'effectue les recherches n\xE9cessaires je vous demande un instant.\
+      \  je viens de relancer le transporteur"}
+  utter_rien_goodbye_SayGoodbye:
+  - {text: "j'en suis ravie et je vous en remercie !  au nom de toute l'\xE9quipe\
+      \ ParfumsMoinsCher.com je vous souhaite une excellente journ\xE9e."}
+  utter_saluer_AskForMissingSlots_SayHello:
+  - {text: que puis je faire pour vous}
+  utter_saluer_deliveryNews_Searchorder_Askforwaiting_ProvideInfo:
+  - {text: "Votre commande est en cours d'acheminement. Elle arrivera entre 3 et 7\
+      \ jours ouvr\xE9s."}
+  utter_thanks_Askforanotherquestion:
+  - {text: 'Avez vous d''autres questions ? '}
+  utter_thanks_CustomerComplaint_ProvideInfo_Performaction:
+  - {text: "j'ai cr\xE9\xE9 votre compte  adresse mail : {email}  mot de passe : AZERTY"}
+  utter_thanks_Login_Askforanotherquestion:
+  - {text: je vous en prie  avez vous d'autres questions}
+  utter_thanks_Proceedtocheckpoint:
+  - {text: "Avez-vous trouv\xE9 comment faire ? "}
+  utter_thanks_ProvideInfo:
+  - {text: "je vous invite donc \xE0 vous connecter avec l'adresse email {email} et\
+      \ le mot de passe   _Name4_  . vous pourrez bien entendu le modifier par la\
+      \ suite."}
+  - {text: "votre commande a bien \xE9t\xE9 exp\xE9di\xE9e par nos services le {date}.\
+      \ comme indiqu\xE9 lors du passage de votre commande le d\xE9lai de livraison\
+      \ avec l'option choisie est g\xE9n\xE9ralement compris entre 7 et 10 jours ouvr\xE9\
+      s \xE0 partir de la date d'exp\xE9dition. je vous invite \xE0 suivre l'acheminement\
+      \ de votre colis :  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT002137718FR"}
+  utter_thanks_ProvideInfo_AskForMissingSlots:
+  - {text: "je n'ai pas de commande associ\xE9e \xE0 cette adresse mail  pouvez m'indiquer\
+      \ le num\xE9ro de commande"}
+  utter_thanks_ProvideInfo_Askforanotherquestion:
+  - {text: "je vous invite \xE0 suivre le lien suivant.  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT000867630FR\
+      \  comme nous vous l'avons sp\xE9cifi\xE9 par email lors du traitement de votre\
+      \ commande celle ci a \xE9t\xE9 exp\xE9di\xE9e en deux colis. voici le lien\
+      \ du 2\xE8me colis qui devrait vous \xEAtre livr\xE9 dans les prochains jours\
+      \ :  je suis \xE0 votre service n'h\xE9sitez pas si vous avez d'autres questions\
+      \ ou besoin de conseils."}
+  utter_thanks_SayGoodbye:
+  - {text: je vous en prie}
+  utter_thanks_goodbye_ProvideInfo_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_thanks_goodbye_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_thanks_goodbye_autre_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_thanks_goodbye_oui_SayGoodbye:
+  - {text: "Au nom de toute l'\xE9quipe je vous souhaite une bonne journ\xE9e"}
+  utter_thanks_oui_Askforanotherquestion:
+  - {text: "de rien je suis \xE0 votre service. avez vous d'autres questions"}
+  - {text: 'avez vous d''autres questions ?'}
+  utter_thanks_oui_ProvideInfo:
+  - {text: "je reste en ligne pour \xEAtre certaine que vous pouvez vous connecter"}
+slots:
+  Store: {type: text}
+  account: {type: text}
+  account_connection: {type: text}
+  add: {type: text}
+  address: {type: text}
+  amount: {type: text}
+  article: {type: text}
+  basket: {type: text}
+  billing: {type: text}
+  bug: {type: text}
+  cache: {type: text}
+  cancel: {type: text}
+  channel: {type: text}
+  city: {type: text}
+  code: {type: text}
+  color: {type: text}
+  complaint: {type: text}
+  concurrence: {type: text}
+  connection: {type: text}
+  country: {type: text}
+  customer: {type: text}
+  damaged: {type: text}
+  data: {type: text}
+  date: {type: text}
+  delay: {type: text}
+  delivery: {type: text}
+  device: {type: text}
+  discount: {type: text}
+  email: {type: text}
+  error: {type: text}
+  facebook: {type: text}
+  fdp: {type: text}
+  follow-up: {type: text}
+  free: {type: text}
+  home: {type: text}
+  info: {type: text}
+  missing: {type: text}
+  mood: {type: text}
+  operation: {type: text}
+  order: {type: text}
+  order_nbr: {type: text}
+  payment: {type: text}
+  payment_tool: {type: text}
+  paypal: {type: text}
+  phone: {type: text}
+  place: {type: text}
+  pr: {type: text}
+  present: {type: text}
+  price: {type: text}
+  profile: {type: text}
+  pwd: {type: text}
+  refund: {type: text}
+  reinit: {type: text}
+  reload: {type: text}
+  relog: {type: text}
+  resend: {type: text}
+  separated: {type: text}
+  size: {type: text}
+  status: {type: text}
+  step: {type: text}
+  store: {type: text}
+  target: {type: text}
+  tool: {type: text}
+  topic: {type: text}
+  transporter: {type: text}
+  uppercase: {type: text}
+  website: {type: text}

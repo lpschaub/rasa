@@ -1,0 +1,9 @@
+( 13:04 ) _Name1_ : bonjour, je suis _Name1_.
+en quoi puis je vous aider ?
+afin d'accélérer le traitement de votre dossier, merci de nous indiquer votre adresse email et / ou votre numéro de commande.
+( 13:04 ) _Name3_ : bonjour je viens de recevoir un mail concernant ma commande et je n'ai pas tout compris ( 13:04 ) _Name3_ : commande 720854 ( 13:05 ) _Name1_ : je regarde, je vous demande un instant.
+( 13:05 ) _Name3_ : adresse mail il y a _Email1_ ( 13:05 ) _Name1_ : votre colis a été endommagé ( 13:05 ) _Name3_ : oui ( 13:05 ) _Name1_ : souhaitez vous le renvoi de votre commande ou le remboursement ?
+( 13:06 ) _Name3_ : je souhaiterais un renvoi ( 13:06 ) _Name3_ : mais du coup j'ai pas compris l histoire de si je reçois le colis initial ( 13:06 ) _Name1_ : pouvez vous en faire la demande en répondant au mail qui vous a été envoyé ?
+( 13:07 ) _Name3_ : _Name2_ ça marche ( 13:07 ) _Name3_ : et du coup l histoire du colis initial ?
+( 13:09 ) _Name1_ : il peut arriver que, même endommagé, le colis puisse vous être livré ( 13:09 ) _Name1_ : donc refusez le ( 13:10 ) userX : l'internaute a mis fin à la conversation.
+

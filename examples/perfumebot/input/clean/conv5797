@@ -1,0 +1,15 @@
+(10:13) _Name1_ : bonjour, je suis _Name1_. en quoi puis je vous aider ? afin d'accélérer le traitement de votre dossier, merci de nous indiquer votre adresse email et / ou votre numéro de commande. 
+(10:13) je me suis trompée je voudrais annuler cette commande 
+(10:14) je commanderais un peu plus tard dans la journée 
+(10:14) _Email2_ 
+(10:15) _Name1_ : avez vous le numéro de la commande ? 
+(10:16) non 
+(10:17) _Name1_ : pouvez vous me donner votre nom ? 
+(10:17) mocquery _Name2_ 
+(10:18) _Name1_ : je n'ai pas de compte à ce nom 
+(10:19) ou _Name3_ mon compagnon 
+(10:20) _Name1_ : avez vous son adresse mail ? 
+(10:21) _Email1_ 
+(10:23) _Name1_ : je n'ai pas de commande sur son compte non plus 
+(10:24) jmerci 
+(10:24) userX : l'internaute a mis fin à la conversation.  

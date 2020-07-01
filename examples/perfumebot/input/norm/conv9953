@@ -1,0 +1,30 @@
+( 11:44 ) _Name1_ : bonjour, je suis _Name1_.
+en quoi puis je vous aider ?
+( 11:44 ) _Name3_ : bonjour.
+je viens d'effectuer une commande avec paiement par carte Visa.
+( 11:45 ) _Name3_ : je n'ai pas confirmation, ni infirmation de ma commande.
+pouvez vous vérifier ?
+( 11:45 ) _Name3_ : Merci ( 11:46 ) _Name1_ : j'effectue les recherches nécessaires, je vous demande un instant.
+( 11:47 ) _Name1_ : je constate que votre paiement présente le statut " " non finalisé " " et votre commande n'a donc pas été enregistrée par nos services.
+avez vous bien reçu le code de validation par SMS ?
+( 11:47 ) _Name3_ : non.
+aucun code reçu !
+( 11:49 ) _Name1_ : votre CB ne semble pas proposer la validation par 3DSecure requise pour passer commande sur notre boutique en ligne.
+je vous invite à utiliser une Carte bancaire différente ou bien à contacter votre banque.
+( 11:50 ) _Name3_ : si ma carte utilise se moyen de sécuruté.
+comment pouvez vous m'envoyer un code si vous ne disposez pas de numéro de téléphone ?
+( 11:50 ) _Name3_ : votre interface ne me demande pas cette information.
+( 11:51 ) _Name1_ : il s'agit du numéro de téléphone portable renseigné auprès de votre banque.
+( 11:51 ) _Name3_ : où est le formulaire pour entrer mon numéro ?
+( 11:52 ) _Name1_ : la validation via un code envoyé par SMS est une fonctionnalité proposée par votre banque et totalement indépendante de votre commande sur notre site.
+je vous invite à vous rapprocher de votre banque si vous souhaitez renseigner / modifier votre numéro de téléphone.
+( 11:53 ) _Name3_ : _Name2_ merci.
+bonne journée.
+( 11:53 ) _Name1_ : de rien, je suis à votre service.
+avez vous d'autres questions ?
+( 11:57 ) _Name3_ : votre interface de paiement ne fonctionne pas.
+après avoir rempli la totalité du formulaire, et cliqué sur payé, ( 11:58 ) _Name3_ : une alerte rouge me dit que le pays choisi n'est pas valide.
+( 11:59 ) _Name1_ : avez vous la possibilité de vider le cache de votre navigateur et réessayer de nouveau ?
+( 12:00 ) _Name3_ : et le formulaire change avec un menu déroulant me demandant mon pays, alors que c'est écrit français sous HiPay, depuis le début.
+( 12:00 ) _Name3_ : je vais vider le cache etc ( 12:00 ) userX : l'internaute a mis fin à la conversation.
+

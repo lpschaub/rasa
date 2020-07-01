@@ -1,0 +1,56 @@
+(10:32) _Name2_ : bonjour, je suis _Name2_. en quoi puis je vous aider ? afin d'accélérer le traitement de votre dossier, merci de nous indiquer votre adresse email et / ou votre numéro de commande. 
+(10:33) _Name1_ : _Email1_ 
+(10:34) _Name1_ : pouvez vous me dire pourquoi l'adresse de livraison au Canada ne passe pas merci 
+(10:36) _Name2_ : avez vous rempli toutes les cases ? 
+(10:38) _Name1_ : oui sauf donnez un nom à cette adresse 
+(10:38) _Name2_ : donner un nom à cette adresse permet de la reconnaître si vous en enregistrez plusieurs. je vous invite à indiquer par exemple : Canada 
+(10:41) _Name1_ : il reste 2 erreurs : alias requis et code postal requis 
+(10:42) _Name2_ : cela veut dire que toutes les cases ne sont pas remplies 
+(10:44) _Name1_ : code postal non rempli je ne connais pas 
+(10:45) _Name2_ : il est impératif que l'adresse soit complète afin de pouvoir expédier votre colis 
+(10:47) _Name1_ : je ne connais pas le code postal de _City3_ moi m'inscris à mon courrier G5 _Name5_ 
+(10:50) _Name2_ : pouvez vous me donner cette adresse ? 
+(10:50) _Name2_ : je vais essayer de mon côté 
+(10:50) _Name1_ : voici l'adresse de livraison _Name1_ 322 rue _Name3_ _City3_ G5 _Name6_ 5 Canada 
+(10:51) _Name2_ : je regarde, je vous demande un instant. 
+(10:53) _Name2_ : merci d'enregistrer l'adresse de la façon suivante : 
+(10:53) _Name2_ : adresse : 322 rue _Name3_ 
+(10:53) _Name2_ : code postal : G5 _Name5_ 
+(10:53) _Name2_ : ville : _City3_ 
+(10:54) _Name2_ : nom à cette adresse : Canada 
+(10:56) _Name2_ : et n'oubliez pas de remplir les 2 cases concernant le numéro de téléphone 
+(10:56) _Name1_ : que dois je faire le code postal est demande en chiffre 
+(10:57) _Name2_ : insistez et il sera pris en compte 
+(10:58) _Name2_ : validez 
+(11:03) _Name1_ : le numéro de téléphone fixe 0014188967938 ne passe pas trop long puis je passer au paiement puisque vous me demandez de valider 
+(11:07) _Name2_ : si le numéro n'est pas pris en compte, indiquer un numéro de portable 
+(11:07) _Name2_ : dans les deux cases 
+(11:08) _Name1_ : _Name7_ cela passe 
+(11:09) _Name2_ : j'en suis ravie 
+(11:09) _Name2_ : avez vous d'autres questions ? 
+(11:11) _Name1_ : pouvez vous me joindre des échantillons pour le noël de mes petites filles un grand merci 
+(11:12) _Name2_ : nous ne sommes plus en mesure de fournir d'échantillons pour chaque commande. ces derniers nous sont en effet dorénavant facturés par nos fournisseurs. j'en suis désolée 
+(11:13) _Name1_ : pouvez vous me confirmer l'adresse de livraison 
+(11:13) _Name2_ : avez vous validé votre commande ? 
+(11:14) _Name1_ : non je suis au paiement 
+(11:21) _Name1_ : la commande est validée 
+(11:22) _Name2_ : je regarde, je vous demande un instant. 
+(11:23) _Name2_ : c'est l'adresse de _City1_ qui apparaît pour la livraison 
+(11:24) _Name1_ : mais non je voulais _City3_ Canada pouvez vous rectifier 
+(11:24) _Name2_ : oui je vais modifier 
+(11:25) _Name2_ : la livraison est au nom de _Name1_ ? 
+(11:26) _Name2_ : Merci de m'indiquer un numéro de portable 
+(11:27) _Name1_ : Merci pouvez vous me le confirmer oui _Name1_ et _Name8_ 
+(11:29) _Name1_ : _Name1_ le _Phone2_ 
+(11:30) _Name2_ : pouvez vous me confirmer l'Etat dans lequel se situe _City3_ ? au _City2_ ? 
+(11:35) _Name2_ : êtes vous toujours en ligne ? 
+(11:37) _Name1_ : voici l'adresse de livraison _Name4_ _Name1_ et _Name8_ 322 rue _Name3_ _City3_ _City2_ G5 _Name6_ 5 Canada 
+(11:38) _Name2_ : voici l'adresse de livraison qui apparaît désormais : 
+(11:38) _Name2_ : _Name1_ 322 rue _Name3_ G5 _Name6_ 5 _City3_ Canada - _City2_ _Phone1_ 05 45 83 51 
+(11:38) _Name2_ : je n'ai pas la possibilité de mettre 2 noms 
+(11:39) _Name1_ : _Name7_ bonne adresse 
+(11:42) _Name2_ : voilà c'est validé 
+(11:42) _Name2_ : avez vous d'autres questions ? 
+(11:43) _Name1_ : non 
+(11:45) _Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com, je vous souhaite une excellente journée. 
+(11:50) userX : vous avez mis fin à la conversation.  

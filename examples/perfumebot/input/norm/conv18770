@@ -1,0 +1,10 @@
+( 09:42 ) _Name1_ : bonjour, je suis _Name1_.
+en quoi puis je vous aider ?
+( 09:43 ) _Name2_ : bonjour j'ai fait une commande dernièrement et on m'a semandé ma pièce d'identité mais je vois que l'état de ma commande n'a toujours pas changé ( 09:43 ) _Name2_ : numéro de commande 747148 ( 09:44 ) _Name1_ : votre commande est en attente de justificatifs, vous devez envoyé votre pièce d'identité ainsi nous pourrons valider votre commande ( 09:44 ) _Name2_ : je l'ai fait a l'adresse envoyé ( 09:46 ) _Name1_ : vous avez envoyé vos documents à l'adresse suivante : _Email1_ serviceclient.com ?
+( 09:46 ) _Name2_ : oui ( 09:48 ) _Name1_ : je regarde, je vous demande un instant.
+( 09:48 ) _Name2_ : ok ( 09:52 ) _Name2_ : aloo ( 09:53 ) _Name1_ : en effet nous avons bien reçu votre pièce d'identité ( 09:54 ) _Name2_ : ok alors c'est bon ou pas ?
+( 09:58 ) _Name1_ : nous sommes en attente de réapprovisionnement sur le produit commandé, souhaitez vous un remboursement ou préférez vous attendre ?
+( 09:59 ) _Name2_ : cela prend t il du temps ?
+( 10:01 ) _Name1_ : malheureusement, nous n'avons pas de visibilité sur la date de réapprovisionnement de la part de nos fournisseurs et je ne suis donc pas en mesure de vous donner un délai précis.
+( 10:02 ) _Name2_ : _Name3_ un remboursement alors ( 10:04 ) userX : l'internaute a mis fin à la conversation.
+
