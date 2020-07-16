@@ -786,6 +786,7 @@ responses:
   - text: vous pourrez modifier également votre adresse postale une fois connectée
       à votre Espace client.
 actions:
+- action_my_restart
 - action_Perform_action
 - action_Search_order
 - action_Look_for_customer_file

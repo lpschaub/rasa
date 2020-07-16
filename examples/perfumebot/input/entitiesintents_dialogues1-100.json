@@ -2704,7 +2704,7 @@
                     "address": "17 avenue _Name3_ _ZipCode1_ _City1_"
                 }
             ],
-            "sys": "(15:09) _Name2_ : voici votre nouveau numéro de commande : n°00(15:09) _Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com, je vous souhaite une excellente journée.",
+            "sys": ["(15:09) _Name2_ : voici votre nouveau numéro de commande : n°00(15:09) _Name2_ : au nom de toute l'équipe ParfumsMoinsCher.com, je vous souhaite une excellente journée."],
             "turn_idx": 5,
             "user satisfaction": [
                 "satisfied"
@@ -46789,7 +46789,7 @@
                     "order_nbr": "00"
                 }
             ],
-            "sys": "(18:09) _Name2_ : votre commande 00 a bien été expédiée par nos services le 18/11/18. le délai de livraison est ensuite compris entre 7 et 10 jours ouvrés avec l'option de livraison choisie. votre colis vous parviendra dans le courant de la semaine prochaine.",
+            "sys": ["(18:09) _Name2_ : votre commande 00 a bien été expédiée par nos services le 18/11/18. le délai de livraison est ensuite compris entre 7 et 10 jours ouvrés avec l'option de livraison choisie. votre colis vous parviendra dans le courant de la semaine prochaine."],
             "turn_idx": 2,
             "user satisfaction": "no",
             "usr": "1 (18:05) _Name1_ : bonjour je n'ai pas de nouvelle de ma commande2 (18:07) _Name1_ : il s'agit de la commande numéro 00"
@@ -48128,7 +48128,7 @@
                     "operation": "resend"
                 }
             ],
-            "sys": "(12:17) _Name1_ : je vous confirme que le renvoi a bien été effectué sous un nouveau numéro de commande ( 04 ). cette dernière est visible depuis votre espace clients et ne vous sera bien entendu pas facturée.(12:17) _Name1_ : exceptionnellement, afin de vous dédommager pour la gêne occasionnée, j'ai pu effectuer le renvoi directement à votre domicile.",
+            "sys": ["(12:17) _Name1_ : je vous confirme que le renvoi a bien été effectué sous un nouveau numéro de commande ( 04 ). cette dernière est visible depuis votre espace clients et ne vous sera bien entendu pas facturée.(12:17) _Name1_ : exceptionnellement, afin de vous dédommager pour la gêne occasionnée, j'ai pu effectuer le renvoi directement à votre domicile."],
             "turn_idx": 7,
             "user satisfaction": [
                 "satisfied"

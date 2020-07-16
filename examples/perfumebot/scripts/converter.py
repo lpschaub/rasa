@@ -42,7 +42,7 @@ class PMCverter(Converter):
 
     def post_treatment_intent(self, intent_example):
 
-        while intent_example[0].isdigit():
+        while intent_example[0].isdigit() or intent_example[0] == ':' :
             intent_example = intent_example[1:]
 
         p = re.compile(r'\(\d\d?:\d\d?\)')
@@ -246,7 +246,7 @@ class PMCverter(Converter):
 
     def get_intents(self, file):
         self.entities = {}
-        p = re.compile("\[[\w _]+\]\([\w]+\)")
+        p = re.compile(r"\[[\w _]+\]\([\w]+\)")
         for line in open(file).readlines():
             if "## intent:" in line:
                 if line not in self.intents:
@@ -526,18 +526,18 @@ class PMCverter(Converter):
         return new_intents
 
 
-conv = PMCverter()
-#
-# dialogues = conv.json_parse('../input/entitiesintents_dialogues1-100.json')
-#
-# entities = json.load(open('../input/entities.json'), encoding='utf-8')
-# slots = json.load(open('../input/slots.json'), encoding='utf-8')
+# conv = PMCverter()
+# #
+# # dialogues = conv.json_parse('../input/entitiesintents_dialogues1-100.json')
+# #
+# # entities = json.load(open('../input/entities.json'), encoding='utf-8')
+# # slots = json.load(open('../input/slots.json'), encoding='utf-8')
 
-intent_file = '../v0/nlu.md'
-stories_file = '../v0/stories.md'
-conv.nlu_converter_lite(intent_file)
-conv.stories_converter_lite(stories_file)
-# conv.domain_builder(dialogues, entities, slots)
+# intent_file = '../v0/nlu.md'
+# stories_file = '../v0/stories.md'
+# conv.nlu_converter_lite(intent_file)
+# conv.stories_converter_lite(stories_file)
+# # conv.domain_builder(dialogues, entities, slots)
 # conv.domain_writer()
 # conv.stories_converter(dialogues)
 # conv.entities_labelling(entities)

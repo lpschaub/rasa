@@ -45,22 +45,6 @@ intents:
 - saluer
 - ProductAvailable
 - deliveryNews+AskDetails
-- ProductQuality
-- DeliveryTime
-- DeliveryCost
-- Customer_service
-- Send
-- ProductOrigin
-- DeliveryPlace
-- deny
-- Previous
-- Change+CancelOrder
-- affirm
-- greet
-- bot_challenge
-- mood_great
-- mood_unhappy
-- DeliveryCountry
 entities:
 - emotion
 - tool
@@ -109,10 +93,7 @@ entities:
 - basket
 - facebook
 - concurrence
-- origin
-- oui
 - action
-- sample
 slots:
   Store:
     type: text
@@ -120,6 +101,8 @@ slots:
     type: text
   account_connection:
     type: text
+  action:
+    type: unfeaturized
   add:
     type: text
   address:
@@ -226,8 +209,6 @@ slots:
     type: text
   resend:
     type: text
-  sample:
-    type: text
   separated:
     type: text
   size:
@@ -313,8 +294,6 @@ responses:
   utter_deliveryCost_ProvideInfo_Apologize:
   - text: nous ne proposons pas les frais de port gratuits et j'en suis désolée  nos
       colis sont expédiés depuis {place}.
-  utter_DeliveryCost:
-    - text: nous ne proposons pas les frais de port gratuits et j'en suis désolé
   utter_thanks_oui_Askforanotherquestion:
   - text: de rien je suis à votre service. avez vous d'autres questions
   - text: avez vous d'autres questions ?
@@ -494,7 +473,7 @@ responses:
   utter_rien_Performaction_ProvideInfo_Suggeststo:
   - text: "je vous invite à vous connecter à votre compte à l'aide du mot de passe\
       \ : AZERTY adresse mail : {email} lelamentin.fr"
-  utter_deliveryNews_ProvideInfo:
+  utter_deliveryTime_ProvideInfo:
   - text: "je vous rappelle nos délais  les délais de livraison sont compris entre\
       \ : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine\
       \ uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile\
@@ -505,7 +484,8 @@ responses:
   utter_oui_Askforanotherquestion:
   - text: Avez vous d'autres questions ?
   utter_autre_AskForMissingSlots_Apologize:
-  - text: je suis désolée je ne comprends pas votre demande pouvez-vous la spécifier?
+  - text: je suis désolée je ne comprends pas votre demande pouvez-vous la spécifier
+      ?
   utter_missingItem_ProvideInfo_Searchorder:
   - text: votre second colis est actuellement en transit vers la {country} et devrait
       arriver sur le territoire Français ce jour ou demain pour une livraison prévue
@@ -599,7 +579,7 @@ responses:
       sur le tchat
   utter_goodbye_ProvideInfo_Apologize:
   - text: je vous présente de nouveau toutes nos excuses
-  utter_AskDetails_deliveryNews_ProvideInfo:
+  utter_AskDetails_deliveryTime_ProvideInfo:
   - text: '- 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine
       uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile
       - 7 et 10 jours ouvrés pour une livraison   express   à domicile'
@@ -653,7 +633,7 @@ responses:
   utter_CommuncationInterruption_deliveryNews_ProvideInfo:
   - text: vous avez reçu un autre produit et vous nous l'avez retourné  un renvoi
       a été effectué {date}S
-  utter_AskDetails_StoreLocation_deliveryNews_ProvideInfo:
+  utter_AskDetails_StoreLocation_deliveryTime_ProvideInfo:
   - text: nos produits sont expédiés depuis {place}
   utter_deliveryTime_AskDetails_ProvideInfo:
   - text: la livraison est prévue {date}
@@ -808,41 +788,17 @@ responses:
   utter_ChangeData_ProvideInfo:
   - text: vous pourrez modifier également votre adresse postale une fois connectée
       à votre Espace client.
-  utter_AskForMissingSlots_delivery:
-  - text: Veuillez me donner votre numéro de commande.
-  utter_deliveryNews_ProvideInfopart:
-  - text: Votre commande arrivera demain.
-  utter_goodbye:
-  - text: Au nom de toute l'équipe ParfumsMoinsCher.com je vous souhaite une excellente
-      journée.
-  utter_ProductAvailableSample:
-  - text: malheureusement non, nous ne sommes plus en mesure de fournir d'échantillons.
-      ces derniers nous sont dorénavant facturés par nos fournisseurs et les frais
-      de port pour les faire venir depuis les USA sont élevés ( ils correspondent
-      au prix d'un parfum classique ).
-  utter_ProductAvailableQuality:
-  - text: l'ensemble des produits proposés sur notre boutique en ligne sont garantis       100
-      neufs et authentiques et proviennent directement des plus grandes marques       de
-      parfums à travers le monde ( à l'instar des parfums que vous pouvez retrouver       en
-      boutique près de chez vous ). nos colis sont régulièrement contrôlés en {delivery}       afin
-      de vérifier qu'il ne s'agisse pas de produits contrefaits. Le produit {article}
-      n'est pas disponible actuellement.
-  utter_deliveryPlace_CustomerComplaint_ProvideInfo_Apologize:
-  - text: Au nom de toute l'équipe je vous transmets nos excuses et allons faire le       nécessaire
-      le plus vite
-  utter_DeliveryCountry:
-  - text: nous sommes sincèrement désolés mais nous ne livrons pas en direct hors
-      de France Métropolitaine depuis notre boutique en ligne. en revanche, vous avez
-      la possibilité de vous tourner vers notre partenaire DTLS ( voir lien ci-dessous
-      ) qui fournit une solution complète pour la livraison de votre commande directement
-      à l'adresse de votre choix.
+  utter_RefundResend:
+  - text: Souhaitez vous le renvoi du produit  ou le remboursement ?
+  utter_damagedPackageAskForMissingSlots:
+  - text: C'est entendu. Pouvez-vous me communiquer votre adresse postale ?
 actions:
-- action_save
+- action_my_restart
 - action_Perform_action
 - action_Search_order
 - action_Look_for_customer_file
 - action_Reset_working_memory
-- action_rename
+- action_save
 - utter_AskForMissingSlots_SayHello
 - utter_deliveryCost_ProvideInfo
 - utter_goodbye_SayGoodbye
@@ -915,12 +871,13 @@ actions:
 - utter_autre_Apologize_SayGoodbye
 - utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting
 - utter_thanks_goodbye_SayGoodbye
+- utter_ProductQuality_ProvideInfo
 - utter_payment_ProvideInfo
 - utter_thanks_ProvideInfo
 - utter_thanks_goodbye_oui_SayGoodbye
 - utter_PaymentRefused_Login_AskForMissingSlots_SayHello
 - utter_rien_Performaction_ProvideInfo_Suggeststo
-- utter_deliveryNews_ProvideInfo
+- utter_deliveryTime_ProvideInfo
 - utter_oui_Askforanotherquestion
 - utter_CancelOrder_SayGoodbye
 - utter_autre_AskForMissingSlots_Apologize
@@ -948,7 +905,7 @@ actions:
 - utter_CustomerComplaint_ProvideInfo_Apologize
 - utter_deliveryNews_ProvideInfo_Offeralternative
 - utter_goodbye_ProvideInfo_Apologize
-- utter_AskDetails_deliveryNews_ProvideInfo
+- utter_AskDetails_deliveryTime_ProvideInfo
 - utter_oui_deliveryPlace_SayGoodbye
 - utter_deliveryCost_ProvideInfo_Proceedtocheckpoint
 - utter_deliveryPlace_AskForMissingSlots_SayHello
@@ -966,7 +923,7 @@ actions:
 - utter_ConfirmationOrder_Searchorder_Askforwaiting_ProvideInfo
 - utter_ReceptionAlert_SayGoodbye
 - utter_CommuncationInterruption_deliveryNews_ProvideInfo
-- utter_AskDetails_StoreLocation_deliveryNews_ProvideInfo
+- utter_AskDetails_StoreLocation_deliveryTime_ProvideInfo
 - utter_deliveryTime_AskDetails_ProvideInfo
 - utter_non_SayGoodbye
 - utter_thanks_goodbye_ProvideInfo_SayGoodbye
@@ -1023,24 +980,6 @@ actions:
 - utter_AccountCreation_AskForMissingSlots_SayHello
 - utter_AccountCreation_ProvideInfo_Lookforcustomerfile
 - utter_ChangeData_ProvideInfo
-- utter_deliveryNews_ProvideInfopart
-- utter_deliveryNews_ProvideInfogen
-- utter_AskForMissingSlots_delivery
-- utter_AskForMissingSlots_login
-- utter_Discount
-- utter_Send_Performaction
 - utter_goodbye
-- utter_ProductAvailableRedirection
-- utter_ProductQuality_ProvideInfo
-- utter_ProductOrigin
-- utter_Askforanotherquestion
-- utter_ProvideInfo
-- utter_DeliveryCost
-- utter_Login
-- utter_CustomerService
-- utter_DeliveryPlace
-- utter_AskForMissingSlots_perfume
-- utter_ProductAvailableSample
-- utter_ProductAvailableQuality
-- utter_deliveryPlace_CustomerComplaint_ProvideInfo_Apologize
-- utter_DeliveryCountry
+- utter_RefundResend
+- utter_damagedPackageAskForMissingSlots

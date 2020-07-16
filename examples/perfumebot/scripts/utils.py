@@ -1,5 +1,7 @@
 import json, sys
 from pprint import pprint
+from converter import PMCverter
+
 
 
 def rename_dialogues(jsondict, out):
@@ -135,11 +137,38 @@ def entities_editor(jsondict, out):
         # sys.exit()
         out.write(json.dumps({dialogue: new_dialogue}, ensure_ascii=False, indent=4, sort_keys=True).encode("utf-8"))
 
+def jsontocsv(jsondict, out):
+    converter = PMCverter()
+    
+    convers = {}
+    for elem in jsondict:
+        convers[elem] = ""
+        intents = {}
+        entities = {}
+        slots = {}
+        speak = {}
+        print(elem)
+        for i in range(1, len(jsondict[elem])) :
+            intents[i] = jsondict[elem][i]['intent']
+            entities[i] = jsondict[elem][i]['entities']
+            slots[i] = jsondict[elem][i]['slots']
+            user  = converter.post_treatment_intent(jsondict[elem][i]['usr'])
+            agent = converter.post_treatment_intent(jsondict[elem][i]['sys'][0])
+            speak[i] = user+"\t"+agent
+            convers[elem] += '\t'+speak[i]+'\t'+str(intents[i])+'\t'+str(entities[i])+'\t'+str(slots[i])+'\n'
+        convers[elem] += '\n'
+    # pprint(convers)
+    out.write('ID\tUSER\tAGENT\tINTENT\tENTITIES\tSLOTS\n')
+    for elem in convers : 
+        out.write(elem+convers[elem])
+
+
+
 
 if __name__ == '__main__':
 
-    # jsondict = json.load(open('../input/dialogues1-100.json'),encoding='utf-8')
-    # out = open('../input/new_dialogues1-100.json', 'wb')
+    jsondict = json.load(open('../input/entitiesintents_dialogues1-100.json'),encoding='utf-8')
+    out = open('../input/new_dialogues1-100.csv', 'w')
     # rename_dialogues(jsondict, out)
     # jsondict = json.load(open('../input/new_dialogues1-100.json'), encoding='utf-8')
     # out = open('../input/brandnew_dialogues1-100.json', 'wb')
@@ -152,6 +181,8 @@ if __name__ == '__main__':
     # slot_corrector(jsondict, out, slots)
     # jsondict = json.load(open('../input/reallybrandnew_dialogues1-100.json'), encoding='utf-8')
     # entities_editor(jsondict, out)
+    """
+    #FORMATAGE 
     jsondict = json.load(open('../input/entities_dialogues1-100.json'), encoding='utf-8')
     slotsstream = open('../input/slots.json', 'wb')
     slots = {}
@@ -177,3 +208,6 @@ if __name__ == '__main__':
             newd.append(turn)
         new.update({dialogue: newd})
     out.write(json.dumps(new, ensure_ascii=False, indent=4, sort_keys=True).encode("utf-8"))
+    """
+
+    jsontocsv(jsondict, out)
