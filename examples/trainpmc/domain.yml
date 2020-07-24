@@ -45,6 +45,8 @@ intents:
 - saluer
 - ProductAvailable
 - deliveryNews+AskDetails
+- CommuncationInterruption
+- customerService
 entities:
 - emotion
 - tool
@@ -94,6 +96,7 @@ entities:
 - facebook
 - concurrence
 - action
+- biling
 slots:
   Store:
     type: text
@@ -460,7 +463,7 @@ responses:
       en boutique près de chez vous ). nos colis sont régulièrement contrôlés en {delivery}
       afin de vérifier qu'il ne s'agisse pas de produits contrefaits.
   utter_payment_ProvideInfo:
-  - text: oui bien sur.
+  - text: le payment est sécurisé.
   utter_thanks_ProvideInfo:
   - text: je vous invite donc à vous connecter avec l'adresse email {email} et le
       mot de passe   _Name4_  . vous pourrez bien entendu le modifier par la suite.
@@ -485,7 +488,7 @@ responses:
   - text: Avez vous d'autres questions ?
   utter_autre_AskForMissingSlots_Apologize:
   - text: je suis désolée je ne comprends pas votre demande pouvez-vous la spécifier
-      ?
+      
   utter_missingItem_ProvideInfo_Searchorder:
   - text: votre second colis est actuellement en transit vers la {country} et devrait
       arriver sur le territoire Français ce jour ou demain pour une livraison prévue
@@ -792,6 +795,28 @@ responses:
   - text: Souhaitez vous le renvoi du produit  ou le remboursement ?
   utter_damagedPackageAskForMissingSlots:
   - text: C'est entendu. Pouvez-vous me communiquer votre adresse postale ?
+  utter_PaymentRefused_Phone:
+  - text: "il s'agit d'un souci avec l'envoi du code de validation par SMS requis\
+      \ par votre banque afin de valider le paiement.  : je vous invite donc à contourner\
+      \ l'envoi de ce code en choisissant le second onglet appelé \" \" PayPal \"\
+      \ \" sur la page de paiement. vous pourrez ensuite saisir vos coordonnées de\
+      \ Carte bancaire afin de régler votre commande sans avoir nécessairement de\
+      \ compte PayPal."
+  utter_Login_AskForMissingSlot:
+  - text: pourriez vous m'indiquer votre adresse mail s'il vous plaît ?
+  utter_DeliveryNews_AskDetails:
+  - text: comme nous l'indiquons dans l'email contenant le lien de suivi le statut       peut
+      rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela
+      n'impacte la bonne livraison de votre colis. ceci est lié au fait que Chronopost
+      ne propose pas de suivi aux Etats-unis ; vous pourrez constater une mise à jour
+      du suivi à l'arrivée du colis sur le territoire français dans les prochains  jours.
+  utter_goodbye:
+  - text: Au nom de toute l'équipe je vous souhaite une agréable journée
+  utter_Reinit:
+  - text: "je viens de réinitialiser votre mot de passe et vous invite donc à vous\\\
+      \       \\ connecter avec l'adresse email : _Name1_ {email} et le mot de passe\
+      \ : _Name3_.\\       \\ vous pourrez bien entendu modifier ce dernier depuis\
+      \ votre espace client par\\       \\ la suite"
 actions:
 - action_my_restart
 - action_Perform_action
@@ -983,3 +1008,11 @@ actions:
 - utter_goodbye
 - utter_RefundResend
 - utter_damagedPackageAskForMissingSlots
+- utter_Login_ProvideInfo
+- utter_PaymentRefused_AskForMissingSlots
+- utter_PaymentRefused_Phone
+- utter_Login_AskForMissingSlot
+- utter_ProductPrice_AskForMissingSlots
+- utter_DeliveryNews_AskDetails
+- utter_AccountIssueError
+- utter_Reinit

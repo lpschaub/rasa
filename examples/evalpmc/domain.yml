@@ -481,7 +481,7 @@ responses:
       en boutique près de chez vous ). nos colis sont régulièrement contrôlés en {delivery}
       afin de vérifier qu'il ne s'agisse pas de produits contrefaits.
   utter_payment_ProvideInfo:
-  - text: oui bien sur.
+  - text: Le payment est sécurisé.
   utter_thanks_ProvideInfo:
   - text: je vous invite donc à vous connecter avec l'adresse email {email} et le
       mot de passe   _Name4_  . vous pourrez bien entendu le modifier par la suite.
