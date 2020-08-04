@@ -51,7 +51,6 @@ intents:
 - Customer_service
 - Send
 - ProductOrigin
-- DeliveryPlace
 - deny
 - Previous
 - Change+CancelOrder
@@ -673,7 +672,7 @@ responses:
   - text: d'accord je traite votre dossier dès que nous aurons reçu votre mail Madame
   utter_oui_Askforwaiting_SayGoodbye:
   - text: je m'occupe de votre dossier  je reviendrais vers vous par mail dans la
-      matinée Madame
+      matinée.
   utter_rien_AskForMissingSlots_SayHello:
   - text: 'Que puis-je faire pour vous ? '
   utter_ChangeData_Performaction_ProvideInfo_Suggeststo:
@@ -686,8 +685,7 @@ responses:
       afin de vous tenir informée des dernières nouveautés.  au nom de toute l'équipe
       ParfumsMoinsCher.com je vous souhaite une excellente journée.
   utter_missingItem_ProvideInfo:
-  - text: effectivement je vois que le produit   {article} de _Name3_ eau De parfum
-      spray 100 ml   n'a pas été expédié
+  - text: effectivement je vois que le produit {article}  n'a pas été expédié
   utter_deliveryNews_ProvideInfo_Apologize_Offeralternative:
   - text: il y a eu une erreur de préparation nous en sommes désolés /  souhaitez
       vous son expédition ( sous 12 à 14 jours ) ou le remboursement
@@ -695,7 +693,7 @@ responses:
   - text: vous optez donc pour le remboursement
   utter_oui_CustomerComplaint_ProvideInfo_Performaction:
   - text: je viens donc de procéder au remboursement du produit et des frais de port
-      associés soit 95.98 euros
+      associés.
   utter_damagedPackage_ProvideInfo_Searchorder:
   - text: "je regarde votre commande  je vous invite à nous envoyer une photo du produit\
       \ reçu par mail  à l'adresse mail : {email} serviceclient.com"

@@ -366,7 +366,7 @@ responses:
   utter_ProductPrice_AskForMissingSlots_SayHello:
   - text: Pour quelle contenance ?
   utter_ProductPrice_ProvideInfo:
-  - text: l'eau de parfum   {article}   {size} est au prix de {amount}
+  - text: l'eau de parfum   {article} est au prix de {amount}
   utter_CustomerComplaint_ProvideInfo:
   - text: je vais transmettre l'information au service concerné.
   utter_autre_AskForMissingSlots_SayHello:
@@ -631,7 +631,7 @@ responses:
   - text: vous avez reçu un autre produit et vous nous l'avez retourné  un renvoi
       a été effectué {date}S
   utter_AskDetails_StoreLocation_deliveryTime_ProvideInfo:
-  - text: nos produits sont expédiés depuis {place}
+  - text: nos produits sont expédiés depuis les USA
   utter_deliveryTime_AskDetails_ProvideInfo:
   - text: la livraison est prévue {date}
   utter_damagedPackage_AskForMissingSlots_Apologize:

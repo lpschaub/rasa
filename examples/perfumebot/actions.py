@@ -20,7 +20,7 @@ class ActionPerformAction(Action):
 
 class ActionSearchOrder(Action):
     def name(self):
-        return "action_Search_order"
+        return "action_search_order"
 
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message(text="Voici ce que j'ai trouvé:")
@@ -29,7 +29,17 @@ class ActionSearchOrder(Action):
             text="is it ok for you? hint: I'm not going to find anything else :)"
         )
         return []
+class ActionSearchProduct(Action):
+    def name(self):
+        return "action_search_product"
 
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message(text="Voici ce que j'ai trouvé:")
+        dispatcher.utter_message(text=tracker.get_slot("article"))
+        dispatcher.utter_message(
+            text="is it ok for you? hint: I'm not going to find anything else :)"
+        )
+        return []
 class ActionLookForCustomerFilel(Action):
 
     def name(self):

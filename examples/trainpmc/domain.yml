@@ -47,6 +47,13 @@ intents:
 - deliveryNews+AskDetails
 - CommuncationInterruption
 - customerService
+- Payment
+- ProductQuality
+- deliveryNews+CustomerComplaint
+- StoreLocation+deliveryTime
+- deliveryNews+deliveryPlace
+- oui+CustomerComplaint
+- Resend
 entities:
 - emotion
 - tool
@@ -97,6 +104,11 @@ entities:
 - concurrence
 - action
 - biling
+- spam
+- event
+- country
+- confirmation
+- oui
 slots:
   Store:
     type: text
@@ -135,6 +147,8 @@ slots:
   complaint:
     type: text
   concurrence:
+    type: text
+  confirmation:
     type: text
   connection:
     type: text
@@ -284,7 +298,7 @@ responses:
   utter_damagedPackage_Proceedtocheckpoint:
   - text: '_Name5_ {address}  _Name1_  est ce la bonne adresse ? '
   utter_autre_ProvideInfo_Performaction:
-  - text: D'accord je procède au {operation}.
+  - text: D'accord je procède au {action}.
   utter_deliveryCost_AskForMissingSlots_SayHello:
   - text: 'Quel type de livraison avez vous sélectionné ? '
   utter_goodbye_ProvideInfo:
@@ -488,7 +502,6 @@ responses:
   - text: Avez vous d'autres questions ?
   utter_autre_AskForMissingSlots_Apologize:
   - text: je suis désolée je ne comprends pas votre demande pouvez-vous la spécifier
-      
   utter_missingItem_ProvideInfo_Searchorder:
   - text: votre second colis est actuellement en transit vers la {country} et devrait
       arriver sur le territoire Français ce jour ou demain pour une livraison prévue
@@ -719,7 +732,6 @@ responses:
   utter_non_ProvideInfo:
   - text: "je vous invite à choisir l'un des 3 modes de livraison : en {place} standard\
       \ ou premium  vous devez cocher la case"
-  - text: donc je vous confirme qu'il n'y a pas de compte à votre nom
   utter_WebsiteBug_ProvideInfo:
   - text: je vous invite à vous déconnecter puis à recommencer votre commande
   utter_PaymentTool_AskForMissingSlots_SayHello:
@@ -817,13 +829,34 @@ responses:
       \       \\ connecter avec l'adresse email : _Name1_ {email} et le mot de passe\
       \ : _Name3_.\\       \\ vous pourrez bien entendu modifier ce dernier depuis\
       \ votre espace client par\\       \\ la suite"
+  utter_AskEmail:
+  - text: Pouvez-vous m'indiquer votre adresse mail ?
+  utter_AskOrder:
+  - text: pourriez vous m'indiquer votre numéro de commande s'il vous plaît ?
+  utter_troll:
+  - text: Ben vous êtes pas douée
+  utter_ConfirmRefund:
+  - text: Vous optez donc pour le remboursement ?
+  utter_Resend:
+  - text: je vous confirme que le renvoi a bien été effectué sous un nouveau numéro
+      de commande. cette dernière est visible depuis votre espace clients et ne vous
+      sera bien entendu pas facturée.  exceptionnellement, afin de vous dédommager
+      pour la gêne occasionnée, j'ai pu effectuer le renvoi directement à votre domicile.
+  utter_deliveryNewsLost:
+  - text: il semblerait que votre commande ait été perdue ou volée durant son transport.       souhaitez
+      vous son renvoi ou bien son remboursement
+  utter_deliveryNews_Lost:
+  - text: il semblerait que votre commande ait été perdue ou volée durant son transport.
+  utter_DeliveryMode:
+  - text: avez vous sélectionné l'un des 3 modes de livraison ?
 actions:
 - action_my_restart
 - action_Perform_action
-- action_Search_order
+- action_search_order
 - action_Look_for_customer_file
 - action_Reset_working_memory
 - action_save
+- action_search_product
 - utter_AskForMissingSlots_SayHello
 - utter_deliveryCost_ProvideInfo
 - utter_goodbye_SayGoodbye
@@ -1016,3 +1049,10 @@ actions:
 - utter_DeliveryNews_AskDetails
 - utter_AccountIssueError
 - utter_Reinit
+- utter_AskEmail
+- utter_AskOrder
+- utter_troll
+- utter_ConfirmRefund
+- utter_Resend
+- utter_deliveryNews_Lost
+- utter_DeliveryMode
