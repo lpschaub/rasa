@@ -167,11 +167,8 @@ def jsontocsv(jsondict, out):
 
 if __name__ == '__main__':
 
-    
-
-
-    # jsondict = json.load(open('../input/entitiesintents_dialogues1-100.json'),encoding='utf-8')
-    # out = open('../input/new_dialogues1-100.csv', 'w')
+    jsondict = json.load(open('../input/entitiesintents_dialogues1-100.json'),encoding='utf-8')
+    out = open('../input/new_dialogues1-100.csv', 'w')
     # rename_dialogues(jsondict, out)
     # jsondict = json.load(open('../input/new_dialogues1-100.json'), encoding='utf-8')
     # out = open('../input/brandnew_dialogues1-100.json', 'wb')
@@ -213,4 +210,4 @@ if __name__ == '__main__':
     out.write(json.dumps(new, ensure_ascii=False, indent=4, sort_keys=True).encode("utf-8"))
     """
 
-    # jsontocsv(jsondict, out)
+    jsontocsv(jsondict, out)
