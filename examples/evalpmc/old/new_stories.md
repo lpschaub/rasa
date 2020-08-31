@@ -1,4 +1,4 @@
-## New Story3539
+## New Story2
 
 * ProductQuality{"origin":"originaux"}
     - utter_ProductQuality_ProvideInfo
@@ -9,17 +9,17 @@
 * Previous
     - utter_ProductAvailable_ProvideInfo_Searchorder
 * ProductOrigin
-    - utter_AskDetails_StoreLocation_DeliveryTime_ProvideInfo
+    - AskDetails_StoreLocation_DeliveryTime_ProvideInfo
 * ProductOrigin
-    - action_default_fallback
+    - action_Default_fallback
 
-## New Story4543
+## New Story4
 
 * ProductQuality{"origin":"originaux"}
     - utter_ProductQuality_ProvideInfo
     - action_Save
 
-## story13474
+## story5
 * Discount{"discount":"code promo"}
     - utter_Discount_ProvideInfo
 * ProductTarget{"target":"femme","target":"mere"}
@@ -32,7 +32,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story9016
+## New Story9
 
 * ProductQuality
     - utter_ProductQuality_ProvideInfo
@@ -41,16 +41,16 @@
     - action_Save
 
 
-## New Story26972
+## New Story8
 
-* DeliveryNews{"order":"608380"}
+* DeliveryNews{"order":"commande 608380"}
     - action_Search_order
     - utter_DeliveryNews_ProvideInfo
     - utter_Goodbye
     - action_Save
 
 
-## New Story14440
+## New Story7
 
 * Discount{"discount":"code promo"}
     - utter_Discount_ProvideInfo
@@ -58,7 +58,7 @@
     - action_Save
 
 
-## New Story26335
+## New Story5
 
 * DeliveryNews{"date":"31/05"}
     - utter_AskOrder
@@ -70,11 +70,11 @@
     - action_Save
 
 
-## New Story5839
+## New Story6
 
 * CancelOrder
     - utter_AskOrder
-* Rien{"order":"15345"}
+* rien{"order":"15345"}
     - slot{"order":"15345"}
     - action_Perform_action
     - utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting
@@ -82,7 +82,7 @@
     - action_Save
 
 
-## New Story8606
+## New Story10
 
 * DeliveryTime{"date":"noel"}
     - utter_DeliveryTime_ProvideInfo
@@ -90,7 +90,7 @@
     - action_Save
 
 
-## New Story8507
+## New Story11
 
 * DeliveryNews{"date":"20 mars"}
     - utter_AskOrder
@@ -106,9 +106,11 @@
     - action_Save
 
 
-## New Story9912
+## New Story12
 
-* DeliveryNews{"date":"31 mai","order":"5785"}
+* DeliveryNews{"date":"31 mai"}
+    - utter_AskOrder
+* Rien{"order":"5785"}
     - slot{"order":"5785"}
     - action_Search_order
     - utter_DeliveryNews_ProvideInfo
@@ -119,7 +121,7 @@
     - action_Save
 
 
-## New Story18222
+## New Story13
 
 * ProductQuality{"origin":"origine"}
     - utter_ProductQuality_ProvideInfo
@@ -130,18 +132,18 @@
     - action_Save
 
 
-## Story 9959
+## Story from conversation with 2833e306c0484e7190f0442a9f796ba3 on June 30th 2020
 
 * AccountIssue
     - utter_Reinit
 * Login{"pwd":"mot de passe"}
     - utter_Login_Repeatprevious
 * Login{"pwd":"mot de passe"}
-    - action_default_fallback
+    - action_Default_fallback
     - action_Save
 
 
-## New Story8298
+## New Story15
 
 * DeliveryNews
     - utter_AskOrder
@@ -154,9 +156,9 @@
     - action_Save
 
 
-## New Story2540
+## New Story16
 
-* AccountIssue{"pwd":"mot de passe"}
+* AccountIssue{,"pwd":"mot de passe"}
     - utter_AskPwd
 * Login
     - utter_Reinit
@@ -165,7 +167,7 @@
     - action_Save
 
 
-## New Story14983
+## New Story17
 * DeliveryNews{"channel":"e-mail","channel":"téléphone"}
     - utter_AskDetails
 * DeliveryTime{"delivery":"acheminement","delivery":"livraison"}
@@ -175,18 +177,17 @@
 * CustomerService{"channel":"mail","channel":"téléphoner"}
     - utter_CustomerService_Contact
 * Previous{"channel":"e-mails"}
-    - action_default_fallback
+    - action_Default_fallback
 
 
-## New Story9750
+## New Story18
 
-* ConfirmationOrder{"billing":"facture","order":"658965"}
-    - slot{"order":"658965"}
-    - utter_DeliveryNews_ProvideInfo
+* ConfirmationOrder{,"billing":"facture"}
+    - utter_DeliveryTime_ProvideInfo
     - utter_Goodbye
     - action_Save
 
-## New Story16601
+## New Story19
 
 * ProductAvailable{"article":"Ted Lapidus"}
     - utter_AskTarget
@@ -198,7 +199,27 @@
     - action_Save
 
 
-## New Story12747
+## New Story20
+
+* DeliveryNews{"delivery":"livraison","date":"15 mai","order":"716640"}
+    - action_Search_order
+    - utter_DeliveryNews_ProvideInfo
+* Goodbye
+    - utter_Goodbye
+    - action_Save
+
+
+## New Story22
+
+* DeliveryNews{"order":"649843"}
+    - action_Search_order
+    - utter_DeliveryNews_ProvideInfo
+* Goodbye
+    - utter_Goodbye
+    - action_Save
+
+
+## New Story21
 
 * DeliveryNews{"order":"716640","delivery":"livraison","date":"15 mai"}
     - slot{"date":"15 mai"}
@@ -210,19 +231,25 @@
     - utter_Goodbye
     - action_Save
 
+## Story from conversation with bf9a980148ea4e6fa0ebe1b0e45384e9 on July 15th 2020
 
-## New Story22637
-
-* DeliveryNews{"order":"649843"}
-    - slot{"order":"649843"}
-    - action_Search_order
+* DeliveryNews{"order":"15","delivery":"livraison","date":"mai"}
+    - slot{"date":"mai"}
+    - slot{"delivery":"livraison"}
+    - slot{"order":"15"}
     - utter_DeliveryNews_ProvideInfo
 * Goodbye
     - utter_Goodbye
     - action_Save
 
+## New Storype
 
-## New Story sample3603
+* DeliveryNews{"order":"649843"}
+    - action_Search_order
+    - utter_DeliveryNews_ProvideInfo
+    - slot{"order":"649843"}
+
+## New Story sample
 
 * ProductAvailable{"article":"Bvlgari","sample":"échantillons"}
     - slot{"article":"Bvlgari","sample":"échantillons"}
@@ -232,35 +259,34 @@
     - utter_Goodbye
     - action_Save
 
-## New Story3632
+## New Story23
 
 * ProductAvailable{"article":"coffret cadeau homme idéal","size":"100ml"}
     - slot{"article":"coffret cadeau homme idéal"}
     - action_Search_product
     - utter_ProductAvailable_ProvideInfo_Searchorder
 
-## New Storyx1
+## New Story24
 
 * ProductTarget{"article":"eau de toilette","target":"pré-ado"}
     - slot{"article":"eau de toilette","target":"pré-ado"}
     - utter_ProductTargetNoIdea
 
-## New Story20943
+## New Story26
 
 * DeliveryPlace{"pr":"point relais","delivery":"livraison"}
     - slot{"delivery":"livraison"}
     - slot{"pr":"point relais"}
     - utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize
 
-## Story6473
+## Story from conversation with ab41c713572743dfba7340220b4e7d5a on July 15th 2020
 
-* DeliveryCountry{"country":"Guadeloupe"}
-    - slot{"country":"Guadeloupe"}
+* DeliveryCountry
     - utter_DeliveryCountry
 * Thanks
     - utter_Goodbye
 
-## New Story3120
+## New Story27
 
 * DeliveryNews{"order":"726648","delivery":"livraison"}
     - slot{"delivery":"livraison"}
@@ -271,12 +297,12 @@
     - utter_Goodbye
     - action_Save
 
-## New Story18130
+## New Story28
 
 * DeliveryCost
-    - action_default_fallback
+    - action_Default_fallback
 
-## New Story23605
+## New Story29
 
 * ProductAvailable{"article":"Repetto"}
     - slot{"article":"Repetto"}
@@ -285,9 +311,9 @@
 * AskDetails
     - utter_ProductRedirection
 * Non
-    - action_default_fallback
+    - action_Default_fallback
 
-## New Story536
+## New Story30
 
 * DeliveryNews
     - utter_AskOrder
@@ -301,13 +327,13 @@
     - utter_Goodbye
     - action_Save
 
-## New Story3846
+## New Story31
 
 * Discount{"discount":"code promo"}
     - slot{"discount":"code promo"}
     - utter_Discount_ProvideInfo
 
-## New Story13098
+## New Story32
 
 * AccountIssue
     - utter_AskConfirmation_ProvideInfo

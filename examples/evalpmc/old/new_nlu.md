@@ -27,7 +27,7 @@
 - no way
 - not really
 - non merci
-- se n'ai pas lui [dommage](mood_neg)
+- se n'ai pas lui dommage
 
 
 
@@ -50,8 +50,9 @@
 - bonjour, les produits sont bien des  [originaux](order)?
 - bonjour, les produits sont bien des [originaux](real) ?
 - bonjour bonjour les pargums sont ils des [originaux](real) svp
-- bonjour _Name1_, vos parfums sont ils les [vrais](real)? ou copies ? sans vouloir vous vexer mais les prix sont juste époustouflants !
+- bonjour _Name1_, vos parfums sont ils les[vrais](real)? ou copies ? sans vouloir vous vexer mais les prix sont juste époustouflants !
 - bonjour, je suis très intéressé par les prix que vous affichez mais qui me prouve l'[origine](real) des produits ?
+- bonjour _Name1_, vos parfums sont ils les [vrais ](real)? ou copies ? sans vouloir vous vexer mais les prix sont juste époustouflants !
 
 ## intent:Previous
 - la réponse à ma question précédente ? ! !
@@ -67,7 +68,7 @@
 - bonjour, étant bon client, je souhaiterais avoir un [code promo](discount) avant de passer commande c'est possible ? Merci.
 - je souhaite bénéficier un [code promo](discount)
 - bonjour, le site annonce qu'il existe un [code promo](discount) - je ne le trouve pas
-- Merci de bien vouloir m'envoyer les [codes de réductions](discount) par [mail](channel).
+- Merci de bien vouloir m'envoyer les[ codes de réductions](discount) par [mail](channel).
 
 ## intent:ProductTarget
 - que me conseillez vous en parfum [femme](target) pour ma [mère](target) ( 75 ans ) merci.
@@ -84,7 +85,7 @@
 - Merci pour cette réponse
 
 ## intent:DeliveryNews
-- bonjour j'attends ma commande du [16 juin](date) toujours en attente chez l'expéditeur. le délai est très long. [commande 608380](order)
+- bonjour j'attends ma commande du [16 juin](date)[6 jui](article)n toujours en attente chez l'expéditeur. le délai est très long. [commande 608380](order)
 - bonjour Madame ma [commande 605565](date) sur chronoposte est toujours en préparation depuis le [24/05](date) etc et je parts à l'étranger le [31/05](order) Mercie de me renseigner
 - bonjour, la livraison sera pour avant Noel ? cordialement.
 - bonjour email _Email1_ je n'ai toujours pas reçu ma [commande](order) du [20](order) mars est ce normal ?
@@ -94,7 +95,7 @@
 - je me suis fait avoir en commandant ailleurs, pouvez vous me confirmer le délai d'[acheminement](order) pour une commande que je serai susceptible de vous faire et quel recours j'ai en xcas de non [livraison](delivery)
 - [716640](order) bonjour cette commande est en cours de [livraison](delivery) depuis le [15 mai](order) dernier. pourrais je avoir de plus amples informations
 - bonsoir, pouvez me dire si ma commande a été expédiée [649843](order)
-- bonjour, bonjour, j'ai passé une commande le 26 juin numéro [726648](order) et ça fait [2 semaines](date) que c'est en cours de [livraison](delivery), je la reçois qaund car je pars bientôt en vacances, merci
+- bonjour, bonjour, j'ai passé une commande le 26 juin numéro [726648](order) et ça fait[ 2 semaines](date) que c'est en cours de [livraison](delivery), je la reçois qaund car je pars bientôt en vacances, merci
 - bonjour je vous contact au sujet de ma commande que je n'ai toujours pas eu
 
 ## intent:CancelOrder
@@ -131,7 +132,7 @@
 - en [point relais](pr) peut on choisir en comment faire
 
 ## intent:ConfirmationOrder
-- commande N° [653320](order) bonjour etc es ce normal suite à une commande passée hier soir que je n'ai pas reçu un [mail](channel) de confirmation de commande alors que j'ai pu avoir la facture accessible sur le compte créé ?
+- commande N° [653320](order) bonjour etc es ce normal suite à une commande passée hier soir que je n'ai pas reçu un [mail ](channel)de confirmation de commande alors que j'ai pu avoir la facture accessible sur le compte créé ?
 
 ## intent:DeliveryPlace
 - bonjour, mon colis a atterri dans un [point relais](pr) alors que j'ai payé pour une [livraison](delivery) a [domicile](place).

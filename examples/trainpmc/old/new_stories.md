@@ -3,22 +3,22 @@
     - slot{"order":"00"}
     - slot{"fdp":"frais de port"}
     - utter_DeliveryCost_ProvideInfo
-* Goodbye{"mood":"dommage"}
+* Goodbye{"mood_neg":"dommage"}
     - utter_Goodbye
     - action_Save
 
-## New Story2
+## New Story1028
 
 * PaymentRefused{"payment":"régler"}
     - utter_PaymentRefused_ProvideInfo
 * PaymentTool{"tool":"PayPal"}
-	- slot{"paypal":"PayPal"}
+    - slot{"paypal":"PayPal"}
     - utter_PaymentRefused_ProvideInfo_Offeralternative
 * Thanks
     - utter_Goodbye
     - action_Save
 
-## New Story3
+## New Story1044
 
 * ProductAvailable{"email":"_Email1_","article":"womanity EAU de parfum spray","target":"amie","reload":"rechargeable"}
     - slot{"email":"_Email1_"}
@@ -30,13 +30,13 @@
     - utter_Goodbye
     - action_Save
 
-## New Story4
+## New Story1060
 
 * DamagedPackage{"damaged":"casse","transporter":"Chronopost"}
     - slot{"damaged":"casse"}
     - utter_RefundResend
-* DamagedPackage{"action":"renvoi","home":"chez nous"}
-    - slot{"action":"renvoi"}
+* DamagedPackage{"resend":"renvoi","home":"chez nous"}
+    - slot{"resend":"renvoi"}
     - slot{"home":"chez nous"}
     - utter_DamagedPackageAskForMissingSlots
 * Rien
@@ -45,7 +45,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story6
+## New Storyx2
 
 * DeliveryCost{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
@@ -53,7 +53,7 @@
 * Discount
     - utter_Discount_ProvideInfo
 
-## New Story5
+## New Storyx1
 
 * DeliveryNews{"order":"48512"}
     - slot{"order":"48512"}
@@ -62,13 +62,13 @@
     - utter_Goodbye
     - action_Save
 
-## New Story6
+## New Story1175
 
 * DeliveryCost{"fdp":"frais de transport"}
     - slot{"fdp":"frais de transport"}
     - utter_DeliveryCost_ProvideInfo
 
-## New Story15
+## New Story1177
 
 * DeliveryCost{"email":"_Email1_","free":"offerte"}
     - slot{"email":"_Email1_"}
@@ -80,7 +80,7 @@
     - slot{"email":"_Email1_"}
     - action_Save
 
-## New Story7
+## New Story1208
 
 * Autre
     - utter_Autre_ProvideInfo_AskForMissingSlots
@@ -109,12 +109,12 @@
     - utter_Goodbye
     - action_Save
 
-## New Story9
+## New Story1225
 
-* Goodbye{"mood":"🙂"}
+* Goodbye{"mood_pos":"🙂"}
     - utter_Goodbye
 
-## New Story10
+## New Story1309
 
 * Login{"pwd":"numéro de passe"}
     -slot{"pwd":"numéro de passe"}
@@ -128,7 +128,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story11
+## New Story1315
 
 * DeliveryNews{"order":"361"}
     - slot{"order":"361"}
@@ -142,7 +142,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story13
+## New Story1354
 
 * PaymentRefused{"device":"portable"}
     - slot{"device":"portable"}
@@ -151,7 +151,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story14
+## New Story1376
 
 * Login{"facebook": "FB","pwd": "mot de passe"}
     - slot{"facebook": "FB"}
@@ -164,21 +164,22 @@
     - utter_Goodbye
     - action_Save
 
-## New Story17
+## New Story1391
 
 * MissingItem
     - utter_MissingItem_ProvideInfo
 
-## New Story12
+## New Story1403
 
 * DeliveryNews{"order":"40535"}
     - slot{"order":"40535"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * ReceptionAlert{"channel":"sms"}
     - slot{"channel":"sms"}
     - utter_ReceptionAlert_ProvideInfo
 
-## New Story16
+## New Story1420
 
 * ProductPrice{"article":"Lolita lempicka","discount":"remise"}
     - slot{"article":" Lolita lempicka"}
@@ -195,11 +196,12 @@
     - utter_Goodbye
     - action_Save
 
-## New Story17
+## New Story1426
 
 * DeliveryNews{"article":"parfum","email":"_Email1_"}
     - slot{"article":"parfum"}
     - slot{"email":"_Email1_"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * AskDetails
     - utter_DeliveryNews_AskDetails
@@ -207,7 +209,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story18
+## New Story1439
 
 * ProductAvailable{"article":"cadeau","fdp":"port"}
     - slot{"article":"cadeau"}
@@ -219,30 +221,28 @@
     - utter_Goodbye
     - action_Save
 
-## New Story19
+## New Story1459
 
 * CustomerService{"channel":"mail"}
     - slot{"channel":"mail"}
-    - utter_Customer_service_ProvideInfo
+    - utter_CustomerService_ProvideInfo
 * Thanks
     - utter_Goodbye
     - action_Save
 
-## New Story20
+## New Story1467
 
 * DeliveryCost
     - utter_DeliveryCost_ProvideInfo
 * AskDetails
     - action_Default_fallback
 
-## New Story21
+## New Story1495
 
 * AccountIssue
     - utter_AccountIssueError
-* Login{"pwd":"passe","action":"renvoie"}
-    - slot{"action":"renvoie"}
-    - slot{"pwd":"passe"}
-    - slot{"action":"renvoie"}
+* Login{"pwd":"passe","resend":"renvoie"}
+    - slot{"resend":"renvoie"}
     - slot{"pwd":"passe"}
     - utter_Login_AskForMissingSlots_SayHello
 * Rien{"email":"email@email.com"}
@@ -252,7 +252,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story22
+## New Story1540
 
 * Login{"email":"_Email_"}
     - slot{"email":"_Email_"}
@@ -265,7 +265,7 @@
     - slot{"bug":"authentification"} 
     - action_Default_fallback
 
-## New Story30
+## New Story158
 
 * CancelOrder
     - utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting
@@ -273,17 +273,17 @@
     - utter_Goodbye
     - action_Save
 
-## New Story25
+## New Story1599
 
 * ProductQuality
     - utter_ProductQuality_ProvideInfo
-* PaymentSecure
+* PaymentSafe
     - utter_Payment_ProvideInfo
 * Goodbye
     - utter_Goodbye
     - action_Save
 
-## New Story24
+## New Story1641
 
 * DeliveryNews
     - utter_DeliveryNews_ProvideInfo
@@ -293,7 +293,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story23
+## New Story1644
 
 * PaymentRefused
     - utter_PaymentRefused_AskForMissingSlots_SayHello
@@ -308,17 +308,22 @@
 * Thanks
     - utter_Goodbye
 
-## New Story29
+## New Story1646
 
 * DeliveryNews
+    - utter_AskOrder
+* Rien{"order":"56"}
+    - slot{"order":"56"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
+
 * AskDetails
     - utter_DeliveryTime_ProvideInfo
 * Autre
     - utter_Goodbye
     - action_Save
 
-## New Story26
+## New Story1647
 
 * PaymentRefused{"email":"_Email_","tool":"MasterCard","payment":"payer"}
     - slot{"email":"_Email_"}
@@ -331,7 +336,7 @@
 * Goodbye
     - utter_Goodbye
 
-## New Story28
+## New Story1661
 
 * DeliveryNews+AskDetails{"article":"parfum","transporter":"Chronopost"}
     - slot{"article":"parfum"}
@@ -346,7 +351,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story27
+## New Story1708
 
 * WebsiteBug{"action":"téléchargé"}
     - slot{"action":"téléchargé"}
@@ -354,18 +359,19 @@
 * AccountIssue{"biling":"factures"}
     - action_Default_fallback
 
-## New Story32
+## New Story1741
 
 * DeliveryNews{"email":"_Email_","article":"parfum","order":"00"}
     - slot{"order":"00"}
     - slot{"article":"parfum"}
     - slot{"email":"_Email_"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * Goodbye
     - utter_Goodbye
     - action_Save
 
-## New Story38
+## New Story1761
 
 * MissingItem
     - utter_MissingItem_ProvideInfo_Searchorder
@@ -376,27 +382,29 @@
     - utter_CustomerComplaint_Searchorder_Askforwaiting_ProvideInfo
 * AskDetails
     - utter_ConfirmationOrder_ProvideInfo_Offeralternative
-* ConfirmationOrder{"mood":"dommage"}
-    - slot{"mood":"dommage"}
+* ConfirmationOrder{"mood_neg":"dommage"}
+    - slot{"mood_neg":"dommage"}
     - utter_Oui_ConfirmationOrder_ProvideInfo
 * Goodbye
     - utter_Goodbye
     - action_Save
 
-## New Story35
+## New Story1763
 
 * DeliveryNews{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * Goodbye
     - utter_Goodbye
     - action_Save
 
-## New Story33
+## New Story1777
 
 * DeliveryNews{"order":"00","pr":"point relais"}
     - slot{"order":"00"}
     - slot{"pr":"point relais"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * DeliveryNews+AskDetails
     - slot{"order":"00"}
@@ -406,7 +414,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story34
+## New Story1799
 
 * Discount{"discount":"code promo"}
     - slot{"discount":"code promo"}
@@ -419,7 +427,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story36
+## New Story1840
 
 * Discount{"article":"parfum","discount":"réduction"}
     - slot{"article":"parfum"}
@@ -433,23 +441,23 @@
     - utter_Goodbye
     - action_Save
 
-## New Story37
+## New Story1851
 
-* DamagedPackage{"article":"parfum","email":"_Email1_","mood":"déçue"}
+* DamagedPackage{"article":"parfum","email":"_Email1_","mood_neg":"déçue"}
     - slot{"article":"parfum"}
     - slot{"email":"_Email1_"}
     - utter_DamagedPackage_AskForMissingSlots_Apologize
 * Autre
     - utter_RefundResend
-* Autre{"action":"renvoie"}
-    - slot{"action":"renvoi"}
-    - utter_Autre_ProvideInfo_Performaction
+* Resend{"resend":"renvoie"}
+    - slot{"resend":"renvoi"}
+    - utter_Resend
     - action_Perform_action
 * Thanks
     - utter_Goodbye
     - action_Save
 
-## New Story40
+## New Story1862
 
 * MissingItem
     - utter_MissingItem_Searchorder_Askforwaiting_ProvideInfo
@@ -457,15 +465,17 @@
     - utter_Goodbye
     - action_Save
 
-## New Story41
+## New Story1870
 
 * DeliveryNews
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 
-## New Story39
+## New Story1880
 
 * DeliveryNews{"order":"00"}
     - slot{"order":"00"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * ReceptionAlert{"fdp":"portable"}
     - slot{"order":"00"}
@@ -475,17 +485,18 @@
     - utter_Goodbye
     - action_Save
 
-## New Story42
+## New Story1882
 
 * DeliveryNews{"email":"_Email1_","order":"00"}
     - slot{"email":"_Email1_"}
     - slot{"order":"00"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * Autre
     - utter_Goodbye
     - action_Save
 
-## New Story43
+## New Story1915
 
 * CancelOrder
     - action_Search_order
@@ -494,7 +505,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story44
+## New Story1929
 
 * DeliveryCost+Discount
     - utter_DeliveryCost_ProvideInfo_Apologize
@@ -502,7 +513,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story45
+## New Story1930
 
 * DeliveryNews
     - action_Search_order
@@ -514,7 +525,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story47
+## New Story1971
 
 * CommuncationInterruption{"transporter":"Chronopost"}
     - slot{"transporter":"Chronopost"}
@@ -535,14 +546,14 @@
     - utter_Goodbye
     - action_Save
 
-## New Story48
+## New Story1973
 
 * DeliveryTime
     - utter_DeliveryTime_ProvideInfo
 * Thanks
     - utter_Goodbye
 
-## New Story54
+## New Story1988
 
 * DeliveryCost{"fdp":"frais"}
     - slot{"fdp":"frais"}
@@ -551,11 +562,12 @@
     - utter_Goodbye
     - action_Save
 
-## New Story55
+## New Story1993
 
 * Autre
+    - action_Default_fallback
 
-## New Story56
+## New Story2013
 
 * ProductPrice{"article":"parfum"}
     - slot{"article":"parfum"}
@@ -565,7 +577,7 @@
     - slot{"article":"Guerlain"}
     - utter_ProductPrice_ProvideInfo_Advisetolookelsewhere
 
-## New Story53
+## New Story2044
 
 * DeliveryNews{"date":"22/09","event":"anniversaire","order":"00"}
     - slot{"order":"00"}
@@ -576,7 +588,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story52
+## New Story2067
 
 * Returned{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
@@ -587,7 +599,7 @@
     - slot{"email":"_Email1_"}
     - action_Default_fallback
 
-## New Story51
+## New Story2070
 
 * Discount{"discount":"remise","code":"MDM0"}
     - slot{"discount":"remise"}
@@ -600,7 +612,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story57
+## New Story2073
 
 * DeliveryTime{"date":"Noël"}
     - slot{"date":"Noël"}
@@ -612,22 +624,22 @@
     - utter_Goodbye
     - action_Save
 
-## New Story58
+## New Story2192
 
-* DeliveryNews{"order":"00","action":"envoi"}
-    - slot{"action":"envoi"}
+* DeliveryNews{"order":"00","resend":"envoi"}
+    - slot{"resend":"envoi"}
     - slot{"order":"00"}
     - action_Search_order
     - utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize
-* DeliveryNews+CustomerComplaint{"action":"envoi"}
-    - slot{"action":"envoi"}
+* DeliveryNews+CustomerComplaint{"resend":"envoi"}
+    - slot{"resend":"envoi"}
     - utter_DeliveryNews_AskDetails_ProvideInfo
 * DeliveryNews+CustomerComplaint
     - utter_DeliveryNews_AskDetails_CustomerComplaint_ProvideInfo
 * CustomerComplaint+goodbye
     - utter_Goodbye
 
-## New Story59
+## New Story2196
 
 * DeliveryNews{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
@@ -637,7 +649,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story60
+## New Story2280
 
 * DeliveryNews{"order":"00"}
     - slot{"order":"00"}
@@ -651,7 +663,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story_troll1
+## New Story_troll2340
 
 * PaymentRefused{"tool":"carte bancaire"}
     - slot{"tool":"carte bancaire"}
@@ -662,19 +674,20 @@
 * Oui
     - utter_PaymentTool_ProvideInfo_Apologize_Offeralternative
 
-## New Story61
+## New Story2345
 
 * DeliveryNews{"email":"_Email1_","date":"09/04/19","fdp":"frais","order":"00"}
     - slot{"date":"09/04/19"}
     - slot{"order":"00"}
     - slot{"email":"_Email1_"}
     - slot{"fdp":"frais"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * CustomerComplaint+goodbye
     - utter_Goodbye
     - action_Save
 
-## New Story62
+## New Story240
 
 * Saluer
     - utter_AskForMissingSlots_SayHello
@@ -685,7 +698,7 @@
 * AskDetails
     - action_Default_fallback
 
-## New Story63
+## New Story252
 
 * ConfirmationOrder{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
@@ -695,7 +708,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story64
+## New Story260
 
 * DeliveryNews{"order":"00"}
     - slot{"order":"00"}
@@ -704,11 +717,12 @@
 * ReceptionAlert
     - action_Default_fallback
 
-## New Story65
+## New Story277
 
 * DeliveryNews{"transporter":"chrono"}
     - slot{"transporter":"chrono"}
     - slot{"transporter":"chrono"}
+    - action_Search_order
     - utter_DeliveryNews_AskDetails_ProvideInfo
     - slot{"transporter":"chrono"}
 * StoreLocation+deliveryTime{"transporter":"chrono","date":"31/12"}
@@ -723,7 +737,7 @@
 * Thanks
     - utter_Goodbye
 
-## New Story66
+## New Story281
 
 * DamagedPackage{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
@@ -731,7 +745,7 @@
 * CustomerComplaint
     - utter_DamagedPackage_ProvideInfo_Searchorder
 
-## New Story67
+## New Story287
 
 * DeliveryNews
     - utter_AskEmail
@@ -743,16 +757,19 @@
     - utter_Goodbye
     - action_Save
 
-## New Story68
+## New Story293
 
 * DeliveryNews
+    - utter_AskEmail
+* Rien{"email":"e@mel.fr"}
+    - slot{"email":"e@mel.fr"}
     - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * Goodbye
     - utter_Goodbye
     - action_Save
 
-## New Storytroll2
+## New Storytroll300
 
 * DeliveryNews
     - utter_AskOrder
@@ -760,7 +777,7 @@
     - slot{"date":"7/06"}
     - utter_Troll
 
-## New Story69
+## New Story307
 
 * ConfirmationOrder{"tool":"carte bancaire","payment":"paiement","confirmation":"confirmation"}
     - slot{"confirmation":"confirmation"}
@@ -771,7 +788,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story80
+## New Story313
 
 * Rien{"email":"_Email1_"}
     - slot{"email":"_Email1_"}
@@ -789,7 +806,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story79
+## New Story325
 
 * Saluer
     - utter_AskForMissingSlots_SayHello
@@ -798,19 +815,20 @@
     - slot{"follow-up":"suivi"}
     - slot{"email":"_Email1_"}
     - action_Search_order
+    - utter_DeliveryNews_ProvideInfo
 * DeliveryNews+deliveryPlace{"transporter":"Chronopost"}
     - slot{"transporter":"Chronopost"}
     - slot{"follow-up":"suivi"}
     - utter_DeliveryNews_AskDetails_ProvideInfo
 
-## New Story72
+## New Story330
 
 * ProductAvailable{"article":"Courrèges in blue"}
     - slot{"article":"Courrèges in blue"}
     - action_Search_product
     - utter_ProductAvailable_ProvideInfo_Searchorder
 
-## New StoryInterestingMemory
+## New StoryInterestingMemory341
 
 * MissingItem
     - action_Search_order
@@ -823,7 +841,7 @@
     - utter_Refund_SayGoodbye
     - action_Save
 
-## New Story78
+## New Story371
 
 * MissingItem{"order":"00"}
     - slot{"order":"00"}
@@ -833,7 +851,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story77
+## New Story412
 
 * Saluer
     - utter_AskForMissingSlots_SayHello
@@ -846,7 +864,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story76
+## New Story420
 
 * ReceptionAlert{"channel":"sms","pr":"point relais"}
     - slot{"channel":"sms"}
@@ -856,22 +874,23 @@
     - utter_Goodbye
     - action_Save
 
-## New Story75
+## New Story444
 
-* DeliveryNews+AskDetails{"follow-up":"suivi","mood":"inquiète"}
+* DeliveryNews+AskDetails{"follow-up":"suivi","mood_neg":"inquiète"}
     - slot{"follow-up":"suivi"}
-    - slot{"mood":"inquiète"}
+    - slot{"mood_neg":"inquiète"}
     - utter_AskOrder
 * Rien{"order":"54678"}
     - slot{"order":"54678"}
+    - action_Search_order
     - utter_DeliveryNews_AskDetails_ProvideInfo
 * Thanks
     - utter_Goodbye
     - action_Save
 
-## New Story73
+## New Story457
 
-* DeliveryNews{"order":"00"}
+* DeliveryNews{"order":"00","date":"14 octobre"}
     - slot{"order":"00"}
     - action_Search_order
     - utter_DeliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion
@@ -882,7 +901,7 @@
 * Goodbye
     - utter_Goodbye
 
-## New Storypassepas
+## New Storypassepas438
 
 * Discount{"code":"NOEL02"}
     - slot{"code":"NOEL02"}
@@ -894,17 +913,17 @@
 * Discount
     - action_Default_fallback
 
-## New Story81
+## New Story468
 
 * DeliveryNews{"order":"00"}
-    - action_Search_order
     - slot{"order":"00"}
+    - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * Thanks
     - utter_Goodbye
     - action_Save
 
-## New StoryrenvoirDur
+## New Storyrenvoir477
 
 * DeliveryNews{"email":"_Email1_2","order":"03"}
     - slot{"email":"_Email1_2"}
@@ -915,9 +934,9 @@
     - slot{"home":"domicile"}
     - slot{"order":"03"}
     - utter_DeliveryNews_ProvideInfo_Apologize_Offeralternative
-* DeliveryPlace{"action":"recommander"}
+* DeliveryPlace{"resend":"recommander"}
     - slot{"home":"domicile"}
-    - slot{"action":"recommander"}
+    - slot{"resend":"recommander"}
     - slot{"order":"03"}
     - utter_DeliveryNews_deliveryPlace_ProvideInfo_Offeralternative
     - slot{"email":"_Email1_2"}
@@ -929,11 +948,10 @@
     - utter_Goodbye
     - action_Save
 
-## New Story
+## New Story510
 
-* DeliveryNews{"date":"mars"}
-    - slot{"date":"mars"}
-    - slot{"date":"mars"}
+* DeliveryNews{"date":"27 mars"}
+    - slot{"date":"27 mars"}
     - action_Search_order
     - utter_DeliveryNews_AskDetails_CustomerComplaint_ProvideInfo
     - slot{"date":"mars"}
@@ -945,19 +963,25 @@
     - utter_Goodbye
     - action_Save
 
-## New Story
+## New Story566
 
-* DeliveryNews{"email":"_Email1_"}
+* DeliveryNews{"email":"_Email1_","order":"00","date":"1 juin 2019"}
     - slot{"email":"_Email1_"}
-    - slot{"email":"_Email1_"}
+    - slot{"order":"00"}
     - action_Search_order
     - utter_DeliveryNews_Lost
     - utter_RefundResend
-    - slot{"email":"_Email1_"}
+    - slot{"date":"1 juin 2019"}
+* Resend{"operation":"renvoyez"}
+    - action_Perform_action
+    - utter_Resend
+    - utter_Goodbye
+    - action_Save
 
-## New Story
+## New Story579
 
-* DeliveryNews{"email":"_Email1_"}
+* DeliveryNews{"email":"_Email1_","order","00"}
+    - slot"order","00"
     - slot{"email":"_Email1_"}
     - action_Search_order
     - utter_DeliveryNews_ProvideInfo
@@ -965,7 +989,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story
+## New Story612
 
 * DeliveryTime
     - utter_DeliveryTime_ProvideInfo
@@ -973,7 +997,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story
+## New Story655
 
 * DeliveryCost+Discount{"fdp":"port"}
     - slot{"fdp":"port"}
@@ -983,7 +1007,7 @@
 * Goodbye
     - utter_Goodbye
 
-## New Story
+## New Story661
 
 * PaymentRefused
     - utter_PaymentRefused_AskForMissingSlots
@@ -999,13 +1023,13 @@
 * WebsiteBug
     - action_Default_fallback
 
-## New Story
+## New Story714
 
 * DeliveryCost+Discount{"fdp":"port"}
     - slot{"fdp":"port"}
     - utter_DeliveryCost_ProvideInfo_Apologize
 
-## New Story
+## New Story731
 
 * PaymentRefused{"email":"_Email1_2","payment":"paiement","tool":"carte"}
     - slot{"email":"_Email1_2"}
@@ -1021,7 +1045,7 @@
 * Non
     - action_Default_fallback
 
-## New Story
+## New Story750
 
 * Login{"connection":"connecter","bug":"authentification"}
     - slot{"bug":"authentification"}
@@ -1035,7 +1059,7 @@
     - utter_Goodbye
     - action_Save
 
-## New Story
+## New Story802
 
 * DeliveryNews{"order":"00"}
     - slot{"order":"00"}
@@ -1044,14 +1068,14 @@
 * CustomerComplaint+goodbye
     - utter_Goodbye
 
-## New Story
+## New Story820
 
 * DeliveryPlace{"country":"France","present":"cadeau"}
     - slot{"country":"France"}
     - slot{"present":"cadeau"}
     - action_Default_fallback
 
-## New Story
+## New Story843
 
 * DeliveryNews
     - utter_AskOrder
@@ -1059,10 +1083,39 @@
     - slot{"order":"4968"}
     - action_Search_order
     - utter_DeliveryNews_ProvideInfo_Offeralternative
-* CustomerComplaint+goodbye{"action":"remboursement","country":"Française","transporter":"Chronopost","fdp":"Française","article":"fond"}
-    - slot{"action":"remboursement"}
+* CustomerComplaint+goodbye{"refund":"remboursement","country":"Française","transporter":"Chronopost","fdp":"Française","article":"fond"}
+    - slot{"refund":"remboursement"}
     - slot{"article":"fond"}
     - slot{"country":"Française"}
     - slot{"fdp":"Française"}
     - slot{"transporter":"Chronopost"}
     - action_Default_fallback
+
+## New story858
+
+* DeliveryNews{"date":"16/11/2018"}
+    - slot"date":"16/11/2018"
+    - utter_AskOrder
+* Rien{"order":"785898"}
+    - utter_DeliveryNews_Lost
+    - utter_RefundResend
+* Resend{"resend":"renvoyez"}
+    - slot{"resend":"renvoyez"}
+    - utter_Resend
+* Thanks 
+    - utter_Goodbye
+    - action_Save
+
+
+## new story868
+
+* AccountCreation
+    - utter_AskEmail
+* Rien{"email":"mon@mail.com"}
+    - slot{"email":"mon@mail.com"}
+    - utter_AccountCreation_ProvideInfo_Lookforcustomerfile
+* ChangeData{"place":"_City1_"}
+    - slot{"place":"_City1_"}
+    - utter_ChangeData_ProvideInfo
+* Thanks
+    - utter_Goodbye

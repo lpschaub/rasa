@@ -1,0 +1,132 @@
+entities: 
+  - tool
+  - city
+  - phone
+  - transporter
+  - website
+  - payment
+  - store
+  - status
+  - device
+  - pwd
+  - pr
+  - home
+  - order
+  - fdp
+  - date
+  - discount
+  - article
+  - email
+  - place
+  - damaged
+  - bug
+  - cancel
+  - add
+  - channel
+  - follow-up
+  - present
+  - billing
+  - customer
+  - mood
+  - reload
+  - size
+  - delay
+  - refund
+  - free
+  - target
+  - operation
+  - code
+  - basket
+  - concurrence
+  - action
+  - biling
+  - spam
+  - event
+  - country
+
+
+slots: 
+  Store: 
+    type: text
+  action: 
+    type: unfeaturized
+  add: 
+    type: text
+  article: 
+    type: text
+  basket: 
+    type: text
+  billing: 
+    type: text
+  bug: 
+    type: text
+  cancel: 
+    type: text
+  channel: 
+    type: text
+  city: 
+    type: text
+  code: 
+    type: text
+  concurrence: 
+    type: text
+  country: 
+    type: text
+  customer: 
+    type: text
+  damaged: 
+    type: text
+  date: 
+    type: text
+  delay: 
+    type: text
+  device: 
+    type: text
+  discount: 
+    type: text
+  email: 
+    type: text
+  fdp: 
+    type: text
+  follow-up: 
+    type: text
+  free: 
+    type: text
+  home: 
+    type: text
+  mood: 
+    type: text
+  operation: 
+    type: text
+  order: 
+    type: text
+  payment: 
+    type: text
+  phone: 
+    type: text
+  place: 
+    type: text
+  pr: 
+    type: text
+  present: 
+    type: text
+  pwd: 
+    type: text
+  refund: 
+    type: text
+  reload: 
+    type: text
+  size: 
+    type: text
+  status: 
+    type: text
+  store: 
+    type: text
+  target: 
+    type: text
+  tool: 
+    type: text
+  transporter: 
+    type: text
+  website: 
+    type: text
