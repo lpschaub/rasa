@@ -55,10 +55,10 @@ def allinonefile(filedir, outfile):
         new_file = ""
         conv = open(file, encoding='utf-8').readlines()
         new_conv = clean_and_concat(conv, ptime, puser)
-        print(new_conv)
+        # print(new_conv)
         #     for line in open(file, encoding='utf-8').readlines():
     #         new_file += line.rstrip() + '; ;\n'
-        outfile.write(new_conv + '\n\n')
+        outfile.write(file.split('/')[-1].split('conv')[1]+'\t'+new_conv + '\n\n')
     # outfile.close()
 
 
@@ -282,9 +282,12 @@ if __name__ == '__main__':
     evalfold = "../input/50evalfold/"
     testout = open("../input/50testfold.csv", 'w', encoding='utf-8')
     evalout = open("../input/50evalfold.csv", 'w', encoding='utf-8')
+    val = "../input/3/"
+    valout = open("../input/50valfold.csv",'w', encoding='utf-8')
 
-    allinonefile(testfold, testout)
-    allinonefile(evalfold, evalout)
+    # allinonefile(testfold, testout)
+    # allinonefile(evalfold, evalout)
+    allinonefile(val, valout)
 
     """
     # creating test and eval convs dirs from already treated data

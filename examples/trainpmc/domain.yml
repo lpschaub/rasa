@@ -47,6 +47,10 @@ intents:
   - ProductOrigin
   - DeliveryCountry
   - Previous
+  - DamagedPackage+DeliveryNews
+  - CustomerComplaint+Attrition
+  - ProductLink
+  - PurchaseIssue
 
 entities: 
   - tool
@@ -312,7 +316,7 @@ responses :
    - text: "je regarde je vous demande un instant  comme nous vous l'avons spécifié par email lors du traitement de votre commande celle ci a été expédiée en deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT046600451FR"
    - text: "merci  j'effectue les recherches nécessaires je vous demande un instant"
   utter_Non_ProvideInfo: 
-   - text: "je vous invite à choisir l'un des 3 modes de livraison : en {place} standard ou premium  vous devez cocher la case "
+   - text: "je vous invite à choisir l'un des 3 modes de livraison : en point-relais standard ou premium  vous devez cocher la case "
   utter_Askforanotherquestion: 
    - text: "Avez vous d'autres questions ?"
   utter_Oui_Askforwaiting_SayGoodbye: 
@@ -394,7 +398,26 @@ responses :
       se fera donc impérativement en point relais. cependant si vous souhaitez une
       livraison à domicile je peux procéder au remboursement intégral de votre commande
       afin que vous puissiez repasser une commande en livraison à domicile.
-
+  utter_DamagedPackage_DeliveryNews :
+  - text: Merci de bien vouloir nous transmettre la preuve de dépôt dans votre bureau de poste et nous pourrons ainsi procéder au renvoi ou au remboursement du produit.
+  utter_AskData:
+  - text: je vous invite à me communiquer les éléments nécessaires à la création de votre compte  nom, prénom, date de naissance, adresse postale, téléphone, mot de passe. je vais procéder à la création de votre compte de mon côté.
+  utter_AskAdress:
+  - text: {adress} est-ce la bonne adresse ? 
+  utter_UpdateAccount:
+  - text: J'ai mis à jour votre compte
+  utter_DiscountRegistred:
+  - text: Un code de remise a déjà été enregistré sur votre panier. 
+  utter_AccountCreation_Done:
+  - text: Je vous confirme la bonne création de votre comte.
+  utter_AccountCreation_PWD:
+  - text:  vous devez créer le mot de passe
+  utter_Payment_Apologize:
+  - text:  Nous sommes désolés mais pour le moment, nous ne sommes pas en mesure de permettre les paiements en plusieurs fois.
+  utter_AskCode:
+  - text: Quel est votre code promo s'il vous plaît ? 
+  utter_AskPhone:
+  - text: Pouvez-vous me communiquer votre numéro de téléphone s'il vous plaît ?
 actions: 
 
   - action_Restart
@@ -494,3 +517,13 @@ actions:
   - utter_ProductRedirection
   - utter_AccountCreation_ProvideInfo_Lookforcustomerfile
   - utter_ChangeData_ProvideInfo
+  - utter_DamagedPackage_DeliveryNews
+  - utter_AskData
+  - utter_AskAdress
+  - utter_UpdateAccount
+  - utter_DiscountRegistred
+  - utter_Payment_Apologize
+  - utter_AccountCreation_Done
+  - utter_AccountCreation_PWD
+  - utter_AskCode
+  - utter_AskPhone
