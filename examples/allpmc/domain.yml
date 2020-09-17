@@ -588,6 +588,8 @@ responses:
   - text: "Votre identité."
   utter_PaymentConfirmation:
   - text: "Oui c'est bien nous."
+  utter_default_fallback:
+  - text: "je ne peux pas répondre à votre problème je vous redirige vers un agent compétent"
 actions:
 - action_Restart
 - action_Perform_action
@@ -596,6 +598,7 @@ actions:
 - action_Reset_working_memory
 - action_Save
 - action_Search_product
+- utter_default_fallback
 - utter_DeliveryNews_deliveryPlace_ProvideInfo_Offeralternative
 - utter_AskDetails
 - utter_AskPwd

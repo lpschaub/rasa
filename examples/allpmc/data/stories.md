@@ -257,7 +257,7 @@
 * DeliveryCost
     - utter_DeliveryCost_ProvideInfo
 * AskDetails
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story1495
@@ -287,7 +287,7 @@
     - utter_Reinit
 * Login{"bug":"authentification"}
     - slot{"bug":"authentification"} 
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story158
@@ -389,7 +389,7 @@
     - slot{"action":"téléchargé"}
     - action_default_ask_rephrase
 * AccountIssue{"biling":"factures"}
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story1741
@@ -616,7 +616,7 @@
 ## New Story1993
 
 * Autre
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story2013
@@ -651,7 +651,7 @@
 * Rien{"order":"4523"}
     - slot{"order":"4523"}
     - slot{"email":"_Email1_"}
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story2070
@@ -758,7 +758,7 @@
     - action_Search_order
     - utter_DeliveryNews_ProvideInfo
 * AskDetails
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story252
@@ -779,7 +779,7 @@
     - action_Search_order
     - utter_DeliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion
 * ReceptionAlert
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story277
@@ -991,7 +991,7 @@
     - slot{"email":"mon@mel.fr"}
     - utter_Discount_ProvideInfo
 * Discount
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story468
@@ -1108,7 +1108,7 @@
 * WebsiteBug
     - utter_WebsiteBug_ProvideInfo
 * WebsiteBug
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story714
@@ -1132,7 +1132,7 @@
     - slot{"payment":"paiement"}
     - slot{"tool":"carte"}
 * Non
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story750
@@ -1165,7 +1165,7 @@
 * DeliveryPlace{"country":"France","present":"cadeau"}
     - slot{"country":"France"}
     - slot{"present":"cadeau"}
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story843
@@ -1182,7 +1182,7 @@
     - slot{"country":"Française"}
     - slot{"fdp":"Française"}
     - slot{"transporter":"Chronopost"}
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New story858
@@ -1227,7 +1227,7 @@
 * ProductOrigin
     - utter_AskDetails_StoreLocation_DeliveryTime_ProvideInfo
 * ProductOrigin
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story4543
@@ -1356,7 +1356,7 @@
 * Login{"pwd":"mot de passe"}
     - utter_Login_Repeatprevious
 * Login{"pwd":"mot de passe"}
-    - action_default_fallback
+    - utter_default_fallback
     - action_Save
     - action_restart
 
@@ -1394,7 +1394,7 @@
 * CustomerService{"channel":"mail","channel":"téléphoner"}
     - utter_CustomerService_Contact
 * Previous{"channel":"e-mails"}
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story9750
@@ -1500,7 +1500,7 @@
 ## New Story18130
 
 * DeliveryCost
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story23605
@@ -1512,7 +1512,7 @@
 * AskDetails
     - utter_ProductRedirection
 * Non
-    - action_default_fallback
+    - utter_default_fallback
     - action_restart
 
 ## New Story536
@@ -1581,6 +1581,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story22909
 * PurchaseIssue{"transporter":"transporteur"}
@@ -1592,6 +1593,7 @@
 * Oui 
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story21449
 * Login{"channel":"adresse mail","wrong":"incorrecte"}
@@ -1607,6 +1609,7 @@
     - slot{"authentification":"authentification"}
     - utter_WebsiteBug_ProvideInfo_AskForMissingSlots
     - action_Save
+    - action_restart
 
 ## story3802
 * Rien{"email":"_Email1_"}
@@ -1626,6 +1629,7 @@
     - utter_ReceptionAlert_ProvideInfo
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story15844
 * Discount{"email":"_Email1_","discount":"code promo"}
@@ -1643,6 +1647,7 @@
 * Thanks 
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story14589
 * DamagedPackage{"mood_neg":"mécontentement","photo":"photo" ,"anormale":"damaged"}
@@ -1653,6 +1658,7 @@
 * Goodbye
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story6069
 * PurchaseIssue
@@ -1665,8 +1671,9 @@
     - utter_WebsiteBug_ProvideInfo_AskForMissingSlots
 * AskDetails{"website":"navigateur"}
      - slot{"website":"navigateur"}
-     - action_default_fallback
+     - utter_default_fallback
      - action_Save
+    - action_restart
 
 ## story15610
 * Discount{"discount":"code promotionnel"}
@@ -1678,7 +1685,7 @@
 
 ## story9549
 * CustomerComplaint
-    - action_default_fallback
+    - utter_default_fallback
 
 ## story 10438
 * DeliveryPlace{"pr":"point relais","address":"adresse"}
@@ -1697,6 +1704,7 @@
 * Goodbye
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story6243
 * WebsiteBug{"email":"em@pofd.fr"}
@@ -1708,6 +1716,7 @@
 * Autre
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story19709
 
@@ -1736,6 +1745,7 @@
 * Thanks 
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story19709bis
 
@@ -1758,14 +1768,15 @@
 * Thanks 
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story24555
 * Autre{"article":"bain de champagne"}
-    - action_default_fallback
+    - utter_default_fallback
 
 ## story24247
 * CustomerComplaint{"pr":"point relais"}
-    - action_default_fallback
+    - utter_default_fallback
 
 ## story4183
 * AccountCreation
@@ -1787,6 +1798,7 @@
     - slot{"attrition":"perdre"}
     - utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize
     - action_Save
+    - action_restart
 
 ## story14574
 * DeliveryCost{"fdp":"frais de port","free":"gratuits"}
@@ -1799,6 +1811,7 @@
 * Thanks 
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story25271
 
@@ -1811,6 +1824,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story16622
 * PaymentTool{"payment":"payer","tool":"CB"}
@@ -1818,6 +1832,7 @@
     - slot{"tool":"CB"}
     - utter_Payment_Apologize
     - action_Save
+    - action_restart
 
 ## story7935
 * DeliveryNews
@@ -1846,6 +1861,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story11478
 * Login{"pwd":"mot de passe"}
@@ -1858,6 +1874,7 @@
 * Goodbye{"mood_pos":"efficace"}
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story6923
 * DeliveryTime
@@ -1865,6 +1882,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## story6510
 * PaymentRefused{"article":"cerruti"}
@@ -1879,6 +1897,7 @@
     - action_Search_product
     - utter_ProductAvailable_ProvideInfo_Searchorder
     - action_Save
+    - action_restart
 
 ## New Story2111
 
@@ -1887,6 +1906,7 @@
     - utter_Discount_ProvideInfo
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story14535
 
@@ -1900,6 +1920,7 @@
 * Oui
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story23148
 
@@ -1908,6 +1929,7 @@
     - action_Search_product
     - utter_ProductAvailable_ProvideInfo_Searchorder
     - action_Save
+    - action_restart
 
 ## New Story15220
 
@@ -1920,6 +1942,7 @@
 * Oui
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story18134
 
@@ -1928,6 +1951,7 @@
     - action_Search_product
     - utter_ProductAvailable_ProvideInfo_Searchorder
     - action_Save
+    - action_restart
 
 ## New Story7226
 
@@ -1963,6 +1987,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story19439
 
@@ -1979,6 +2004,7 @@
 * Goodbye
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story6749
 
@@ -2010,6 +2036,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story21881
 
@@ -2018,6 +2045,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story26925
 
@@ -2033,13 +2061,14 @@
 * Goodbye
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story9553
 
 * Refund{"refund":"remboursement","fdp":"douane"}
     - slot{"refund":"remboursement"}
     - slot{"fdp":"douane"}
-    - action_default_fallback
+    - utter_default_fallback
 
 ## New Story12247
 
@@ -2049,6 +2078,7 @@
     - utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story11312
 
@@ -2062,7 +2092,7 @@
 * PaymentTool{"target":"amie","tool":"carte bancaire"}
     - slot{"target":"amie"}
     - slot{"tool":"carte bancaire"}
-    - action_default_fallback
+    - utter_default_fallback
 
 ## New Story19170
 
@@ -2074,6 +2104,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story26262
 
@@ -2084,6 +2115,7 @@
 * Goodbye
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story8097
 
@@ -2119,6 +2151,7 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story1886
 
@@ -2141,6 +2174,7 @@
 * Goodbye
     - utter_Goodbye
     - action_Save
+    - action_restart
 
 ## New Story3101
 
@@ -2153,3 +2187,4 @@
 * Thanks
     - utter_Goodbye
     - action_Save
+    - action_restart
