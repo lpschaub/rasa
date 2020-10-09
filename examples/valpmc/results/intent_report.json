@@ -1,0 +1,318 @@
+{
+  "Refund": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 1,
+    "confused_with": {}
+  },
+  "DeliveryPlace": {
+    "precision": 0.6666666666666666,
+    "recall": 0.4,
+    "f1-score": 0.5,
+    "support": 5,
+    "confused_with": {
+      "CustomerComplaint+goodbye": 1,
+      "DeliveryCost": 1
+    }
+  },
+  "Rien": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 2,
+    "confused_with": {
+      "Reset": 1
+    }
+  },
+  "CustomerComplaint": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DamagedPackage": 1
+    }
+  },
+  "Login": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 6,
+    "confused_with": {
+      "DeliveryNews+AskDetails": 1
+    }
+  },
+  "Thanks": {
+    "precision": 0.8571428571428571,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.8571428571428571,
+    "support": 14,
+    "confused_with": {
+      "Login": 1,
+      "Oui+CustomerComplaint": 1
+    }
+  },
+  "AccountCreation": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "WebsiteBug": 1,
+      "ConfirmationOrder": 1
+    }
+  },
+  "Resend": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "DeliveryNews": 3
+    }
+  },
+  "WebsiteBug": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "PurchaseIssue": 1,
+      "ConfirmationOrder": 1
+    }
+  },
+  "ProductAvailable": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "Autre": 1,
+      "Refund": 1,
+      "Discount": 1
+    }
+  },
+  "ProductTarget": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "CancelOrder": 1
+    }
+  },
+  "ReceptionAlert": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "AskDetails": 1,
+      "DeliveryNews+CustomerComplaint": 1,
+      "DeliveryNews+AskDetails": 1
+    }
+  },
+  "Oui": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "DeliveryNews": {
+    "precision": 0.625,
+    "recall": 0.7692307692307693,
+    "f1-score": 0.6896551724137931,
+    "support": 13,
+    "confused_with": {
+      "DamagedPackage": 1,
+      "Rien": 1
+    }
+  },
+  "CommuncationInterruption": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DeliveryNews": 1
+    }
+  },
+  "ProductPrice": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "Goodbye": 1
+    }
+  },
+  "AccountIssue": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "ProductTarget": 1
+    }
+  },
+  "Goodbye": {
+    "precision": 0.8,
+    "recall": 0.7272727272727273,
+    "f1-score": 0.761904761904762,
+    "support": 11,
+    "confused_with": {
+      "DeliveryPlace": 1,
+      "DeliveryNews+AskDetails": 1
+    }
+  },
+  "CancelOrder": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DeliveryNews+AskDetails": 1
+    }
+  },
+  "DeliveryNews+AskDetails": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "Resend": 1
+    }
+  },
+  "DeliveryTime": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Oui+CustomerComplaint": 1,
+      "DeliveryNews+AskDetails": 1
+    }
+  },
+  "DamagedPackage": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "ProductAvailable": 1
+    }
+  },
+  "PurchaseIssue": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "Goodbye": 1,
+      "ProductTarget": 1,
+      "AskDetails": 1
+    }
+  },
+  "Discount": {
+    "precision": 0.25,
+    "recall": 0.5,
+    "f1-score": 0.3333333333333333,
+    "support": 2,
+    "confused_with": {
+      "DeliveryNews": 1
+    }
+  },
+  "ProductOrigin": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "Saluer": 1
+    }
+  },
+  "ProductQuality": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "ProductAvailable": 1
+    }
+  },
+  "Saluer": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "Autre": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 8,
+    "confused_with": {
+      "Discount": 2,
+      "Saluer": 1,
+      "DeliveryNews+deliveryPlace": 1
+    }
+  },
+  "Returned": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "PaymentSafe": 1
+    }
+  },
+  "DeliveryNews+CustomerComplaint": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "DeliveryNews+AskDetails": 1,
+      "ConfirmationOrder": 1
+    }
+  },
+  "AskDetails": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DeliveryTime": 1
+    }
+  },
+  "DeliveryCost": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 2,
+    "confused_with": {
+      "DeliveryTime": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.4943820224719101,
+    "recall": 0.4444444444444444,
+    "f1-score": 0.4680851063829787,
+    "support": 99
+  },
+  "macro avg": {
+    "precision": 0.2197544642857143,
+    "recall": 0.2527181152181152,
+    "f1-score": 0.22839696223316913,
+    "support": 99
+  },
+  "weighted avg": {
+    "precision": 0.42685185185185187,
+    "recall": 0.4444444444444444,
+    "f1-score": 0.42942561908079147,
+    "support": 99
+  }
+}

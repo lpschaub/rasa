@@ -1,0 +1,706 @@
+actions:
+- action_Look_for_customer_file
+- action_Perform_action
+- action_Reset_working_memory
+- action_Restart
+- action_Save
+- action_Search_order
+- action_Search_product
+- utter_AccountCreation_Done
+- utter_AccountCreation_PWD
+- utter_AccountCreation_ProvideInfo_Lookforcustomerfile
+- utter_AskAdress
+- utter_AskCode
+- utter_AskConfirmation_ProvideInfo
+- utter_AskData
+- utter_AskDetails
+- utter_AskDetails_ProvideInfo
+- utter_AskDetails_StoreLocation_DeliveryTime_ProvideInfo
+- utter_AskEmail
+- utter_AskForMissingSlots_SayHello
+- utter_AskJustif
+- utter_AskOrder
+- utter_AskPhone
+- utter_AskPwd
+- utter_AskTarget
+- utter_Askforanotherquestion
+- utter_Autre_ProvideInfo_AskForMissingSlots
+- utter_Autre_ProvideInfo_Performaction
+- utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting
+- utter_ChangeData_Performaction_ProvideInfo_Suggeststo
+- utter_ChangeData_ProvideInfo
+- utter_CommuncationInterruption_ProvideInfo_Offeralternative
+- utter_ConfirmRefund
+- utter_ConfirmationOrder_AskForMissingSlots_SayHello
+- utter_ConfirmationOrder_ProvideInfo
+- utter_ConfirmationOrder_ProvideInfo_Offeralternative
+- utter_ConfirmationOrder_Searchorder_Askforwaiting_ProvideInfo
+- utter_CustomerComplaint_ProvideInfo
+- utter_CustomerComplaint_ProvideInfo_Apologize
+- utter_CustomerComplaint_Searchorder_Askforwaiting_ProvideInfo
+- utter_CustomerComplaint_goodbye_ProvideInfo
+- utter_CustomerService_Contact
+- utter_CustomerService_ProvideInfo
+- utter_DamagedPackageAskForMissingSlots
+- utter_DamagedPackage_AskForMissingSlots_Apologize
+- utter_DamagedPackage_DeliveryNews
+- utter_DamagedPackage_ProvideInfo_Searchorder
+- utter_DeliveryCost_ProvideInfo
+- utter_DeliveryCost_ProvideInfo_Apologize
+- utter_DeliveryCost_ProvideInfo_Proceedtocheckpoint
+- utter_DeliveryCountry
+- utter_DeliveryMode
+- utter_DeliveryNews_AskDetails
+- utter_DeliveryNews_AskDetails_CustomerComplaint_ProvideInfo
+- utter_DeliveryNews_AskDetails_ProvideInfo
+- utter_DeliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion
+- utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize
+- utter_DeliveryNews_DeliveryPlace_ProvideInfo_Offeralternative
+- utter_DeliveryNews_Lost
+- utter_DeliveryNews_ProvideInfo
+- utter_DeliveryNews_ProvideInfo_Apologize_Offeralternative
+- utter_DeliveryNews_ProvideInfo_Offeralternative
+- utter_DeliveryNews_deliveryPlace_ProvideInfo_Offeralternative
+- utter_DeliveryTime_ProductAvailable_ProvideInfo_Apologize
+- utter_DeliveryTime_ProvideInfo
+- utter_DiscountRegistred
+- utter_Discount_AskForMissingSlots_SayHello
+- utter_Discount_ProvideInfo
+- utter_ErrorMessage
+- utter_Goodbye
+- utter_Login_AskForMissingSlot
+- utter_Login_AskForMissingSlots_SayHello
+- utter_Login_ProvideInfo
+- utter_Login_Repeatprevious
+- utter_MissingItem_ProvideInfo
+- utter_MissingItem_ProvideInfo_Searchorder
+- utter_MissingItem_Searchorder_Askforwaiting_ProvideInfo
+- utter_Non_ProvideInfo
+- utter_Oui
+- utter_Oui_Askforwaiting_SayGoodbye
+- utter_Oui_ConfirmationOrder_ProvideInfo
+- utter_PaymentConfirmation
+- utter_PaymentRefused_AskForMissingSlots
+- utter_PaymentRefused_Phone
+- utter_PaymentRefused_ProvideInfo
+- utter_PaymentRefused_ProvideInfo_Offeralternative
+- utter_PaymentTool_AskForMissingSlots_SayHello
+- utter_PaymentTool_PaymentRefused_ProvideInfo
+- utter_PaymentTool_ProvideInfo_Apologize_Offeralternative
+- utter_Payment_Apologize
+- utter_Payment_ProvideInfo
+- utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize
+- utter_ProductAvailable_ProvideInfo_Searchorder
+- utter_ProductPrice_AskForMissingSlots
+- utter_ProductPrice_ProvideInfo
+- utter_ProductPrice_ProvideInfo_Advisetolookelsewhere
+- utter_ProductQuality_ProvideInfo
+- utter_ProductRedirection
+- utter_ProductTargetNoIdea
+- utter_Product_AskDetails_ProvideInfo
+- utter_ReceptionAlert_ProvideInfo
+- utter_RefundResend
+- utter_Refund_SayGoodbye
+- utter_Reinit
+- utter_Resend
+- utter_Rien_ProvideInfo_Offeralternative
+- utter_Troll
+- utter_UpdateAccount
+- utter_WebsiteBug_AskForMissingSlots_SayHello
+- utter_WebsiteBug_ProvideInfo
+- utter_WebsiteBug_ProvideInfo_AskForMissingSlots
+- utter_YourID
+- utter_default_fallback
+entities:
+- action
+- add
+- address
+- anormale
+- article
+- attrition
+- authentification
+- basket
+- biling
+- billing
+- bug
+- cancel
+- channel
+- city
+- code
+- concurrence
+- confirmation
+- connection
+- country
+- customer
+- damaged
+- date
+- delay
+- delivery
+- device
+- discount
+- email
+- event
+- facebook
+- fdp
+- follow-up
+- free
+- home
+- missing
+- mood_neg
+- mood_pos
+- operation
+- order
+- origin
+- oui
+- payment
+- paypal
+- phone
+- photo
+- place
+- pr
+- present
+- pwd
+- real
+- refund
+- reload
+- resend
+- sample
+- size
+- spam
+- status
+- store
+- target
+- tool
+- transporter
+- website
+- wrong
+intents:
+- Saluer
+- AskDetails
+- ChangeData
+- PaymentRefused
+- PaymentTool
+- Oui
+- Autre
+- DamagedPackage
+- Thanks
+- CustomerComplaint+goodbye
+- ProductTarget
+- DeliveryPlace
+- CustomerComplaint
+- Discount
+- Rien
+- DeliveryNews
+- WebsiteBug
+- Refund
+- MissingItem
+- ProductPrice
+- CancelOrder
+- AccountIssue
+- AccountCreation
+- Goodbye
+- ConfirmationOrder
+- DeliveryTime
+- DeliveryCost
+- Login
+- Non
+- ReceptionAlert
+- ProductAvailable
+- DeliveryNews+AskDetails
+- CommuncationInterruption
+- CustomerService
+- PaymentSafe
+- ProductQuality
+- DeliveryNews+CustomerComplaint
+- StoreLocation+DeliveryTime
+- DeliveryNews+DeliveryPlace
+- Oui+CustomerComplaint
+- Resend
+- Returned
+- ProductOrigin
+- DeliveryCountry
+- Previous
+- DamagedPackage+DeliveryNews
+- CustomerComplaint+Attrition
+- ProductLink
+- PurchaseIssue
+- Reset
+- Discount+CustomerComplaint
+- DeliveryNews+deliveryPlace
+responses:
+  utter_AccountCreation_Done:
+  - text: Je vous confirme la bonne création de votre compte.
+  utter_AccountCreation_PWD:
+  - text: Vous devez créer le mot de passe.
+  utter_AccountCreation_ProvideInfo_Lookforcustomerfile:
+  - text: après vérification je constate qu'il existe déjà un compte avec l'adresse
+      email {email}.  ce compte a été créé en {date} et est au nom de _Name3_ _Name5_.
+  utter_AskAdress:
+  - text: '{address} est-ce la bonne adresse ? '
+  utter_AskCode:
+  - text: "Quel est votre code promo s'il vous plaît ? "
+  utter_AskConfirmation_ProvideInfo:
+  - text: Avez-vous créé un compte client sur notre site pour pouvoir commander ?
+  utter_AskData:
+  - text: je vous invite à me communiquer les éléments nécessaires à la création de
+      votre compte  nom, prénom, date de naissance, adresse postale, téléphone, mot
+      de passe. je vais procéder à la création de votre compte de mon côté.
+  utter_AskDetails:
+  - text: pouvez vous me donner des détails concernant votre problème ?
+  utter_AskDetails_ProvideInfo:
+  - text: comme nous l'indiquons dans l'email contenant le lien de suivi le statut
+      peut rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que
+      cela n'impacte la bonne livraison de votre colis. ceci est lié au fait que {transporter}
+      ne propose pas de suivi aux Etats-unis ; vous pourrez constater une mise à jour
+      du suivi à l'arrivée du colis sur le territoire français dans les prochains
+      jours.
+  - text: une livraison en {place} vous assure effectivement une livraison avant {date}
+  utter_AskDetails_StoreLocation_DeliveryTime_ProvideInfo:
+  - text: nos produits sont expédiés depuis les USA.
+  utter_AskEmail:
+  - text: "Pouvez-vous m'indiquer votre adresse mail "
+  utter_AskForMissingSlots_SayHello:
+  - text: bonjour je suis Noah en quoi puis je vous aider ? afin d'accélérer le traitement
+      de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro
+      de commande
+  utter_AskJustif:
+  - text: Pouvez-vous envoyer à serviceclient@parfum.fr votre justificatif d'identité
+      ?
+  utter_AskOrder:
+  - text: "pourriez vous m'indiquer votre numéro de commande s'il vous plaît "
+  utter_AskPhone:
+  - text: Pouvez-vous me communiquer votre numéro de téléphone s'il vous plaît ?
+  utter_AskPwd:
+  - text: Quel mot de passe avez vous utilisé ?
+  utter_AskTarget:
+  - text: Pour homme ou femme ?
+  utter_Askforanotherquestion:
+  - text: Avez vous d'autres questions ?
+  utter_Autre_ProvideInfo_AskForMissingSlots:
+  - text: oui je suis là  que puis je faire pour vous
+  utter_Autre_ProvideInfo_Performaction:
+  - text: D'accord je procède au {action}
+  utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting:
+  - text: je regarde je vous demande un instant.  je viens de procéder à l'annulation
+      et au remboursement de votre commande
+  utter_ChangeData_Performaction_ProvideInfo_Suggeststo:
+  - text: oui vous devez vous rendre dans la rubrique   mon compte   puis informations
+      personnelle
+  utter_ChangeData_ProvideInfo:
+  - text: vous pourrez modifier également votre adresse postale une fois connectée
+      à votre Espace client.
+  utter_CommuncationInterruption_ProvideInfo_Offeralternative:
+  - text: normalement non et si c'était le cas veuillez nous solliciter à nouveau
+      je vous prie
+  utter_ConfirmRefund:
+  - text: 'Vous optez donc pour le remboursement '
+  utter_ConfirmationOrder_AskForMissingSlots_SayHello:
+  - text: pourriez vous s'il vous plaît nous envoyer la preuve de paiement par mail  {email}
+      serviceclient.com
+  utter_ConfirmationOrder_ProvideInfo:
+  - text: _Name4_ deux liens de suivi vous ont été transmis par email.  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT070996874FR
+      voici votre lien de suivi
+  utter_ConfirmationOrder_ProvideInfo_Offeralternative:
+  - text: vous l'avez reçu le {date}. si vous n'avez pas connaissance de cet email
+      je vous invite à consulter vos indésirables. il est possible qu'il s'y situe
+  utter_ConfirmationOrder_Searchorder_Askforwaiting_ProvideInfo:
+  - text: je regarde je vous demande un instant.  non je ne vois pas de commande  je
+      vais vérifier la transaction  les deux paiements ont été refusés
+  utter_CustomerComplaint_ProvideInfo:
+  - text: je vais transmettre l'information au service concerné
+  utter_CustomerComplaint_ProvideInfo_Apologize:
+  - text: je suis sincèrement désolée  oui nous avons relancé {transporter} car cette
+      situation est inacceptable
+  utter_CustomerComplaint_Searchorder_Askforwaiting_ProvideInfo:
+  - text: un instant SVP je consulte les emails transactionnels  vous avez bien reçu
+      un email contenant votre second lien de suivi et vous informant d'un éventuel
+      délai supplémentaire. cependant vous n'avez pas ouvert ni cliqué cet email.  vous
+      l'avez reçu le 19/07 à 12h46. si vous n'avez pas connaissance de cet email je
+      vous invite à consulter vos indésirables. il est possible qu'il s'y situe
+  utter_CustomerComplaint_goodbye_ProvideInfo:
+  - text: Ce délai s'explique par le fait que nos produits sont expédiés depuis les
+      USA. il s'agit malheureusement d'un délai incomprésible afin de profiter de
+      remises avantageuses sur vos produits préférés
+  utter_CustomerService_Contact:
+  - text: "Vous pouvez contacter le service client à l'adresse mail suivante : _Email1_\
+      \ serviceclient.com"
+  utter_CustomerService_ProvideInfo:
+  - text: Une réponse vous sera donc envoyée par mail  votre dossier sera traité dans
+      la journée.
+  utter_DamagedPackageAskForMissingSlots:
+  - text: "C'est entendu. Pouvez-vous me communiquer votre adresse postale "
+  utter_DamagedPackage_AskForMissingSlots_Apologize:
+  - text: je suis sincèrement désolée  pouvez vous nous envoyer une photo du produit
+      reçu par mail
+  utter_DamagedPackage_DeliveryNews:
+  - text: Merci de bien vouloir nous transmettre la preuve de dépôt dans votre bureau
+      de poste et nous pourrons ainsi procéder au renvoi ou au remboursement du produit.
+  utter_DamagedPackage_ProvideInfo_Searchorder:
+  - text: "je regarde votre commande  je vous invite à nous envoyer une photo du produit\
+      \ reçu par mail  à l'adresse mail : {email} serviceclient.com"
+  utter_DeliveryCost_ProvideInfo:
+  - text: "les frais de port dépendent de l'option de livraison choisie et du nombre\
+      \ de produits commandés : - pour une livraison en {place}  il faut ainsi compter\
+      \ {amount} pour le premier article commandé puis {amount} par produit supplémentaire\
+      \ ensuite. le délai de livraison avec cette option est compris entre 7 et 10\
+      \ jours ouvrés. - pour une livraison à l'adresse de votre choix il faut compter\
+      \ {amount} pour un produit puis {amount} par article supplémentaire ensuite\
+      \ le délai de livraison avec cette option est compris entre 10 et 14 jours ouvrés."
+  - text: les frais de livraison sont calculés en fonction du nombre de produits commandés
+  - text: nous ne proposons pas de livraison gratuite actuellement sur ParfumsMoinsCher.com
+  utter_DeliveryCost_ProvideInfo_Apologize:
+  - text: nous ne proposons pas les frais de port gratuits et j'en suis désolée  nos
+      colis sont expédiés depuis {place}
+  utter_DeliveryCost_ProvideInfo_Proceedtocheckpoint:
+  - text: "vous n'avez que très peu de chance d'avoir des frais de port à régler à\
+      \ la livraison de votre commande ( moins de 5 % de nos expéditions en font l'objet\
+      \ ). si tel était le cas nous nous engageons à vous les rembourser intégralement\
+      \ comme indiqué dans nos CGV et dans l'email de confirmation de commande. il\
+      \ vous suffit pour cela simplement de nous adresser le justificatif de dédouanement\
+      \ par email à l'adresse suivante : _Email1_.  ai je répondu à vos attentes"
+  utter_DeliveryCountry:
+  - text: Nous sommes sincèrement désolés mais nous ne livrons pas en direct les DOM-TOM
+      depuis notre boutique en ligne.
+  utter_DeliveryMode:
+  - text: Avez-vous choisi l'un des trois modes de livraison ?
+  utter_DeliveryNews_AskDetails:
+  - text: comme nous l'indiquons dans l'email contenant le lien de suivi le statut       peut
+      rester en   envoi prêt chez l'expéditeur   durant quelques jours sans que cela
+      n'impacte la bonne livraison de votre colis. ceci est lié au fait que Chronopost
+      ne propose pas de suivi aux Etats-unis ; vous pourrez constater une mise à jour
+      du suivi à l'arrivée du colis sur le territoire français dans les prochains  jours
+  utter_DeliveryNews_AskDetails_CustomerComplaint_ProvideInfo:
+  - text: la livraison devrait avoir lieu en fin de semaine
+  utter_DeliveryNews_AskDetails_ProvideInfo:
+  - text: le colis a bien été expédié
+  - text: il a bien été expédié  le lien sera mis à jour par {transporter} dès l'arrivée
+      de votre colis sur le sol français très prochainemen
+  utter_DeliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion:
+  - text: j'effectue les recherches nécessaires je vous demande un instant.  je vous
+      invite à suivre le lien suivant.  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT017207857FR  votre
+      colis a bien été pris en charge par le transporteur il est actuellement en transit
+      aérien. dès son arrivée sur le sol français c'est {transporter} qui finalisera
+      la commande.  je suis à votre service n'hésitez pas si vous avez d'autres questions
+      ou besoin de conseils
+  utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize:
+  - text: Au nom de toute l'équipe je vous transmets nos excuses et allons faire le
+      nécessaire le plus vite
+  utter_DeliveryNews_DeliveryPlace_ProvideInfo_Offeralternative:
+  - text: le mode d'expédition choisi initialement était en point relais. le renvoi
+      se fera donc impérativement en point relais. cependant si vous souhaitez une
+      livraison à domicile je peux procéder au remboursement intégral de votre commande
+      afin que vous puissiez repasser une commande en livraison à domicile
+  utter_DeliveryNews_Lost:
+  - text: il semblerait que votre commande ait été perdue ou volée durant son transport.
+  utter_DeliveryNews_ProvideInfo:
+  - text: comme indiqué lors de votre commande le délai de livraison avec l'option
+      choisie est compris entre 7 et 10 jours ouvrés. votre colis devrait donc vous
+      parvenir en fin de semaine
+  utter_DeliveryNews_ProvideInfo_Apologize_Offeralternative:
+  - text: il y a eu une erreur de préparation nous en sommes désolés /  souhaitez
+      vous son expédition ( sous 12 à 14 jours ) ou le remboursement
+  utter_DeliveryNews_ProvideInfo_Offeralternative:
+  - text: si {transporter} est dans l'incapacité de localiser votre colis nous vous
+      proposerons le renvoi ou le remboursement je vous invite à revenir vers nous
+      sur le tchat
+  utter_DeliveryNews_deliveryPlace_ProvideInfo_Offeralternative:
+  - text: le mode d'expédition choisi initialement était en point relais. le renvoi
+      se fera donc impérativement en point relais. cependant si vous souhaitez une
+      livraison à domicile je peux procéder au remboursement intégral de votre commande
+      afin que vous puissiez repasser une commande en livraison à domicile.
+  utter_DeliveryTime_ProductAvailable_ProvideInfo_Apologize:
+  - text: "les délais de livraison sont compris entre : - 7 et 10 jours ouvrés pour\
+      \ une livraison en {place} ( {country} métropolitaine uniquement - 10 et 14\
+      \ jours ouvrés pour une livraison   classique   à domicile - 7 et 10 jours ouvrés\
+      \ pour une livraison   express   à domicile  je suis désolée mais à ce jour\
+      \ le service paquet cadeau n'est pas disponible veuillez nous en excuser."
+  utter_DeliveryTime_ProvideInfo:
+  - text: "je vous rappelle nos délais  les délais de livraison sont compris entre\
+      \ : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine\
+      \ uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile\
+      \ - 7 et 10 jours ouvrés pour une livraison   express   à domicile  je suis\
+      \ à votre service n'hésitez pas si vous avez d'autres questions ou besoin de\
+      \ conseils."
+  - text: le délai est compris entre 7 et 10 jours ouvrés
+  utter_DiscountRegistred:
+  - text: Un code de remise a déjà été enregistré sur votre panier.
+  utter_Discount_AskForMissingSlots_SayHello:
+  - text: pouvez vous m'indiquer votre adresse mail
+  utter_Discount_ProvideInfo:
+  - text: je vous invite à saisir le code {code}
+  - text: je vous invite à saisir le code {code} en majuscules sans espaces et sans
+      accent
+  utter_ErrorMessage:
+  - text: un message d'erreur s'affiche t il sur votre écran ?
+  - text: avez vous un message d'erreur?
+  - text: pourriez vous s'il vous plaît nous donner plus de renseignements concernant
+      votre problème  un message d'erreur s'affiche t il sur votre écran et si oui
+      quel est son code d'avance merci pour votre réponse
+  utter_Goodbye:
+  - text: Au nom de toute l'équipe je vous souhaite une agréable journée
+  utter_Login_AskForMissingSlot:
+  - text: pourriez vous m'indiquer votre adresse mail s'il vous plaît ?
+  utter_Login_AskForMissingSlots_SayHello:
+  - text: je vais le réinitialiser  pouvez vous m'indiquer votre adresse mail {email}
+  utter_Login_ProvideInfo:
+  - text: "je vous invite à vous connecter à votre compte à l'aide du mot de passe\
+      \ : AZERTY adresse mail : {email}"
+  utter_Login_Repeatprevious:
+  - text: "je vous invite à vous connecter à votre compte à l'aide du mot de passe\
+      \ : AZERTY adresse mail : {email}"
+  utter_MissingItem_ProvideInfo:
+  - text: effectivement je vois que le produit  {article} n'a pas été expédié
+  utter_MissingItem_ProvideInfo_Searchorder:
+  - text: votre second colis est actuellement en transit vers la {country} et devrait
+      arriver sur le territoire Français ce jour ou demain pour une livraison prévue
+      en cette fin de semaine.  comme indiqué par email lors de l'expédition de vos
+      colis. votre colis XT070996874FR peut mettre jusqu'à 5 jours supplémentaires
+      avant de vous parvenir
+  utter_MissingItem_Searchorder_Askforwaiting_ProvideInfo:
+  - text: "je regarde je vous demande un instant  comme nous vous l'avons spécifié\
+      \ par email lors du traitement de votre commande celle ci a été expédiée en\
+      \ deux colis. voici le lien du 2ème colis qui devrait vous être livré dans les\
+      \ prochains jours : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT046600451FR"
+  - text: merci  j'effectue les recherches nécessaires je vous demande un instant
+  utter_Non_ProvideInfo:
+  - text: "je vous invite à choisir l'un des 3 modes de livraison : en point-relais\
+      \ standard ou premium  vous devez cocher la case "
+  utter_Oui:
+  - text: Oui
+  utter_Oui_Askforwaiting_SayGoodbye:
+  - text: je m'occupe de votre dossier  je reviendrais vers vous par mail dans la
+      matinée.
+  utter_Oui_ConfirmationOrder_ProvideInfo:
+  - text: "je vous confirme que vous avez bien réceptionné cet email. notre service\
+      \ automatique d'emails transactionnels à bien reçu un accusé réception de votre\
+      \ boite email.  malheureusement ces emails étant automatique je ne peux vous\
+      \ renvoyer l'email. cependant je peux vous le copier ici :  bonjour _Name2_\
+      \ votre commande #732398 vient d'être expédiée. pour des raisons logistiques\
+      \ le ( s ) produit ( s ) suivant ( s ) pourrait faire l'objet d'un délai de\
+      \ livraison supplémentaire par rapport à celui indiqué initialement : HM ( x1\
+      \ ) ce délai additionnel - n'excédant pas cinq jours maximum - ne remet pas\
+      \ en cause les modalités de livraison choisies lors du passage de votre commande\
+      \ ( {place} ou adresse de livraison sélectionnée ). veuillez aussi noter que\
+      \ votre commande est expédiée en plusieurs colis. cela n'a cependant aucune\
+      \ incidence sur le coût des frais de port. vous pouvez suivre l'avancement de\
+      \ la livraison à l'adresse suivante : http://www.chronopost.fr/expedier/inputLTNumbers.do?chronoNumbers=XT070996874FR\
+      \ vous pouvez accéder au suivi de votre commande et télécharger votre facture\
+      \ dans   historique des commandes   de la rubrique   mon compte   sur notre\
+      \ site."
+  utter_PaymentConfirmation:
+  - text: Oui c'est bien nous.
+  utter_PaymentRefused_AskForMissingSlots:
+  - text: est ce que cette {tool} accepte les paiements internationaux ?
+  utter_PaymentRefused_Phone:
+  - text: "il s'agit d'un souci avec l'envoi du code de validation par SMS requis\
+      \ par votre banque afin de valider le paiement.  : je vous invite donc à contourner\
+      \ l'envoi de ce code en choisissant le second onglet appelé PayPal sur la page\
+      \ de paiement. vous pourrez ensuite saisir vos coordonnées de Carte bancaire\
+      \ afin de régler votre commande sans avoir nécessairement de compte PayPal."
+  utter_PaymentRefused_ProvideInfo:
+  - text: "vous pouvez régler votre commande à l'étape "
+  utter_PaymentRefused_ProvideInfo_Offeralternative:
+  - text: vous pouvez régler votre commande par {paypal} ( qui constitue le moyen
+      de paiement le plus sécurisé sur Internet à l'heure actuelle )
+  utter_PaymentTool_AskForMissingSlots_SayHello:
+  - text: est ce que votre {tool} accepte les paiements internationaux
+  utter_PaymentTool_PaymentRefused_ProvideInfo:
+  - text: je vous invite à contacter votre banque
+  utter_PaymentTool_ProvideInfo_Apologize_Offeralternative:
+  - text: vous semblez avoir rencontrer un souci de paiement. nous sommes désolés
+      de ce contretemps indépendant de notre volonté et nous vous prions de bien vouloir
+      nous excuser. je vous invite à contourner le souci. veuillez passer par {paypal}
+      pour faire le paiement on vous proposera alors 2 choix soit payer avec un compte
+      {paypal} soit de payer avec votre carte bancaire habituelle
+  utter_Payment_Apologize:
+  - text: Nous sommes désolés mais pour le moment, nous ne sommes pas en mesure de
+      permettre les paiements en plusieurs fois.
+  utter_Payment_ProvideInfo:
+  - text: le payment est sécurisé
+  utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize:
+  - text: je regarde je vous demande un instant.  nous sommes sincèrement désolés
+      mais nous ne pouvons proposer ce produit pour le moment. nous vous invitons
+      à vous rendre régulièrement sur notre site ou à vous inscrire à la newsletter
+      afin de vous tenir informée des dernières nouveautés.  au nom de toute l'équipe
+      ParfumsMoinsCher.com je vous souhaite une excellente journée
+  utter_ProductAvailable_ProvideInfo_Searchorder:
+  - text: le produit {article} est disponible
+  - text: je vous invite à suivre le lien suivant [LINK]
+  utter_ProductPrice_AskForMissingSlots:
+  - text: Pour quelle contenance ?
+  utter_ProductPrice_ProvideInfo:
+  - text: l'eau de parfum   {article}   {size} est au prix de {amount}
+  utter_ProductPrice_ProvideInfo_Advisetolookelsewhere:
+  - text: je vous laisse suivre ce lien  https://www.parfumsmoinscher.com/search.php?orderby=position&orderway=desc&search_query=mon
+      + guerlain+&submit_search =  vous allez découvrir toute la gamme de ce parfum  je
+      suis à votre service n'hésitez pas si vous avez d'autres questions ou besoin
+      de conseils
+  utter_ProductQuality_ProvideInfo:
+  - text: l'ensemble des produits proposés sur notre boutique en ligne sont garantis
+      100 % neufs et authentiques et proviennent directement des plus grandes marques
+      de parfums à travers le monde ( à l'instar des parfums que vous pouvez retrouver
+      en boutique près de chez vous ). nos colis sont régulièrement contrôlés en {Delivery}
+      afin de vérifier qu'il ne s'agisse pas de produits contrefaits
+  utter_ProductRedirection:
+  - text: je vous invite à suivre le lien suivant [LINK]
+  utter_ProductTargetNoIdea:
+  - text: je suis sincèrement désolé mais je ne saurais pas vous répondre précisément
+      pour ce type de cas.
+  utter_Product_AskDetails_ProvideInfo:
+  - text: Il est dans son emballage d'origine
+  utter_ReceptionAlert_ProvideInfo:
+  - text: oui {transporter} vous avertira par mail ou sms
+  utter_RefundResend:
+  - text: 'Souhaitez vous le renvoi du produit  ou le remboursement '
+  utter_Refund_SayGoodbye:
+  - text: Nous allons procéder au remboursement. Au nom de toute l'équipe je vous
+      souhaite une bonne journée
+  utter_Reinit:
+  - text: "je viens de réinitialiser votre mot de passe et vous invite donc à vous\
+      \ connecter avec l'adresse email : _Name1_ {email} et le mot de passe : _Name3_.\
+      \        vous pourrez bien entendu modifier ce dernier depuis votre espace client\
+      \ par        la suite"
+  utter_Resend:
+  - text: je vous confirme que le renvoi a bien été effectué sous un nouveau numéro
+      de commande. cette dernière est visible depuis votre espace clients et ne vous
+      sera bien entendu pas facturée.  exceptionnellement, afin de vous dédommager
+      pour la gêne occasionnée, j'ai pu effectuer le renvoi directement à votre domicile
+  utter_Rien_ProvideInfo_Offeralternative:
+  - text: ma collègue a fait le nécessaire auprès de {transporter}  je vous invite
+      à revenir vers nous demain le temps qu'une réponse nous soit apportée  si votre
+      colis n'est pas localisé d'ici là nous vous proposerons le renvoi ou le remboursement
+  utter_Troll:
+  - text: Ben vous êtes pas doué
+  utter_UpdateAccount:
+  - text: J'ai mis à jour votre compte
+  utter_WebsiteBug_AskForMissingSlots_SayHello:
+  - text: êtes vous connecté à votre compte client ?
+  - text: "avez vous tenté de vous connecter à partir d'un autre navigateur "
+  utter_WebsiteBug_ProvideInfo:
+  - text: je vous invite à vous déconnecter puis à recommencer votre commande
+  utter_WebsiteBug_ProvideInfo_AskForMissingSlots:
+  - text: je vous invite à vider les caches de votre navigateur.  puis à recommencer
+  - text: nous n'avons pas connaissance de ce problème et faisons donc remonter l'information
+      à notre service informatique. nous vous invitons à vider le cache de votre navigateur
+      Internet ou bien à en utiliser un différent. cela résout il votre problème
+  utter_YourID:
+  - text: Votre identité.
+  utter_default_fallback:
+  - text: je ne peux pas répondre à votre problème je vous redirige vers un agent
+      compétent
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
+slots:
+  action:
+    type: unfeaturized
+  add:
+    type: text
+  address:
+    type: text
+  anormale:
+    type: text
+  article:
+    type: text
+  attrition:
+    type: text
+  authentification:
+    type: text
+  basket:
+    type: text
+  billing:
+    type: text
+  bug:
+    type: text
+  cancel:
+    type: text
+  channel:
+    type: text
+  city:
+    type: text
+  code:
+    type: text
+  concurrence:
+    type: text
+  confirmation:
+    type: text
+  connection:
+    type: text
+  country:
+    type: text
+  customer:
+    type: text
+  damaged:
+    type: text
+  date:
+    type: text
+  delay:
+    type: text
+  delivery:
+    type: text
+  device:
+    type: text
+  discount:
+    type: text
+  email:
+    type: text
+  facebook:
+    type: text
+  fdp:
+    type: text
+  follow-up:
+    type: text
+  free:
+    type: text
+  home:
+    type: text
+  missing:
+    type: text
+  mood_neg:
+    type: text
+  mood_pos:
+    type: text
+  operation:
+    type: text
+  order:
+    type: text
+  payment:
+    type: text
+  paypal:
+    type: text
+  phone:
+    type: text
+  photo:
+    type: text
+  place:
+    type: text
+  pr:
+    type: text
+  present:
+    type: text
+  pwd:
+    type: text
+  refund:
+    type: text
+  reload:
+    type: text
+  resend:
+    type: text
+  sample:
+    type: text
+  size:
+    type: text
+  status:
+    type: text
+  store:
+    type: text
+  target:
+    type: text
+  tool:
+    type: text
+  transporter:
+    type: text
+  website:
+    type: text
+  wrong:
+    type: text

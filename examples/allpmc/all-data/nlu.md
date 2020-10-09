@@ -1,3 +1,4 @@
+
 ## intent:DeliveryCost
 - bonjour bonjour je passerai commande seulement si les [frais de port](fdp) sont à 0 € surtout pour une commande de 20 €. très cordialement. [Email1](email)
 -   : bonjour,3    : [Email1](email) j'ai une commande à valider, pourrais avoir la livraison [offerte](free) ?
@@ -9,6 +10,7 @@
 - : bonjour,3    : [Email1](email) j'ai une commande à valider, pourrais avoir la livraison [offerte](free) ?
 - différence prix livraison
 - bonjour, bonjour, vous demandez deux fois des [frais de port](fdp) ? ça devient un peu cher de payer deux fois
+
 
 ## intent:Goodbye
 - [dommage](mood_neg). Passez de bonnes fêtes de fin d'année.
@@ -41,6 +43,7 @@
 - merci bonnes fêtes de fin d année
 - je vous remercie de votre réponse et vous souhaite une bonne journée
 - oui merci pour ce renseignement. je vous souhaite une bonne journée.
+
 ## intent:PaymentRefused
 - J problème pour régler2   : comment [régler](payment)
 - City : bonjour  City : je ne possède ps d [portable](device), j'ai changé d'adresse après la vente de mon ancien appartement voulu par le propriétaire, demande de livraison en point relais notifié, mais impossible de régler ; j'annule tout ?
@@ -50,12 +53,14 @@
 - bonjour   : je n'arrive pas à rentrer mon numéro de [carte bancaire](tool) etc. pourquoi. . Merci
 - je ne peux pas aller en payment
 - [Email1](email)   mon [paiement](payment) vient d'être refusé par votre site sur ma [carte mastercard](tool) des postes italiennes  j'ai bien reçus le code d'acceptation de mon débit par la [carte](tool)
+
 ## intent:PaymentTool
 - il met, je veux régler avec [PayPal](tool) et moi non.je veux régler avec ma carte
 - mauvaise expérience par [Paypal](tool)
 - bonjour peut on [payer](payment) en plusieurs fois par [CB](tool) sur votre site svp
 - si je demande c'est parce que moi je suis à l'étranger et une [amie](target) à moi à commandé avec sa [carte bancaire](tool)
 - bonjour, j'ai passé une commande le [28 Mai](date) 2019 à Midi et aujourdh'ui en consultant mon compte, je m'aperçois que j'ai été débité par un site de [paiement](payment) [HIPAYWALLET](tool). est ce bien vous ? voici mon adresse [mail](channel) : [_Email1_](email)
+
 ## intent:Thanks
 - Merci, je vais aller rectifier tout cela !
 - Merci
@@ -92,10 +97,12 @@
 - Merci je vais voir
 - merci donc ça peut pas le faire
 - ok, je vais essayer. Merci
+
 ## intent:Previous
 - la réponse à ma question précédente ? ! !
 - répondez vous vraiment aux [e-mails](channel) ?
 - j'ai choisi en [point relais](pr)
+
 ## intent:Autre
 - bonjour2   : quelqu'un est il la pour répondre ?
 - je ne trouve nulle part mon numéro de commande
@@ -103,6 +110,7 @@
 - in , please ?2  I have an order : NR : 0201 7041 4639 69773  I do not know Where the order has been delivered ?4  are you taire ?
 - je suis en [France](country) normalement.
 - _Name2_ je fais autrement
+
 ## intent:ProductAvailable
 - avez vous des [recharges](reload) pour le [Chanel](article) ?
 - bonjour, client chez vous je souhaite faire plaisir à mon [amie](target) pour lui offrir [womanity EAU de parfum spray](article), j'aimerai savoir si ce produit sera toujours [rechargeable](reload), merci de votre réponse, mon mail [Email1](email). cdt
@@ -113,6 +121,7 @@
 - bonjour je cherche parure de [Gerlain](article) pouvez vous me le trouver c'est un ancien parfum
 - bonjour le [play intense](article) pour [femme](target) n'est plus disponible en [100ml](size) ? car je ne vois que le 50 et au même prix je ne commande que celui la
 - bonjour je cherche Allure de [Chanel](article)
+
 ## intent:DamagedPackage
 - bonjour3   : hier nous avons reçu une commande ou un produit était [casse](damaged) et nous vous avons transmis un document de [Chronopost](transporter) attestant ce problème
 - le [renvoi](resend) et si possible nous l'envoyer [chez nous](place)
@@ -120,6 +129,7 @@
 - : [Email1](email)   commande [00](order) crèmes onctueuses [lolitalempica](article) [abîmées](damaged)
 - je viens de recevoir mon eau de parfum [Angel](article) que je mets depuis très longtemps. j'ai ouvert le paquet et vu la bouteille, déjà la couleur est bleu gris et l'odeur est différente de celle que j'ai encore en ma possession.   voici mon email : [Email1](email)
 - bonjour suite à ma dernière commande j'avais fait part par mail de mon [mécontentement](mood_neg). j'ai envoyé une [photo](photo) du parfum dont la couleur me semble [anormale](damaged) sans parler de l'odeur qui semble passée. à ce jour je n'ai aucunes nouvelles
+
 ## intent:Rien
 - ok l'adresse est bonne tel mob Phone2
 - [Email1](email)
@@ -145,6 +155,7 @@
 - _Name3_ mon [panier](basket)
 - [mail@email.com](email)
 - [email1](email)
+
 ## intent:Discount
 -   : d'accord, un [code promo](discount) peut être ?
 - bonjour puis je avoir un [code promo](discount) pour mon [anniversaire](event) ?
@@ -165,6 +176,7 @@
 - bonjour bonjour le [code promotionnel](discount) ne fonctionne plus ? Merci
 - : d'accord, un [code promo](discount) peut être ?
 - bonjour je souhaiterais savoir sil y a un [code promo](discount) ? [_Email1_](email)
+
 ## intent:DeliveryNews
 - bonjour je voudrais savoir si ma commande [483265](order) était bien arrivée svp
 - bonjour je voudrais savoir où se trouve ma commande [361](order)
@@ -207,6 +219,7 @@
 - [_Email1_](email) colis [669785](order) pourriez vs me dire où en est la livraison svp ?
 - je suis désolé je n'ai pas eu l'information le [mail](channel) ne m'est pas arrivé semble t il ou bien ai je fait une fausse manipulation auriez vous l'amabilité de me dire si je recevrai le reste de la commande avant [vendredi](date) car un [cadeau](present) est à destination d'un membre de la famille que je ne reverrai pas avant quelques mois Merci beaucoup
 - bonjour, j'ai effectué une commande le [3](order) Decembre N° [10413084](order) je n'ai pas de nouvelle concernant ma commande. où en est elle ?
+
 ## intent:WebsiteBug
 - bonjour [Email1](email) mon panier est de 60,18 hors en poursuivant je dois 62,18 parfum insolence [Guerlain](article) - code promo +7,99 [frais de port](fdp) 60,182   : [Email2](email)   :  [Email1](email) je suis mal voyante4   : hier même problème donc pas commandé5   : maintenant le total TTC est monté à 64,88 ?
 - je sais mais ça ne passe pas  je connais bien le fonctionnement : j'ai travaillé dans ce secteur. apparemment votre site [dysfonctionnait](bug) quand j'ai voulu saisir.8  je réessaierai plus tard
@@ -219,9 +232,11 @@
 - Ca me dit échec lors de [l'authentification](authentification)
 - c'est fait mais rien de changé !
 - problème de connection en cours [_Email1_](email)
+
 ## intent:CommuncationInterruption
 - je vais le faire si je sors de la conversation cela coupera t il notre entretien
 - bonjour, j'ai déjà eu une conversation avec vous et je viens d'être coupée  avec ;2   pouvez vous relancer [Chronopost](transporter) puisque le colis est arrivé chez eux le 1er octobre et nous sommes le 10 octobre.
+
 ## intent:Login
 - bonjour Madame2  ayant oublié mon [numéro de passe](pwd), il m'a été proposé différents nouveaux n° mais aucun ne me permet de finaliser ma commande. comment faire ? Merci.
 - c'est .2  j'essaie de passer commande de 2  mais impossible de se [connecter](connection) via [FB](facebook). j'ai saisi également le formulaire qui est rejeté pour [mot de passe](pwd)
@@ -239,6 +254,7 @@
 - bonjour je ne retrouve pas mon [mot de passe](pwd) ! et je ne le reçois pas sur mon [adresse](channel) que j'ai communique !
 - bonjour je n'arrive a me [connecter](connection) pour passer une commande
 - bonjour je n'arrive pas à M, identifier alors _City1_, un nouveau [mot](pwd) de [passe](pwd) vient de M, être attribué. Merci d, avance pour votre aide
+
 ## intent:DeliveryNews+AskDetails
 - Name : est ce normal qui le est toujours pas parti de [chez vous](store)
 - oui mais depuis lundi c'est comme ça  commande n'évolue pas etc  c'est normal ?
@@ -251,6 +267,7 @@
 - bonjour, j'ai fait une commande sur votre site et je suis [inquiète](mood_neg) car je n'ai pas de numéro de [suivi](follow-up)   le colis n'est toujours pas parti ?
 - lorsque je vais vers le [transporteur](fdp) avec mon numéro de colis il me dit qu'il n'a pas d'information à propos de ce numéro de
 - je ne peux pas suivre mon colis [Chronopost](transporter) je n'ai pas de n°. ma commande du [10/12](date) n° [668649](order)
+
 ## intent:AskDetails
 - portant sur le lien il dise qui le est toujours [chez vous](store)
 - [Email](email)  vous voudrez bien me tenir informée svp, je vais devoir décrocher. Merci beaucoup
@@ -267,6 +284,7 @@
 - _Name3_ etc donc je dois attendre de recevoir le [mail](channel) pour le parfum [manquant](missing) etc c'est ça ? Merci
 - c'est quoi [navigateur](website) ?
 - la pièce du titulaire du compte [bancaire](tool) ou du compte parfums moins cher ?
+
 ## intent:MissingItem
 - bonjour, j'ai reçu une commande mais il me [manque](missing) un produit à l'intérieur, vais je le recevoir ? Merci
 - où en est ma commande je n'ai eu que 3 produits sur 4 commande du [1juillet](date) on est le 3
@@ -278,6 +296,7 @@
 - d'accord merci oui j'en ai reçu deux sur trois
 - bonjour je viens de recevoir la commande commande #[642650](order) commande #642650 elle ne contient qu'un seul parfum,[ roberto cavalli](article) alors que j'ai commandé deux parfums
 - bonjour Mme bonjour Mme voici mon numéro de commande [653872](order) j'ai bien reçu les parfums 5th avenue et petite robe noire mais pas [Eternity](article) pour [femme](target) ni _Name3_ pourriez vous m'indiquer si vous comptez livrer ou si vous êtes en rupture Merci d'avance
+
 ## intent:ReceptionAlert
 - merci. je vais recevoir un [sms](channel) pour me dire de venir la retirer ?
 - pourriez vous me communiquer sur mon [portable](channel) dès que le colis arrive dans le [point relais](pr) ?4   voici mon N [Phone1](phone). Merci
@@ -285,6 +304,7 @@
 - serai je prévenue de la date de livraison ? tel : [phone2](phone)
 - bonjour,   serais je informée par [sms](channel) de la livraison de ma commande dans le [point relais](pr) ?
 - d'accord. je reçois un [mail](channel) pour pouvoir le réceptionner ?
+
 ## intent:CustomerComplaint
 - oui mais j'ai reçu un mail avec 6 % de réduction pour  [publicité](add) mensongère, ?
 - mais je n'ai pas eu de [mail](channel) pour me prévenir que ma commande était en 2 colis je l'ai su par le [relais](pr) et pas eu de message pour me faire part de délai  etc 2 jours pour la livraison ce n'est pas ce que vous proposez lors des commandes et des [frais](fdp) de [port](fdp) proposes c'est a réfléchir par deux fois avant de repasser commande chez vous désolée mais je reprendrai nocive ou Sephora
@@ -293,20 +313,24 @@
 - : x mails appels depuis5 jours aucune réponse   : la [photo](photo) ne vous donnera pas l'odeur
 - votre [pub](add) annonçait des [frais de port](fdp) offerts !! c'est n'importe quoi
 - : x mails appels depuis5 jours aucune réponse   : la photo ne vous donnera pas l'odeur
+
 ## intent:CancelOrder
 - bonjour, je viens de passer à l'instant ma commande qui a pour numéro [4056](order)   : seulement je viens de me rendre compte que je me suis trompée etc. y a t il possibilité d'annuler celle ci etc ?
 - je veux annuler ma commande [00](order)
 - Bonjour je voudrais que vous annuliez ma commande svp
 - bonjour, je viens de passer commande et je croyais avoir enlever un parfum et non comment puis je faire ? 656306 numéro commande ?
+
 ## intent:AccountIssue
 - bonjour, je ne parviens pas à passer ma commande
 - : dans mon compte les fichiers pdf je ne peux pas les télécharger    : commande No [0897](order) et les anciennes commandes    : je ne comprends pas car sur les autres sites je peux [télécharger](action) mes [factures](biling) relatives aux commandes    : dans mon compte    : comment puis je faire ?
+
 ## intent:ProductTarget
 - bonjour, une question sur le [fond de teint make up for ever fluide](article) tenseur le coloris sable est il bien clair merci
 - c'est quoi que vous me conseillez pour une [ado](target) ?
 - j'aurais besoin d'une eau de toilette  pour [femme](target) d'un certain âge
 - je voudrais faire un cadeau à mon [fils](target), une idée ?
 - bonjour je recherche une eau de toilette pour une [pré-ado](target) de 10 ans
+
 ## intent:DeliveryTime
 - [super](mood_pos) .6  pensez vous que je serai livrée la semaine prochaine ? je vis en [Martinique](country) et viens en métropole ce samedi pour une semaine. je demande la livraison chez mon fils à City
 - j'espère le recevoir ace Xe week-end le [cadeau](present) de la fête des pères
@@ -315,58 +339,72 @@
 - bonjour   je voudrais savoir LE TEMPS de livraison pour une commande
 - [super](mood_pos).6  pensez vous que je serai livrée la semaine prochaine ? je vis en Martinique et viens en métropole ce samedi pour une semaine. je demande la livraison chez mon fils à City
 - [_Email1_](email) c'est urgent. si je commande aujourd'hui quand serai je livrée
+
 ## intent:ConfirmationOrder
 - pourquoi je n'ai pas eu de message pour me prévenir des références du 2eme colis avec un numéro de [suivi](follow-up)
 - ok je regarde   : [dommage](mood_neg) que les + vieux messages des [indésirables](spam) soient du [2 juillet](date) mais dans la liste des [indésirables](spam) il n'y a pas aucun de votre site etc ce qu'il serait bien est que vous me l'envoyez de nouveau ce mail etc merci
 - [Email2](email)  je voulais savoir si ma commande a biens été pris en compte car j'ai été débité 2 fois de 244.94 car j'ai appelé ma banque  [Email1](email)
 - bonjour, j'ai passé une commande hier, que j'ai réglée par [carte bancaire](tool), j'ai fait une capture d'écran du [paiement](payment), mais sur mon compte il apparaît que je n'ai pas de commande en cours, d'autre part je n'ai pas reçu [confirmation](confirmation) de ma commande
 - alirs faites la livraison en [point relais](pr)  merci de le [confirmer](confirmation)
+
 ## intent:DeliveryNews+CustomerComplaint
 - vous voulez dire 2e [envoi](action) car depuis le [26 Mars](date) il y a UN gros SOUCI
 - vous êtes Sure que je serai livré cette année ! cela fait 3 fois que l'on me donne de nouveaux délais
 - bon ! vous comptez me livrer quand ?? ca fait 3 semaines que j'attends !!
+
 ## intent:CustomerComplaint+goodbye
 - si en fin de semaine je ne V oi rien vous voudrez bien procéder au [remboursement](refund) de mon article sous les meilleurs délais
 - c'est très long pour le prix etc merci au revoir   PS : je ne suis pas sûre du tout de recommander un jour
 - je n'ai reçu aucun message pour me prévenir etc etc   merci du renseignement et bonne journée à vous
 - j'ai dû faire appel à l'avocat de notre entreprise pour pouvoir faire avancer ce dossier. en parallèle j'ai été obligé d'aller acheter les parfums en boutique ( qui m'a finalement coûté le même prix que chez vous grâce aux remises clients ). de cette manière, je vous demanderai un [remboursement](refund) sans plus tarder comme il l'est prévu par la loi [Française](country). aussi, si vous refuser sous prétexte de procédures [Chronopost](transporter), sachez que nous sommes aussi en contrat avec [Chronopost](transporter) et que notre chargé d'affaire m'a fait savoir que la procédure était singulière et que c'était à la boutique de faire immédiatement le nécessaire pour répondre aux exigences de la loi. sans [remboursement](refund) de votre part, je serai contraint de faire une plainte contre votre entreprise pour non respect de la législation [Française](fdp) dans la cadre d'un colis jamais réceptionné, et demanderai la [remboursement](refund) via le [fond](article) d'aide aux victimes.
+
 ## intent:Non
 - eu h non je suis sur mon lieu de travail   pourtant ça a été prélevé le [7/06](date)
 - ah non 12 14 jours
 - non
 - je pense pas que ce soit le problème
+
 ## intent:ChangeData
 - peut on changer le [mot](pwd) de [passe](pwd) que j'ai marqué
 - Je voudrais modifier mon adresse svp
 - comment on édite ses données ?
 - par contre l'adresse n'est plus la même, je n'habite plus à _City1_
 - pouvez vous changer l'adresse de [facturation](biling) pour ma commande n° [625652](order). mettre la même [adresse](address) que celle de la livraison, car la [facture](biling) doit être jointe à l'[envoi](action). Merci de me [confirmer](confirmation)
+
 ## intent:DeliveryNews+deliveryPlace
 - est ce que vous pouvez me dire à peut prêt quand il va être livré et si [Chronopost](transporter) le met dans la boîte aux lettre en cas d'ansence   car je pars [vendredi](date) et je reviens [dimanche](date)   [00](order)   vous pouvez me dire ?8   rassurez moi vous trouvez bien ma commande ?
 - mais il devait m'être déjà livrer à mon [domicile](place)
 - la livraison se fait en point relais ou à domicile ?
+
 ## intent:Oui+CustomerComplaint
 - [absolument](oui)   mais, je trouve que ce n'est pas sérieux de votre part
 - oui mais je suis [déçue](mood_neg)
+
 ## intent:DeliveryPlace
 - que dois je faire aujourd'hui  [recommander](resend) ou ou attendre la livraison à mon [domicile](place) comme proposer  merci
 - bonjour, je voudrai acheter un parfum ici en [France](country) mais donner comme [cadeau](present) à quelqu'un aux [Etats Unis](country), est ce possible ?
 - bonjour vou livre à [domicile](place) ?
+
 ## intent:Resend
 - vous me la [renvoyez](resend) en urgence merci
 - oui effectuez le [renvoie](resend) svp
 - oui le [renvoi](resend)
 - [renvoyez](resend) la commande merci j'espère une réception avant le [2412](date).
+
 ## intent:AccountCreation
 - je souhaite m'inscrire mais cela fait 3 fois l'on me dit que mon adresse mail et la confirmation d'adresse mail ne st pas les mêmes, or si !
 - [_Email1_](email) je suis en cours de création du compte [chez vous](store)
 - j'essaie de commander un parfum mon adresse [mail](channel) est [_Email1_](email) ne sais plus si je suis inscrite chez vous [_Email2_](email) j'avais oublie le g
+
 ## intent:Returned
 - [_Email1_](email)  bonjour un article de ma commande a été retourné que doit je faire maintenant, merci
+
 ## intent:PaymentSafe
 - d'accord merci le paiement et sécuriser ?
+
 ## intent:StoreLocation+DeliveryTime
 - non, quand je consulte le lien sur chrono post il est prêt chez l'expéditeur. vous ? depuis le 31/12 etc vous n'êtes pas en France ?6   une petite idée du délai ?
+
 ## intent:Reset
 - annuler
 - je veux recommencer
@@ -376,6 +414,7 @@
 - reset all
 - tout reset
 - recommencer
+
 ## intent:Oui
 - oui
 - yeah
@@ -385,6 +424,7 @@
 - tout à fait
 - ok
 - ok d'accord
+
 ## intent:Saluer
 - bonjour
 - hello
@@ -392,14 +432,22 @@
 - bonjour bonjour
 - Salut
 - bonsoir !
+
 ## intent:PurchaseIssue
 - bonjour, vous demandez d'indiquer un [transporteur](transporter), je ne comprends pas
 - je n'arrive pas à commander
 - bonjour, je souhaite une livraison à [domicile](home) mais je n'arrive pas à trouver ?
 - bonjour Madame [_Name2_](code) je comprends pas pourquoi la commande est toujours en attente [de](pwd) [justificatifs](authentification)
+
 ## intent:ProductPrice
 - [dégoûtée](mood_neg) je ne le trouvais que [chez vous](store) et donc le 50 est bien au même prix que le 100 ?
+
 ## intent:ProductOrigin
 - merci mais je ne comprends pas ces parfums viennent de quel pays svp ?
+
 ## intent:Refund
 - bonjour, à quel adresse faut il vous envoyer le relevé de F rais de [douane](fdp) ? et comment procédez vous au [remboursement](refund) ? merci pour votre réponse
+
+## intent:ProductQuality
+- bonjour les parfums sont-ils les vrais ? 
+- c'est des parfums authentiques ? 

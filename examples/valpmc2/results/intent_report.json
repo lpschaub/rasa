@@ -1,0 +1,283 @@
+{
+  "Oui": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "Returned": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "CustomerComplaint+goodbye": 1
+    }
+  },
+  "CustomerComplaint": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "ProductOrigin": 1,
+      "Goodbye": 1
+    }
+  },
+  "Autre": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 10,
+    "confused_with": {
+      "ProductAvailable": 2,
+      "ConfirmationOrder": 1,
+      "Login": 1
+    }
+  },
+  "ConfirmationOrder": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "DeliveryNews": 1
+    }
+  },
+  "Refund": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "CustomerComplaint": 1,
+      "ReceptionAlert": 1
+    }
+  },
+  "Rien": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 4,
+    "confused_with": {
+      "PaymentRefused": 1
+    }
+  },
+  "ProductAvailable": {
+    "precision": 0.2,
+    "recall": 0.5,
+    "f1-score": 0.28571428571428575,
+    "support": 2,
+    "confused_with": {
+      "Discount": 1
+    }
+  },
+  "DeliveryNews+AskDetails": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DeliveryNews": 1
+    }
+  },
+  "Discount": {
+    "precision": 0.375,
+    "recall": 1.0,
+    "f1-score": 0.5454545454545454,
+    "support": 3,
+    "confused_with": {}
+  },
+  "DeliveryTime": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Discount": 1,
+      "Goodbye": 1
+    }
+  },
+  "CancelOrder": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "ProductAvailable": 1,
+      "PaymentRefused": 1
+    }
+  },
+  "PurchaseIssue": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "Saluer": 1,
+      "DeliveryNews+deliveryPlace": 1,
+      "Login": 1
+    }
+  },
+  "CommuncationInterruption": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "ReceptionAlert": 1,
+      "PaymentTool": 1
+    }
+  },
+  "ProductPrice": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "DeliveryCost": 2,
+      "ProductAvailable": 1
+    }
+  },
+  "ProductQuality": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "CommuncationInterruption": 1
+    }
+  },
+  "DeliveryNews": {
+    "precision": 0.5714285714285714,
+    "recall": 0.7272727272727273,
+    "f1-score": 0.64,
+    "support": 11,
+    "confused_with": {
+      "Goodbye": 1,
+      "Autre": 1
+    }
+  },
+  "ProductOrigin": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "MissingItem": 1
+    }
+  },
+  "Non": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DeliveryNews+AskDetails": 1
+    }
+  },
+  "Thanks": {
+    "precision": 0.9230769230769231,
+    "recall": 0.8,
+    "f1-score": 0.8571428571428571,
+    "support": 15,
+    "confused_with": {
+      "Goodbye": 1,
+      "AskDetails": 1
+    }
+  },
+  "PaymentTool": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 1,
+    "confused_with": {}
+  },
+  "Goodbye": {
+    "precision": 0.5555555555555556,
+    "recall": 0.625,
+    "f1-score": 0.5882352941176471,
+    "support": 8,
+    "confused_with": {
+      "Thanks": 1,
+      "Rien": 1
+    }
+  },
+  "DeliveryCost": {
+    "precision": 0.6,
+    "recall": 0.6,
+    "f1-score": 0.6,
+    "support": 5,
+    "confused_with": {
+      "MissingItem": 1,
+      "DeliveryNews": 1
+    }
+  },
+  "MissingItem": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "DeliveryNews": 1
+    }
+  },
+  "DeliveryPlace": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "DeliveryNews+deliveryPlace": 1,
+      "DeliveryNews+CustomerComplaint": 1
+    }
+  },
+  "Login": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 6,
+    "confused_with": {
+      "ChangeData": 1,
+      "ConfirmationOrder": 1
+    }
+  },
+  "DamagedPackage": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "Discount": 2,
+      "AskDetails": 1
+    }
+  },
+  "ReceptionAlert": {
+    "precision": 0.2,
+    "recall": 0.5,
+    "f1-score": 0.28571428571428575,
+    "support": 2,
+    "confused_with": {
+      "Discount": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.5232558139534884,
+    "recall": 0.45454545454545453,
+    "f1-score": 0.48648648648648646,
+    "support": 99
+  },
+  "macro avg": {
+    "precision": 0.3098236089307517,
+    "recall": 0.3393668831168831,
+    "f1-score": 0.30186647386227217,
+    "support": 99
+  },
+  "weighted avg": {
+    "precision": 0.44109069942403273,
+    "recall": 0.45454545454545453,
+    "f1-score": 0.43113379787176576,
+    "support": 99
+  }
+}

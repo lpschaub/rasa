@@ -1,17 +1,14 @@
-
 ## intent:DeliveryCost
 - bonjour bonjour je passerai commande seulement si les [frais de port](fdp) sont à 0 € surtout pour une commande de 20 €. très cordialement. [Email1](email)
--   : bonjour,3    : [Email1](email) j'ai une commande à valider, pourrais avoir la livraison [offerte](free) ?
+- : bonjour,3    : [Email1](email) j'ai une commande à valider, pourrais avoir la livraison [offerte](free) ?
 - J e vous ai précisé que je ne comprenais pas la différence de [facturation](biling) qui, [frais de transport](fdp) compris est de 97,94€ et au final on me réclame 100,96€. Merci. je m'a fait livrer à mon [domicile](place), je ne vois donc pas pourquoi sur le bon de commande les frais inclus sont arrêtés à un peu plus de 97€. j'ai commandé 2 articles. a vous lire. cordialement
 - je pensais que les [frais de livraison](fdp) étaient [offerts](free) mais je ne trouve pas de [code](discount) pour cela
 - bonjour j'ai choisi mes parfums prix 9,3 je fais étape suivante et la 1,3 alors que je n'ai pas encore choisi mon mode de livraison
 - bonjour, les parfums sont expédiés des [USA](country) ?2   il peut y avoir des [frais](fdp) de douane ?
 - bonjour vos [frais de port](fdp) sont [gratuits](free) à quel montant
-- : bonjour,3    : [Email1](email) j'ai une commande à valider, pourrais avoir la livraison [offerte](free) ?
 - différence prix livraison
 - bonjour, bonjour, vous demandez deux fois des [frais de port](fdp) ? ça devient un peu cher de payer deux fois
 - pourquoi les frais [frais de port](fdp) vais d une page à l'autre vais _Name3_
-
 
 ## intent:Goodbye
 - [dommage](mood_neg). Passez de bonnes fêtes de fin d'année.
@@ -160,7 +157,7 @@
 - [email1](email)
 
 ## intent:Discount
--   : d'accord, un [code promo](discount) peut être ?
+- : d'accord, un [code promo](discount) peut être ?
 - bonjour puis je avoir un [code promo](discount) pour mon [anniversaire](event) ?
 - bonjour je souhaite commander aujourd'hui un [parfum](article) est ce que j'aurai ne [réduction](discount) en plus ? si oui quel code, merci
 - j'ai mis le code [MDM0](code) pour une [remise](discount) et l'on me répond code expire quand un nouveau [code remise](discount) sinon je diffère ma commande
@@ -177,9 +174,8 @@
 - où est mon [code de réduction](discount) ?
 - [_Email1_](email)  juste avoir le [code promo](discount) pourcent
 - bonjour bonjour le [code promotionnel](discount) ne fonctionne plus ? Merci
-- : d'accord, un [code promo](discount) peut être ?
 - bonjour je souhaiterais savoir sil y a un [code promo](discount) ? [_Email1_](email)
-- bonjour je souhaite acheter l'homme idéal [Guerlain](article) en [150ml](size) je suis un fidèle client de parfumsmoinscher, est t il possible d'avoir la [remise](discount) 40 % au lieu de 37 % ? 
+- bonjour je souhaite acheter l'homme idéal [Guerlain](article) en [150ml](size) je suis un fidèle client de parfumsmoinscher, est t il possible d'avoir la [remise](discount) 40 % au lieu de 37 % ?
 
 ## intent:DeliveryNews
 - bonjour j'ai passé une commande et je n'ai toujours rien reçu
@@ -240,7 +236,7 @@
 - Ca me dit échec lors de [l'authentification](authentification)
 - c'est fait mais rien de changé !
 - problème de connection en cours [_Email1_](email)
--  j'étais en conversation avec dorothe est il possible de continuer avec car il y a des _Name2_ en tchat le tchat s'arrête tout seulk c'est agaçant
+- j'étais en conversation avec dorothe est il possible de continuer avec car il y a des _Name2_ en tchat le tchat s'arrête tout seulk c'est agaçant
 
 ## intent:CommuncationInterruption
 - je vais le faire si je sors de la conversation cela coupera t il notre entretien
@@ -322,8 +318,8 @@
 - : x mails appels depuis5 jours aucune réponse   : la [photo](photo) ne vous donnera pas l'odeur
 - votre [pub](add) annonçait des [frais de port](fdp) offerts !! c'est n'importe quoi
 - : x mails appels depuis5 jours aucune réponse   : la photo ne vous donnera pas l'odeur
--  et ? aucune information toujours chez vous Ca j'avais déjà ce site est il [nul](mood_neg) de chez nul
--  c'est effectivement la dernière solution pour moi car malheureusement je ne reviendrai que l'année prochaine ! ! ! très [déçu](mood_neg) si je ne l'ai pas à temps ! ! ! !
+- et ? aucune information toujours chez vous Ca j'avais déjà ce site est il [nul](mood_neg) de chez nul
+- c'est effectivement la dernière solution pour moi car malheureusement je ne reviendrai que l'année prochaine ! ! ! très [déçu](mood_neg) si je ne l'ai pas à temps ! ! ! !
 
 ## intent:CancelOrder
 - bonjour, je viens de passer à l'instant ma commande qui a pour numéro [4056](order)   : seulement je viens de me rendre compte que je me suis trompée etc. y a t il possibilité d'annuler celle ci etc ?
@@ -364,14 +360,13 @@
 - bon ! vous comptez me livrer quand ?? ca fait 3 semaines que j'attends !!
 - bonjour commande préparée le 1 toujours pas expédier le 5 je [regrette](attrition) mon achat chez vous et me permettrai de le faire savoir [641051](order) numéro de commande
 
-
 ## intent:CustomerComplaint+goodbye
 - si en fin de semaine je ne V oi rien vous voudrez bien procéder au [remboursement](refund) de mon article sous les meilleurs délais
 - c'est très long pour le prix etc merci au revoir   PS : je ne suis pas sûre du tout de recommander un jour
 - je n'ai reçu aucun message pour me prévenir etc etc   merci du renseignement et bonne journée à vous
 - j'ai dû faire appel à l'avocat de notre entreprise pour pouvoir faire avancer ce dossier. en parallèle j'ai été obligé d'aller acheter les parfums en boutique ( qui m'a finalement coûté le même prix que chez vous grâce aux remises clients ). de cette manière, je vous demanderai un [remboursement](refund) sans plus tarder comme il l'est prévu par la loi [Française](country). aussi, si vous refuser sous prétexte de procédures [Chronopost](transporter), sachez que nous sommes aussi en contrat avec [Chronopost](transporter) et que notre chargé d'affaire m'a fait savoir que la procédure était singulière et que c'était à la boutique de faire immédiatement le nécessaire pour répondre aux exigences de la loi. sans [remboursement](refund) de votre part, je serai contraint de faire une plainte contre votre entreprise pour non respect de la législation [Française](fdp) dans la cadre d'un colis jamais réceptionné, et demanderai la [remboursement](refund) via le [fond](article) d'aide aux victimes.
 - je [regrette](attrition) plus jamais chez vous vive [incenza](concurrence)
--  un conseil changer de métier merci
+- un conseil changer de métier merci
 
 ## intent:Non
 - eu h non je suis sur mon lieu de travail   pourtant ça a été prélevé le [7/06](date)
@@ -454,6 +449,7 @@
 - je n'arrive pas à commander
 - bonjour, je souhaite une livraison à [domicile](home) mais je n'arrive pas à trouver ?
 - bonjour Madame [_Name2_](code) je comprends pas pourquoi la commande est toujours en attente [de](pwd) [justificatifs](authentification)
+- j'ai un probleme pour commander
 
 ## intent:ProductPrice
 - [dégoûtée](mood_neg) je ne le trouvais que [chez vous](store) et donc le 50 est bien au même prix que le 100 ?
@@ -463,3 +459,7 @@
 
 ## intent:Refund
 - bonjour, à quel adresse faut il vous envoyer le relevé de F rais de [douane](fdp) ? et comment procédez vous au [remboursement](refund) ? merci pour votre réponse
+
+## intent:ProductQuality
+- bonjour les parfums sont-ils les vrais ? 
+- c'est des parfums authentiques ? cd 

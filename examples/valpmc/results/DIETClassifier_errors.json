@@ -1,0 +1,1334 @@
+[
+  {
+    "text": "_Email1_ bonjour j'ai lu frais de port offert mais à la fin de la commande ils s'affichent ?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 38,
+        "value": "frais de port",
+        "entity": "fdp"
+      },
+      {
+        "start": 39,
+        "end": 45,
+        "value": "offert",
+        "entity": "free"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 0,
+        "end": 8,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "fdp",
+        "start": 25,
+        "end": 38,
+        "value": "frais de port",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "free",
+        "start": 39,
+        "end": 45,
+        "value": "offert",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dommage désoler donc je passe pas la commande",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "mood_neg",
+        "start": 0,
+        "end": 7,
+        "value": "dommage",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "_Name1_ je vous remercie et bon WE",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "discount",
+        "start": 28,
+        "end": 31,
+        "value": "bon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dommage. Merci.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "mood_neg",
+        "start": 0,
+        "end": 7,
+        "value": "dommage",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "_Name3_ bonsoir je n'arrive pas à passer la commande pour le parfum Love _Name2_ 75ml. il est indiqué que le produit n'est pas disponible en stock etc etc. alors que vous m'avez confirmé qu'il y était etc etc ?",
+    "entities": [
+      {
+        "start": 68,
+        "end": 72,
+        "value": "Love",
+        "entity": "article"
+      },
+      {
+        "start": 81,
+        "end": 85,
+        "value": "75ml",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "confirmation",
+        "start": 178,
+        "end": 186,
+        "value": "confirmé",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour je voudrais commander le parfum _Name3_ 100ml est il disponible j'aurais bien voulu le 150ml mais bon je ne sais pas sil est disponible aussi",
+    "entities": [
+      {
+        "start": 48,
+        "end": 53,
+        "value": "100ml",
+        "entity": "size"
+      },
+      {
+        "start": 95,
+        "end": 100,
+        "value": "150ml",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "size",
+        "start": 48,
+        "end": 53,
+        "value": "100ml",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "size",
+        "start": 95,
+        "end": 100,
+        "value": "150ml",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "discount",
+        "start": 106,
+        "end": 109,
+        "value": "bon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "first van clef eau de parfum 60 ml. j'ai bien compris que vous avez 100, ml. mais je vous demande si en 60ml vous l'aurez à nouveau ou si vous l'abandonner ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "first van clef",
+        "entity": "article"
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "value": "60 ml",
+        "entity": "size"
+      },
+      {
+        "start": 68,
+        "end": 75,
+        "value": "100, ml",
+        "entity": "size"
+      },
+      {
+        "start": 104,
+        "end": 108,
+        "value": "60ml",
+        "entity": "size"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "size",
+        "start": 104,
+        "end": 108,
+        "value": "60ml",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cancel",
+        "start": 145,
+        "end": 155,
+        "value": "abandonner",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "j'ai envoyé une réclamation pour parfum defae j'ai envoyé demande parfum défectueux pas de retour j'ai envoyé photo produit",
+    "entities": [
+      {
+        "start": 40,
+        "end": 45,
+        "value": "defae",
+        "entity": "article"
+      },
+      {
+        "start": 73,
+        "end": 83,
+        "value": "défectueux",
+        "entity": "damaged"
+      },
+      {
+        "start": 110,
+        "end": 115,
+        "value": "photo",
+        "entity": "photo"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "photo",
+        "start": 110,
+        "end": 115,
+        "value": "photo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "_Email1_",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 0,
+        "end": 8,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjours je voulais savoir si vous aviez un code de réduction en cours",
+    "entities": [
+      {
+        "start": 44,
+        "end": 61,
+        "value": "code de réduction",
+        "entity": "discount"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "discount",
+        "start": 49,
+        "end": 61,
+        "value": "de réduction",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour je souhaite savoir des infos sur ma commande No N°713041",
+    "entities": [
+      {
+        "start": 58,
+        "end": 64,
+        "value": "713041",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "article",
+        "start": 56,
+        "end": 64,
+        "value": "N°713041",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "_Email1_ N 708853 ou et ma commande ?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "708853",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 0,
+        "end": 8,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "order",
+        "start": 11,
+        "end": 17,
+        "value": "708853",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour ma commande 712817 n'a toujours pas été livrée. vendredi dernier, une réclamation auprès de Chronopost a été faite et je voulais savoir où cela en était etc mon mail _Email1_",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "712817",
+        "entity": "order"
+      },
+      {
+        "start": 100,
+        "end": 110,
+        "value": "Chronopost",
+        "entity": "transporter"
+      },
+      {
+        "start": 174,
+        "end": 182,
+        "value": "_Email1_",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "order",
+        "start": 20,
+        "end": 26,
+        "value": "712817",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 56,
+        "end": 64,
+        "value": "vendredi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transporter",
+        "start": 100,
+        "end": 110,
+        "value": "Chronopost",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "channel",
+        "start": 169,
+        "end": 173,
+        "value": "mail",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "email",
+        "start": 174,
+        "end": 182,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour j'ai reçu un mail m'informant que ma commande était expédié par Chronopost lorsque je suis allé sur leur site je ne voit aucune avancé dans ma livraison il me dise de voir avec vous commande N° 740952 il n'y a plus personne ?",
+    "entities": [
+      {
+        "start": 72,
+        "end": 82,
+        "value": "Chronopost",
+        "entity": "transporter"
+      },
+      {
+        "start": 202,
+        "end": 208,
+        "value": "740952",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "channel",
+        "start": 21,
+        "end": 25,
+        "value": "mail",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "transporter",
+        "start": 72,
+        "end": 82,
+        "value": "Chronopost",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "store",
+        "start": 185,
+        "end": 189,
+        "value": "vous",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "j'ai passé une commande N° 708855 pour un déodorant _Name2_ 17/04/2019 et je n'. ai toujours aucune nouvelle de la livraison !",
+    "entities": [
+      {
+        "start": 27,
+        "end": 33,
+        "value": "708855",
+        "entity": "order"
+      },
+      {
+        "start": 42,
+        "end": 51,
+        "value": "déodorant",
+        "entity": "article"
+      },
+      {
+        "start": 60,
+        "end": 70,
+        "value": "17/04/2019",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "order",
+        "start": 27,
+        "end": 33,
+        "value": "708855",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 60,
+        "end": 70,
+        "value": "17/04/2019",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour je vous ai passé commande n° 723025 le 07/06/2019, c'était pour offrir et je n'ai jamais reçu ma commande ! je vous ai déjà appelé à plusieurs reprises et à chaque fois vous m'informiez de la livraison sous peu A ce jour toujours rien reçu !",
+    "entities": [
+      {
+        "start": 37,
+        "end": 43,
+        "value": "723025",
+        "entity": "order"
+      },
+      {
+        "start": 47,
+        "end": 57,
+        "value": "07/06/2019",
+        "entity": "date"
+      },
+      {
+        "start": 72,
+        "end": 78,
+        "value": "offrir",
+        "entity": "present"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store",
+        "start": 11,
+        "end": 15,
+        "value": "vous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "order",
+        "start": 37,
+        "end": 43,
+        "value": "723025",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 47,
+        "end": 57,
+        "value": "07/06/2019",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "store",
+        "start": 119,
+        "end": 123,
+        "value": "vous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "store",
+        "start": 177,
+        "end": 181,
+        "value": "vous",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour je voulais vous demander une seconde fois où est mon colis ? j'ai commandé un lady million le 08/07 et je n'ai aucune information sur le colis 730334 le numéro de commande",
+    "entities": [
+      {
+        "start": 86,
+        "end": 98,
+        "value": "lady million",
+        "entity": "article"
+      },
+      {
+        "start": 102,
+        "end": 107,
+        "value": "08/07",
+        "entity": "date"
+      },
+      {
+        "start": 151,
+        "end": 157,
+        "value": "730334",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 102,
+        "end": 107,
+        "value": "08/07",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "je ne suis toujours pas livrée de la commande passée le 26 mars nous sommes le 15 avril on peut même dire le 16",
+    "entities": [
+      {
+        "start": 56,
+        "end": 63,
+        "value": "26 mars",
+        "entity": "date"
+      },
+      {
+        "start": 79,
+        "end": 87,
+        "value": "15 avril",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 59,
+        "end": 63,
+        "value": "mars",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "order",
+        "start": 109,
+        "end": 111,
+        "value": "16",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour j'attend ma commande depuis le 15 novembre",
+    "entities": [
+      {
+        "start": 39,
+        "end": 50,
+        "value": "15 novembre",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "order",
+        "start": 39,
+        "end": 41,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 42,
+        "end": 50,
+        "value": "novembre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "je n'ai aucune de ma commande passée le 04.07.2018, dois l'attendre encore longtemps ?",
+    "entities": [
+      {
+        "start": 40,
+        "end": 50,
+        "value": "04.07.2018",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ok elle apparaît comme en cours de préparation sur mon historique",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "status",
+        "start": 26,
+        "end": 31,
+        "value": "cours",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 32,
+        "end": 34,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "le mot de passe _Name2_ ne donne rien",
+    "entities": [
+      {
+        "start": 3,
+        "end": 15,
+        "value": "mot de passe",
+        "entity": "pwd"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pwd",
+        "start": 3,
+        "end": 6,
+        "value": "mot",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 10,
+        "end": 15,
+        "value": "passe",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour, j'ai oublié mon mot de passe.",
+    "entities": [
+      {
+        "start": 21,
+        "end": 37,
+        "value": "mon mot de passe",
+        "entity": "pwd"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pwd",
+        "start": 25,
+        "end": 28,
+        "value": "mot",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 32,
+        "end": 37,
+        "value": "passe",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "aucun mot de passe ne m'est envoyé sur ma boîte mail _Email1_ depuis hier or l je voudrais suivre l'arrivée de ma dernière commande : parfum lancome pour noël",
+    "entities": [
+      {
+        "start": 6,
+        "end": 18,
+        "value": "mot de passe",
+        "entity": "pwd"
+      },
+      {
+        "start": 53,
+        "end": 61,
+        "value": "_Email1_",
+        "entity": "email"
+      },
+      {
+        "start": 141,
+        "end": 148,
+        "value": "lancome",
+        "entity": "article"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pwd",
+        "start": 6,
+        "end": 9,
+        "value": "mot",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 13,
+        "end": 18,
+        "value": "passe",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "channel",
+        "start": 48,
+        "end": 52,
+        "value": "mail",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "email",
+        "start": 53,
+        "end": 61,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "impossible de me connecter",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "connection",
+        "start": 17,
+        "end": 26,
+        "value": "connecter",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "_Email1_ _Name2_ de pass oublié pouvez vous me reenisialiser. merci",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "de pass",
+        "entity": "pwd"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 0,
+        "end": 8,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "je n'arrive pas à récupérer le mot de passe rattaché à _Email1_ même en cliquant sur mot de passe oublié. aucun mail ne m'est adressé. Merci de votre aide pouvez vs svp me le renvoyer ?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 43,
+        "value": "mot de passe",
+        "entity": "pwd"
+      },
+      {
+        "start": 55,
+        "end": 63,
+        "value": "_Email1_",
+        "entity": "email"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pwd",
+        "start": 31,
+        "end": 34,
+        "value": "mot",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 38,
+        "end": 43,
+        "value": "passe",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "email",
+        "start": 55,
+        "end": 63,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 85,
+        "end": 88,
+        "value": "mot",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pwd",
+        "start": 92,
+        "end": 97,
+        "value": "passe",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "channel",
+        "start": 112,
+        "end": 116,
+        "value": "mail",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "est ce que je vais recevoir un mail car si je ne relance pas je n'ai pas de nouvelles ? j'ai contacté le service relai  qui a le statut de la commande toujours en expédié",
+    "entities": [
+      {
+        "start": 31,
+        "end": 35,
+        "value": "mail",
+        "entity": "channel"
+      },
+      {
+        "start": 163,
+        "end": 170,
+        "value": "expédié",
+        "entity": "status"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "oui je suis avec vous mais une faute technique je suis sorti pouvez vous me donner le lien pour suivre mon colis s'il vous plaît je n'arrive pas",
+    "entities": [
+      {
+        "start": 86,
+        "end": 90,
+        "value": "lien",
+        "entity": "follow-up"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "je n'ai pas reçu ce colis et pourtant vs, vous avez très vite encaissé mon règlement ! c'est de l'abus de. confiance très mécontente !",
+    "entities": [
+      {
+        "start": 62,
+        "end": 70,
+        "value": "encaissé",
+        "entity": "payment"
+      },
+      {
+        "start": 107,
+        "end": 116,
+        "value": "confiance",
+        "entity": "mood_neg"
+      },
+      {
+        "start": 122,
+        "end": 132,
+        "value": "mécontente",
+        "entity": "mood_neg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "country",
+        "start": 107,
+        "end": 116,
+        "value": "confiance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mood_neg",
+        "start": 122,
+        "end": 132,
+        "value": "mécontente",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "vous m'avez dit je viens vers vous si aujourd'hui je reçois toujours pas mon colis je peux annuler ma commande ?",
+    "entities": [
+      {
+        "start": 91,
+        "end": 98,
+        "value": "annuler",
+        "entity": "cancel"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bonjour, le site ne veut pas prendre en compte mon adresse mail.",
+    "entities": [
+      {
+        "start": 51,
+        "end": 63,
+        "value": "adresse mail",
+        "entity": "channel"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "channel",
+        "start": 59,
+        "end": 63,
+        "value": "mail",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "est il toujours possible de changer le délais de livraison en payant la différence",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pwd",
+        "start": 46,
+        "end": 48,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si je commande un parfum aujourd'hui je peux être livré demain ?",
+    "entities": [
+      {
+        "start": 56,
+        "end": 62,
+        "value": "demain",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "commande n° 703912 par contre le montant est débité depuis longtemps",
+    "entities": [
+      {
+        "start": 12,
+        "end": 18,
+        "value": "703912",
+        "entity": "order"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "je n'arrive pas à finaliser mon inscription car je ne trouve pas la Guadeloupe dans la liste déroulante des pays c'est un DOM",
+    "entities": [
+      {
+        "start": 68,
+        "end": 78,
+        "value": "Guadeloupe",
+        "entity": "country"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "article",
+        "start": 68,
+        "end": 78,
+        "value": "Guadeloupe",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "country",
+        "start": 122,
+        "end": 125,
+        "value": "DOM",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si j'ai une adresse de France je peux me faire livrez sans problème",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "France",
+        "entity": "country"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bonjour livrez vous à la Réunion ? et combien les frais de port ? merci",
+    "entities": [
+      {
+        "start": 25,
+        "end": 32,
+        "value": "Réunion",
+        "entity": "country"
+      },
+      {
+        "start": 50,
+        "end": 63,
+        "value": "frais de port",
+        "entity": "fdp"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "fdp",
+        "start": 50,
+        "end": 63,
+        "value": "frais de port",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "je voudrais me faire livrer au point relais du _City1_ _ZipCode1_ Merci",
+    "entities": [
+      {
+        "start": 31,
+        "end": 43,
+        "value": "point relais",
+        "entity": "pr"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pr",
+        "start": 31,
+        "end": 43,
+        "value": "point relais",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "address",
+        "start": 55,
+        "end": 65,
+        "value": "_ZipCode1_",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour, ma commande 649252 n'est restée que 5 jours en point relais et a donc été renvoyée. pouvez vous svp la réexpédier ? merci pour votre aide",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "649252",
+        "entity": "order"
+      },
+      {
+        "start": 56,
+        "end": 68,
+        "value": "point relais",
+        "entity": "pr"
+      },
+      {
+        "start": 112,
+        "end": 122,
+        "value": "réexpédier",
+        "entity": "resend"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "order",
+        "start": 21,
+        "end": 27,
+        "value": "649252",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "date",
+        "start": 45,
+        "end": 46,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pr",
+        "start": 56,
+        "end": 68,
+        "value": "point relais",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oui merci de bien vouloir renvoyer la commande svp",
+    "entities": [
+      {
+        "start": 26,
+        "end": 34,
+        "value": "renvoyer",
+        "entity": "resend"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "j'ai bien compris que ça pouvait rester bloqué quelques jours mais la ça fait presque 1 mois je veux bien que vous m'en réexpédiez un s'il vous plaît avec livraison rapide en temps que geste commercial parce que ça fait 1 mois que j'ai pas eu de nouvelles et pas de réponse a ma première demande",
+    "entities": [
+      {
+        "start": 120,
+        "end": 130,
+        "value": "réexpédiez",
+        "entity": "resend"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "bug",
+        "start": 40,
+        "end": 46,
+        "value": "bloqué",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "_Email1_. je suis en train de créer mon compte",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 0,
+        "end": 8,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "channel",
+        "start": 21,
+        "end": 26,
+        "value": "train",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "commande 715649. je viens de vous écrire mais maintenant pour vs demander svp de m'envoyer en chrono poste à domicile, au plus vite et le point relais vous retournera celui qui doit arriver, si il arrive. Merci beaucoup je l'espère.",
+    "entities": [
+      {
+        "start": 94,
+        "end": 106,
+        "value": "chrono poste",
+        "entity": "transporter"
+      },
+      {
+        "start": 109,
+        "end": 117,
+        "value": "domicile",
+        "entity": "home"
+      },
+      {
+        "start": 138,
+        "end": 150,
+        "value": "point relais",
+        "entity": "pr"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "place",
+        "start": 109,
+        "end": 117,
+        "value": "domicile",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pr",
+        "start": 138,
+        "end": 150,
+        "value": "point relais",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "BEN _Name1_ : bonjour,",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "discount",
+        "start": 0,
+        "end": 3,
+        "value": "BEN",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "non apparemment, mais quand je tape le destinataire c'est la facturation qui se remet la mienne en faite ?",
+    "entities": [
+      {
+        "start": 61,
+        "end": 72,
+        "value": "facturation",
+        "entity": "billing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "biling",
+        "start": 61,
+        "end": 72,
+        "value": "facturation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "je remplis le formulaire et j'ai deux fois l'adresse de facturation ? oui bien sur",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 45,
+        "end": 52,
+        "value": "adresse",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "biling",
+        "start": 56,
+        "end": 67,
+        "value": "facturation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour le produit amour de cacao est à 47€ sur votre site il est à 40€ sur le site officiel est ce normal ? passez une bonne journée au revoir",
+    "entities": [
+      {
+        "start": 19,
+        "end": 24,
+        "value": "amour",
+        "entity": "article"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "_Email1_ pourriez vous m'appeler s'il vous plaît _Phone1_",
+    "entities": [
+      {
+        "start": 49,
+        "end": 57,
+        "value": "_Phone1_",
+        "entity": "phone"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "email",
+        "start": 0,
+        "end": 8,
+        "value": "_Email1_",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "store",
+        "start": 18,
+        "end": 22,
+        "value": "vous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "channel",
+        "start": 33,
+        "end": 34,
+        "value": "s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "store",
+        "start": 38,
+        "end": 42,
+        "value": "vous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone",
+        "start": 49,
+        "end": 57,
+        "value": "_Phone1_",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "16 06 2017 16:35:56 en cours de livraison je n'ai pas le statut livré ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "order",
+        "start": 0,
+        "end": 19,
+        "value": "16 06 2017 16:35:56",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bonjour ! je voulais savoir si vos parfums sont 100 % authentiques ? comment faites vous pour bénéficier de prix si imbattables ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "device",
+        "start": 116,
+        "end": 127,
+        "value": "imbattables",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

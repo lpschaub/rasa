@@ -15,7 +15,7 @@ def get_convs(file, convs = []) :
 	return convs
 
 if __name__ == '__main__':
-	file = open('../data/stories.md')
+	file = open('../all-data/stories.md')
 	convs = get_convs(file)
 
 	out = open("../input/done.txt",'w')

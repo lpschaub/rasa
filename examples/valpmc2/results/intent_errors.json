@@ -1,0 +1,434 @@
+[
+  {
+    "text": "bjr pourquoi vous prenez 7.99 de frais de port et âpres cette étape vous redemande 19.97 de frais de port cela fais 7.99 plus 19.97 se trop cher ou ou",
+    "intent": "DeliveryCost",
+    "intent_prediction": {
+      "name": "DeliveryNews",
+      "confidence": 0.8226638436317444
+    }
+  },
+  {
+    "text": "bonjour comment avoir la livraison gratuite sur votre site s'il vous plaît ?",
+    "intent": "DeliveryCost",
+    "intent_prediction": {
+      "name": "MissingItem",
+      "confidence": 0.30689775943756104
+    }
+  },
+  {
+    "text": "Merci pour vos précisions etc je devrai donc avoir des nouvelles le 26 janvier.",
+    "intent": "Goodbye",
+    "intent_prediction": {
+      "name": "DeliveryNews",
+      "confidence": 0.7566415667533875
+    }
+  },
+  {
+    "text": "ok je vois cela demain matin ! !",
+    "intent": "Goodbye",
+    "intent_prediction": {
+      "name": "Rien",
+      "confidence": 0.4538500905036926
+    }
+  },
+  {
+    "text": "merci cordialement",
+    "intent": "Goodbye",
+    "intent_prediction": {
+      "name": "Thanks",
+      "confidence": 0.7556717395782471
+    }
+  },
+  {
+    "text": "ok pou moi trop cher MCIII",
+    "intent": "Thanks",
+    "intent_prediction": {
+      "name": "AskDetails",
+      "confidence": 0.9997903108596802
+    }
+  },
+  {
+    "text": "je remercie et vous en suis reconnaissant",
+    "intent": "Thanks",
+    "intent_prediction": {
+      "name": "ReceptionAlert",
+      "confidence": 0.3731214106082916
+    }
+  },
+  {
+    "text": "OK Merci pour _Name2_",
+    "intent": "Thanks",
+    "intent_prediction": {
+      "name": "Goodbye",
+      "confidence": 0.991852879524231
+    }
+  },
+  {
+    "text": "bonjour je cherche du parfum Chanel",
+    "intent": "ProductAvailable",
+    "intent_prediction": {
+      "name": "Discount",
+      "confidence": 0.7778083086013794
+    }
+  },
+  {
+    "text": "bonjour, je viens de prendre possession de mon colis parfums n° 26503775. le flacon de parfum Moustache est endommagé et cela est précisé sur le bon d'expédition. je n'ai jamais commandé un parfum d'occasion ! ! ! ! mon mail est _Email1_",
+    "intent": "DamagedPackage",
+    "intent_prediction": {
+      "name": "Discount",
+      "confidence": 0.8677179217338562
+    }
+  },
+  {
+    "text": "le colis n'est pas abîmé : seul la boite du parfum est abîmé",
+    "intent": "DamagedPackage",
+    "intent_prediction": {
+      "name": "AskDetails",
+      "confidence": 0.8782756924629211
+    }
+  },
+  {
+    "text": "#726241 je viens d'être appeler par Chronopost pour la livraison de ma commande. ils m'informent que que mon colis est vide et de vous contacter pour le signaler et d'établir une réclamation ! ! !",
+    "intent": "DamagedPackage",
+    "intent_prediction": {
+      "name": "Discount",
+      "confidence": 0.7720337510108948
+    }
+  },
+  {
+    "text": "mail _Email1_ il s'agit eau de parfum _Name3_ de lancome vapo",
+    "intent": "Rien",
+    "intent_prediction": {
+      "name": "PaymentRefused",
+      "confidence": 0.3046128749847412
+    }
+  },
+  {
+    "text": "bonjour _Name1_, je viens vers vous pour avoir des informations sur ma commande : commande N° 611429 du 02 juillet 2018 j'ai transmis par mail hier les justificatifs de mon identité je suis M _Name3_, à _City1_. adresse : 25 Rue Clémenceau12300 _City1_. téléphone : _Phone1_ je voudrais donc m'assurer que mon mail a été reçu et quand pourrais je avoir le colis ? Merci à vous.",
+    "intent": "DeliveryNews",
+    "intent_prediction": {
+      "name": "MissingItem",
+      "confidence": 0.5082679390907288
+    }
+  },
+  {
+    "text": "bonjour cela fait plusieurs fois que je vous contact sans réponse si le statut de ma commande N évolué pas dans la journée",
+    "intent": "DeliveryNews",
+    "intent_prediction": {
+      "name": "Goodbye",
+      "confidence": 0.6147695183753967
+    }
+  },
+  {
+    "text": "bonjour etc je suis toujours en attente de ma commande 721809 en date du 05:06:2019 . pouvez vous me donner des informations a ce sujet ? etc. Merci",
+    "intent": "DeliveryNews",
+    "intent_prediction": {
+      "name": "Autre",
+      "confidence": 0.9592182636260986
+    }
+  },
+  {
+    "text": "oui j'étais en conversation qui été interrompue",
+    "intent": "CommuncationInterruption",
+    "intent_prediction": {
+      "name": "PaymentTool",
+      "confidence": 0.6001740097999573
+    }
+  },
+  {
+    "text": "_Name2_ bonjour, vous venez de m'envoyer votre adresse mail mais \" \" en raison d'un incident technique \" \" je n'ai pas eu le temps de la recopier",
+    "intent": "CommuncationInterruption",
+    "intent_prediction": {
+      "name": "ReceptionAlert",
+      "confidence": 0.7723793983459473
+    }
+  },
+  {
+    "text": "impossible de passer une commande a chaque essai non adresse email ne correspond pas avec la confirmation de cette adresse comment faire pour passer commande.",
+    "intent": "Login",
+    "intent_prediction": {
+      "name": "ChangeData",
+      "confidence": 0.4085223376750946
+    }
+  },
+  {
+    "text": "bonjour, moi c'est _Name2_ il y a _Email1_. je voudrais passer une commande mais à chaque connexion on me dit qu'il y a une erreur. que puis je faire dans ce cas ? peux t on passer une commande par téléphone svp ?",
+    "intent": "Login",
+    "intent_prediction": {
+      "name": "ConfirmationOrder",
+      "confidence": 0.31112560629844666
+    }
+  },
+  {
+    "text": "de _Name1_ : sans me demander mon numéro de commande ? étonnant etc de _Name1_ : c'est parfait etc il devrait arriver rapidement j'imagine.",
+    "intent": "DeliveryNews+AskDetails",
+    "intent_prediction": {
+      "name": "DeliveryNews",
+      "confidence": 0.37001532316207886
+    }
+  },
+  {
+    "text": "bonjour j'ai commandé 2 spes de déodorant sauva j'en est reçus 1 pces _Email1_",
+    "intent": "MissingItem",
+    "intent_prediction": {
+      "name": "DeliveryNews",
+      "confidence": 0.9999610781669617
+    }
+  },
+  {
+    "text": "mais c'est bizarre, il n'est pas encore pris en charge par Chronopost",
+    "intent": "ReceptionAlert",
+    "intent_prediction": {
+      "name": "Discount",
+      "confidence": 0.8878896236419678
+    }
+  },
+  {
+    "text": "très bien ; mais vous êtes injuste !",
+    "intent": "CustomerComplaint",
+    "intent_prediction": {
+      "name": "ProductOrigin",
+      "confidence": 0.41282182931900024
+    }
+  },
+  {
+    "text": "d'accord _Name5_ je souhaite juste ne pas être oublier",
+    "intent": "CustomerComplaint",
+    "intent_prediction": {
+      "name": "Goodbye",
+      "confidence": 0.33846646547317505
+    }
+  },
+  {
+    "text": "je serais contraint de faire annuler le paiement par mastercard Merci de votre compréhension Mr _Name7_",
+    "intent": "CancelOrder",
+    "intent_prediction": {
+      "name": "ProductAvailable",
+      "confidence": 0.5379365682601929
+    }
+  },
+  {
+    "text": "Mr _Name4_ _Name3_ _Email1_ j'ai déjà envoyé une demande d' annulation de commande par e-mail je n'ai pas eu de réponse de votre part",
+    "intent": "CancelOrder",
+    "intent_prediction": {
+      "name": "PaymentRefused",
+      "confidence": 0.4184783399105072
+    }
+  },
+  {
+    "text": "pour recevoir le parfum sa met combien de temps svp",
+    "intent": "DeliveryTime",
+    "intent_prediction": {
+      "name": "Discount",
+      "confidence": 0.5209004282951355
+    }
+  },
+  {
+    "text": "bonjour si je commande de suite etc je serai livré quand ?",
+    "intent": "DeliveryTime",
+    "intent_prediction": {
+      "name": "Goodbye",
+      "confidence": 0.49014320969581604
+    }
+  },
+  {
+    "text": "non je voulais être certain qu'il _Name4_ ai pas de problèmes ma. commande",
+    "intent": "ConfirmationOrder",
+    "intent_prediction": {
+      "name": "DeliveryNews",
+      "confidence": 0.9702234864234924
+    }
+  },
+  {
+    "text": "toujours pas",
+    "intent": "Non",
+    "intent_prediction": {
+      "name": "DeliveryNews+AskDetails",
+      "confidence": 0.9967244863510132
+    }
+  },
+  {
+    "text": "je ne peux plus me faire livrer à domicile aux frais de livraison de 7.99 comme indiqué précédemment ?",
+    "intent": "DeliveryPlace",
+    "intent_prediction": {
+      "name": "DeliveryNews+CustomerComplaint",
+      "confidence": 0.35417526960372925
+    }
+  },
+  {
+    "text": "bonjour, je voulais savoir si vous livré à la Réunion.",
+    "intent": "DeliveryPlace",
+    "intent_prediction": {
+      "name": "DeliveryNews+deliveryPlace",
+      "confidence": 0.9319577813148499
+    }
+  },
+  {
+    "text": "d'accord, je l'envoie à l'adresse du service client ?",
+    "intent": "Returned",
+    "intent_prediction": {
+      "name": "CustomerComplaint+goodbye",
+      "confidence": 0.7813985347747803
+    }
+  },
+  {
+    "text": "bonjour, je n'arrive pas à finaliser ma commande.",
+    "intent": "PurchaseIssue",
+    "intent_prediction": {
+      "name": "Saluer",
+      "confidence": 0.6520348191261292
+    }
+  },
+  {
+    "text": "quand je le rajoute au panier cela me mets qu'y'a une erreur plus assez de stock",
+    "intent": "PurchaseIssue",
+    "intent_prediction": {
+      "name": "Login",
+      "confidence": 0.9077979326248169
+    }
+  },
+  {
+    "text": "dans mon panier de commande on me dit de cocher le transporteur mais je ne vois pas où c'est",
+    "intent": "PurchaseIssue",
+    "intent_prediction": {
+      "name": "DeliveryNews+deliveryPlace",
+      "confidence": 0.40978923439979553
+    }
+  },
+  {
+    "text": "BJR je souhaiterai savoir pourquoi le prix de _Name2_ sensuelle eau de parfum spray 75ml est il au prix de 61,99 E et celui de 50ml au prix de 77,99 E ? _Email1_",
+    "intent": "ProductPrice",
+    "intent_prediction": {
+      "name": "DeliveryCost",
+      "confidence": 0.9035259485244751
+    }
+  },
+  {
+    "text": "quelle différence entre le flacon _Name3_ de lancome de 100ml a69.99et celui a 77.99 pour la même contenance merci",
+    "intent": "ProductPrice",
+    "intent_prediction": {
+      "name": "ProductAvailable",
+      "confidence": 0.8760231733322144
+    }
+  },
+  {
+    "text": "le prix est donc de 69.99 ?",
+    "intent": "ProductPrice",
+    "intent_prediction": {
+      "name": "DeliveryCost",
+      "confidence": 0.3934299647808075
+    }
+  },
+  {
+    "text": "d'où sont experdier vos parfums ?",
+    "intent": "ProductOrigin",
+    "intent_prediction": {
+      "name": "MissingItem",
+      "confidence": 0.4475187659263611
+    }
+  },
+  {
+    "text": "j'ai également une requête de dédommagement ; a qui puis je m'adresser ? car entre les délais excessifs et le numéro de téléphone surtaxé que j'ai utilisé à plusieurs reprise",
+    "intent": "Refund",
+    "intent_prediction": {
+      "name": "CustomerComplaint",
+      "confidence": 0.7376605868339539
+    }
+  },
+  {
+    "text": "bonjour, j'ai discuté avec une de vos collègues hier car mon colis a disparu. il n'est pas dsns le point relais indiqué, même après enquête de Chronopost , il s'avère que le colis malgré tout n'y ai pas. votre collègue devait me recontacter hier pour m'informer si Chronopost l'a égarée et qu'on procéderai au remboursement colis XT _PersonId1_",
+    "intent": "Refund",
+    "intent_prediction": {
+      "name": "ReceptionAlert",
+      "confidence": 0.6499139070510864
+    }
+  },
+  {
+    "text": "bonjour voudrai m'inscrire pour travailler comme VDI",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "AccountCreation",
+      "confidence": 0.9012006521224976
+    }
+  },
+  {
+    "text": "je suis cliente chez vous, mais surprise car ce produit est intéressant, c'est pour offrir à ma belle fille à Noël et je voulais être sûre pour mon achat. Merci de vos réponses, je vais commander. bonne journée le flacon n'a pas la même forme que le 75 ml en _Name2_ story ?",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "ConfirmationOrder",
+      "confidence": 0.6935560703277588
+    }
+  },
+  {
+    "text": "d'accord je demande car j'ai déjà commander sur des sites internet et malheureusement je me suis rendu compte que c'était des copie l'odeur tourné et ne tenais pas",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "CustomerComplaint",
+      "confidence": 0.9335386157035828
+    }
+  },
+  {
+    "text": "vous avait un numéro de téléphone non surtaxé pour vous joindre ?",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "AccountIssue",
+      "confidence": 0.4380631446838379
+    }
+  },
+  {
+    "text": "non désoler vous avait mal compris je n'ai pas commande sur votre site sur un autre site mais C » est pour cela que je vous pose la question car il m'avait aussi certifié que les produits était authentique donc c'est pour sa que je vous demande",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "Login",
+      "confidence": 0.8034811615943909
+    }
+  },
+  {
+    "text": "bonjour _Name1_, juste pour dire que je surseois ce jour à mon intention de commande car je part je pars en vacances mardi prochain et donc la livraison serait trop tard. je commanderai à mon retour. merci ;",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "DeliveryNews",
+      "confidence": 0.8670276403427124
+    }
+  },
+  {
+    "text": "en allant sur la page _Name3_ de lancome parfum il y a dessous produits de le même gamme",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "ProductAvailable",
+      "confidence": 0.9979228377342224
+    }
+  },
+  {
+    "text": "qu'appelez vous lien ?",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "AskDetails",
+      "confidence": 0.7372837066650391
+    }
+  },
+  {
+    "text": "mais je suis dans votre boutique je n'ai pas _Name1_ de CE typé sur le produits je vais voir SI il y a une REF",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "ReceptionAlert",
+      "confidence": 0.319593608379364
+    }
+  },
+  {
+    "text": "_Name2_ mail vous entendez par chat ? car le numéro de service client ne fonctionne même pas.",
+    "intent": "Autre",
+    "intent_prediction": {
+      "name": "ProductAvailable",
+      "confidence": 0.531704843044281
+    }
+  },
+  {
+    "text": "d'accord plus il y a de demandes, moins le produit est cher ? la qualité est la même ?",
+    "intent": "ProductQuality",
+    "intent_prediction": {
+      "name": "CommuncationInterruption",
+      "confidence": 0.7075682878494263
+    }
+  }
+]

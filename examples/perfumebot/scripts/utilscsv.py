@@ -278,16 +278,16 @@ def clean_and_concat(conv, ptime, puser, final_conv="",user="", sequence="",firs
 
 
 if __name__ == '__main__':
-    testfold = "../input/50testfold/"
-    evalfold = "../input/50evalfold/"
-    testout = open("../input/50testfold.csv", 'w', encoding='utf-8')
-    evalout = open("../input/50evalfold.csv", 'w', encoding='utf-8')
-    val = "../input/3/"
-    valout = open("../input/50valfold.csv",'w', encoding='utf-8')
+    # testfold = "../input/50testfold/"
+    # evalfold = "../input/50evalfold/"
+    # testout = open("../input/50testfold.csv", 'w', encoding='utf-8')
+    # evalout = open("../input/50evalfold.csv", 'w', encoding='utf-8')
+    val2 = "../input/5/"
+    valout = open("../input/50val5fold.csv",'w', encoding='utf-8')
 
     # allinonefile(testfold, testout)
     # allinonefile(evalfold, evalout)
-    allinonefile(val, valout)
+    allinonefile(val2, valout)
 
     """
     # creating test and eval convs dirs from already treated data

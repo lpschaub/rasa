@@ -1,10 +1,23 @@
 import os, json, glob
 path = "/home/tf/Documents/projets/repos/rasa/examples/perfumebot/input/"
 source  = path + 'clean/'
-iteration = '3/'
+iteration = '5'
 extract = path+iteration
 os.system(f'mkdir {extract}')
 current = path+'done.txt'
+# stream = open(current)
+# done = stream.readlines()
+# stream.close()
+# out = open(current,'w')
+
+# for file in glob.glob(path+'4/*') :
+# 	file = file.split('/')[-1].rstrip()
+# 	print(file)
+# 	if file not in done :
+# 		done.append(file.replace("conv","")+'\n')
+# for elem in done :  
+# 	out.write(elem)
+# sys.exit()
 
 def extractor(fun, list_files, nbr = 20, x = 0) :
 	list_convs = fun()
