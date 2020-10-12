@@ -276,14 +276,28 @@ def clean_and_concat(conv, ptime, puser, final_conv="",user="", sequence="",firs
             final_conv += turn + '\n'
         return clean_and_concat(conv[1:], ptime, puser, final_conv, this_user, sequence,first + 1)
 
+def getIntents(parsedcsv) :
+    intents = {}
+    pattern = re.compile(r'\d+$')
+    for line in parsedcsv :
+        if re.match(pattern,line[0]) :
+            print(line[0])
+
+
+def parsecsv(csv):
+    convs = []
+    conv = {}
+    for line in csv[1:] :
+        if line == '\n' :
+            
+
+
 
 if __name__ == '__main__':
-    testfold = "../input/50testfold/"
-    # evalfold = "../input/50evalfold/"
-    # evalout = open("../input/50evalfold.csv", 'w', encoding='utf-8')
-    testout = open("../input/50testfold.csv", 'w', encoding='utf-8')
 
-    allinonefile(testfold, testout)
+    test = open("../input/50testfold.csv", 'w', encoding='utf-8')
+
+    # allinonefile(testfold, testout)
     # allinonefile(evalfold, evalout)
 
     """

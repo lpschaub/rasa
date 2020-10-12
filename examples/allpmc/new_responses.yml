@@ -1,0 +1,138 @@
+- utter_AskDetails_StoreLocation_DeliveryTime_ProvideInfo:
+  - text: nos produits sont expédiés depuis les USA.
+- utter_AskEmail:
+  - text: "Pouvez-vous m'indiquer votre adresse mail "
+- utter_AskForMissingSlots_SayHello:
+  - text: bonjour je suis Noah en quoi puis je vous aider ? afin d'accélérer le traitement
+      de votre dossier merci de nous indiquer votre adresse email et / ou votre numéro
+      de commande
+- utter_AskOrder:
+  - text: "pourriez vous m'indiquer votre numéro de commande s'il vous plaît "
+- utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting:
+  - text: je regarde je vous demande un instant.  je viens de procéder à l'annulation
+      et au remboursement de votre commande
+- utter_DeliveryCost_ProvideInfo:
+  - text: "les frais de port dépendent de l'option de livraison choisie et du nombre\
+      \ de produits commandés : - pour une livraison en {place}  il faut ainsi compter\
+      \ {amount} pour le premier article commandé puis {amount} par produit supplémentaire\
+      \ ensuite. le délai de livraison avec cette option est compris entre 7 et 10\
+      \ jours ouvrés. - pour une livraison à l'adresse de votre choix il faut compter\
+      \ {amount} pour un produit puis {amount} par article supplémentaire ensuite\
+      \ le délai de livraison avec cette option est compris entre 10 et 14 jours ouvrés."
+  - text: les frais de livraison sont calculés en fonction du nombre de produits commandés
+  - text: nous ne proposons pas de livraison gratuite actuellement sur ParfumsMoinsCher.com
+- utter_DeliveryCost_ProvideInfo_Apologize:
+  - text: nous ne proposons pas les frais de port gratuits et j'en suis désolée  nos
+      colis sont expédiés depuis {place}
+- utter_DeliveryNews_AskDetails_CustomerComplaint_ProvideInfo:
+  - text: la livraison devrait avoir lieu en fin de semaine
+- utter_DeliveryNews_AskDetails_ProvideInfo:
+  - text: le colis a bien été expédié
+  - text: il a bien été expédié  le lien sera mis à jour par {transporter} dès l'arrivée
+      de votre colis sur le sol français très prochainemen
+- utter_DeliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion:
+  - text: j'effectue les recherches nécessaires je vous demande un instant.  je vous
+      invite à suivre le lien suivant.  https://www.chronopost.fr/tracking-no-cms/suivi-page?langue=fr&listeNumerosLT=XT017207857FR  votre
+      colis a bien été pris en charge par le transporteur il est actuellement en transit
+      aérien. dès son arrivée sur le sol français c'est {transporter} qui finalisera
+      la commande.  je suis à votre service n'hésitez pas si vous avez d'autres questions
+      ou besoin de conseils
+- utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize:
+  - text: Au nom de toute l'équipe je vous transmets nos excuses et allons faire le
+      nécessaire le plus vite
+- utter_DeliveryNews_Lost:
+  - text: il semblerait que votre commande ait été perdue ou volée durant son transport.
+- utter_DeliveryNews_ProvideInfo:
+  - text: comme indiqué lors de votre commande le délai de livraison avec l'option
+      choisie est compris entre 7 et 10 jours ouvrés. votre colis devrait donc vous
+      parvenir en fin de semaine
+- utter_DeliveryTime_ProvideInfo:
+  - text: "je vous rappelle nos délais  les délais de livraison sont compris entre\
+      \ : - 7 et 10 jours ouvrés pour une livraison en {place} ( {country} métropolitaine\
+      \ uniquement - 10 et 14 jours ouvrés pour une livraison   classique   à domicile\
+      \ - 7 et 10 jours ouvrés pour une livraison   express   à domicile  je suis\
+      \ à votre service n'hésitez pas si vous avez d'autres questions ou besoin de\
+      \ conseils."
+  - text: le délai est compris entre 7 et 10 jours ouvrés
+- utter_Discount_ProvideInfo:
+  - text: je vous invite à saisir le code {code}
+  - text: je vous invite à saisir le code {code} en majuscules sans espaces et sans
+      accent
+- utter_ErrorMessage:
+  - text: un message d'erreur s'affiche t il sur votre écran ?
+  - text: avez vous un message d'erreur?
+  - text: pourriez vous s'il vous plaît nous donner plus de renseignements concernant
+      votre problème  un message d'erreur s'affiche t il sur votre écran et si oui
+      quel est son code d'avance merci pour votre réponse
+- utter_Goodbye:
+  - text: Au nom de toute l'équipe je vous souhaite une agréable journée
+- utter_Login_AskForMissingSlot:
+  - text: pourriez vous m'indiquer votre adresse mail s'il vous plaît ?
+- utter_Login_ProvideInfo:
+  - text: "je vous invite à vous connecter à votre compte à l'aide du mot de passe\
+      \ : AZERTY adresse mail : {email}"
+- utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize:
+  - text: je regarde je vous demande un instant.  nous sommes sincèrement désolés
+      mais nous ne pouvons proposer ce produit pour le moment. nous vous invitons
+      à vous rendre régulièrement sur notre site ou à vous inscrire à la newsletter
+      afin de vous tenir informée des dernières nouveautés.  au nom de toute l'équipe
+      ParfumsMoinsCher.com je vous souhaite une excellente journée
+- utter_ProductAvailable_ProvideInfo_Searchorder:
+  - text: le produit {article} est disponible
+  - text: je vous invite à suivre le lien suivant [LINK]
+- utter_ProductQuality_ProvideInfo:
+  - text: l'ensemble des produits proposés sur notre boutique en ligne sont garantis
+      100 % neufs et authentiques et proviennent directement des plus grandes marques
+      de parfums à travers le monde ( à l'instar des parfums que vous pouvez retrouver
+      en boutique près de chez vous ). nos colis sont régulièrement contrôlés en {Delivery}
+      afin de vérifier qu'il ne s'agisse pas de produits contrefaits
+- utter_ReceptionAlert_ProvideInfo:
+  - text: oui {transporter} vous avertira par mail ou sms
+- utter_RefundResend:
+  - text: 'Souhaitez vous le renvoi du produit  ou le remboursement '
+- utter_Reinit:
+  - text: "je viens de réinitialiser votre mot de passe et vous invite donc à vous\
+      \ connecter avec l'adresse email : _Name1_ {email} et le mot de passe : _Name3_.\
+      \        vous pourrez bien entendu modifier ce dernier depuis votre espace client\
+      \ par        la suite"
+- utter_Resend:
+  - text: je vous confirme que le renvoi a bien été effectué sous un nouveau numéro
+      de commande. cette dernière est visible depuis votre espace clients et ne vous
+      sera bien entendu pas facturée.  exceptionnellement, afin de vous dédommager
+      pour la gêne occasionnée, j'ai pu effectuer le renvoi directement à votre domicile
+- utter_WebsiteBug_ProvideInfo:
+  - text: "je vous invite à vous déconnecter puis à recommencer votre commande"
+- utter_WebsiteBug_ProvideInfo_AskForMissingSlots:
+  - text: "je vous invite à vider les caches de votre navigateur.  puis à recommencer"
+  - text: "nous n'avons pas connaissance de ce problème et faisons donc remonter l'information
+      à notre service informatique. nous vous invitons à vider le cache de votre navigateur
+      Internet ou bien à en utiliser un différent. cela résout il votre problème"
+
+- utter_AskForMissingSlots_SayHello
+- utter_DeliveryCost_ProvideInfo
+- utter_ProductAvailable_ProvideInfo_Searchorder
+- utter_DeliveryCost_ProvideInfo_Apologize
+- utter_DeliveryNews_AskDetails_ProvideInfo
+- utter_ReceptionAlert_ProvideInfo
+- utter_DeliveryNews_ProvideInfo
+- utter_Discount_ProvideInfo
+- utter_WebsiteBug_ProvideInfo_AskForMissingSlots
+- utter_CancelOrder_Searchorder_ProvideInfo_Performaction_Askforwaiting
+- utter_ProductQuality_ProvideInfo
+- utter_DeliveryTime_ProvideInfo
+- utter_DeliveryNews_CustomerComplaint_ProvideInfo_Apologize
+- utter_DeliveryNews_AskDetails_CustomerComplaint_ProvideInfo
+- utter_AskDetails_StoreLocation_DeliveryTime_ProvideInfo
+- utter_ProductAvailable_Askforwaiting_ProvideInfo_Apologize
+- utter_DeliveryNews_Askforwaiting_ProvideInfo_Askforanotherquestion
+- utter_WebsiteBug_ProvideInfo
+- utter_Goodbye
+- utter_RefundResend
+- utter_Login_ProvideInfo
+- utter_Login_AskForMissingSlot
+- utter_Reinit
+- utter_AskEmail
+- utter_AskOrder
+- utter_Resend
+- utter_DeliveryNews_Lost
+- utter_ErrorMessage
